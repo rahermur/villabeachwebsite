@@ -453,6 +453,12 @@ const attachCopyButtons = () => {
   });
 };
 
+const attachDetailButtons = () => {
+  document.querySelectorAll("[data-sheet-key]").forEach((button) => {
+    button.addEventListener("click", () => openDetailSheet(button.dataset.sheetKey));
+  });
+};
+
 const render = () => {
   currentLocale = getEffectiveLocale(languagePreference);
   currentCopy = translations[currentLocale];
@@ -517,9 +523,6 @@ const render = () => {
     .join("");
 
   renderCards("checkInCards", currentCopy.content.checkInCards);
-  document.querySelectorAll("[data-sheet-key]").forEach((button) => {
-    button.addEventListener("click", () => openDetailSheet(button.dataset.sheetKey));
-  });
 
   renderHouseSection();
 
@@ -538,10 +541,18 @@ const render = () => {
           <h3>${section.title}</h3>
           ${section.text ? textToParagraphs(section.text) : ""}
           ${section.list?.length ? `<ul>${section.list.map((entry) => `<li>${entry}</li>`).join("")}</ul>` : ""}
+          ${
+            section.sheetKey
+              ? `<div class="card__links"><button class="ghost-button card__detail-button" type="button" data-sheet-key="${section.sheetKey}">${
+                  section.sheetLabel || currentCopy.ui.viewMoreLabel
+                }</button></div>`
+              : ""
+          }
         </article>
       `
     )
     .join("");
+  attachDetailButtons();
 
   renderFoodSection();
   renderCards("hostCards", currentCopy.content.hostContacts, { wideEveryThird: true, showTags: true });

@@ -179,6 +179,12 @@ window.siteData = {
                 "No se permite alojar o invitar a personas no registradas previamente durante el check-in. La ocupación debe respetar siempre la reserva confirmada.",
             },
             {
+              title: "🐾 Mascotas",
+              text:
+                "Se admiten mascotas bajo petición. La estancia con mascota tiene un suplemento de 25 EUR por estancia y un depósito de garantía adicional según el peso del animal, a abonar durante el check-in por check-in online o transferencia. Hay una cama y comederos disponibles para animales pequeños o medianos, aunque recomendamos traer los propios.",
+              sheetKey: "petPolicy",
+            },
+            {
               title: "🏊 Piscina y jacuzzi",
               list: [
                 "Es obligatorio ducharse antes de usar la piscina o el jacuzzi.",
@@ -241,6 +247,24 @@ window.siteData = {
             title: "🪪 Registro de viajeros y check-in online",
             text:
               "Todas las personas alojadas deben registrarse en la aplicación de check-in porque en España es obligatorio comunicar esos datos a la policía.\nEl entorno es seguro y los datos del documento de identidad solo se usan para cumplir con esta obligación.\nNormalmente recibirás previamente por email o mensaje un enlace personal para hacerlo online con antelación, pero si no lo hubieras completado, uno de los anfitriones tomará los datos durante el check-in antes de entrar en la vivienda.",
+          },
+          petPolicy: {
+            eyebrow: "Normas",
+            title: "🐾 Mascotas: condiciones y depósito",
+            text:
+              "Las mascotas se aceptan solo bajo petición y es importante avisarlo justo después de hacer la reserva. Si no se ha informado previamente, no podemos garantizar la estancia con animal.\n\nLa estancia con mascota tiene un suplemento de 25 EUR por estancia, no por noche.\nAdemás, se solicita un depósito adicional por posibles daños o limpieza extraordinaria, que debe abonarse en el momento del check-in mediante la aplicación de check-in o por transferencia.\n\nLa vivienda dispone de una cama y comederos para animales pequeños o medianos, aunque recomendamos traer los suyos para que el animal esté más cómodo.",
+            list: [
+              "Hasta 10 kg: depósito de 150 EUR por estancia.",
+              "Más de 10 kg: depósito de 260 EUR por estancia.",
+              "La mascota debe contar con cartilla sanitaria al día, incluyendo vacunaciones y desparasitación.",
+              "Los perros deben ir con correa y, cuando corresponda, con bozal y siempre bajo supervisión del propietario o cuidador autorizado.",
+              "No se admiten animales potencialmente peligrosos o agresivos ni razas consideradas como tales por la normativa aplicable.",
+              "No está permitido que los animales suban a camas o sofás. Deben traer su propia cama o manta.",
+              "No se permite usar toallas, sábanas o ropa de cama de la vivienda para el animal, ni que haga sus necesidades dentro del apartamento.",
+              "Los dueños deben limpiar cualquier suciedad dejada por el animal dentro de la vivienda, en zonas comunes o en el recorrido de acceso.",
+              "Los daños, manchas, olores o limpiezas especiales en textiles, mobiliario o equipamiento se valorarán y se descontarán del depósito o, si fuera necesario, se cobrarán aparte según el coste real de reposición o reparación.",
+              "Si no se detectan incidencias, el depósito se devuelve tras el check-out. Si hubiera daños o suciedad extraordinaria, se informará y se aplicará el coste correspondiente.",
+            ],
           },
         },
         houseBasics: [
@@ -572,6 +596,12 @@ window.siteData = {
                 "Guests may not host or invite people who were not previously registered at check-in. Occupancy must always match the confirmed reservation.",
             },
             {
+              title: "🐾 Pets",
+              text:
+                "Pets are allowed on request. Staying with a pet has a 25 EUR fee per stay and an additional security deposit depending on the animal's weight, payable at check-in through the check-in app or by bank transfer. A pet bed and feeding bowls are available for small or medium animals, although bringing your own is recommended.",
+              sheetKey: "petPolicy",
+            },
+            {
               title: "🏊 Pool and hot tub",
               list: [
                 "Showering before using the pool or hot tub is mandatory.",
@@ -634,6 +664,24 @@ window.siteData = {
             title: "🪪 Traveller registration and online check-in",
             text:
               "All staying guests must register through the check-in app because in Spain those details must be reported to the police.\nThe environment is secure and identity document data is only used to comply with that legal obligation.\nGuests will normally receive a personal link by email or message in advance so they can complete it online, but if it has not been done, one of the hosts will collect the details during check-in before access to the property.",
+          },
+          petPolicy: {
+            eyebrow: "Rules",
+            title: "🐾 Pets: conditions and deposit",
+            text:
+              "Pets are only accepted on request, and it is important to notify this just after booking. If it has not been reported in advance, we cannot guarantee the stay with an animal.\n\nStaying with a pet has a 25 EUR fee per stay, not per night.\nAn additional security deposit is also required for possible damage or extra cleaning, payable at check-in through the check-in app or by bank transfer.\n\nThe villa has a pet bed and feeding bowls available for small or medium animals, although we recommend bringing your own so the animal feels more comfortable.",
+            list: [
+              "Up to 10 kg: 150 EUR deposit per stay.",
+              "Over 10 kg: 260 EUR deposit per stay.",
+              "The animal must have an up-to-date health card, including vaccinations and deworming.",
+              "Dogs must be kept on a lead and, when required, muzzled, always under the supervision of the owner or an authorised carer.",
+              "Potentially dangerous or aggressive animals, including breeds considered as such under applicable regulations, are not accepted.",
+              "Pets are not allowed on beds or sofas. They must have their own bed or blanket.",
+              "Villa towels, sheets and bed linen may not be used for the animal, and pets must not relieve themselves inside the apartment.",
+              "Owners must clean any dirt left by the animal inside the property, in common areas or on access routes.",
+              "Damage, stains, odours or special cleaning affecting textiles, furniture or equipment will be assessed and deducted from the deposit or, if necessary, charged separately based on the real replacement or repair cost.",
+              "If no issues are found, the deposit is returned after check-out. If there is damage or extraordinary dirt, the guest will be informed and the corresponding cost will be applied.",
+            ],
           },
         },
         houseBasics: [
