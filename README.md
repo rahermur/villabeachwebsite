@@ -41,3 +41,28 @@ La elección manual se guarda en `localStorage` del navegador.
 - `styles.css`: diseño responsive.
 - `site-data.js`: contenido editable.
 - `app.js`: renderizado simple y botones.
+- `generated-places.js`: datos generados para la sección `To enjoy`.
+
+## Google Maps As Source Of Truth
+
+La lista guardada de Google Maps puede seguir siendo la fuente de verdad operativa, pero no se usa directamente en el runtime de la web.
+
+El flujo preparado ahora es:
+
+- `scripts/sync-google-maps-list.mjs`: intenta extraer un snapshot estable de la lista compartida.
+- `data/places.snapshot.json`: último snapshot válido generado desde Google Maps.
+- `data/places.overrides.json`: categorías, favoritos y copy corto para la web.
+- `scripts/build-generated-places.mjs`: mezcla snapshot + overrides y genera `generated-places.js`.
+
+### Workflows
+
+- `.github/workflows/sync-google-maps-list.yml`
+  Sincroniza la lista manualmente o en horario programado y actualiza el snapshot.
+
+- `.github/workflows/deploy-pages.yml`
+  Construye `generated-places.js` a partir del último snapshot disponible y despliega en GitHub Pages.
+
+Importante:
+
+- Si el scrapeo de Google Maps falla, la web puede seguir desplegándose con el último snapshot válido.
+- La parte más frágil del sistema es `sync-google-maps-list.mjs`, porque Google Maps no ofrece una API oficial para listas guardadas compartidas.

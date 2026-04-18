@@ -1,0 +1,439 @@
+{
+  "source": {
+    "type": "google-maps-saved-list",
+    "url": "https://maps.app.goo.gl/6kiRLdhaMThJCQia9",
+    "payloadUrl": "https://www.google.es/maps/preview/entitylist/getlist?authuser=0&hl=es&gl=es&pb=%211m4%211s9FHSLytbQZeXfVD7Pj_uPw%212e1%213m1%211e1%212e2%213e2%214i500%216m3%211s2ZTjaa-iNayNmLQP6sWm0As%2115i204459%2128e2%2116b1",
+    "lastSyncedAt": "2026-04-18T14:27:39.344Z",
+    "title": "Villa Beach Higuericas",
+    "description": "List of recommended places in Pilar de la Horadada and surroundings",
+    "totalPlaces": 42,
+    "home": {
+      "name": "C. Dalia, 31",
+      "address": "C. Dalia, 31, 03190 Pilar de la Horadada, Alicante",
+      "lat": 37.8565095,
+      "lng": -0.7676005
+    }
+  },
+  "places": [
+    {
+      "id": "nostrissima",
+      "name": "Nostrissima",
+      "note": "",
+      "address": "de la, C. Mayor, 60, 03190 Pilar de la Horadada, Alicante",
+      "lat": 37.8631739,
+      "lng": -0.7886881,
+      "category": "restaurants",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Nostrissima%2C%20de%20la%2C%20C.%20Mayor%2C%2060%2C%2003190%20Pilar%20de%20la%20Horadada%2C%20Alicante"
+    },
+    {
+      "id": "el-gallego",
+      "name": "El Gallego",
+      "note": "",
+      "address": "C. Transformador, 1, 03190 Pilar de la Horadada, Alicante",
+      "lat": 37.861043099999996,
+      "lng": -0.7854462999999999,
+      "category": "restaurants",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=El%20Gallego%2C%20C.%20Transformador%2C%201%2C%2003190%20Pilar%20de%20la%20Horadada%2C%20Alicante"
+    },
+    {
+      "id": "centro-comercial-dos-mares",
+      "name": "Centro Comercial Dos Mares",
+      "note": "",
+      "address": "N-332, 30730 San Javier, Murcia",
+      "lat": 37.820083499999996,
+      "lng": -0.8130006,
+      "category": "shopping",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Centro%20Comercial%20Dos%20Mares%2C%20N-332%2C%2030730%20San%20Javier%2C%20Murcia"
+    },
+    {
+      "id": "wow-beach-by-las-colinas",
+      "name": "WOW Beach by Las Colinas",
+      "note": "",
+      "address": "C/ Rubén Darío, 2, 03189 Dehesa de Campoamor, Alicante",
+      "lat": 37.903993,
+      "lng": -0.7457102999999999,
+      "category": "restaurants",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=WOW%20Beach%20by%20Las%20Colinas%2C%20C%2F%20Rub%C3%A9n%20Dar%C3%ADo%2C%202%2C%2003189%20Dehesa%20de%20Campoamor%2C%20Alicante"
+    },
+    {
+      "id": "vivo-restaurante",
+      "name": "Vivo Restaurante",
+      "note": "",
+      "address": "C. Caspio, 13, 03189 Orihuela, Alicante",
+      "lat": 37.919396899999995,
+      "lng": -0.75513,
+      "category": "restaurants",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Vivo%20Restaurante%2C%20C.%20Caspio%2C%2013%2C%2003189%20Orihuela%2C%20Alicante"
+    },
+    {
+      "id": "arroceria-el-sarmiento",
+      "name": "Arroceria el Sarmiento",
+      "note": "",
+      "address": "N-332, Km.52, 03189 Orihuela Costa, Alicante",
+      "lat": 37.9408776,
+      "lng": -0.7192634,
+      "category": "restaurants",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Arroceria%20el%20Sarmiento%2C%20N-332%2C%20Km.52%2C%2003189%20Orihuela%20Costa%2C%20Alicante"
+    },
+    {
+      "id": "la-mafia-se-sienta-a-la-mesa",
+      "name": "La Mafia se sienta a la mesa",
+      "note": "",
+      "address": "C. Sta. Alodia, 2, 03189 Orihuela Costa, Alicante",
+      "lat": 37.93629,
+      "lng": -0.722341,
+      "category": "restaurants",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=La%20Mafia%20se%20sienta%20a%20la%20mesa%2C%20C.%20Sta.%20Alodia%2C%202%2C%2003189%20Orihuela%20Costa%2C%20Alicante"
+    },
+    {
+      "id": "byoko-la-zenia",
+      "name": "Byoko La Zenia",
+      "note": "",
+      "address": "C. Unamuno, 1, 03189 Orihuela Costa, Alicante",
+      "lat": 37.9263784,
+      "lng": -0.7319958999999999,
+      "category": "restaurants",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Byoko%20La%20Zenia%2C%20C.%20Unamuno%2C%201%2C%2003189%20Orihuela%20Costa%2C%20Alicante"
+    },
+    {
+      "id": "restaurante-rincon-de-joaquin",
+      "name": "Restaurante Rincon de Joaquin",
+      "note": "",
+      "address": "C. Enrique García Álvarez, 2, 30592 San Cayetano, Murcia",
+      "lat": 37.8157529,
+      "lng": -0.8929623999999999,
+      "category": "restaurants",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Restaurante%20Rincon%20de%20Joaquin%2C%20C.%20Enrique%20Garc%C3%ADa%20%C3%81lvarez%2C%202%2C%2030592%20San%20Cayetano%2C%20Murcia"
+    },
+    {
+      "id": "restaurante-venezuela",
+      "name": "Restaurante Venezuela",
+      "note": "",
+      "address": "C. Campoamor, 1, 30740 Lo Pagan, Murcia",
+      "lat": 37.8181766,
+      "lng": -0.7859064,
+      "category": "restaurants",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Restaurante%20Venezuela%2C%20C.%20Campoamor%2C%201%2C%2030740%20Lo%20Pagan%2C%20Murcia"
+    },
+    {
+      "id": "mejias-beach",
+      "name": "Mejias Beach",
+      "note": "Brunch and dinner",
+      "address": "Pl. de Antonio Sánchez Lozano, 5, 03191 Torre de la Horadada, Alicante",
+      "lat": 37.8682817,
+      "lng": -0.759459,
+      "category": "restaurants",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Mejias%20Beach%2C%20Pl.%20de%20Antonio%20S%C3%A1nchez%20Lozano%2C%205%2C%2003191%20Torre%20de%20la%20Horadada%2C%20Alicante"
+    },
+    {
+      "id": "cafeteria-angel",
+      "name": "Cafetería Ángel",
+      "note": "Breakfast, drinks and convenience store",
+      "address": "C. Salar, 108, 03191 Torre de la Horadada, Alicante",
+      "lat": 37.8582821,
+      "lng": -0.7656364999999999,
+      "category": "restaurants",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Cafeter%C3%ADa%20%C3%81ngel%2C%20C.%20Salar%2C%20108%2C%2003191%20Torre%20de%20la%20Horadada%2C%20Alicante"
+    },
+    {
+      "id": "supermercados-manper-pilar-de-la-horadada",
+      "name": "Supermercados Manper Pilar de la Horadada",
+      "note": "Local supermarket. Excellent selection of local fish, butcher’s cuts, and charcuterie.",
+      "address": "Carrer Talleres, 26, 03190 Pilar de la Horadada, Alicante",
+      "lat": 37.866196699999996,
+      "lng": -0.7766132,
+      "category": "supermarkets",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Supermercados%20Manper%20Pilar%20de%20la%20Horadada%2C%20Carrer%20Talleres%2C%2026%2C%2003190%20Pilar%20de%20la%20Horadada%2C%20Alicante"
+    },
+    {
+      "id": "restaurante-asia",
+      "name": "Restaurante Asia",
+      "note": "Chinese restaurant with delivery options",
+      "address": "C. Mayor, 136, 03190 Pilar de la Horadada, Alicante",
+      "lat": 37.8602871,
+      "lng": -0.7836744,
+      "category": "restaurants",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Restaurante%20Asia%2C%20C.%20Mayor%2C%20136%2C%2003190%20Pilar%20de%20la%20Horadada%2C%20Alicante"
+    },
+    {
+      "id": "bodegon-la-pena",
+      "name": "Bodegón la Peña",
+      "note": "",
+      "address": "C. Benissa, 37, 03190 Pilar de la Horadada, Alicante",
+      "lat": 37.8629119,
+      "lng": -0.7835795,
+      "category": "restaurants",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Bodeg%C3%B3n%20la%20Pe%C3%B1a%2C%20C.%20Benissa%2C%2037%2C%2003190%20Pilar%20de%20la%20Horadada%2C%20Alicante"
+    },
+    {
+      "id": "aldi",
+      "name": "ALDI",
+      "note": "Supermarket",
+      "address": "C. Mayor, s/n, 03190 Pilar de la Horadada, Alicante",
+      "lat": 37.859978,
+      "lng": -0.782832,
+      "category": "supermarkets",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=ALDI%2C%20C.%20Mayor%2C%20s%2Fn%2C%2003190%20Pilar%20de%20la%20Horadada%2C%20Alicante"
+    },
+    {
+      "id": "mercadona",
+      "name": "Mercadona",
+      "note": "",
+      "address": "Av. de la Torre, s/n, 03190 Pilar de la Horadada, Alicante",
+      "lat": 37.86618,
+      "lng": -0.7820237,
+      "category": "supermarkets",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Mercadona%2C%20Av.%20de%20la%20Torre%2C%20s%2Fn%2C%2003190%20Pilar%20de%20la%20Horadada%2C%20Alicante"
+    },
+    {
+      "id": "il-palco",
+      "name": "il Palco",
+      "note": "",
+      "address": "Avenida de las Colinas,2,Ctra. de Campoamor a, CV-941 Km. 6, 03189 San Miguel de Salinas, Alicante",
+      "lat": 37.9303952,
+      "lng": -0.8050463,
+      "category": "restaurants",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=il%20Palco%2C%20Avenida%20de%20las%20Colinas%2C2%2CCtra.%20de%20Campoamor%20a%2C%20CV-941%20Km.%206%2C%2003189%20San%20Miguel%20de%20Salinas%2C%20Alicante"
+    },
+    {
+      "id": "t1-restaurante",
+      "name": "T1 Restaurante",
+      "note": "",
+      "address": "Calle comunidad castellano-manchega, 6, 03190 Pilar de la Horadada, Alicante",
+      "lat": 37.8682802,
+      "lng": -0.7766168999999999,
+      "category": "restaurants",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=T1%20Restaurante%2C%20Calle%20comunidad%20castellano-manchega%2C%206%2C%2003190%20Pilar%20de%20la%20Horadada%2C%20Alicante"
+    },
+    {
+      "id": "hiperasia-euromacro-sl",
+      "name": "Hiperasia (Euromacro SL.)",
+      "note": "Large Chinese bazar",
+      "address": "Av Comunidad Valenciana, 8, 03191 Torre de la Horadada, Alicante",
+      "lat": 37.866248999999996,
+      "lng": -0.7716835,
+      "category": "shopping",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Hiperasia%20(Euromacro%20SL.)%2C%20Av%20Comunidad%20Valenciana%2C%208%2C%2003191%20Torre%20de%20la%20Horadada%2C%20Alicante"
+    },
+    {
+      "id": "el-griego",
+      "name": "El Griego",
+      "note": "Greek restaurant",
+      "address": "Avenida Comercial, 1, 03191 Mil Palmeras, Alicante",
+      "lat": 37.882707499999995,
+      "lng": -0.7542433,
+      "category": "restaurants",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=El%20Griego%2C%20Avenida%20Comercial%2C%201%2C%2003191%20Mil%20Palmeras%2C%20Alicante"
+    },
+    {
+      "id": "oasis-beach",
+      "name": "Oasis Beach",
+      "note": "Sea food restaurant",
+      "address": "Av. de Francia, s/n, 03191 Mil Palmeras, Alicante",
+      "lat": 37.887178899999995,
+      "lng": -0.7530464,
+      "category": "restaurants",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Oasis%20Beach%2C%20Av.%20de%20Francia%2C%20s%2Fn%2C%2003191%20Mil%20Palmeras%2C%20Alicante"
+    },
+    {
+      "id": "padel-selected",
+      "name": "Padel Selected",
+      "note": "Padel",
+      "address": "Calle Marrajo, 2, 30709 Roldán, Murcia",
+      "lat": 37.8429152,
+      "lng": -0.776521,
+      "category": "sports",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Padel%20Selected%2C%20Calle%20Marrajo%2C%202%2C%2030709%20Rold%C3%A1n%2C%20Murcia"
+    },
+    {
+      "id": "pinatar-arena",
+      "name": "Pinatar Arena",
+      "note": "Gym",
+      "address": "Av. del Mojón, s/n, 30740 San Pedro del Pinatar, Murcia",
+      "lat": 37.843401899999996,
+      "lng": -0.7747272,
+      "category": "sports",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Pinatar%20Arena%2C%20Av.%20del%20Moj%C3%B3n%2C%20s%2Fn%2C%2030740%20San%20Pedro%20del%20Pinatar%2C%20Murcia"
+    },
+    {
+      "id": "",
+      "name": "Детская площадка",
+      "note": "",
+      "address": "C. Salar, 5, 03191 Torre de la Horadada, Alicante",
+      "lat": 37.8632862,
+      "lng": -0.7647159,
+      "category": "restaurants",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=%D0%94%D0%B5%D1%82%D1%81%D0%BA%D0%B0%D1%8F%20%D0%BF%D0%BB%D0%BE%D1%89%D0%B0%D0%B4%D0%BA%D0%B0%2C%20C.%20Salar%2C%205%2C%2003191%20Torre%20de%20la%20Horadada%2C%20Alicante"
+    },
+    {
+      "id": "parque-infantil",
+      "name": "Parque Infantil",
+      "note": "",
+      "address": "C. Catamarán, 22, 03191 Pilar de la Horadada, Alicante",
+      "lat": 37.8530397,
+      "lng": -0.7640802,
+      "category": "parks",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Parque%20Infantil%2C%20C.%20Catamar%C3%A1n%2C%2022%2C%2003191%20Pilar%20de%20la%20Horadada%2C%20Alicante"
+    },
+    {
+      "id": "area-infantil",
+      "name": "Área infantil",
+      "note": "",
+      "address": "03191 Pilar de la Horadada, Alicante",
+      "lat": 37.8536846,
+      "lng": -0.7634337999999999,
+      "category": "parks",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=%C3%81rea%20infantil%2C%2003191%20Pilar%20de%20la%20Horadada%2C%20Alicante"
+    },
+    {
+      "id": "pirata-tio-pepe",
+      "name": "Pirata Tío Pepe",
+      "note": "Nice hidden chiringuito!",
+      "address": "C/ Partida de, C. Brisamar, 14, 03191 Torre de la Horadada, Alicante",
+      "lat": 37.8607605,
+      "lng": -0.7627864,
+      "category": "restaurants",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Pirata%20T%C3%ADo%20Pepe%2C%20C%2F%20Partida%20de%2C%20C.%20Brisamar%2C%2014%2C%2003191%20Torre%20de%20la%20Horadada%2C%20Alicante"
+    },
+    {
+      "id": "heladeria-galan",
+      "name": "Heladería Galán",
+      "note": "The town’s best ice cream",
+      "address": "C. Albacete, 2, 03191 Torre de la Horadada, Alicante",
+      "lat": 37.8679748,
+      "lng": -0.7588073,
+      "category": "ice-cream",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Helader%C3%ADa%20Gal%C3%A1n%2C%20C.%20Albacete%2C%202%2C%2003191%20Torre%20de%20la%20Horadada%2C%20Alicante"
+    },
+    {
+      "id": "restaurante-pizzeria-arroceria-plaza",
+      "name": "RESTAURANTE PIZZERÍA ARROCERÍA PLAZA",
+      "note": "Spanish restaurant with delivery for paellas, pizzas and more",
+      "address": "Urbanización, C. Maria Auxiliadora, n° 32, 03191 Torre de la Horadada, Alicante",
+      "lat": 37.8743048,
+      "lng": -0.7578667,
+      "category": "restaurants",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=RESTAURANTE%20PIZZER%C3%8DA%20ARROCER%C3%8DA%20PLAZA%2C%20Urbanizaci%C3%B3n%2C%20C.%20Maria%20Auxiliadora%2C%20n%C2%B0%2032%2C%2003191%20Torre%20de%20la%20Horadada%2C%20Alicante"
+    },
+    {
+      "id": "manolo-s-mar",
+      "name": "Manolo's Mar",
+      "note": "Restaurant",
+      "address": "Calle Hamburgo, s/n Complejo Deportivo Las Artes, 03191 Torre de la Horadada, Alicante",
+      "lat": 37.8769384,
+      "lng": -0.7545953,
+      "category": "restaurants",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Manolo's%20Mar%2C%20Calle%20Hamburgo%2C%20s%2Fn%20Complejo%20Deportivo%20Las%20Artes%2C%2003191%20Torre%20de%20la%20Horadada%2C%20Alicante"
+    },
+    {
+      "id": "centro-comercial-zenia-boulevard",
+      "name": "Centro comercial Zenia Boulevard",
+      "note": "Shopping center",
+      "address": "C. Jade, 2, 03189 La Zenia, Alicante",
+      "lat": 37.9305065,
+      "lng": -0.7363415,
+      "category": "shopping",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Centro%20comercial%20Zenia%20Boulevard%2C%20C.%20Jade%2C%202%2C%2003189%20La%20Zenia%2C%20Alicante"
+    },
+    {
+      "id": "hospital-universitario-de-torrevieja",
+      "name": "Hospital Universitario de Torrevieja",
+      "note": "",
+      "address": "Carretera CV 95, s/n, 03186 Torrevieja, Alicante",
+      "lat": 37.963497,
+      "lng": -0.7157511,
+      "category": "health",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Hospital%20Universitario%20de%20Torrevieja%2C%20Carretera%20CV%2095%2C%20s%2Fn%2C%2003186%20Torrevieja%2C%20Alicante"
+    },
+    {
+      "id": "cap-de-pilar-de-la-horadada",
+      "name": "CAP DE PILAR DE LA HORADADA",
+      "note": "",
+      "address": "C. Vicente Blasco Ibáñez, s/n, 03190 Pilar de la Horadada, Alicante",
+      "lat": 37.863617399999995,
+      "lng": -0.787512,
+      "category": "health",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=CAP%20DE%20PILAR%20DE%20LA%20HORADADA%2C%20C.%20Vicente%20Blasco%20Ib%C3%A1%C3%B1ez%2C%20s%2Fn%2C%2003190%20Pilar%20de%20la%20Horadada%2C%20Alicante"
+    },
+    {
+      "id": "farmacia-rafael-espuch-farmacia-de-toda-la-vida-en-pilar-de-la-horadada",
+      "name": "FARMACIA RAFAEL ESPUCH - Farmacia de Toda la Vida en Pilar de la Horadada",
+      "note": "",
+      "address": "C. Mayor, 21, 03190 Pilar de la Horadada, Alicante",
+      "lat": 37.8652727,
+      "lng": -0.7924568,
+      "category": "pharmacy",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=FARMACIA%20RAFAEL%20ESPUCH%20-%20Farmacia%20de%20Toda%20la%20Vida%20en%20Pilar%20de%20la%20Horadada%2C%20C.%20Mayor%2C%2021%2C%2003190%20Pilar%20de%20la%20Horadada%2C%20Alicante"
+    },
+    {
+      "id": "farmacia-playa-las-higuericas-lda-m-del-mar-lorenzo-banon",
+      "name": "Farmacia Playa Las Higuericas Lda. M del Mar Lorenzo Bañón",
+      "note": "closest Pharmacy",
+      "address": "C. Alheli, 21, 03191 Pilar de la Horadada, Alicante",
+      "lat": 37.8535353,
+      "lng": -0.7661985,
+      "category": "pharmacy",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Farmacia%20Playa%20Las%20Higuericas%20Lda.%20M%20del%20Mar%20Lorenzo%20Ba%C3%B1%C3%B3n%2C%20C.%20Alheli%2C%2021%2C%2003191%20Pilar%20de%20la%20Horadada%2C%20Alicante"
+    },
+    {
+      "id": "chiringuito-pirata-dunas-higuericas",
+      "name": "Chiringuito Pirata Dunas Higuericas",
+      "note": "",
+      "address": "C. Catamarán, 94, 03190 Pilar de la Horadada, Alicante",
+      "lat": 37.853321,
+      "lng": -0.7638863,
+      "category": "restaurants",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Chiringuito%20Pirata%20Dunas%20Higuericas%2C%20C.%20Catamar%C3%A1n%2C%2094%2C%2003190%20Pilar%20de%20la%20Horadada%2C%20Alicante"
+    },
+    {
+      "id": "las-colinas-golf-country-club",
+      "name": "Las Colinas Golf & Country Club",
+      "note": "",
+      "address": "Av. de las Colinas, 2, 03189 Dehesa de Campoamor, Alicante",
+      "lat": 37.9279868,
+      "lng": -0.8090537999999999,
+      "category": "golf",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Las%20Colinas%20Golf%20%26%20Country%20Club%2C%20Av.%20de%20las%20Colinas%2C%202%2C%2003189%20Dehesa%20de%20Campoamor%2C%20Alicante"
+    },
+    {
+      "id": "lo-romero-golf",
+      "name": "Lo Romero Golf",
+      "note": "Golf",
+      "address": "CV 925 Km 29, CV-925, Km 29, 03191 Pilar de la Horadada, Alicante",
+      "lat": 37.882675,
+      "lng": -0.8234334999999999,
+      "category": "golf",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Lo%20Romero%20Golf%2C%20CV%20925%20Km%2029%2C%20CV-925%2C%20Km%2029%2C%2003191%20Pilar%20de%20la%20Horadada%2C%20Alicante"
+    },
+    {
+      "id": "c-mar-de-noruega-2-16",
+      "name": "C. Mar de Noruega, 2, 16",
+      "note": "Small Chinese bazar",
+      "address": "C. Mar de Noruega, 2, 03191 Torre de la Horadada, Alicante",
+      "lat": 37.8585472,
+      "lng": -0.765643,
+      "category": "shopping",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=C.%20Mar%20de%20Noruega%2C%202%2C%2016%2C%20C.%20Mar%20de%20Noruega%2C%202%2C%2003191%20Torre%20de%20la%20Horadada%2C%20Alicante"
+    },
+    {
+      "id": "restaurante-victoria-roneria-mangu",
+      "name": "Restaurante Victoria & Roneria Mangú",
+      "note": "",
+      "address": "Av. Río Segura, 116, 03191 Torre de la Horadada, Alicante",
+      "lat": 37.8753114,
+      "lng": -0.7635459,
+      "category": "restaurants",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Restaurante%20Victoria%20%26%20Roneria%20Mang%C3%BA%2C%20Av.%20R%C3%ADo%20Segura%2C%20116%2C%2003191%20Torre%20de%20la%20Horadada%2C%20Alicante"
+    },
+    {
+      "id": "archi-snack-bar-restaurant",
+      "name": "Archi snack-bar & restaurant",
+      "note": "Disco",
+      "address": "Av. del Mojón, 43, 30740 San Pedro del Pinatar, Murcia",
+      "lat": 37.843401899999996,
+      "lng": -0.7747272,
+      "category": "restaurants",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Archi%20snack-bar%20%26%20restaurant%2C%20Av.%20del%20Moj%C3%B3n%2C%2043%2C%2030740%20San%20Pedro%20del%20Pinatar%2C%20Murcia"
+    }
+  ]
+}

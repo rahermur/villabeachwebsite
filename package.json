@@ -1,0 +1,9 @@
+{
+  "name": "villa-higuericas-guide",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build:places": "node ./scripts/build-generated-places.mjs",
+    "sync:maps": "node ./scripts/sync-google-maps-list.mjs"
+  }
+}

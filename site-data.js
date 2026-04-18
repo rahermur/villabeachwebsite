@@ -13,7 +13,9 @@ window.siteData = {
     links: {
       mapsRoute:
         "https://www.google.com/maps/search/?api=1&query=Calle+Dalia+31%2C+Pilar+de+la+Horadada",
-      hostList: "https://maps.app.goo.gl/abxeaTyqkJ7zVvQr8",
+      hostList: "https://maps.app.goo.gl/6kiRLdhaMThJCQia9",
+      foodMapEmbed:
+        "https://www.google.com/maps?q=Playa%20de%20las%20Higuericas%2C%20Pilar%20de%20la%20Horadada&output=embed",
       beach:
         "https://www.visitpilardelahoradada.com/es/disfruta_pilar_horadada/playas_calas/playa/2-playa-las-higuericas",
       beaches: "https://www.visitpilardelahoradada.com/es/que_ver_hacer/playas",
@@ -111,7 +113,7 @@ window.siteData = {
         checkin: { eyebrow: "", title: "Llegada y salida" },
         house: { eyebrow: "", title: "Todo en la villa" },
         rules: { eyebrow: "", title: "Normas de la casa" },
-        food: { eyebrow: "", title: "Restaurantes, planes y favoritos" },
+        food: { eyebrow: "", title: "Maps, favoritos y planes" },
         hosts: { eyebrow: "", title: "Contacto del anfitrión" },
         emergencies: { eyebrow: "", title: "Ayuda rápida y asistencia" },
       },
@@ -121,8 +123,8 @@ window.siteData = {
           "Bienvenidos a nuestra villa. Esperamos que disfrutéis de vuestra estancia, del buen clima y de todas las comodidades de la casa. Esta guía reúne lo esencial para la llegada, la salida, el uso de la vivienda y la información práctica de la zona.",
         actions: [
           { label: "Cómo llegar", hrefKey: "mapsRoute", style: "sea" },
-          { label: "Anfitrión", href: "#hosts" },
-          { label: "Favoritos", hrefKey: "hostList" },
+          { label: "Contacto anfitrión", href: "#hosts" },
+          { label: "Favoritos en Maps", hrefKey: "hostList" },
         ],
         facts: [
           { label: "Check-in", valueKey: "checkInTime" },
@@ -251,6 +253,7 @@ window.siteData = {
               "💡 La conexión es de 1 Gb, así que debería ser bastante estable salvo si estás muy lejos del router.",
             ],
             tags: ["Internet", "1 Gb"],
+            copyValueKey: "wifi.password",
           },
           {
             title: "📺 TV y streaming",
@@ -285,67 +288,111 @@ window.siteData = {
             listKey: "bbq",
           },
         ],
-        restaurants: [
+        foodIntro: {
+          title: "Google Maps y favoritos del anfitrión",
+          body:
+            "Aquí tienes un punto de partida rápido para abrir el mapa, guardar la lista compartida del anfitrión en Google Maps y descubrir una selección corta de sitios que priorizaríamos durante la estancia.\nLa web muestra un resumen curado para móvil, pero la lista completa sigue viviendo en Google Maps.",
+          tags: ["Google Maps", "Lista compartida"],
+          links: [
+            { label: "Abrir lista completa", hrefKey: "hostList" },
+            { label: "Guía oficial", hrefKey: "restaurantsGuide" },
+          ],
+        },
+        foodFeatured: [
           {
-            title: "Restaurante Pirata Club Náutico",
-            text:
-              "Restaurante junto al puerto deportivo, recomendable si buscas una comida con vistas al entorno náutico.",
-            tags: ["Puerto", "Espetos"],
-            links: [{ label: "Ver ficha", hrefKey: "restaurantPirata" }],
-          },
-          {
-            title: "Restaurante Pizzeria Plaza",
-            text:
-              "Buena alternativa si el grupo quiere variedad, con pizzas, arroces y menú del día.",
-            tags: ["Arroces", "Pizza"],
-            links: [{ label: "Ver ficha", hrefKey: "restaurantPlaza" }],
-          },
-          {
-            title: "Victoria",
-            text:
-              "Opción muy adecuada para comidas largas o familiares, con cocina mediterránea y arroces.",
-            tags: ["Familias", "Mediterráneo"],
-            links: [{ label: "Ver ficha", hrefKey: "restaurantVictoria" }],
-          },
-          {
-            title: "Más restaurantes",
-            text:
-              "La oferta cambia según la temporada. Si quieres ver más opciones abiertas en ese momento, usa la guía oficial o la búsqueda ya preparada.",
-            tags: ["Actualizado", "Mapa"],
-            links: [
-              { label: "Guía oficial", hrefKey: "restaurantsGuide" },
-              { label: "Abrir Google Maps", hrefKey: "restaurantsMap" },
-            ],
-          },
-        ],
-        activities: [
-          {
-            title: "Playa de las Higuericas",
-            text:
-              "Playa cómoda para familias y paseos al atardecer, muy cerca de la vivienda.",
-            tags: ["Playa cercana", "Familias"],
+            title: "No te pierdas: Playa de las Higuericas",
+            text: "La referencia más cercana para playa, paseo y atardecer a pie desde la villa.",
+            tags: ["★ Favorito", "Playa"],
             links: [{ label: "Ver playa", hrefKey: "beach" }],
           },
           {
-            title: "Paseo marítimo y playas cercanas",
-            text:
-              "El entorno invita a caminar, ir en bici y alternar entre varias playas cercanas con buen acceso.",
-            tags: ["Paseo", "Bicicleta"],
-            links: [{ label: "Ver playas", hrefKey: "beaches" }],
+            title: "No te pierdas: Pirata Club Náutico",
+            text: "Muy buena opción si quieres una comida con vistas al puerto y ambiente marítimo.",
+            tags: ["★ Favorito", "Restaurante"],
+            links: [{ label: "Ver ficha", hrefKey: "restaurantPirata" }],
           },
           {
-            title: "Turismo local",
-            text:
-              "La web turística del municipio reúne rutas, agenda y propuestas para organizar planes durante la estancia.",
-            tags: ["Agenda", "Rutas"],
-            links: [{ label: "Web turística", hrefKey: "tourism" }],
+            title: "No te pierdas: Victoria",
+            text: "Buena elección para una comida larga con arroces y cocina mediterránea.",
+            tags: ["★ Favorito", "Arroces"],
+            links: [{ label: "Ver ficha", hrefKey: "restaurantVictoria" }],
+          },
+        ],
+        foodCategories: [
+          {
+            id: "food-restaurants",
+            title: "Restaurantes",
+            eyebrow: "Comer bien",
+            description: "Una selección corta para decidir rápido desde el móvil.",
+            items: [
+              {
+                title: "Pirata Club Náutico",
+                text: "Restaurante junto al puerto deportivo, recomendable si buscas una comida con vistas al entorno náutico.",
+                tags: ["Puerto", "Espetos"],
+                links: [{ label: "Ver ficha", hrefKey: "restaurantPirata" }],
+              },
+              {
+                title: "Pizzeria Plaza",
+                text: "Buena alternativa si el grupo quiere variedad, con pizzas, arroces y menú del día.",
+                tags: ["Pizza", "Arroces"],
+                links: [{ label: "Ver ficha", hrefKey: "restaurantPlaza" }],
+              },
+              {
+                title: "Victoria",
+                text: "Opción muy adecuada para comidas largas o familiares, con cocina mediterránea y arroces.",
+                tags: ["Mediterráneo", "Familias"],
+                links: [{ label: "Ver ficha", hrefKey: "restaurantVictoria" }],
+              },
+            ],
           },
           {
-            title: "Lista compartida del anfitrión",
-            text:
-              "Puedes abrir la lista compartida en Google Maps y guardarla en tu cuenta para tener a mano restaurantes, compras, farmacia y otros favoritos seleccionados por el anfitrión.",
-            tags: ["Google Maps", "Útil"],
-            links: [{ label: "Abrir lista", hrefKey: "hostList" }],
+            id: "food-walks",
+            title: "Playa y paseos",
+            eyebrow: "A pocos minutos",
+            description: "Planes fáciles para cualquier momento del día.",
+            items: [
+              {
+                title: "Playa de las Higuericas",
+                text: "Playa cómoda para familias y paseos al atardecer, muy cerca de la vivienda.",
+                tags: ["Playa cercana", "Familias"],
+                links: [{ label: "Ver playa", hrefKey: "beach" }],
+              },
+              {
+                title: "Paseo marítimo y playas cercanas",
+                text: "El entorno invita a caminar, ir en bici y alternar entre varias playas cercanas con buen acceso.",
+                tags: ["Paseo", "Bicicleta"],
+                links: [{ label: "Ver playas", hrefKey: "beaches" }],
+              },
+            ],
+          },
+          {
+            id: "food-area",
+            title: "Entorno y planes",
+            eyebrow: "Descubrir",
+            description: "Recursos útiles para ampliar la estancia más allá de los favoritos.",
+            items: [
+              {
+                title: "Turismo local",
+                text: "La web turística del municipio reúne rutas, agenda y propuestas para organizar planes durante la estancia.",
+                tags: ["Agenda", "Rutas"],
+                links: [{ label: "Web turística", hrefKey: "tourism" }],
+              },
+              {
+                title: "Lista completa en Google Maps",
+                text: "Abre la lista compartida del anfitrión y guárdala en tu cuenta para usarla directamente en el móvil durante la estancia.",
+                tags: ["Google Maps", "Lista completa"],
+                links: [{ label: "Abrir lista", hrefKey: "hostList" }],
+              },
+              {
+                title: "Más restaurantes abiertos",
+                text: "Si quieres ver más opciones según el momento del día o la temporada, usa la guía oficial o la búsqueda preparada.",
+                tags: ["Actualizado", "Mapa"],
+                links: [
+                  { label: "Guía oficial", hrefKey: "restaurantsGuide" },
+                  { label: "Abrir Google Maps", hrefKey: "restaurantsMap" },
+                ],
+              },
+            ],
           },
         ],
         hostContacts: [
@@ -367,21 +414,6 @@ window.siteData = {
             title: "🚨 112",
             text: "Emergencias generales, gratuito y 24h.\nPolicía, ambulancia y bomberos.",
           },
-          {
-            title: "🏥 Hospital",
-            text:
-              "Hospital Universitario de Torrevieja.\nUrgencias 24h a unos 15-20 minutos en coche.",
-            links: [{ label: "Abrir hospital", hrefKey: "hospitalTorrevieja" }],
-          },
-          {
-            title: "💊 Farmacia / guardia",
-            text:
-              "Farmacia más cercana a 450 m.\nPara una necesidad 24h, consulta la farmacia de guardia activa del día.",
-            links: [
-              { label: "Abrir farmacia", hrefKey: "pharmacyHiguericas" },
-              { label: "Farmacia de guardia", hrefKey: "dutyPharmacy" },
-            ],
-          },
         ],
         emergencyAccordions: [
           {
@@ -396,11 +428,11 @@ window.siteData = {
           },
           {
             title: "💊 Farmacia y farmacia de guardia",
-            summary: "Qué hacer si necesitas una farmacia fuera del horario habitual.",
+            summary: "Farmacia más cercana y qué hacer si necesitas una 24h.",
             text:
-              "Farmacia Playa Las Higuericas Lda. M del Mar Lorenzo Bañón.\nA 450 m caminando de la vivienda.\n\nSi necesitas atención fuera del horario habitual, en España las farmacias 24h funcionan por turnos y van rotando, así que la farmacia disponible puede cambiar cada día.\nPara saber cuál está de guardia en ese momento, utiliza el enlace de farmacia de guardia o consulta con el anfitrión o en el centro de salud.",
+              "Farmacia Playa Las Higuericas Lda. M del Mar Lorenzo Bañón.\nA 450 m caminando de la vivienda.\n\nEn España las farmacias 24h funcionan por turnos y van rotando, así que la farmacia disponible puede cambiar cada día.\nPara saber cuál está de guardia en ese momento, utiliza el enlace de farmacia de guardia o consulta con el anfitrión o en el centro de salud.",
             links: [
-              { label: "Abrir farmacia cercana", hrefKey: "pharmacyHiguericas" },
+              { label: "Abrir farmacia", hrefKey: "pharmacyHiguericas" },
               { label: "Ver farmacia de guardia", hrefKey: "dutyPharmacy" },
             ],
           },
@@ -461,7 +493,7 @@ window.siteData = {
         checkin: { eyebrow: "", title: "Arrival & departure" },
         house: { eyebrow: "", title: "Everything at the villa" },
         rules: { eyebrow: "", title: "House rules" },
-        food: { eyebrow: "", title: "Restaurants, plans and favourites" },
+        food: { eyebrow: "", title: "Maps, favourites and plans" },
         hosts: { eyebrow: "", title: "Host contact" },
         emergencies: { eyebrow: "", title: "Quick help and assistance" },
       },
@@ -471,8 +503,8 @@ window.siteData = {
           "Welcome to the villa. This guide brings together the essentials for arrival, departure, house use and practical local information for a smooth stay by the sea.",
         actions: [
           { label: "How to get here", hrefKey: "mapsRoute", style: "sea" },
-          { label: "Places list", hrefKey: "hostList" },
-          { label: "Host", href: "#hosts" },
+          { label: "Host contact", href: "#hosts" },
+          { label: "Saved places", hrefKey: "hostList" },
         ],
         facts: [
           { label: "Check-in", valueKey: "checkInTime" },
@@ -601,6 +633,7 @@ window.siteData = {
               "💡 The connection is 1 Gb, so it should be quite stable unless you are far from the router.",
             ],
             tags: ["Internet", "1 Gb"],
+            copyValueKey: "wifi.password",
           },
           {
             title: "📺 TV / streaming",
@@ -635,66 +668,111 @@ window.siteData = {
             listKey: "bbq",
           },
         ],
-        restaurants: [
+        foodIntro: {
+          title: "Google Maps and host favourites",
+          body:
+            "This section gives you a fast starting point to open the map, save the host's shared list in Google Maps and browse a short set of places we would prioritise during the stay.\nThe website offers a mobile-friendly summary, while the full list continues to live in Google Maps.",
+          tags: ["Google Maps", "Shared list"],
+          links: [
+            { label: "Open full list", hrefKey: "hostList" },
+            { label: "Official guide", hrefKey: "restaurantsGuide" },
+          ],
+        },
+        foodFeatured: [
           {
-            title: "Pirata Club Nautico",
-            text:
-              "Restaurant by the marina, recommended if you want a meal with views over the nautical setting.",
-            tags: ["Marina", "Grilled fish"],
-            links: [{ label: "View listing", hrefKey: "restaurantPirata" }],
-          },
-          {
-            title: "Pizzeria Plaza",
-            text:
-              "A good option if the group wants variety, with pizzas, rice dishes and a daily menu.",
-            tags: ["Rice dishes", "Pizza"],
-            links: [{ label: "View listing", hrefKey: "restaurantPlaza" }],
-          },
-          {
-            title: "Victoria",
-            text:
-              "A strong option for longer or family meals, with Mediterranean cuisine and rice dishes.",
-            tags: ["Families", "Mediterranean"],
-            links: [{ label: "View listing", hrefKey: "restaurantVictoria" }],
-          },
-          {
-            title: "More restaurants",
-            text:
-              "The offer changes by season. Use the official guide or the prepared search to see what is open.",
-            tags: ["Up to date", "Map"],
-            links: [
-              { label: "Official guide", hrefKey: "restaurantsGuide" },
-              { label: "Open Google Maps", hrefKey: "restaurantsMap" },
-            ],
-          },
-        ],
-        activities: [
-          {
-            title: "Playa de las Higuericas",
-            text: "An easy beach for families and sunset walks, very close to the house.",
-            tags: ["Nearby beach", "Families"],
+            title: "Don't miss: Playa de las Higuericas",
+            text: "The closest reference for beach time, walking and sunset plans near the villa.",
+            tags: ["★ Favourite", "Beach"],
             links: [{ label: "View beach", hrefKey: "beach" }],
           },
           {
-            title: "Promenade and nearby beaches",
-            text:
-              "The area is ideal for walking, cycling and moving between nearby beaches with easy access.",
-            tags: ["Walks", "Cycling"],
-            links: [{ label: "View beaches", hrefKey: "beaches" }],
+            title: "Don't miss: Pirata Club Nautico",
+            text: "A strong choice if you want a meal with marina views and a seaside atmosphere.",
+            tags: ["★ Favourite", "Restaurant"],
+            links: [{ label: "View listing", hrefKey: "restaurantPirata" }],
           },
           {
-            title: "Local tourism",
-            text:
-              "The town tourism website gathers routes, events and ideas for the stay.",
-            tags: ["Events", "Routes"],
-            links: [{ label: "Tourism website", hrefKey: "tourism" }],
+            title: "Don't miss: Victoria",
+            text: "A reliable pick for longer meals with rice dishes and Mediterranean cooking.",
+            tags: ["★ Favourite", "Rice dishes"],
+            links: [{ label: "View listing", hrefKey: "restaurantVictoria" }],
+          },
+        ],
+        foodCategories: [
+          {
+            id: "food-restaurants",
+            title: "Restaurants",
+            eyebrow: "Eating well",
+            description: "A short selection to help you decide quickly from your phone.",
+            items: [
+              {
+                title: "Pirata Club Nautico",
+                text: "Restaurant by the marina, recommended if you want a meal with views over the nautical setting.",
+                tags: ["Marina", "Grilled fish"],
+                links: [{ label: "View listing", hrefKey: "restaurantPirata" }],
+              },
+              {
+                title: "Pizzeria Plaza",
+                text: "A good option if the group wants variety, with pizzas, rice dishes and a daily menu.",
+                tags: ["Pizza", "Rice dishes"],
+                links: [{ label: "View listing", hrefKey: "restaurantPlaza" }],
+              },
+              {
+                title: "Victoria",
+                text: "A strong option for longer or family meals, with Mediterranean cuisine and rice dishes.",
+                tags: ["Mediterranean", "Families"],
+                links: [{ label: "View listing", hrefKey: "restaurantVictoria" }],
+              },
+            ],
           },
           {
-            title: "Host's shared list",
-            text:
-              "Open the shared Google Maps list and save it to your account to keep restaurants, shopping, pharmacy and other host favourites close at hand.",
-            tags: ["Google Maps", "Useful"],
-            links: [{ label: "Open list", hrefKey: "hostList" }],
+            id: "food-walks",
+            title: "Beach and walks",
+            eyebrow: "Close by",
+            description: "Easy plans for any time of day.",
+            items: [
+              {
+                title: "Playa de las Higuericas",
+                text: "An easy beach for families and sunset walks, very close to the house.",
+                tags: ["Nearby beach", "Families"],
+                links: [{ label: "View beach", hrefKey: "beach" }],
+              },
+              {
+                title: "Promenade and nearby beaches",
+                text: "The area is ideal for walking, cycling and moving between nearby beaches with easy access.",
+                tags: ["Walks", "Cycling"],
+                links: [{ label: "View beaches", hrefKey: "beaches" }],
+              },
+            ],
+          },
+          {
+            id: "food-area",
+            title: "Area and plans",
+            eyebrow: "Explore",
+            description: "Useful resources to expand the stay beyond the core favourites.",
+            items: [
+              {
+                title: "Local tourism",
+                text: "The town tourism website gathers routes, events and ideas for the stay.",
+                tags: ["Events", "Routes"],
+                links: [{ label: "Tourism website", hrefKey: "tourism" }],
+              },
+              {
+                title: "Full list in Google Maps",
+                text: "Open the host's shared list and save it to your account to use it directly from your phone during the stay.",
+                tags: ["Google Maps", "Full list"],
+                links: [{ label: "Open list", hrefKey: "hostList" }],
+              },
+              {
+                title: "More restaurants open now",
+                text: "If you want more options depending on season or time of day, use the official guide or the prepared map search.",
+                tags: ["Up to date", "Map"],
+                links: [
+                  { label: "Official guide", hrefKey: "restaurantsGuide" },
+                  { label: "Open Google Maps", hrefKey: "restaurantsMap" },
+                ],
+              },
+            ],
           },
         ],
         hostContacts: [
@@ -716,21 +794,6 @@ window.siteData = {
             title: "🚨 112",
             text: "General emergencies, free and available 24/7.\nPolice, ambulance and fire brigade.",
           },
-          {
-            title: "🏥 Hospital",
-            text:
-              "Torrevieja University Hospital.\n24h emergency care around 15-20 minutes away by car.",
-            links: [{ label: "Open hospital", hrefKey: "hospitalTorrevieja" }],
-          },
-          {
-            title: "💊 Pharmacy / duty pharmacy",
-            text:
-              "Nearest pharmacy is 450 m away.\nFor a 24/7 need, check the active duty pharmacy for that day.",
-            links: [
-              { label: "Open pharmacy", hrefKey: "pharmacyHiguericas" },
-              { label: "Duty pharmacy", hrefKey: "dutyPharmacy" },
-            ],
-          },
         ],
         emergencyAccordions: [
           {
@@ -745,16 +808,16 @@ window.siteData = {
           },
           {
             title: "💊 Pharmacy and duty pharmacy",
-            summary: "What to do if you need a pharmacy outside normal opening hours.",
+            summary: "Nearest pharmacy and what to do if you need a 24-hour one.",
             text:
-              "Farmacia Playa Las Higuericas Lda. M del Mar Lorenzo Banon.\n450 m walking from the house.\n\nIf you need help outside normal opening hours, please note that in Spain 24/7 pharmacies work on a rotating duty system, so the available pharmacy may change every day.\nTo find the active duty pharmacy at that moment, use the duty pharmacy link or ask the host or the health centre.",
+              "Farmacia Playa Las Higuericas Lda. M del Mar Lorenzo Banon.\n450 m walking from the house.\n\nIn Spain 24-hour pharmacies work on a rotating duty system, so the available pharmacy may change every day.\nTo find the active duty pharmacy at that moment, use the duty pharmacy link or ask the host or the health centre.",
             links: [
-              { label: "Open nearby pharmacy", hrefKey: "pharmacyHiguericas" },
-              { label: "Check duty pharmacy", hrefKey: "dutyPharmacy" },
+              { label: "Open pharmacy", hrefKey: "pharmacyHiguericas" },
+              { label: "Duty pharmacy", hrefKey: "dutyPharmacy" },
             ],
           },
           {
-            title: "🏡 Inside the villa",
+            title: "🏡 In the house",
             summary: "Basic safety items and important precautions.",
             text: "The house includes basic items to react to an incident inside the property.",
             list: [
