@@ -349,7 +349,7 @@ const render = () => {
     currentCopy.sections.rules.title,
     currentCopy.property.houseRules.intro,
     [],
-    [currentCopy.sections.rules.eyebrow, `${currentCopy.ui.selectedLanguageLabel}: ${formatSelectedLanguage(languagePreference)}`]
+    []
   );
 
   document.getElementById("rulesCards").innerHTML = currentCopy.property.houseRules.sections
