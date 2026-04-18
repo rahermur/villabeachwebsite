@@ -179,7 +179,6 @@ const renderFoodSection = () => {
         foodFeatured: currentCopy.content.foodFeatured,
         foodCategories: currentCopy.content.foodCategories
       };
-
   renderFeaturePanel(
     "foodIntro",
     foodData.foodIntro.title,
@@ -189,66 +188,51 @@ const renderFoodSection = () => {
     foodData.foodIntro.links
   );
 
-  const foodFeatured = document.getElementById("foodFeatured");
-  foodFeatured.innerHTML = "";
-  foodFeatured.hidden = true;
-
   document.getElementById("foodGroups").innerHTML = foodData.foodCategories
-    .map(
-      (category, index) => `
-        <details class="food-group" id="${category.id}"${index === 0 ? " open" : ""}>
+    .map((item, index) => {
+      const category = item;
+      return `
+        <details class="food-group"${index === 0 ? " open" : ""}>
           <summary class="food-group__summary">
             <div>
-              <p class="eyebrow">${category.eyebrow || currentCopy.sections.food.eyebrow}</p>
               <h3>${category.emoji || "📍"} ${category.title}</h3>
               <p>${category.description}</p>
             </div>
             <span class="house-accordion__icon" aria-hidden="true">+</span>
           </summary>
           <div class="food-group__content">
-            <article class="food-compact-card">
-              <ul class="food-compact-list">
-                ${[...category.items]
-                  .sort((a, b) => Number(Boolean(b.featured)) - Number(Boolean(a.featured)))
-                  .map((item) => {
-                    const addressDetail = item.details?.find((detail) =>
-                      detail.label.includes("Dirección") || detail.label.includes("Address")
-                    );
-                    const noteDetail = item.details?.find((detail) =>
-                      detail.label.includes("Nota") || detail.label.includes("Note")
-                    );
-                    const mapsHref = item.links?.[0]?.href || "#";
+            <ul class="food-bullet-list">
+            ${[...category.items]
+              .sort((a, b) => Number(Boolean(b.featured)) - Number(Boolean(a.featured)))
+              .map((entry) => {
+                const addressDetail = entry.details?.find((detail) =>
+                  detail.label.includes("Dirección") || detail.label.includes("Address")
+                );
+                const noteDetail = entry.details?.find((detail) =>
+                  detail.label.includes("Nota") || detail.label.includes("Note")
+                );
+                const mapsHref = entry.links?.[0]?.href || "#";
+                const showTags = category.id !== "food-restaurants" && entry.tags?.length;
 
-                    return `
-                      <li class="food-compact-item">
-                        <div class="food-compact-item__head">
-                          <strong>${item.featured ? "⭐ " : ""}${item.title}</strong>
-                          ${
-                            category.id === "food-restaurants"
-                              ? ""
-                              : createTags(item.tags)
-                          }
-                        </div>
-                        ${
-                          noteDetail
-                            ? `<p class="food-compact-item__note">${noteDetail.value}</p>`
-                            : ""
-                        }
-                        ${
-                          addressDetail
-                            ? `<a class="food-compact-item__link" href="${mapsHref}" target="_blank" rel="noreferrer">📍 ${addressDetail.value}</a>`
-                            : ""
-                        }
-                      </li>
-                    `;
-                  })
-                  .join("")}
-              </ul>
-            </article>
+                return `
+                  <li class="food-bullet-item">
+                    <strong>${entry.featured ? "⭐ " : ""}${entry.title}</strong>
+                    ${showTags ? createTags(entry.tags) : ""}
+                    ${noteDetail ? `<p class="food-bullet-note">${noteDetail.value}</p>` : ""}
+                    ${
+                      addressDetail
+                        ? `<a class="food-bullet-link" href="${mapsHref}" target="_blank" rel="noreferrer">📍 ${addressDetail.value}</a>`
+                        : ""
+                    }
+                  </li>
+                `;
+              })
+              .join("")}
+            </ul>
           </div>
         </details>
-      `
-    )
+      `;
+    })
     .join("");
 };
 
