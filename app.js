@@ -9,6 +9,7 @@ const accessError = document.getElementById("gateError");
 const logoutButton = document.getElementById("logoutButton");
 const detailSheet = document.getElementById("detailSheet");
 const detailSheetClose = document.getElementById("detailSheetClose");
+const generatedPlacesData = window.generatedPlacesData;
 
 const getByPath = (obj, path) =>
   path.split(".").reduce((acc, key) => (acc ? acc[key] : undefined), obj);
@@ -67,6 +68,12 @@ const renderCards = (targetId, items, wideEveryThird = false) => {
       const wideClass = forceWide || (wideEveryThird && index % 3 === 0) ? " card--wide" : "";
       const toneClass = index % 2 === 0 ? " card--soft-sea" : " card--soft-sand";
       const list = item.listKey ? currentCopy.property[item.listKey] : item.list || [];
+      const copyValue = item.copyValueKey
+        ? resolveTemplate(String(getByPath(shared.property, item.copyValueKey)))
+        : item.copyValue;
+      const copyButton = copyValue
+        ? `<button class="mini-fact__copy card__copy-button" type="button" data-copy-value="${copyValue}">${getCopyLabels().copy}</button>`
+        : "";
       const detailButton = item.sheetKey
         ? `<button class="ghost-button card__detail-button" type="button" data-sheet-key="${item.sheetKey}">${item.sheetLabel || currentCopy.ui.viewMoreLabel}</button>`
         : "";
@@ -77,11 +84,12 @@ const renderCards = (targetId, items, wideEveryThird = false) => {
           ${textToParagraphs(item.text)}
           ${list.length ? `<ul>${list.map((entry) => `<li>${entry}</li>`).join("")}</ul>` : ""}
           ${createTags(item.tags)}
-          <div class="card__links">${detailButton}${createLinks(item.links)}</div>
+          <div class="card__links">${copyButton}${detailButton}${createLinks(item.links)}</div>
         </article>
       `;
     })
     .join("");
+  attachCopyButtons();
 };
 
 const renderFeaturePanel = (targetId, title, body, list, tags = [], links = []) => {
@@ -139,7 +147,8 @@ const renderEmergencySection = () => {
     )
     .join("");
 
-  document.getElementById("emergencyAccordions").innerHTML = currentCopy.content.emergencyAccordions
+  const emergencyAccordions = document.getElementById("emergencyAccordions");
+  emergencyAccordions.innerHTML = currentCopy.content.emergencyAccordions
     .map(
       (item) => `
         <details class="emergency-accordion">
@@ -154,6 +163,88 @@ const renderEmergencySection = () => {
             ${item.text ? textToParagraphs(item.text) : ""}
             ${item.list?.length ? `<ul>${item.list.map((entry) => `<li>${entry}</li>`).join("")}</ul>` : ""}
             <div class="card__links">${createLinks(item.links)}</div>
+          </div>
+        </details>
+      `
+    )
+    .join("");
+  emergencyAccordions.hidden = !currentCopy.content.emergencyAccordions.length;
+};
+
+const renderFoodSection = () => {
+  const foodData = generatedPlacesData?.[currentLocale]
+    ? generatedPlacesData[currentLocale]
+    : {
+        foodIntro: currentCopy.content.foodIntro,
+        foodFeatured: currentCopy.content.foodFeatured,
+        foodCategories: currentCopy.content.foodCategories
+      };
+
+  renderFeaturePanel(
+    "foodIntro",
+    foodData.foodIntro.title,
+    foodData.foodIntro.body,
+    [],
+    foodData.foodIntro.tags,
+    foodData.foodIntro.links
+  );
+
+  const foodFeatured = document.getElementById("foodFeatured");
+  foodFeatured.innerHTML = "";
+  foodFeatured.hidden = true;
+
+  document.getElementById("foodGroups").innerHTML = foodData.foodCategories
+    .map(
+      (category, index) => `
+        <details class="food-group" id="${category.id}"${index === 0 ? " open" : ""}>
+          <summary class="food-group__summary">
+            <div>
+              <p class="eyebrow">${category.eyebrow || currentCopy.sections.food.eyebrow}</p>
+              <h3>${category.emoji || "📍"} ${category.title}</h3>
+              <p>${category.description}</p>
+            </div>
+            <span class="house-accordion__icon" aria-hidden="true">+</span>
+          </summary>
+          <div class="food-group__content">
+            <article class="food-compact-card">
+              <ul class="food-compact-list">
+                ${[...category.items]
+                  .sort((a, b) => Number(Boolean(b.featured)) - Number(Boolean(a.featured)))
+                  .map((item) => {
+                    const addressDetail = item.details?.find((detail) =>
+                      detail.label.includes("Dirección") || detail.label.includes("Address")
+                    );
+                    const noteDetail = item.details?.find((detail) =>
+                      detail.label.includes("Nota") || detail.label.includes("Note")
+                    );
+                    const mapsHref = item.links?.[0]?.href || "#";
+
+                    return `
+                      <li class="food-compact-item">
+                        <div class="food-compact-item__head">
+                          <strong>${item.featured ? "⭐ " : ""}${item.title}</strong>
+                          ${
+                            category.id === "food-restaurants"
+                              ? ""
+                              : createTags(item.tags)
+                          }
+                        </div>
+                        ${
+                          noteDetail
+                            ? `<p class="food-compact-item__note">${noteDetail.value}</p>`
+                            : ""
+                        }
+                        ${
+                          addressDetail
+                            ? `<a class="food-compact-item__link" href="${mapsHref}" target="_blank" rel="noreferrer">📍 ${addressDetail.value}</a>`
+                            : ""
+                        }
+                      </li>
+                    `;
+                  })
+                  .join("")}
+              </ul>
+            </article>
           </div>
         </details>
       `
@@ -284,6 +375,37 @@ const closeDetailSheet = () => {
   }
 };
 
+const getCopyLabels = () =>
+  currentLocale === "es"
+    ? { copy: "Copiar", copied: "Copiada" }
+    : { copy: "Copy", copied: "Copied" };
+
+const attachCopyButtons = () => {
+  const labels = getCopyLabels();
+
+  document.querySelectorAll("[data-copy-value]").forEach((button) => {
+    button.addEventListener("click", async () => {
+      const value = button.dataset.copyValue;
+      if (!value) return;
+
+      try {
+        await navigator.clipboard.writeText(value);
+        button.textContent = labels.copied;
+        button.classList.add("is-copied");
+        window.setTimeout(() => {
+          button.textContent = labels.copy;
+          button.classList.remove("is-copied");
+        }, 1400);
+      } catch {
+        button.textContent = labels.copied;
+        window.setTimeout(() => {
+          button.textContent = labels.copy;
+        }, 1400);
+      }
+    });
+  });
+};
+
 const render = () => {
   currentLocale = getEffectiveLocale(languagePreference);
   currentCopy = translations[currentLocale];
@@ -313,14 +435,24 @@ const render = () => {
   document.getElementById("heroFacts").innerHTML = currentCopy.hero.facts
     .map((fact) => {
       const value = fact.valueKey ? resolveTemplate(String(getByPath(shared.property, fact.valueKey))) : fact.value;
+      const isWifiPassword = fact.valueKey === "wifi.password";
+      const labels = getCopyLabels();
       return `
         <div class="mini-fact">
           <span>${fact.label}</span>
-          <strong>${value}</strong>
+          <div class="mini-fact__value-row">
+            <strong>${value}</strong>
+            ${
+              isWifiPassword
+                ? `<button class="mini-fact__copy" type="button" data-copy-value="${value}">${labels.copy}</button>`
+                : ""
+            }
+          </div>
         </div>
       `;
     })
     .join("");
+  attachCopyButtons();
 
   setPhoto("heroPhotoMain", shared.property.photos[0]);
   setPhoto("heroPhotoTop", shared.property.photos[1]);
@@ -364,7 +496,7 @@ const render = () => {
     )
     .join("");
 
-  renderCards("foodCards", [...currentCopy.content.restaurants, ...currentCopy.content.activities], true);
+  renderFoodSection();
   renderCards("hostCards", currentCopy.content.hostContacts, true);
   renderEmergencySection();
 };

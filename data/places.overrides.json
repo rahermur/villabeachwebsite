@@ -1,0 +1,217 @@
+{
+  "listUrl": "https://maps.app.goo.gl/6kiRLdhaMThJCQia9",
+  "featuredIds": [
+    "restaurante-victoria-roneria-mangu",
+    "heladeria-galan",
+    "las-colinas-golf-country-club",
+    "vivo-restaurante",
+    "il-palco",
+    "centro-comercial-zenia-boulevard",
+    "pinatar-arena"
+  ],
+  "categoryOrder": [
+    "restaurants",
+    "golf",
+    "ice-cream",
+    "supermarkets",
+    "shopping",
+    "sports",
+    "parks"
+  ],
+  "categoryMeta": {
+    "restaurants": {
+      "title": {
+        "es": "Restaurants",
+        "en": "Restaurants"
+      },
+      "eyebrow": {
+        "es": "Comer y tomar algo",
+        "en": "Food and drinks"
+      },
+      "description": {
+        "es": "Restaurantes, chiringuitos y mesas a las que iríamos primero durante la estancia.",
+        "en": "Restaurants, beach bars and easy meal picks we would open first during the stay."
+      }
+    },
+    "golf": {
+      "title": {
+        "es": "Golf",
+        "en": "Golf"
+      },
+      "eyebrow": {
+        "es": "Plan deportivo",
+        "en": "Sport plan"
+      },
+      "description": {
+        "es": "Campos de golf guardados en la lista compartida del anfitrión.",
+        "en": "Golf courses saved in the host's shared list."
+      }
+    },
+    "ice-cream": {
+      "title": {
+        "es": "Ice Cream",
+        "en": "Ice Cream"
+      },
+      "eyebrow": {
+        "es": "Capricho cerca",
+        "en": "Sweet stop"
+      },
+      "description": {
+        "es": "Paradas rápidas para helado o sobremesa cerca de la costa.",
+        "en": "Quick stops for ice cream or a sweet finish near the coast."
+      }
+    },
+    "supermarkets": {
+      "title": {
+        "es": "Supermarkets",
+        "en": "Supermarkets"
+      },
+      "eyebrow": {
+        "es": "Compra práctica",
+        "en": "Essentials"
+      },
+      "description": {
+        "es": "Supermercados y básicos que conviene tener controlados desde el primer día.",
+        "en": "Supermarkets and practical essentials worth keeping handy from day one."
+      }
+    },
+    "shopping": {
+      "title": {
+        "es": "Shopping",
+        "en": "Shopping"
+      },
+      "eyebrow": {
+        "es": "Compras y centros",
+        "en": "Shops and malls"
+      },
+      "description": {
+        "es": "Centros comerciales, bazares y compras útiles guardadas en Maps.",
+        "en": "Shopping centres, bazaars and useful shopping spots saved in Maps."
+      }
+    },
+    "sports": {
+      "title": {
+        "es": "Sports",
+        "en": "Sports"
+      },
+      "eyebrow": {
+        "es": "Moverse",
+        "en": "Active plans"
+      },
+      "description": {
+        "es": "Padel, gimnasio y otros planes activos de la lista.",
+        "en": "Padel, gym and other active plans from the shared list."
+      }
+    },
+    "parks": {
+      "title": {
+        "es": "Parks",
+        "en": "Parks"
+      },
+      "eyebrow": {
+        "es": "Aire libre",
+        "en": "Outdoor"
+      },
+      "description": {
+        "es": "Parques y zonas infantiles guardadas para planes sencillos cerca.",
+        "en": "Parks and playgrounds saved for easy nearby plans."
+      }
+    },
+    "health": {
+      "title": {
+        "es": "Health",
+        "en": "Health"
+      },
+      "eyebrow": {
+        "es": "Asistencia",
+        "en": "Medical help"
+      },
+      "description": {
+        "es": "Hospital y centro de salud incluidos también en la lista compartida.",
+        "en": "Hospital and health centre also included in the shared list."
+      }
+    },
+    "pharmacy": {
+      "title": {
+        "es": "Pharmacy",
+        "en": "Pharmacy"
+      },
+      "eyebrow": {
+        "es": "Muy cerca",
+        "en": "Very close"
+      },
+      "description": {
+        "es": "Farmacias guardadas en Google Maps para tenerlas localizadas rápidamente.",
+        "en": "Pharmacies saved in Google Maps so they are quick to find."
+      }
+    }
+  },
+  "places": {
+    "heladeria-galan": {
+      "tags": {
+        "es": ["Ice Cream", "Favorito"],
+        "en": ["Ice Cream", "Favourite"]
+      }
+    },
+    "restaurante-victoria-roneria-mangu": {
+      "tags": {
+        "es": ["Restaurants", "Favorito"],
+        "en": ["Restaurants", "Favourite"]
+      }
+    },
+    "las-colinas-golf-country-club": {
+      "tags": {
+        "es": ["Golf", "Favorito"],
+        "en": ["Golf", "Favourite"]
+      }
+    },
+    "vivo-restaurante": {
+      "tags": {
+        "es": ["Restaurants", "Favorito"],
+        "en": ["Restaurants", "Favourite"]
+      }
+    },
+    "il-palco": {
+      "tags": {
+        "es": ["Restaurants", "Favorito"],
+        "en": ["Restaurants", "Favourite"]
+      }
+    },
+    "centro-comercial-zenia-boulevard": {
+      "tags": {
+        "es": ["Shopping", "Favorito"],
+        "en": ["Shopping", "Favourite"]
+      }
+    },
+    "pinatar-arena": {
+      "tags": {
+        "es": ["Sports", "Favorito"],
+        "en": ["Sports", "Favourite"]
+      }
+    },
+    "farmacia-playa-las-higuericas-lda-m-del-mar-lorenzo-banon": {
+      "tags": {
+        "es": ["Pharmacy", "Más cercana"],
+        "en": ["Pharmacy", "Closest"]
+      }
+    },
+    "chiringuito-pirata-dunas-higuericas": {
+      "tags": {
+        "es": ["Restaurants", "Playa"],
+        "en": ["Restaurants", "Beach"]
+      }
+    },
+    "centro-comercial-dos-mares": {
+      "tags": {
+        "es": ["Shopping", "Centro comercial"],
+        "en": ["Shopping", "Mall"]
+      }
+    },
+    "centro-comercial-zenia-boulevard": {
+      "tags": {
+        "es": ["Shopping", "Centro comercial"],
+        "en": ["Shopping", "Mall"]
+      }
+    }
+  }
+}
