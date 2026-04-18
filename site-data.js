@@ -16,6 +16,10 @@ window.siteData = {
     },
   },
   shared: {
+    auth: {
+      sessionKey: "villa-guide-access",
+      codeHash: "4c4d26e1476ca1f1d92b4cfc798b11ba033422fc21fef89580b106e5544e1bae",
+    },
     address: "Calle Dalia 31, Pilar de la Horadada, Alicante",
     links: {
       mapsRoute:
@@ -124,6 +128,7 @@ window.siteData = {
         summaryEyebrow: "Resumen",
         languageLabel: "Idioma",
         selectedLanguageLabel: "Seleccionado",
+        logoutLabel: "Cerrar acceso",
         autoLabel: "Auto",
         activeLanguage: "Español",
         activeLanguageAuto: "Automático (%s)",
@@ -143,6 +148,16 @@ window.siteData = {
         sectionLabels: {
           address: "Dirección",
           streetViewOverlay: "Acceso visual a la calle y a la fachada.",
+        },
+        gate: {
+          eyebrow: "Guest Access",
+          title: "Acceso privado",
+          description:
+            "Introduce tu código de huésped para ver la guía completa de la villa.",
+          inputLabel: "Código de acceso",
+          submit: "Entrar",
+          hint: "Si no lo tienes, pídelo al anfitrión.",
+          error: "Código incorrecto. Inténtalo de nuevo.",
         },
       },
       sections: {
@@ -616,6 +631,7 @@ window.siteData = {
         summaryEyebrow: "Summary",
         languageLabel: "Language",
         selectedLanguageLabel: "Selected",
+        logoutLabel: "Sign out",
         autoLabel: "Auto",
         activeLanguage: "English",
         activeLanguageAuto: "Automatic (%s)",
@@ -635,6 +651,16 @@ window.siteData = {
         sectionLabels: {
           address: "Address",
           streetViewOverlay: "Street-level view of the access and facade.",
+        },
+        gate: {
+          eyebrow: "Guest Access",
+          title: "Private access",
+          description:
+            "Enter your guest code to view the full villa guide.",
+          inputLabel: "Access code",
+          submit: "Enter",
+          hint: "If you do not have it, ask the host.",
+          error: "Incorrect code. Please try again.",
         },
       },
       sections: {

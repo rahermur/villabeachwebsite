@@ -1,6 +1,12 @@
 const STORAGE_KEY = "villa-guide-language";
 
 const { shared, translations, localeOptions } = window.siteData;
+const pageShell = document.getElementById("pageShell");
+const accessGate = document.getElementById("accessGate");
+const accessForm = document.getElementById("accessForm");
+const accessInput = document.getElementById("accessCode");
+const accessError = document.getElementById("gateError");
+const logoutButton = document.getElementById("logoutButton");
 
 const getByPath = (obj, path) =>
   path.split(".").reduce((acc, key) => (acc ? acc[key] : undefined), obj);
@@ -96,6 +102,7 @@ const detectLocale = () => {
 };
 
 const getSavedPreference = () => localStorage.getItem(STORAGE_KEY) || "auto";
+const getSessionAccess = () => sessionStorage.getItem(shared.auth.sessionKey) === "granted";
 
 const getEffectiveLocale = (preference) => (preference === "auto" ? detectLocale() : preference);
 
@@ -150,11 +157,43 @@ const applySectionLabels = () => {
     contactsEyebrow: currentCopy.sections.contacts.eyebrow,
     contactsTitle: currentCopy.sections.contacts.title,
     languageLabel: currentCopy.ui.languageLabel,
+    logoutButton: currentCopy.ui.logoutLabel,
+    gateEyebrow: currentCopy.ui.gate.eyebrow,
+    gateTitle: currentCopy.ui.gate.title,
+    gateDescription: currentCopy.ui.gate.description,
+    gateInputLabel: currentCopy.ui.gate.inputLabel,
+    gateSubmit: currentCopy.ui.gate.submit,
+    gateHint: currentCopy.ui.gate.hint,
+    gateError: currentCopy.ui.gate.error,
   };
 
   Object.entries(map).forEach(([id, value]) => {
     document.getElementById(id).textContent = value;
   });
+};
+
+const sha256Hex = async (value) => {
+  const bytes = new TextEncoder().encode(value);
+  const digest = await crypto.subtle.digest("SHA-256", bytes);
+  return Array.from(new Uint8Array(digest))
+    .map((byte) => byte.toString(16).padStart(2, "0"))
+    .join("");
+};
+
+const unlockGuide = () => {
+  sessionStorage.setItem(shared.auth.sessionKey, "granted");
+  accessGate.hidden = true;
+  pageShell.hidden = false;
+  document.body.classList.remove("is-locked");
+};
+
+const lockGuide = () => {
+  sessionStorage.removeItem(shared.auth.sessionKey);
+  accessGate.hidden = false;
+  pageShell.hidden = true;
+  accessInput.value = "";
+  accessError.hidden = true;
+  document.body.classList.add("is-locked");
 };
 
 const render = () => {
@@ -287,4 +326,28 @@ let languagePreference = getSavedPreference();
 let currentLocale = getEffectiveLocale(languagePreference);
 let currentCopy = translations[currentLocale];
 
+accessForm.addEventListener("submit", async (event) => {
+  event.preventDefault();
+  const candidate = accessInput.value.trim();
+  const candidateHash = await sha256Hex(candidate);
+
+  if (candidateHash === shared.auth.codeHash) {
+    unlockGuide();
+    return;
+  }
+
+  accessError.hidden = false;
+  accessInput.select();
+});
+
+logoutButton.addEventListener("click", () => {
+  lockGuide();
+});
+
 render();
+
+if (getSessionAccess()) {
+  unlockGuide();
+} else {
+  lockGuide();
+}

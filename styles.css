@@ -34,6 +34,10 @@ body {
     linear-gradient(180deg, #fff7ec 0%, #f5ead6 50%, #f8f0df 100%);
 }
 
+body.is-locked {
+  overflow: hidden;
+}
+
 img,
 iframe {
   display: block;
@@ -49,6 +53,87 @@ a {
   width: min(calc(100% - 28px), var(--max-width));
   margin: 0 auto;
   padding: 22px 0 72px;
+}
+
+.access-gate {
+  position: fixed;
+  inset: 0;
+  z-index: 100;
+  display: grid;
+  place-items: center;
+  padding: 20px;
+  background:
+    radial-gradient(circle at top left, rgba(11, 141, 155, 0.26), transparent 25%),
+    radial-gradient(circle at bottom right, rgba(239, 125, 87, 0.24), transparent 28%),
+    rgba(248, 240, 223, 0.96);
+  backdrop-filter: blur(12px);
+}
+
+.access-gate[hidden] {
+  display: none;
+}
+
+.access-gate__panel {
+  width: min(100%, 460px);
+  padding: 28px;
+  border-radius: 28px;
+  border: 1px solid rgba(24, 53, 59, 0.1);
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.82), rgba(255, 248, 235, 0.94));
+  box-shadow: var(--shadow);
+}
+
+.access-gate__panel h1 {
+  margin: 0;
+  font-family: "Fraunces", serif;
+  font-size: clamp(2rem, 5vw, 3rem);
+  line-height: 1.05;
+}
+
+.access-gate__copy,
+.access-gate__hint,
+.access-gate__error {
+  color: var(--muted);
+  line-height: 1.65;
+}
+
+.access-gate__form {
+  display: grid;
+  gap: 12px;
+  margin-top: 18px;
+}
+
+.access-gate__label {
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+.access-gate__input {
+  width: 100%;
+  padding: 14px 16px;
+  border-radius: 16px;
+  border: 1px solid rgba(24, 53, 59, 0.12);
+  background: rgba(255, 255, 255, 0.8);
+  font: inherit;
+}
+
+.access-gate__error {
+  color: #9a3f2b;
+}
+
+.logout-button {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  z-index: 2;
+  appearance: none;
+  border: 1px solid rgba(24, 53, 59, 0.1);
+  background: rgba(255, 250, 240, 0.92);
+  color: var(--ink);
+  border-radius: 999px;
+  padding: 10px 12px;
+  font: inherit;
+  cursor: pointer;
 }
 
 .hero {
@@ -625,6 +710,13 @@ a {
 
   .hero__visuals {
     min-height: 420px;
+  }
+
+  .logout-button {
+    top: 8px;
+    right: 8px;
+    padding: 8px 10px;
+    font-size: 0.92rem;
   }
 
   .hero__photo--main {
