@@ -7,6 +7,8 @@ const accessForm = document.getElementById("accessForm");
 const accessInput = document.getElementById("accessCode");
 const accessError = document.getElementById("gateError");
 const logoutButton = document.getElementById("logoutButton");
+const detailSheet = document.getElementById("detailSheet");
+const detailSheetClose = document.getElementById("detailSheetClose");
 
 const getByPath = (obj, path) =>
   path.split(".").reduce((acc, key) => (acc ? acc[key] : undefined), obj);
@@ -61,9 +63,13 @@ const renderCards = (targetId, items, wideEveryThird = false) => {
   const target = document.getElementById(targetId);
   target.innerHTML = items
     .map((item, index) => {
-      const wideClass = wideEveryThird && index % 3 === 0 ? " card--wide" : "";
+      const forceWide = item.layout === "half";
+      const wideClass = forceWide || (wideEveryThird && index % 3 === 0) ? " card--wide" : "";
       const toneClass = index % 2 === 0 ? " card--soft-sea" : " card--soft-sand";
       const list = item.listKey ? currentCopy.property[item.listKey] : item.list || [];
+      const detailButton = item.sheetKey
+        ? `<button class="ghost-button card__detail-button" type="button" data-sheet-key="${item.sheetKey}">${item.sheetLabel || currentCopy.ui.viewMoreLabel}</button>`
+        : "";
 
       return `
         <article class="card${wideClass}${toneClass}">
@@ -71,7 +77,7 @@ const renderCards = (targetId, items, wideEveryThird = false) => {
           ${textToParagraphs(item.text)}
           ${list.length ? `<ul>${list.map((entry) => `<li>${entry}</li>`).join("")}</ul>` : ""}
           ${createTags(item.tags)}
-          <div class="card__links">${createLinks(item.links)}</div>
+          <div class="card__links">${detailButton}${createLinks(item.links)}</div>
         </article>
       `;
     })
@@ -90,6 +96,32 @@ const renderFeaturePanel = (targetId, title, body, list, tags = [], links = []) 
       <div class="card__links">${createLinks(links)}</div>
     </div>
   `;
+};
+
+const renderHouseSection = () => {
+  renderCards("houseCards", currentCopy.content.houseBasics);
+
+  document.getElementById("houseAccordions").innerHTML = currentCopy.content.houseAccordions
+    .map((item, index) => {
+      const list = item.listKey ? currentCopy.property[item.listKey] : item.list || [];
+      return `
+        <details class="house-accordion"${index === 0 ? " open" : ""}>
+          <summary class="house-accordion__summary">
+            <div>
+              <p class="eyebrow">${item.eyebrow || currentCopy.sections.house.eyebrow}</p>
+              <h3>${item.title}</h3>
+              <p>${item.summary}</p>
+            </div>
+            <span class="house-accordion__icon" aria-hidden="true">+</span>
+          </summary>
+          <div class="house-accordion__content">
+            ${textToParagraphs(item.text)}
+            ${list.length ? `<ul>${list.map((entry) => `<li>${entry}</li>`).join("")}</ul>` : ""}
+          </div>
+        </details>
+      `;
+    })
+    .join("");
 };
 
 const setPhoto = (targetId, photo) => {
@@ -142,8 +174,6 @@ const applySectionLabels = () => {
     addressLabel: currentCopy.ui.sectionLabels.address,
     checkinEyebrow: currentCopy.sections.checkin.eyebrow,
     checkinTitle: currentCopy.sections.checkin.title,
-    checkoutEyebrow: currentCopy.sections.checkout.eyebrow,
-    checkoutTitle: currentCopy.sections.checkout.title,
     houseEyebrow: currentCopy.sections.house.eyebrow,
     houseTitle: currentCopy.sections.house.title,
     rulesEyebrow: currentCopy.sections.rules.eyebrow,
@@ -189,9 +219,32 @@ const lockGuide = () => {
   sessionStorage.removeItem(shared.auth.sessionKey);
   accessGate.hidden = false;
   pageShell.hidden = true;
+  detailSheet.hidden = true;
   accessInput.value = "";
   accessError.hidden = true;
   document.body.classList.add("is-locked");
+};
+
+const openDetailSheet = (sheetKey) => {
+  const sheet = currentCopy.content.infoSheets?.[sheetKey];
+  if (!sheet) return;
+
+  document.getElementById("detailSheetEyebrow").textContent = sheet.eyebrow || currentCopy.sections.checkin.eyebrow;
+  document.getElementById("detailSheetTitle").textContent = sheet.title;
+  document.getElementById("detailSheetContent").innerHTML = `
+    ${textToParagraphs(sheet.text)}
+    ${sheet.list?.length ? `<ul>${sheet.list.map((entry) => `<li>${entry}</li>`).join("")}</ul>` : ""}
+    ${createLinks(sheet.links)}
+  `;
+  detailSheet.hidden = false;
+  document.body.classList.add("is-locked");
+};
+
+const closeDetailSheet = () => {
+  detailSheet.hidden = true;
+  if (getSessionAccess()) {
+    document.body.classList.remove("is-locked");
+  }
 };
 
 const render = () => {
@@ -238,7 +291,6 @@ const render = () => {
 
   document.getElementById("quickNav").innerHTML = [
     ["checkin", currentCopy.ui.nav.checkin],
-    ["checkout", currentCopy.ui.nav.checkout],
     ["house", currentCopy.ui.nav.house],
     ["rules", currentCopy.ui.nav.rules],
     ["food", currentCopy.ui.nav.food],
@@ -248,27 +300,12 @@ const render = () => {
     .map(([href, label]) => `<a href="#${href}">${label}</a>`)
     .join("");
 
-  renderFeaturePanel(
-    "checkInPanel",
-    currentCopy.content.checkInPanel.title,
-    currentCopy.content.checkInPanel.body,
-    currentCopy.property.checkIn.details,
-    currentCopy.content.checkInPanel.tags,
-    currentCopy.content.checkInPanel.links
-  );
   renderCards("checkInCards", currentCopy.content.checkInCards);
+  document.querySelectorAll("[data-sheet-key]").forEach((button) => {
+    button.addEventListener("click", () => openDetailSheet(button.dataset.sheetKey));
+  });
 
-  renderFeaturePanel(
-    "checkOutPanel",
-    currentCopy.content.checkOutPanel.title,
-    currentCopy.content.checkOutPanel.body,
-    currentCopy.property.checkOut.details,
-    currentCopy.content.checkOutPanel.tags,
-    currentCopy.content.checkOutPanel.links || []
-  );
-  renderCards("checkOutCards", currentCopy.content.checkOutCards);
-
-  renderCards("houseCards", currentCopy.content.houseCards, true);
+  renderHouseSection();
 
   renderFeaturePanel(
     "rulesPanel",
@@ -315,6 +352,13 @@ accessForm.addEventListener("submit", async (event) => {
 
 logoutButton.addEventListener("click", () => {
   lockGuide();
+});
+
+detailSheetClose.addEventListener("click", closeDetailSheet);
+detailSheet.addEventListener("click", (event) => {
+  if (event.target.hasAttribute("data-close-detail")) {
+    closeDetailSheet();
+  }
 });
 
 render();
