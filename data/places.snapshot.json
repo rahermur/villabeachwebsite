@@ -2,11 +2,11 @@
   "source": {
     "type": "google-maps-saved-list",
     "url": "https://maps.app.goo.gl/6kiRLdhaMThJCQia9",
-    "payloadUrl": "https://www.google.es/maps/preview/entitylist/getlist?authuser=0&hl=es&gl=es&pb=%211m4%211s9FHSLytbQZeXfVD7Pj_uPw%212e1%213m1%211e1%212e2%213e2%214i500%216m3%211sVqXjab-gGtrZruEP_8K2kQM%2115i204459%2128e2%2116b1",
-    "lastSyncedAt": "2026-04-18T15:37:59.835Z",
+    "payloadUrl": "https://www.google.es/maps/preview/entitylist/getlist?authuser=0&hl=es&gl=es&pb=%211m4%211s9FHSLytbQZeXfVD7Pj_uPw%212e1%213m1%211e1%212e2%213e2%214i500%216m3%211sZvHjabTCHrTKp84P8MibmQo%2115i204459%2128e2%2116b1",
+    "lastSyncedAt": "2026-04-18T21:02:32.017Z",
     "title": "Villa Beach Higuericas",
     "description": "List of recommended places in Pilar de la Horadada and surroundings",
-    "totalPlaces": 43,
+    "totalPlaces": 47,
     "home": {
       "name": "C. Dalia, 31",
       "address": "C. Dalia, 31, 03190 Pilar de la Horadada, Alicante",
@@ -16,6 +16,97 @@
   },
   "places": [
     {
+      "id": "byoko-la-zenia",
+      "name": "Byoko La Zenia",
+      "note": "Speciality coffee and brunch",
+      "address": "C. Unamuno, 1, 03189 Orihuela Costa, Alicante",
+      "lat": 37.9263784,
+      "lng": -0.7319958999999999,
+      "category": "cafes",
+      "temporarilyClosed": false,
+      "closureLabel": null,
+      "closureSource": null,
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Byoko%20La%20Zenia%2C%20C.%20Unamuno%2C%201%2C%2003189%20Orihuela%20Costa%2C%20Alicante"
+    },
+    {
+      "id": "sirocco-club-de-padel",
+      "name": "Sirocco club de pádel",
+      "note": "Pádel club",
+      "address": "Av. de Luxemburgo, 3, 03191 Pilar de la Horadada, Alicante",
+      "lat": 37.8892135,
+      "lng": -0.7561772,
+      "category": "padel",
+      "temporarilyClosed": false,
+      "closureLabel": null,
+      "closureSource": null,
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Sirocco%20club%20de%20p%C3%A1del%2C%20Av.%20de%20Luxemburgo%2C%203%2C%2003191%20Pilar%20de%20la%20Horadada%2C%20Alicante"
+    },
+    {
+      "id": "farmacia-rafael-espuch-farmacia-de-toda-la-vida-en-pilar-de-la-horadada",
+      "name": "FARMACIA RAFAEL ESPUCH - Farmacia de Toda la Vida en Pilar de la Horadada",
+      "note": "",
+      "address": "C. Mayor, 21, 03190 Pilar de la Horadada, Alicante",
+      "lat": 37.8652727,
+      "lng": -0.7924568,
+      "category": "pharmacy",
+      "temporarilyClosed": false,
+      "closureLabel": null,
+      "closureSource": null,
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=FARMACIA%20RAFAEL%20ESPUCH%20-%20Farmacia%20de%20Toda%20la%20Vida%20en%20Pilar%20de%20la%20Horadada%2C%20C.%20Mayor%2C%2021%2C%2003190%20Pilar%20de%20la%20Horadada%2C%20Alicante"
+    },
+    {
+      "id": "adventure-jetski-alquiler-motos-de-agua",
+      "name": "ADVENTURE JETSKI - ALQUILER MOTOS DE AGUA",
+      "note": "Jet skis rental (water sports)",
+      "address": "Puerto Marina de las Salinas Muelle poniente, local 35, 30740 San Pedro del Pinatar, Murcia",
+      "lat": 37.819986,
+      "lng": -0.7575581,
+      "category": "sports",
+      "temporarilyClosed": false,
+      "closureLabel": null,
+      "closureSource": null,
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=ADVENTURE%20JETSKI%20-%20ALQUILER%20MOTOS%20DE%20AGUA%2C%20Puerto%20Marina%20de%20las%20Salinas%20Muelle%20poniente%2C%20local%2035%2C%2030740%20San%20Pedro%20del%20Pinatar%2C%20Murcia"
+    },
+    {
+      "id": "hibernis-mare-playa-de-invierno",
+      "name": "Hibernis Mare, playa de invierno",
+      "note": "Group activities including paddle surf, kayak, hikes, dancing and body fitness",
+      "address": "P.º Riviera, 03191 Mil Palmeras, Alicante",
+      "lat": 37.881677599999996,
+      "lng": -0.7541798,
+      "category": "sports",
+      "temporarilyClosed": false,
+      "closureLabel": null,
+      "closureSource": null,
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Hibernis%20Mare%2C%20playa%20de%20invierno%2C%20P.%C2%BA%20Riviera%2C%2003191%20Mil%20Palmeras%2C%20Alicante"
+    },
+    {
+      "id": "manolo-s-padel-club",
+      "name": "Manolo’s Padel Club",
+      "note": "Padel",
+      "address": "C. Hamburgo, 6, 03191 Torre de la Horadada, Alicante",
+      "lat": 37.8770965,
+      "lng": -0.7548745,
+      "category": "padel",
+      "temporarilyClosed": false,
+      "closureLabel": null,
+      "closureSource": null,
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Manolo%E2%80%99s%20Padel%20Club%2C%20C.%20Hamburgo%2C%206%2C%2003191%20Torre%20de%20la%20Horadada%2C%20Alicante"
+    },
+    {
+      "id": "parque",
+      "name": "Parque",
+      "note": "",
+      "address": "03191 El Mojón, Alicante",
+      "lat": 37.847963799999995,
+      "lng": -0.7682947,
+      "category": "parks",
+      "temporarilyClosed": false,
+      "closureLabel": null,
+      "closureSource": null,
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Parque%2C%2003191%20El%20Moj%C3%B3n%2C%20Alicante"
+    },
+    {
       "id": "zona-de-esparcimiento-canino-cecilia",
       "name": "Zona de esparcimiento canino Cecilia",
       "note": "Parque canino",
@@ -23,6 +114,9 @@
       "lat": 37.8555069,
       "lng": -0.7686122,
       "category": "parks",
+      "temporarilyClosed": false,
+      "closureLabel": null,
+      "closureSource": null,
       "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Zona%20de%20esparcimiento%20canino%20Cecilia%2C%20C.%20Helecho%20Moj%C3%B3n%2C%2003191%20Pilar%20de%20la%20Horadada%2C%20Alicante"
     },
     {
@@ -33,6 +127,9 @@
       "lat": 37.863219699999995,
       "lng": -0.764679,
       "category": "parks",
+      "temporarilyClosed": false,
+      "closureLabel": null,
+      "closureSource": null,
       "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Parque%20De%20La%20Salar%2C%20C.%20Salar%2C%205%2C%2003191%20Torre%20de%20la%20Horadada%2C%20Alicante"
     },
     {
@@ -43,6 +140,9 @@
       "lat": 37.8631739,
       "lng": -0.7886881,
       "category": "restaurants",
+      "temporarilyClosed": false,
+      "closureLabel": null,
+      "closureSource": null,
       "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Nostrissima%2C%20de%20la%2C%20C.%20Mayor%2C%2060%2C%2003190%20Pilar%20de%20la%20Horadada%2C%20Alicante"
     },
     {
@@ -53,6 +153,9 @@
       "lat": 37.861043099999996,
       "lng": -0.7854462999999999,
       "category": "restaurants",
+      "temporarilyClosed": false,
+      "closureLabel": null,
+      "closureSource": null,
       "mapsUrl": "https://www.google.com/maps/search/?api=1&query=El%20Gallego%2C%20C.%20Transformador%2C%201%2C%2003190%20Pilar%20de%20la%20Horadada%2C%20Alicante"
     },
     {
@@ -63,6 +166,9 @@
       "lat": 37.820083499999996,
       "lng": -0.8130006,
       "category": "shopping",
+      "temporarilyClosed": false,
+      "closureLabel": null,
+      "closureSource": null,
       "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Centro%20Comercial%20Dos%20Mares%2C%20N-332%2C%2030730%20San%20Javier%2C%20Murcia"
     },
     {
@@ -73,6 +179,9 @@
       "lat": 37.903993,
       "lng": -0.7457102999999999,
       "category": "restaurants",
+      "temporarilyClosed": true,
+      "closureLabel": "official-site-seasonal-closure",
+      "closureSource": "https://wowbeach.es/en/restaurant/",
       "mapsUrl": "https://www.google.com/maps/search/?api=1&query=WOW%20Beach%20by%20Las%20Colinas%2C%20C%2F%20Rub%C3%A9n%20Dar%C3%ADo%2C%202%2C%2003189%20Dehesa%20de%20Campoamor%2C%20Alicante"
     },
     {
@@ -83,6 +192,9 @@
       "lat": 37.919396899999995,
       "lng": -0.75513,
       "category": "restaurants",
+      "temporarilyClosed": false,
+      "closureLabel": null,
+      "closureSource": null,
       "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Vivo%20Restaurante%2C%20C.%20Caspio%2C%2013%2C%2003189%20Orihuela%2C%20Alicante"
     },
     {
@@ -93,6 +205,9 @@
       "lat": 37.9408776,
       "lng": -0.7192634,
       "category": "restaurants",
+      "temporarilyClosed": false,
+      "closureLabel": null,
+      "closureSource": null,
       "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Arroceria%20el%20Sarmiento%2C%20N-332%2C%20Km.52%2C%2003189%20Orihuela%20Costa%2C%20Alicante"
     },
     {
@@ -103,17 +218,10 @@
       "lat": 37.93629,
       "lng": -0.722341,
       "category": "restaurants",
+      "temporarilyClosed": false,
+      "closureLabel": null,
+      "closureSource": null,
       "mapsUrl": "https://www.google.com/maps/search/?api=1&query=La%20Mafia%20se%20sienta%20a%20la%20mesa%2C%20C.%20Sta.%20Alodia%2C%202%2C%2003189%20Orihuela%20Costa%2C%20Alicante"
-    },
-    {
-      "id": "byoko-la-zenia",
-      "name": "Byoko La Zenia",
-      "note": "",
-      "address": "C. Unamuno, 1, 03189 Orihuela Costa, Alicante",
-      "lat": 37.9263784,
-      "lng": -0.7319958999999999,
-      "category": "restaurants",
-      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Byoko%20La%20Zenia%2C%20C.%20Unamuno%2C%201%2C%2003189%20Orihuela%20Costa%2C%20Alicante"
     },
     {
       "id": "restaurante-rincon-de-joaquin",
@@ -123,6 +231,9 @@
       "lat": 37.8157529,
       "lng": -0.8929623999999999,
       "category": "restaurants",
+      "temporarilyClosed": false,
+      "closureLabel": null,
+      "closureSource": null,
       "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Restaurante%20Rincon%20de%20Joaquin%2C%20C.%20Enrique%20Garc%C3%ADa%20%C3%81lvarez%2C%202%2C%2030592%20San%20Cayetano%2C%20Murcia"
     },
     {
@@ -133,6 +244,9 @@
       "lat": 37.8181766,
       "lng": -0.7859064,
       "category": "restaurants",
+      "temporarilyClosed": false,
+      "closureLabel": null,
+      "closureSource": null,
       "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Restaurante%20Venezuela%2C%20C.%20Campoamor%2C%201%2C%2030740%20Lo%20Pagan%2C%20Murcia"
     },
     {
@@ -142,7 +256,10 @@
       "address": "Pl. de Antonio Sánchez Lozano, 5, 03191 Torre de la Horadada, Alicante",
       "lat": 37.8682817,
       "lng": -0.759459,
-      "category": "restaurants",
+      "category": "cafes",
+      "temporarilyClosed": false,
+      "closureLabel": null,
+      "closureSource": null,
       "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Mejias%20Beach%2C%20Pl.%20de%20Antonio%20S%C3%A1nchez%20Lozano%2C%205%2C%2003191%20Torre%20de%20la%20Horadada%2C%20Alicante"
     },
     {
@@ -152,7 +269,10 @@
       "address": "C. Salar, 108, 03191 Torre de la Horadada, Alicante",
       "lat": 37.8582821,
       "lng": -0.7656364999999999,
-      "category": "restaurants",
+      "category": "cafes",
+      "temporarilyClosed": false,
+      "closureLabel": null,
+      "closureSource": null,
       "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Cafeter%C3%ADa%20%C3%81ngel%2C%20C.%20Salar%2C%20108%2C%2003191%20Torre%20de%20la%20Horadada%2C%20Alicante"
     },
     {
@@ -163,6 +283,9 @@
       "lat": 37.866196699999996,
       "lng": -0.7766132,
       "category": "supermarkets",
+      "temporarilyClosed": false,
+      "closureLabel": null,
+      "closureSource": null,
       "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Supermercados%20Manper%20Pilar%20de%20la%20Horadada%2C%20Carrer%20Talleres%2C%2026%2C%2003190%20Pilar%20de%20la%20Horadada%2C%20Alicante"
     },
     {
@@ -173,6 +296,9 @@
       "lat": 37.8602871,
       "lng": -0.7836744,
       "category": "restaurants",
+      "temporarilyClosed": false,
+      "closureLabel": null,
+      "closureSource": null,
       "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Restaurante%20Asia%2C%20C.%20Mayor%2C%20136%2C%2003190%20Pilar%20de%20la%20Horadada%2C%20Alicante"
     },
     {
@@ -183,6 +309,9 @@
       "lat": 37.8629119,
       "lng": -0.7835795,
       "category": "restaurants",
+      "temporarilyClosed": false,
+      "closureLabel": null,
+      "closureSource": null,
       "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Bodeg%C3%B3n%20la%20Pe%C3%B1a%2C%20C.%20Benissa%2C%2037%2C%2003190%20Pilar%20de%20la%20Horadada%2C%20Alicante"
     },
     {
@@ -193,6 +322,9 @@
       "lat": 37.859978,
       "lng": -0.782832,
       "category": "supermarkets",
+      "temporarilyClosed": false,
+      "closureLabel": null,
+      "closureSource": null,
       "mapsUrl": "https://www.google.com/maps/search/?api=1&query=ALDI%2C%20C.%20Mayor%2C%20s%2Fn%2C%2003190%20Pilar%20de%20la%20Horadada%2C%20Alicante"
     },
     {
@@ -203,6 +335,9 @@
       "lat": 37.86618,
       "lng": -0.7820237,
       "category": "supermarkets",
+      "temporarilyClosed": false,
+      "closureLabel": null,
+      "closureSource": null,
       "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Mercadona%2C%20Av.%20de%20la%20Torre%2C%20s%2Fn%2C%2003190%20Pilar%20de%20la%20Horadada%2C%20Alicante"
     },
     {
@@ -213,6 +348,9 @@
       "lat": 37.9303952,
       "lng": -0.8050463,
       "category": "restaurants",
+      "temporarilyClosed": false,
+      "closureLabel": null,
+      "closureSource": null,
       "mapsUrl": "https://www.google.com/maps/search/?api=1&query=il%20Palco%2C%20Avenida%20de%20las%20Colinas%2C2%2CCtra.%20de%20Campoamor%20a%2C%20CV-941%20Km.%206%2C%2003189%20San%20Miguel%20de%20Salinas%2C%20Alicante"
     },
     {
@@ -223,6 +361,9 @@
       "lat": 37.8682802,
       "lng": -0.7766168999999999,
       "category": "restaurants",
+      "temporarilyClosed": false,
+      "closureLabel": null,
+      "closureSource": null,
       "mapsUrl": "https://www.google.com/maps/search/?api=1&query=T1%20Restaurante%2C%20Calle%20comunidad%20castellano-manchega%2C%206%2C%2003190%20Pilar%20de%20la%20Horadada%2C%20Alicante"
     },
     {
@@ -233,6 +374,9 @@
       "lat": 37.866248999999996,
       "lng": -0.7716835,
       "category": "shopping",
+      "temporarilyClosed": false,
+      "closureLabel": null,
+      "closureSource": null,
       "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Hiperasia%20(Euromacro%20SL.)%2C%20Av%20Comunidad%20Valenciana%2C%208%2C%2003191%20Torre%20de%20la%20Horadada%2C%20Alicante"
     },
     {
@@ -243,6 +387,9 @@
       "lat": 37.882707499999995,
       "lng": -0.7542433,
       "category": "restaurants",
+      "temporarilyClosed": false,
+      "closureLabel": null,
+      "closureSource": null,
       "mapsUrl": "https://www.google.com/maps/search/?api=1&query=El%20Griego%2C%20Avenida%20Comercial%2C%201%2C%2003191%20Mil%20Palmeras%2C%20Alicante"
     },
     {
@@ -253,6 +400,9 @@
       "lat": 37.887178899999995,
       "lng": -0.7530464,
       "category": "restaurants",
+      "temporarilyClosed": false,
+      "closureLabel": null,
+      "closureSource": null,
       "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Oasis%20Beach%2C%20Av.%20de%20Francia%2C%20s%2Fn%2C%2003191%20Mil%20Palmeras%2C%20Alicante"
     },
     {
@@ -262,7 +412,10 @@
       "address": "Calle Marrajo, 2, 30709 Roldán, Murcia",
       "lat": 37.8429152,
       "lng": -0.776521,
-      "category": "sports",
+      "category": "padel",
+      "temporarilyClosed": false,
+      "closureLabel": null,
+      "closureSource": null,
       "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Padel%20Selected%2C%20Calle%20Marrajo%2C%202%2C%2030709%20Rold%C3%A1n%2C%20Murcia"
     },
     {
@@ -273,6 +426,9 @@
       "lat": 37.843401899999996,
       "lng": -0.7747272,
       "category": "sports",
+      "temporarilyClosed": false,
+      "closureLabel": null,
+      "closureSource": null,
       "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Pinatar%20Arena%2C%20Av.%20del%20Moj%C3%B3n%2C%20s%2Fn%2C%2030740%20San%20Pedro%20del%20Pinatar%2C%20Murcia"
     },
     {
@@ -283,6 +439,9 @@
       "lat": 37.8530397,
       "lng": -0.7640802,
       "category": "parks",
+      "temporarilyClosed": false,
+      "closureLabel": null,
+      "closureSource": null,
       "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Parque%20Infantil%2C%20C.%20Catamar%C3%A1n%2C%2022%2C%2003191%20Pilar%20de%20la%20Horadada%2C%20Alicante"
     },
     {
@@ -293,6 +452,9 @@
       "lat": 37.8536846,
       "lng": -0.7634337999999999,
       "category": "parks",
+      "temporarilyClosed": false,
+      "closureLabel": null,
+      "closureSource": null,
       "mapsUrl": "https://www.google.com/maps/search/?api=1&query=%C3%81rea%20infantil%2C%2003191%20Pilar%20de%20la%20Horadada%2C%20Alicante"
     },
     {
@@ -302,7 +464,10 @@
       "address": "C/ Partida de, C. Brisamar, 14, 03191 Torre de la Horadada, Alicante",
       "lat": 37.8607605,
       "lng": -0.7627864,
-      "category": "restaurants",
+      "category": "bars",
+      "temporarilyClosed": false,
+      "closureLabel": null,
+      "closureSource": null,
       "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Pirata%20T%C3%ADo%20Pepe%2C%20C%2F%20Partida%20de%2C%20C.%20Brisamar%2C%2014%2C%2003191%20Torre%20de%20la%20Horadada%2C%20Alicante"
     },
     {
@@ -313,6 +478,9 @@
       "lat": 37.8679748,
       "lng": -0.7588073,
       "category": "ice-cream",
+      "temporarilyClosed": false,
+      "closureLabel": null,
+      "closureSource": null,
       "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Helader%C3%ADa%20Gal%C3%A1n%2C%20C.%20Albacete%2C%202%2C%2003191%20Torre%20de%20la%20Horadada%2C%20Alicante"
     },
     {
@@ -323,6 +491,9 @@
       "lat": 37.8743048,
       "lng": -0.7578667,
       "category": "restaurants",
+      "temporarilyClosed": false,
+      "closureLabel": null,
+      "closureSource": null,
       "mapsUrl": "https://www.google.com/maps/search/?api=1&query=RESTAURANTE%20PIZZER%C3%8DA%20ARROCER%C3%8DA%20PLAZA%2C%20Urbanizaci%C3%B3n%2C%20C.%20Maria%20Auxiliadora%2C%20n%C2%B0%2032%2C%2003191%20Torre%20de%20la%20Horadada%2C%20Alicante"
     },
     {
@@ -333,6 +504,9 @@
       "lat": 37.8769384,
       "lng": -0.7545953,
       "category": "restaurants",
+      "temporarilyClosed": false,
+      "closureLabel": null,
+      "closureSource": null,
       "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Manolo's%20Mar%2C%20Calle%20Hamburgo%2C%20s%2Fn%20Complejo%20Deportivo%20Las%20Artes%2C%2003191%20Torre%20de%20la%20Horadada%2C%20Alicante"
     },
     {
@@ -343,6 +517,9 @@
       "lat": 37.9305065,
       "lng": -0.7363415,
       "category": "shopping",
+      "temporarilyClosed": false,
+      "closureLabel": null,
+      "closureSource": null,
       "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Centro%20comercial%20Zenia%20Boulevard%2C%20C.%20Jade%2C%202%2C%2003189%20La%20Zenia%2C%20Alicante"
     },
     {
@@ -353,6 +530,9 @@
       "lat": 37.963497,
       "lng": -0.7157511,
       "category": "health",
+      "temporarilyClosed": false,
+      "closureLabel": null,
+      "closureSource": null,
       "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Hospital%20Universitario%20de%20Torrevieja%2C%20Carretera%20CV%2095%2C%20s%2Fn%2C%2003186%20Torrevieja%2C%20Alicante"
     },
     {
@@ -363,17 +543,10 @@
       "lat": 37.863617399999995,
       "lng": -0.787512,
       "category": "health",
+      "temporarilyClosed": false,
+      "closureLabel": null,
+      "closureSource": null,
       "mapsUrl": "https://www.google.com/maps/search/?api=1&query=CAP%20DE%20PILAR%20DE%20LA%20HORADADA%2C%20C.%20Vicente%20Blasco%20Ib%C3%A1%C3%B1ez%2C%20s%2Fn%2C%2003190%20Pilar%20de%20la%20Horadada%2C%20Alicante"
-    },
-    {
-      "id": "farmacia-rafael-espuch-farmacia-de-toda-la-vida-en-pilar-de-la-horadada",
-      "name": "FARMACIA RAFAEL ESPUCH - Farmacia de Toda la Vida en Pilar de la Horadada",
-      "note": "",
-      "address": "C. Mayor, 21, 03190 Pilar de la Horadada, Alicante",
-      "lat": 37.8652727,
-      "lng": -0.7924568,
-      "category": "pharmacy",
-      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=FARMACIA%20RAFAEL%20ESPUCH%20-%20Farmacia%20de%20Toda%20la%20Vida%20en%20Pilar%20de%20la%20Horadada%2C%20C.%20Mayor%2C%2021%2C%2003190%20Pilar%20de%20la%20Horadada%2C%20Alicante"
     },
     {
       "id": "farmacia-playa-las-higuericas-lda-m-del-mar-lorenzo-banon",
@@ -383,6 +556,9 @@
       "lat": 37.8535353,
       "lng": -0.7661985,
       "category": "pharmacy",
+      "temporarilyClosed": false,
+      "closureLabel": null,
+      "closureSource": null,
       "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Farmacia%20Playa%20Las%20Higuericas%20Lda.%20M%20del%20Mar%20Lorenzo%20Ba%C3%B1%C3%B3n%2C%20C.%20Alheli%2C%2021%2C%2003191%20Pilar%20de%20la%20Horadada%2C%20Alicante"
     },
     {
@@ -392,7 +568,10 @@
       "address": "C. Catamarán, 94, 03190 Pilar de la Horadada, Alicante",
       "lat": 37.853321,
       "lng": -0.7638863,
-      "category": "restaurants",
+      "category": "bars",
+      "temporarilyClosed": false,
+      "closureLabel": null,
+      "closureSource": null,
       "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Chiringuito%20Pirata%20Dunas%20Higuericas%2C%20C.%20Catamar%C3%A1n%2C%2094%2C%2003190%20Pilar%20de%20la%20Horadada%2C%20Alicante"
     },
     {
@@ -403,6 +582,9 @@
       "lat": 37.9279868,
       "lng": -0.8090537999999999,
       "category": "golf",
+      "temporarilyClosed": false,
+      "closureLabel": null,
+      "closureSource": null,
       "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Las%20Colinas%20Golf%20%26%20Country%20Club%2C%20Av.%20de%20las%20Colinas%2C%202%2C%2003189%20Dehesa%20de%20Campoamor%2C%20Alicante"
     },
     {
@@ -413,6 +595,9 @@
       "lat": 37.882675,
       "lng": -0.8234334999999999,
       "category": "golf",
+      "temporarilyClosed": false,
+      "closureLabel": null,
+      "closureSource": null,
       "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Lo%20Romero%20Golf%2C%20CV%20925%20Km%2029%2C%20CV-925%2C%20Km%2029%2C%2003191%20Pilar%20de%20la%20Horadada%2C%20Alicante"
     },
     {
@@ -423,6 +608,9 @@
       "lat": 37.8585472,
       "lng": -0.765643,
       "category": "shopping",
+      "temporarilyClosed": false,
+      "closureLabel": null,
+      "closureSource": null,
       "mapsUrl": "https://www.google.com/maps/search/?api=1&query=C.%20Mar%20de%20Noruega%2C%202%2C%2016%2C%20C.%20Mar%20de%20Noruega%2C%202%2C%2003191%20Torre%20de%20la%20Horadada%2C%20Alicante"
     },
     {
@@ -433,17 +621,10 @@
       "lat": 37.8753114,
       "lng": -0.7635459,
       "category": "restaurants",
+      "temporarilyClosed": false,
+      "closureLabel": null,
+      "closureSource": null,
       "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Restaurante%20Victoria%20%26%20Roneria%20Mang%C3%BA%2C%20Av.%20R%C3%ADo%20Segura%2C%20116%2C%2003191%20Torre%20de%20la%20Horadada%2C%20Alicante"
-    },
-    {
-      "id": "archi-snack-bar-restaurant",
-      "name": "Archi snack-bar & restaurant",
-      "note": "Disco",
-      "address": "Av. del Mojón, 43, 30740 San Pedro del Pinatar, Murcia",
-      "lat": 37.843401899999996,
-      "lng": -0.7747272,
-      "category": "restaurants",
-      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Archi%20snack-bar%20%26%20restaurant%2C%20Av.%20del%20Moj%C3%B3n%2C%2043%2C%2030740%20San%20Pedro%20del%20Pinatar%2C%20Murcia"
     }
   ]
 }

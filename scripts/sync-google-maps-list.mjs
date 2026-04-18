@@ -5,9 +5,11 @@ import { fileURLToPath } from "node:url";
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const snapshotPath = path.join(ROOT, "data", "places.snapshot.json");
+const overridesPath = path.join(ROOT, "data", "places.overrides.json");
 const LIST_URL =
   process.env.GOOGLE_MAPS_LIST_URL || "https://maps.app.goo.gl/6kiRLdhaMThJCQia9";
 const BASE_URL = "https://www.google.es";
+const overrides = JSON.parse(await fs.readFile(overridesPath, "utf8"));
 
 const slugify = (value) =>
   value
@@ -25,15 +27,78 @@ const curlGet = (url) =>
     stdio: ["ignore", "pipe", "pipe"]
   });
 
+const findClosureStatus = (value) => {
+  const matches = [];
+
+  const walk = (node) => {
+    if (typeof node === "string") {
+      const text = node.trim();
+      if (/temporarily closed|closed temporarily|cerrado temporalmente/i.test(text)) {
+        matches.push(text);
+      }
+      return;
+    }
+
+    if (Array.isArray(node)) {
+      node.forEach(walk);
+    }
+  };
+
+  walk(value);
+  return matches[0] || null;
+};
+
+const findWebsiteStatus = (place) => {
+  const config = overrides.places?.[place.id]?.statusCheck;
+  if (!config?.url || !config.closedPatterns?.length) return null;
+
+  try {
+    const html = curlGet(config.url);
+    const match = config.closedPatterns.find((pattern) => new RegExp(pattern, "i").test(html));
+    return match
+      ? {
+          temporarilyClosed: true,
+          closureLabel: config.label || match,
+          closureSource: config.url
+        }
+      : null;
+  } catch {
+    return null;
+  }
+};
+
 const inferCategory = ({ name = "", note = "", address = "" }) => {
-  const haystack = `${name} ${note} ${address}`.toLowerCase();
+  const haystack = `${name} ${note} ${address}`
+    .toLowerCase()
+    .normalize("NFD")
+    .replace(/\p{Diacritic}/gu, "");
 
   if (haystack.includes("home") || haystack.includes("c. dalia")) return "home";
   if (haystack.includes("farmacia")) return "pharmacy";
   if (haystack.includes("hospital") || haystack.includes("cap de pilar")) return "health";
   if (haystack.includes("golf")) return "golf";
   if (haystack.includes("ice cream") || haystack.includes("helader")) return "ice-cream";
-  if (haystack.includes("padel") || haystack.includes("gym")) return "sports";
+  if (haystack.includes("padel")) return "padel";
+  if (
+    haystack.includes("cafeter") ||
+    haystack.includes("café") ||
+    haystack.includes("cafe ") ||
+    haystack.includes("coffee") ||
+    haystack.includes("brunch") ||
+    haystack.includes("breakfast")
+  ) {
+    return "cafes";
+  }
+  if (
+    haystack.includes("chiringuito") ||
+    haystack.includes("beach club") ||
+    haystack.includes("cocktail") ||
+    haystack.includes("bar ") ||
+    haystack.includes("pub") ||
+    haystack.includes("tapas bar")
+  ) {
+    return "bars";
+  }
   if (
     haystack.includes("supermarket") ||
     haystack.includes("mercadona") ||
@@ -41,6 +106,32 @@ const inferCategory = ({ name = "", note = "", address = "" }) => {
     haystack.includes("manper")
   ) {
     return "supermarkets";
+  }
+  if (
+    haystack.includes("padel") ||
+    haystack.includes("gym") ||
+    haystack.includes("sport") ||
+    haystack.includes("adventure") ||
+    haystack.includes("tour") ||
+    haystack.includes("excursion") ||
+    haystack.includes("kayak") ||
+    haystack.includes("paddle board") ||
+    haystack.includes("surf") ||
+    haystack.includes("snorkel") ||
+    haystack.includes("diving") ||
+    haystack.includes("scuba") ||
+    haystack.includes("boat") ||
+    haystack.includes("sailing") ||
+    haystack.includes("jet ski") ||
+    haystack.includes("quad") ||
+    haystack.includes("hiking") ||
+    haystack.includes("bike") ||
+    haystack.includes("cycling") ||
+    haystack.includes("ruta") ||
+    haystack.includes("aventura") ||
+    haystack.includes("deporte")
+  ) {
+    return "sports";
   }
   if (
     haystack.includes("shopping center") ||
@@ -95,6 +186,7 @@ for (const item of root[8]) {
   const address = details?.[4] || details?.[2] || "";
   const lat = details?.[5]?.[2] ?? null;
   const lng = details?.[5]?.[3] ?? null;
+  const closureStatus = findClosureStatus(item);
 
   if (!name) continue;
 
@@ -108,8 +200,18 @@ for (const item of root[8]) {
     address,
     lat,
     lng,
-    category: inferCategory({ name, note, address })
+    category: inferCategory({ name, note, address }),
+    temporarilyClosed: Boolean(closureStatus),
+    closureLabel: closureStatus,
+    closureSource: null
   };
+
+  const websiteStatus = findWebsiteStatus(place);
+  if (websiteStatus) {
+    place.temporarilyClosed = websiteStatus.temporarilyClosed;
+    place.closureLabel = websiteStatus.closureLabel;
+    place.closureSource = websiteStatus.closureSource;
+  }
 
   place.mapsUrl = toMapsUrl(place);
   dedupe.set(key, place);
