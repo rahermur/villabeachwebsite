@@ -444,8 +444,8 @@ const render = () => {
 
   document.getElementById("quickNav").innerHTML = [
     ["checkin", currentCopy.ui.nav.checkin],
-    ["house", currentCopy.ui.nav.house],
     ["rules", currentCopy.ui.nav.rules],
+    ["house", currentCopy.ui.nav.house],
     ["hosts", currentCopy.ui.nav.hosts],
     ["food", currentCopy.ui.nav.food],
     ["emergencies", currentCopy.ui.nav.emergencies],

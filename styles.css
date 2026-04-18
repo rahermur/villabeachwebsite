@@ -1328,6 +1328,25 @@ a {
     width: 100%;
   }
 
+  .content {
+    gap: 30px;
+    margin-top: 14px;
+    padding: 0 14px;
+  }
+
+  .section {
+    min-width: 0;
+  }
+
+  .section-heading {
+    margin-bottom: 14px;
+  }
+
+  .section-heading h2 {
+    font-size: clamp(1.6rem, 6vw, 2.1rem);
+    line-height: 1.08;
+  }
+
   .card__detail-button {
     width: 100%;
   }
@@ -1355,10 +1374,83 @@ a {
   .card--wide,
   .rule-card {
     grid-column: span 1;
+    min-width: 0;
   }
 
   .rules-grid {
     grid-template-columns: 1fr;
+  }
+
+  .feature-panel,
+  .food-group,
+  .emergency-callout,
+  .emergency-accordion,
+  .card {
+    min-width: 0;
+  }
+
+  .feature-panel {
+    padding: 18px;
+  }
+
+  .feature-panel__headline {
+    font-size: 1.45rem;
+    line-height: 1.15;
+  }
+
+  .food-intro-panel,
+  .food-groups,
+  #hostCards,
+  .emergency-summary,
+  .emergency-accordions {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 12px;
+    min-width: 0;
+  }
+
+  .food-group__summary {
+    gap: 12px;
+  }
+
+  .food-group__summary h3 {
+    font-size: 1.12rem;
+    line-height: 1.2;
+  }
+
+  .food-group__summary p {
+    font-size: 0.94rem;
+    line-height: 1.5;
+  }
+
+  .food-bullet-list {
+    gap: 10px;
+    padding-left: 16px;
+  }
+
+  .food-bullet-item strong {
+    font-size: 1rem;
+    line-height: 1.35;
+  }
+
+  .food-bullet-note,
+  .food-bullet-link {
+    font-size: 0.94rem;
+    line-height: 1.55;
+  }
+
+  .emergency-callout {
+    padding: 16px 18px;
+  }
+
+  .emergency-accordion__summary h3 {
+    font-size: 1rem;
+    line-height: 1.25;
+  }
+
+  .emergency-accordion__summary p {
+    font-size: 0.93rem;
+    line-height: 1.45;
   }
 
   .detail-sheet__panel {
