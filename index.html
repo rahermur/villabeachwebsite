@@ -18,7 +18,37 @@
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
-    <div class="page-shell">
+    <div class="access-gate" id="accessGate">
+      <div class="access-gate__panel">
+        <p class="eyebrow" id="gateEyebrow">Guest Access</p>
+        <h1 id="gateTitle">Acceso privado</h1>
+        <p class="access-gate__copy" id="gateDescription">
+          Introduce tu código de huésped para ver la guía completa de la villa.
+        </p>
+        <form class="access-gate__form" id="accessForm">
+          <label class="access-gate__label" for="accessCode" id="gateInputLabel">
+            Código de acceso
+          </label>
+          <input
+            class="access-gate__input"
+            id="accessCode"
+            name="accessCode"
+            type="password"
+            autocomplete="current-password"
+            inputmode="text"
+          />
+          <button class="button button--sea" type="submit" id="gateSubmit">Entrar</button>
+          <p class="access-gate__hint" id="gateHint">
+            Si no lo tienes, pídelo al anfitrión.
+          </p>
+          <p class="access-gate__error" id="gateError" hidden>
+            Código incorrecto. Inténtalo de nuevo.
+          </p>
+        </form>
+      </div>
+    </div>
+
+    <div class="page-shell" id="pageShell" hidden>
       <header class="hero">
         <div class="hero__copy">
           <div class="hero__topbar">
@@ -35,6 +65,7 @@
         </div>
 
         <div class="hero__visuals">
+          <button class="logout-button" id="logoutButton" type="button">Cerrar acceso</button>
           <div class="hero__photo hero__photo--main" id="heroPhotoMain"></div>
           <div class="hero__photo hero__photo--top" id="heroPhotoTop"></div>
           <div class="hero__photo hero__photo--bottom" id="heroPhotoBottom"></div>
