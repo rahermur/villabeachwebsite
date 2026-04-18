@@ -1028,13 +1028,9 @@ a {
 
 @media (max-width: 720px) {
   .page-shell {
-    width: min(calc(100% - 14px), var(--max-width));
-    padding-top: 8px;
+    width: 100%;
+    padding-top: 0;
     padding-bottom: 48px;
-  }
-
-  .hero {
-    border-radius: 22px;
   }
 
   .hero__topbar {
@@ -1043,79 +1039,120 @@ a {
     gap: 8px;
   }
 
+  /* ── MÓVIL: imagen de fondo a pantalla completa ── */
+
+  .hero {
+    border-radius: 0;
+    box-shadow: none;
+    border: none;
+    background: none;
+    display: block;
+    overflow: visible;
+  }
+
+  .hero__topbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 40;
+    padding: 10px 14px;
+    background: rgba(250, 246, 240, 0.92);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(17, 140, 140, 0.1);
+  }
+
+  /* contenedor imagen: ocupa pantalla completa */
   .hero__content {
+    position: relative;
     display: flex;
     flex-direction: column;
-    padding: 14px;
-    gap: 0;
+    justify-content: flex-end;
+    padding: 0;
+    height: 100svh;
+    min-height: 500px;
+    overflow: hidden;
   }
 
-  /* --- orden móvil: fotos → título/texto → botones/facts --- */
-
-  /* fotos: grid simple en móvil, sin absolute positioning */
-  .hero__photos {
-    order: 1;
-    position: static;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 10px;
-    height: 210px;
-    min-height: unset;
-    margin-bottom: 14px;
+  /* activar la foto de fondo */
+  .hero__bg {
+    display: block;
+    position: absolute;
+    inset: 0;
+    z-index: 0;
   }
 
-  .hero__photos .hero__photo {
-    position: relative;
+  .hero__bg img {
     width: 100%;
     height: 100%;
-    transform: none;
-    border-radius: 18px;
-    box-shadow: 0 8px 24px rgba(17, 140, 140, 0.15);
-    border: 3px solid rgba(255, 255, 255, 0.8);
+    object-fit: cover;
+    object-position: center;
   }
 
-  .hero__photos .hero__photo:nth-child(1) {
-    border-radius: 18px 40px 18px 40px;
+  /* overlay sutil para que el panel se lea bien */
+  .hero__overlay {
+    display: block;
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    background: linear-gradient(
+      to bottom,
+      rgba(0,0,0,0.05) 0%,
+      rgba(0,0,0,0.1) 50%,
+      rgba(17, 140, 140, 0.55) 100%
+    );
   }
 
-  .hero__photos .hero__photo:nth-child(2) {
-    border-radius: 40px 18px 40px 18px;
+  /* ocultar el collage de fotos secundarias en móvil */
+  .hero__photos {
+    display: none;
   }
 
-  /* panel: fondo semitransparente sobre arena para legibilidad */
+  /* panel azul superpuesto en la parte inferior de la imagen */
   .hero__panel {
-    order: 2;
-    padding: 20px;
-    background: rgba(255, 255, 255, 0.72);
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
-    border: 1px solid rgba(17, 140, 140, 0.12);
-    border-radius: var(--radius-lg);
-    color: var(--ink);
+    position: relative;
+    z-index: 2;
+    margin: 0;
+    padding: 24px 20px 0;
+    background: rgba(17, 140, 140, 0.82);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: none;
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 0;
+    color: white;
+    display: flex;
+    flex-direction: column;
   }
 
   .hero__panel .eyebrow {
-    color: var(--sea);
+    color: var(--yellow);
+    margin-bottom: 6px;
   }
 
   .hero h1 {
-    font-size: clamp(2rem, 8vw, 2.8rem);
-    margin-top: 4px;
-    color: var(--ink);
+    font-size: clamp(2rem, 8vw, 2.6rem);
+    margin-top: 0;
+    color: white;
   }
 
   .hero__lede {
-    font-size: 0.97rem;
-    line-height: 1.65;
-    margin-top: 10px;
-    color: var(--muted);
+    font-size: 0.93rem;
+    line-height: 1.6;
+    margin-top: 8px;
+    color: rgba(255, 255, 255, 0.88);
   }
 
-  .hero__actions {
-    gap: 8px;
-    margin-top: 18px;
-    padding-top: 16px;
-    border-top: 1px solid var(--line);
+  /* botones: "rompen" visualmente fuera del panel azul con fondo arena */
+  .hero__panel .hero__actions {
+    margin: 16px -20px 0;
+    padding: 18px 20px 22px;
+    background: var(--bg-soft);
+    border-top: 1px solid rgba(17, 140, 140, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
   }
 
   .hero__panel .hero__actions .button,
@@ -1123,56 +1160,20 @@ a {
     width: 100%;
     text-align: center;
     justify-content: center;
-    padding: 13px 16px;
-    font-size: 0.95rem;
+    padding: 14px 16px;
+    font-size: 0.97rem;
   }
 
-  .hero__panel .ghost-button {
+  .hero__panel .hero__actions .ghost-button {
     border-color: var(--line);
-    background: rgba(255, 255, 255, 0.55);
+    background: rgba(255, 255, 255, 0.8);
     color: var(--ink);
   }
 
-  .hero__panel .mini-fact {
-    background: rgba(255, 255, 255, 0.52);
-    border-color: rgba(17, 140, 140, 0.09);
-  }
-
-  .hero__panel .mini-fact span {
-    color: var(--muted);
-  }
-
-  .hero__panel .mini-fact strong {
-    color: var(--ink);
-  }
-
-  .hero__mini-grid {
-    grid-template-columns: 1fr 1fr;
-    gap: 8px;
-    margin-top: 12px;
-  }
-
+  /* ocultar facts y dirección en móvil */
+  .hero__mini-grid,
   .hero__location-card {
-    padding-top: 14px;
-    margin-top: 14px;
-    border-top: 1px solid var(--line);
-    background: none;
-    border-left: none;
-    border-right: none;
-    border-bottom: none;
-    border-radius: 0;
-  }
-
-  .hero__location-card p {
-    color: var(--muted);
-  }
-
-  .hero__location-card strong {
-    color: var(--ink);
-  }
-
-  .hero__panel .panel-label {
-    color: var(--sea);
+    display: none;
   }
 
   .logout-button {
