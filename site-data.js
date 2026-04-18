@@ -108,21 +108,21 @@ window.siteData = {
         viewMoreLabel: "Ver detalle",
       },
       sections: {
-        checkin: { eyebrow: "Llegada", title: "Llegada y salida" },
-        house: { eyebrow: "En la villa", title: "Todo en la villa" },
-        rules: { eyebrow: "Convivencia", title: "Normas de la casa" },
-        food: { eyebrow: "Para disfrutar", title: "Restaurantes, planes y favoritos" },
-        hosts: { eyebrow: "Anfitriones", title: "Contacto del anfitrión" },
-        emergencies: { eyebrow: "Emergencias", title: "Ayuda rápida y asistencia" },
+        checkin: { eyebrow: "", title: "Llegada y salida" },
+        house: { eyebrow: "", title: "Todo en la villa" },
+        rules: { eyebrow: "", title: "Normas de la casa" },
+        food: { eyebrow: "", title: "Restaurantes, planes y favoritos" },
+        hosts: { eyebrow: "", title: "Contacto del anfitrión" },
+        emergencies: { eyebrow: "", title: "Ayuda rápida y asistencia" },
       },
       hero: {
-        title: "Villa Dalia 31",
+        title: "Villa Beach",
         description:
           "Bienvenidos a nuestra villa. Esperamos que disfrutéis de vuestra estancia, del buen clima y de todas las comodidades de la casa. Esta guía reúne lo esencial para la llegada, la salida, el uso de la vivienda y la información práctica de la zona.",
         actions: [
           { label: "Cómo llegar", hrefKey: "mapsRoute", style: "sea" },
-          { label: "Lista de sitios", hrefKey: "hostList" },
           { label: "Anfitrión", href: "#hosts" },
+          { label: "Lista de sitios", hrefKey: "hostList" },
         ],
         facts: [
           { label: "Check-in", valueKey: "checkInTime" },
@@ -130,8 +130,7 @@ window.siteData = {
           { label: "Wi-Fi", valueKey: "wifi.network" },
           { label: "Clave Wi-Fi", valueKey: "wifi.password" },
         ],
-        addressHint:
-          "A pocos minutos andando de la Playa de las Higuericas y con acceso sencillo en coche.",
+        addressHint: "",
       },
       property: {
         arrivalFlow: {
@@ -227,7 +226,6 @@ window.siteData = {
             title: "🧳 Salida",
             text:
               "La referencia de salida es hasta las 12:00.\nSi necesitas late check-out, solicítalo con antelación para comprobar disponibilidad.\nNo hace falta quedar en persona con el anfitrión para devolver las llaves: solo avisa de que vais a abandonar la vivienda y sigue las indicaciones acordadas.",
-            tags: ["Check-out", "Late check-out"],
             layout: "half",
             list: [
               "🍽️ Deja la cocina recogida y saca la basura si es posible.",
@@ -460,15 +458,15 @@ window.siteData = {
         viewMoreLabel: "View details",
       },
       sections: {
-        checkin: { eyebrow: "Arrival", title: "Arrival & departure" },
-        house: { eyebrow: "At the villa", title: "Everything at the villa" },
-        rules: { eyebrow: "Stay well", title: "House rules" },
-        food: { eyebrow: "To enjoy", title: "Restaurants, plans and favourites" },
-        hosts: { eyebrow: "Hosts", title: "Host contact" },
-        emergencies: { eyebrow: "Emergency", title: "Quick help and assistance" },
+        checkin: { eyebrow: "", title: "Arrival & departure" },
+        house: { eyebrow: "", title: "Everything at the villa" },
+        rules: { eyebrow: "", title: "House rules" },
+        food: { eyebrow: "", title: "Restaurants, plans and favourites" },
+        hosts: { eyebrow: "", title: "Host contact" },
+        emergencies: { eyebrow: "", title: "Quick help and assistance" },
       },
       hero: {
-        title: "Villa Dalia 31",
+        title: "Villa Beach",
         description:
           "Welcome to the villa. This guide brings together the essentials for arrival, departure, house use and practical local information for a smooth stay by the sea.",
         actions: [
@@ -578,7 +576,6 @@ window.siteData = {
             title: "🧳 Departure",
             text:
               "Reference check-out time is by 12:00 noon.\nIf you need a late check-out, ask in advance so availability can be confirmed.\nThere is no need to meet the host in person to return the keys: just let them know you are leaving and follow the agreed departure instructions.",
-            tags: ["Check-out", "Late check-out"],
             layout: "half",
             list: [
               "🍽️ Leave the kitchen tidy and take rubbish out if possible.",

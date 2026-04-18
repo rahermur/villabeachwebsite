@@ -330,8 +330,8 @@ const render = () => {
     ["checkin", currentCopy.ui.nav.checkin],
     ["house", currentCopy.ui.nav.house],
     ["rules", currentCopy.ui.nav.rules],
-    ["food", currentCopy.ui.nav.food],
     ["hosts", currentCopy.ui.nav.hosts],
+    ["food", currentCopy.ui.nav.food],
     ["emergencies", currentCopy.ui.nav.emergencies],
   ]
     .map(([href, label]) => `<a href="#${href}">${label}</a>`)
