@@ -37,8 +37,8 @@ window.siteData = {
     },
     property: {
       wifi: {
-        network: "[COMPLETAR_NOMBRE_WIFI]",
-        password: "[COMPLETAR_PASSWORD_WIFI]",
+        network: "Flexa_B2A4",
+        password: "YGwXpRE8",
       },
       checkInTime: "15:00",
       checkOutTime: "12:00",
@@ -85,8 +85,7 @@ window.siteData = {
         activeLanguage: "Español",
         activeLanguageAuto: "Automático (%s)",
         nav: {
-          checkin: "Check-in",
-          checkout: "Check-out",
+          checkin: "Llegada y salida",
           house: "Casa",
           rules: "Normas",
           food: "Para disfrutar",
@@ -106,11 +105,11 @@ window.siteData = {
           hint: "Si no lo tienes, pídelo al anfitrión.",
           error: "Código incorrecto. Inténtalo de nuevo.",
         },
+        viewMoreLabel: "Ver detalle",
       },
       sections: {
-        checkin: { eyebrow: "Llegada", title: "Check-in" },
-        checkout: { eyebrow: "Salida", title: "Check-out" },
-        house: { eyebrow: "Dentro y fuera", title: "La casa y cómo usarla" },
+        checkin: { eyebrow: "Llegada", title: "Llegada y salida" },
+        house: { eyebrow: "En la villa", title: "Todo en la villa" },
         rules: { eyebrow: "Convivencia", title: "Normas de la casa" },
         food: { eyebrow: "Para disfrutar", title: "Restaurantes, planes y favoritos" },
         hosts: { eyebrow: "Anfitriones", title: "Contacto del anfitrión" },
@@ -129,24 +128,14 @@ window.siteData = {
           { label: "Check-in", valueKey: "checkInTime" },
           { label: "Check-out", valueKey: "checkOutTime" },
           { label: "Wi-Fi", valueKey: "wifi.network" },
+          { label: "Clave Wi-Fi", valueKey: "wifi.password" },
         ],
         addressHint:
           "A pocos minutos andando de la Playa de las Higuericas y con acceso sencillo en coche.",
       },
       property: {
-        checkIn: {
-          details: [
-            "Check-in a partir de las 15:00.",
-            "La llegada puede ser autónoma o asistida según la reserva. Confirma el método exacto con el anfitrión el mismo día.",
-            "Si prevés llegar más tarde de lo acordado, avisa cuanto antes.",
-          ],
-        },
-        checkOut: {
-          details: [
-            "Check-out hasta las 12:00.",
-            "Existe opción de late check-out bajo consulta previa y según disponibilidad.",
-            "Deja cerradas puertas y ventanas, apaga luces y climatización y devuelve llaves o mandos según te hayan indicado.",
-          ],
+        arrivalFlow: {
+          details: [],
         },
         jacuzzi: [
           "Ducharse antes de usarlo y mantener la tapa cerrada cuando no se utilice.",
@@ -225,90 +214,77 @@ window.siteData = {
         },
       },
       content: {
-        checkInPanel: {
-          title: "Llegada sin estrés",
-          body:
-            "Check-in a partir de las 15:00.\nConfirma con el anfitrión el método exacto de acceso antes del viaje.",
-          tags: ["Llegada", "Acceso"],
-          links: [{ label: "Abrir ubicación", hrefKey: "mapsRoute" }],
-        },
         checkInCards: [
           {
-            title: "Antes de salir hacia la villa",
+            title: "🛬 Llegada",
             text:
-              "Ten a mano el teléfono del anfitrión, revisa el punto exacto de llegada y confirma si necesitas código, llave o asistencia.",
-            tags: ["Preparación"],
+              "Coordina la llegada con el anfitrión a partir de las 15:00.\nAntes de venir, completa si es posible el check-in online desde el enlace personal enviado previamente por email o mensaje.\nEn el check-in se recordarán las normas de la casa y se resolverá cualquier duda necesaria.",
+            tags: ["Llegada", "Desde las 15:00"],
+            layout: "half",
+            sheetKey: "arrivalRegistration",
           },
           {
-            title: "Si llegas tarde",
+            title: "🧳 Salida",
             text:
-              "Si prevés llegar más tarde de lo acordado, avisa cuanto antes. Esto evita incidencias con llaves, limpieza o entrega de acceso.",
-            tags: ["Importante"],
-          },
-          {
-            title: "Ubicación y favoritos",
-            text:
-              "Desde la portada puedes abrir tanto la ruta en Google Maps como la lista compartida de sitios recomendados para usarla durante la estancia.",
-            tags: ["Google Maps", "Lista"],
-            links: [{ label: "Abrir lista", hrefKey: "hostList" }],
+              "La referencia de salida es hasta las 12:00.\nSi necesitas late check-out, solicítalo con antelación para comprobar disponibilidad.\nNo hace falta quedar en persona con el anfitrión para devolver las llaves: solo avisa de que vais a abandonar la vivienda y sigue las indicaciones acordadas.",
+            tags: ["Check-out", "Late check-out"],
+            layout: "half",
+            list: [
+              "🍽️ Deja la cocina recogida y saca la basura si es posible.",
+              "💡 Apaga luces y climatización y cierra puertas y ventanas.",
+              "📩 Avisa al anfitrión cuando salgáis de la vivienda.",
+            ],
           },
         ],
-        checkOutPanel: {
-          title: "Salida sencilla",
-          body:
-            "Check-out hasta las 12:00.\nSi necesitas late check-out, consúltalo previamente con el anfitrión.",
-          tags: ["Salida", "Checklist"],
+        infoSheets: {
+          arrivalRegistration: {
+            eyebrow: "Llegada",
+            title: "🪪 Registro de viajeros y check-in online",
+            text:
+              "Todas las personas alojadas deben registrarse en la aplicación de check-in porque en España es obligatorio comunicar esos datos a la policía.\nEl entorno es seguro y los datos del documento de identidad solo se usan para cumplir con esta obligación.\nNormalmente recibirás previamente por email o mensaje un enlace personal para hacerlo online con antelación, pero si no lo hubieras completado, uno de los anfitriones tomará los datos durante el check-in antes de entrar en la vivienda.",
+          },
         },
-        checkOutCards: [
+        houseBasics: [
           {
-            title: "Cocina y basura",
-            text:
-              "Deja la cocina recogida, saca la basura si es posible y evita dejar restos de carbón o comida en exterior.",
-            tags: ["Cierre"],
-          },
-          {
-            title: "Climatización y seguridad",
-            text:
-              "Antes de irte, revisa aire acondicionado, luces, puertas, ventanas, toldos y cualquier elemento exterior sensible al viento.",
-            tags: ["Seguridad"],
-          },
-          {
-            title: "Llaves y mandos",
-            text:
-              "Devuelve llaves, mandos o códigos exactamente como te indique el anfitrión para evitar recargos o incidencias.",
-            tags: ["Entrega"],
-          },
-        ],
-        houseCards: [
-          {
-            title: "Wi-Fi",
+            title: "📶 Wi-Fi",
             text:
               "Red: [COMPLETAR_NOMBRE_WIFI]\nContraseña: [COMPLETAR_PASSWORD_WIFI]",
-            tags: ["Internet"],
+            list: [
+              "💡 La conexión es de 1 Gb, así que debería ser bastante estable salvo si estás muy lejos del router.",
+            ],
+            tags: ["Internet", "1 Gb"],
           },
           {
-            title: "Uso del jacuzzi",
-            text: "Indicaciones básicas para un uso seguro y sin incidencias.",
-            listKey: "jacuzzi",
-            tags: ["Jacuzzi"],
-          },
-          {
-            title: "Uso de la piscina",
-            text: "Consejos básicos para un uso seguro y cómodo.",
-            listKey: "pool",
-            tags: ["Piscina"],
-          },
-          {
-            title: "Barbacoa de carbón",
-            text: "Recomendaciones para usarla de forma segura y limpia.",
-            listKey: "bbq",
-            tags: ["Exterior", "Carbón"],
-          },
-          {
-            title: "La villa",
+            title: "📺 TV y streaming",
             text:
-              "Villa moderna con piscina privada, jacuzzi y barbacoa, a solo 400 m de la playa. Cuenta con 3 dormitorios dobles, 2 baños en suite, cocina equipada con cafetera y air fryer, terrazas soleadas, solárium con jacuzzi, aire acondicionado, Wi-Fi y parking privado.",
-            tags: ["3 dormitorios", "Piscina privada"],
+              "Puedes añadir tus cuentas de Netflix, Prime Video, Disney+ u otras plataformas durante la estancia.",
+            list: [
+              "🔐 Recuerda cerrar sesión en todas tus cuentas antes del check-out.",
+            ],
+            tags: ["TV", "Streaming"],
+          },
+        ],
+        houseAccordions: [
+          {
+            title: "🏊 Piscina",
+            eyebrow: "Exterior",
+            summary: "Consejos rápidos para usar la piscina con seguridad y sin incidencias.",
+            text: "Antes de usarla, revisa que la zona esté libre de objetos y mantén siempre la supervisión de menores.",
+            listKey: "pool",
+          },
+          {
+            title: "♨️ Jacuzzi",
+            eyebrow: "Relax",
+            summary: "Uso cómodo y seguro del jacuzzi durante la estancia.",
+            text: "El jacuzzi requiere un uso cuidadoso y debe mantenerse cerrado cuando no se utiliza.",
+            listKey: "jacuzzi",
+          },
+          {
+            title: "🔥 Barbacoa",
+            eyebrow: "Comer fuera",
+            summary: "Cómo encenderla y dejarla bien al terminar.",
+            text: "Utiliza la barbacoa con calma, sin acelerantes y dejando siempre las brasas completamente apagadas al final.",
+            listKey: "bbq",
           },
         ],
         restaurants: [
@@ -461,8 +437,7 @@ window.siteData = {
         activeLanguage: "English",
         activeLanguageAuto: "Automatic (%s)",
         nav: {
-          checkin: "Check-in",
-          checkout: "Check-out",
+          checkin: "Arrival & departure",
           house: "House",
           rules: "Rules",
           food: "To enjoy",
@@ -481,11 +456,11 @@ window.siteData = {
           hint: "If you do not have it, ask the host.",
           error: "Incorrect code. Please try again.",
         },
+        viewMoreLabel: "View details",
       },
       sections: {
-        checkin: { eyebrow: "Arrival", title: "Check-in" },
-        checkout: { eyebrow: "Departure", title: "Check-out" },
-        house: { eyebrow: "Inside & outside", title: "The house and how to use it" },
+        checkin: { eyebrow: "Arrival", title: "Arrival & departure" },
+        house: { eyebrow: "At the villa", title: "Everything at the villa" },
         rules: { eyebrow: "Stay well", title: "House rules" },
         food: { eyebrow: "To enjoy", title: "Restaurants, plans and favourites" },
         hosts: { eyebrow: "Hosts", title: "Host contact" },
@@ -504,23 +479,13 @@ window.siteData = {
           { label: "Check-in", valueKey: "checkInTime" },
           { label: "Check-out", valueKey: "checkOutTime" },
           { label: "Wi-Fi", valueKey: "wifi.network" },
+          { label: "Wi-Fi password", valueKey: "wifi.password" },
         ],
         addressHint: "A short walk from Playa de las Higuericas, with easy access by car.",
       },
       property: {
-        checkIn: {
-          details: [
-            "Check-in from 3:00 pm.",
-            "Arrival may be self check-in or assisted, depending on the booking. Confirm the exact access method with the host on the same day.",
-            "If you expect to arrive late, let the host know as soon as possible.",
-          ],
-        },
-        checkOut: {
-          details: [
-            "Check-out by 12:00 noon.",
-            "Late check-out may be possible on prior request and subject to availability.",
-            "Leave doors and windows closed, turn off lights and climate control, and return keys or remotes as instructed.",
-          ],
+        arrivalFlow: {
+          details: [],
         },
         jacuzzi: [
           "Shower before using it and keep the cover closed when it is not in use.",
@@ -599,90 +564,77 @@ window.siteData = {
         },
       },
       content: {
-        checkInPanel: {
-          title: "Arrival without stress",
-          body:
-            "Check-in from 3:00 pm.\nPlease confirm the exact access method with the host before you travel.",
-          tags: ["Arrival", "Access"],
-          links: [{ label: "Open location", hrefKey: "mapsRoute" }],
-        },
         checkInCards: [
           {
-            title: "Before leaving for the villa",
+            title: "🛬 Arrival",
             text:
-              "Keep the host phone number handy, review the exact arrival point and confirm whether you need a code, key or assistance.",
-            tags: ["Preparation"],
+              "Coordinate the arrival with the host from 3:00 pm onwards.\nBefore travelling, complete the online check-in if possible using the personal link previously sent by email or message.\nDuring check-in, the house rules can be reviewed and any questions can be answered.",
+            tags: ["Arrival", "From 3:00 pm"],
+            layout: "half",
+            sheetKey: "arrivalRegistration",
           },
           {
-            title: "If you arrive late",
+            title: "🧳 Departure",
             text:
-              "If you expect to arrive later than planned, let the host know as early as possible.",
-            tags: ["Important"],
-          },
-          {
-            title: "Route and saved places",
-            text:
-              "From the cover you can open both the route in Google Maps and the shared list of recommended places for the stay.",
-            tags: ["Google Maps", "List"],
-            links: [{ label: "Open list", hrefKey: "hostList" }],
+              "Reference check-out time is by 12:00 noon.\nIf you need a late check-out, ask in advance so availability can be confirmed.\nThere is no need to meet the host in person to return the keys: just let them know you are leaving and follow the agreed departure instructions.",
+            tags: ["Check-out", "Late check-out"],
+            layout: "half",
+            list: [
+              "🍽️ Leave the kitchen tidy and take rubbish out if possible.",
+              "💡 Turn off lights and climate control and close doors and windows.",
+              "📩 Let the host know when you leave the property.",
+            ],
           },
         ],
-        checkOutPanel: {
-          title: "Easy departure",
-          body:
-            "Check-out by 12:00 noon.\nIf you need a late check-out, please ask the host in advance.",
-          tags: ["Departure", "Checklist"],
+        infoSheets: {
+          arrivalRegistration: {
+            eyebrow: "Arrival",
+            title: "🪪 Traveller registration and online check-in",
+            text:
+              "All staying guests must register through the check-in app because in Spain those details must be reported to the police.\nThe environment is secure and identity document data is only used to comply with that legal obligation.\nGuests will normally receive a personal link by email or message in advance so they can complete it online, but if it has not been done, one of the hosts will collect the details during check-in before access to the property.",
+          },
         },
-        checkOutCards: [
+        houseBasics: [
           {
-            title: "Kitchen and rubbish",
-            text:
-              "Leave the kitchen tidy, take out rubbish if possible and avoid leaving charcoal or food remains outside.",
-            tags: ["Closing"],
-          },
-          {
-            title: "Climate and security",
-            text:
-              "Before leaving, check air conditioning, lights, doors, windows, awnings and any outdoor element affected by wind.",
-            tags: ["Safety"],
-          },
-          {
-            title: "Keys and remotes",
-            text:
-              "Return keys, remotes or codes exactly as the host indicates to avoid charges or issues.",
-            tags: ["Hand-over"],
-          },
-        ],
-        houseCards: [
-          {
-            title: "Wi-Fi",
+            title: "📶 Wi-Fi",
             text:
               "Network: [COMPLETAR_NOMBRE_WIFI]\nPassword: [COMPLETAR_PASSWORD_WIFI]",
-            tags: ["Internet"],
+            list: [
+              "💡 The connection is 1 Gb, so it should be quite stable unless you are far from the router.",
+            ],
+            tags: ["Internet", "1 Gb"],
           },
           {
-            title: "Using the hot tub",
-            text: "Basic guidance for safe use.",
-            listKey: "jacuzzi",
-            tags: ["Hot tub"],
-          },
-          {
-            title: "Using the pool",
-            text: "Simple advice for safe and easy use.",
-            listKey: "pool",
-            tags: ["Pool"],
-          },
-          {
-            title: "Charcoal barbecue",
-            text: "Recommendations for safe and tidy use.",
-            listKey: "bbq",
-            tags: ["Outdoor", "Charcoal"],
-          },
-          {
-            title: "The villa",
+            title: "📺 TV / streaming",
             text:
-              "Modern villa with private pool, hot tub and barbecue only 400 m from the beach. It has 3 double bedrooms, 2 en-suite bathrooms, a fully equipped kitchen with coffee machine and air fryer, sunny terraces, a rooftop solarium, air conditioning, Wi-Fi and private parking.",
-            tags: ["3 bedrooms", "Private pool"],
+              "You can add your own Netflix, Prime Video, Disney+ or other streaming accounts during your stay.",
+            list: [
+              "🔐 Remember to log out of all your accounts before check-out.",
+            ],
+            tags: ["TV", "Streaming"],
+          },
+        ],
+        houseAccordions: [
+          {
+            title: "🏊 Pool",
+            eyebrow: "Outdoor",
+            summary: "Quick guidance for safe and easy pool use.",
+            text: "Before using it, make sure the area is clear and always supervise children.",
+            listKey: "pool",
+          },
+          {
+            title: "♨️ Hot tub",
+            eyebrow: "Relax",
+            summary: "Simple guidance for comfortable and safe hot tub use.",
+            text: "The hot tub should be used carefully and kept closed when it is not in use.",
+            listKey: "jacuzzi",
+          },
+          {
+            title: "🔥 Barbecue",
+            eyebrow: "Outdoor dining",
+            summary: "How to light it and leave it safely afterwards.",
+            text: "Use the barbecue calmly, avoid accelerants and always leave the coals fully extinguished at the end.",
+            listKey: "bbq",
           },
         ],
         restaurants: [

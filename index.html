@@ -88,31 +88,18 @@
         <section class="section" id="checkin">
           <div class="section-heading">
             <p class="eyebrow" id="checkinEyebrow">Llegada</p>
-            <h2 id="checkinTitle">Check-in</h2>
+            <h2 id="checkinTitle">Llegada y salida</h2>
           </div>
-          <div class="feature-layout">
-            <div class="feature-panel" id="checkInPanel"></div>
-            <div class="card-grid" id="checkInCards"></div>
-          </div>
-        </section>
-
-        <section class="section" id="checkout">
-          <div class="section-heading">
-            <p class="eyebrow" id="checkoutEyebrow">Salida</p>
-            <h2 id="checkoutTitle">Check-out</h2>
-          </div>
-          <div class="feature-layout">
-            <div class="feature-panel" id="checkOutPanel"></div>
-            <div class="card-grid" id="checkOutCards"></div>
-          </div>
+          <div class="card-grid" id="checkInCards"></div>
         </section>
 
         <section class="section" id="house">
           <div class="section-heading">
             <p class="eyebrow" id="houseEyebrow">Dentro y fuera</p>
-            <h2 id="houseTitle">La casa y cómo usarla</h2>
+            <h2 id="houseTitle">Todo en la villa</h2>
           </div>
-          <div class="card-grid" id="houseCards"></div>
+          <div class="card-grid card-grid--compact" id="houseCards"></div>
+          <div class="house-accordions" id="houseAccordions"></div>
         </section>
 
         <section class="section" id="rules">
@@ -148,6 +135,24 @@
           <div class="card-grid" id="emergencyCards"></div>
         </section>
       </main>
+    </div>
+
+    <div class="detail-sheet" id="detailSheet" hidden>
+      <div class="detail-sheet__backdrop" data-close-detail></div>
+      <aside
+        class="detail-sheet__panel"
+        id="detailSheetPanel"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="detailSheetTitle"
+      >
+        <button class="detail-sheet__close" id="detailSheetClose" type="button" aria-label="Cerrar">
+          ✕
+        </button>
+        <p class="eyebrow" id="detailSheetEyebrow"></p>
+        <h3 id="detailSheetTitle"></h3>
+        <div class="detail-sheet__content" id="detailSheetContent"></div>
+      </aside>
     </div>
 
     <script src="./site-data.js"></script>
