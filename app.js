@@ -17,7 +17,7 @@ const resolveHref = (link) => {
   return "#";
 };
 
-const resolveTemplate = (text) =>
+const resolveTemplate = (text = "") =>
   text
     .replaceAll("[COMPLETAR_HORA_CHECKIN]", shared.property.checkInTime)
     .replaceAll("[COMPLETAR_HORA_CHECKOUT]", shared.property.checkOutTime)
@@ -64,6 +64,7 @@ const renderCards = (targetId, items, wideEveryThird = false) => {
       const wideClass = wideEveryThird && index % 3 === 0 ? " card--wide" : "";
       const toneClass = index % 2 === 0 ? " card--soft-sea" : " card--soft-sand";
       const list = item.listKey ? currentCopy.property[item.listKey] : item.list || [];
+
       return `
         <article class="card${wideClass}${toneClass}">
           <h3>${item.title}</h3>
@@ -103,7 +104,6 @@ const detectLocale = () => {
 
 const getSavedPreference = () => localStorage.getItem(STORAGE_KEY) || "auto";
 const getSessionAccess = () => sessionStorage.getItem(shared.auth.sessionKey) === "granted";
-
 const getEffectiveLocale = (preference) => (preference === "auto" ? detectLocale() : preference);
 
 const formatSelectedLanguage = (preference) => {
@@ -148,14 +148,12 @@ const applySectionLabels = () => {
     houseTitle: currentCopy.sections.house.title,
     rulesEyebrow: currentCopy.sections.rules.eyebrow,
     rulesTitle: currentCopy.sections.rules.title,
-    mapsEyebrow: currentCopy.sections.maps.eyebrow,
-    mapsTitle: currentCopy.sections.maps.title,
     foodEyebrow: currentCopy.sections.food.eyebrow,
     foodTitle: currentCopy.sections.food.title,
-    familyEyebrow: currentCopy.sections.family.eyebrow,
-    familyTitle: currentCopy.sections.family.title,
-    contactsEyebrow: currentCopy.sections.contacts.eyebrow,
-    contactsTitle: currentCopy.sections.contacts.title,
+    hostsEyebrow: currentCopy.sections.hosts.eyebrow,
+    hostsTitle: currentCopy.sections.hosts.title,
+    emergenciesEyebrow: currentCopy.sections.emergencies.eyebrow,
+    emergenciesTitle: currentCopy.sections.emergencies.title,
     languageLabel: currentCopy.ui.languageLabel,
     logoutButton: currentCopy.ui.logoutLabel,
     gateEyebrow: currentCopy.ui.gate.eyebrow,
@@ -243,10 +241,9 @@ const render = () => {
     ["checkout", currentCopy.ui.nav.checkout],
     ["house", currentCopy.ui.nav.house],
     ["rules", currentCopy.ui.nav.rules],
-    ["maps", currentCopy.ui.nav.maps],
     ["food", currentCopy.ui.nav.food],
-    ["family", currentCopy.ui.nav.family],
-    ["contacts", currentCopy.ui.nav.contacts],
+    ["hosts", currentCopy.ui.nav.hosts],
+    ["emergencies", currentCopy.ui.nav.emergencies],
   ]
     .map(([href, label]) => `<a href="#${href}">${label}</a>`)
     .join("");
@@ -259,7 +256,6 @@ const render = () => {
     currentCopy.content.checkInPanel.tags,
     currentCopy.content.checkInPanel.links
   );
-
   renderCards("checkInCards", currentCopy.content.checkInCards);
 
   renderFeaturePanel(
@@ -270,8 +266,8 @@ const render = () => {
     currentCopy.content.checkOutPanel.tags,
     currentCopy.content.checkOutPanel.links || []
   );
-
   renderCards("checkOutCards", currentCopy.content.checkOutCards);
+
   renderCards("houseCards", currentCopy.content.houseCards, true);
 
   renderFeaturePanel(
@@ -279,7 +275,7 @@ const render = () => {
     currentCopy.sections.rules.title,
     currentCopy.property.houseRules.intro,
     [],
-    [currentCopy.sections.rules.eyebrow, currentCopy.ui.selectedLanguageLabel + ": " + formatSelectedLanguage(languagePreference)]
+    [currentCopy.sections.rules.eyebrow, `${currentCopy.ui.selectedLanguageLabel}: ${formatSelectedLanguage(languagePreference)}`]
   );
 
   document.getElementById("rulesCards").innerHTML = currentCopy.property.houseRules.sections
@@ -295,31 +291,8 @@ const render = () => {
     .join("");
 
   renderCards("foodCards", [...currentCopy.content.restaurants, ...currentCopy.content.activities], true);
-  renderCards("familyCards", currentCopy.content.family);
-  renderCards("contactCards", currentCopy.content.contacts, true);
-
-  document.getElementById("mapsEmbed").src = shared.links.mapsEmbed;
-  document.getElementById("locationSummary").innerHTML = `
-    <h3>${currentCopy.content.maps.summary.title}</h3>
-    ${textToParagraphs(currentCopy.content.maps.summary.text)}
-    ${createTags(currentCopy.content.maps.summary.tags)}
-    <div class="card__links">${createLinks(currentCopy.content.maps.summary.links)}</div>
-  `;
-
-  document.getElementById("streetViewCard").innerHTML = `
-    <div class="streetview-preview">
-      <strong>${currentCopy.content.maps.streetView.title}</strong>
-      <span>${currentCopy.ui.sectionLabels.streetViewOverlay}</span>
-    </div>
-    ${textToParagraphs(currentCopy.content.maps.streetView.text)}
-    <div class="card__links">${createLinks(currentCopy.content.maps.streetView.links)}</div>
-  `;
-
-  renderCards(
-    "mapsCards",
-    [...currentCopy.content.location, ...currentCopy.content.maps.essentials, ...currentCopy.content.maps.lists],
-    true
-  );
+  renderCards("hostCards", currentCopy.content.hostContacts, true);
+  renderCards("emergencyCards", currentCopy.content.emergencies, true);
 };
 
 let languagePreference = getSavedPreference();
