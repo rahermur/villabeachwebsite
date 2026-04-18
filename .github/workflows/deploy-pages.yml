@@ -29,6 +29,14 @@ jobs:
       - name: Install dependencies
         run: npm install
 
+      - name: Install Playwright browser
+        run: npx playwright install --with-deps chromium
+
+      - name: Sync Google Maps list
+        env:
+          GOOGLE_MAPS_LIST_URL: https://maps.app.goo.gl/6kiRLdhaMThJCQia9
+        run: npm run sync:maps
+
       - name: Build generated places
         run: npm run build:places
 

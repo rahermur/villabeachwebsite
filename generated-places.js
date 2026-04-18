@@ -2,8 +2,8 @@ window.generatedPlacesData = {
   "meta": {
     "sourceUrl": "https://maps.app.goo.gl/6kiRLdhaMThJCQia9",
     "listTitle": "Villa Beach Higuericas",
-    "lastSyncedAt": "2026-04-18T14:27:39.344Z",
-    "totalPlaces": 42,
+    "lastSyncedAt": "2026-04-18T15:37:59.835Z",
+    "totalPlaces": 43,
     "directListEmbedAvailable": false
   },
   "es": {
@@ -12,7 +12,7 @@ window.generatedPlacesData = {
       "body": "Esta sección resume la lista compartida del anfitrión en Google Maps y la ordena por categorías como Restaurants, Golf, Ice Cream o Shopping.\nLa llamada principal es abrir la lista completa en Google Maps, guardarla en tu cuenta y usar este resumen web solo como atajo rápido durante la estancia.",
       "tags": [
         "Google Maps",
-        "42 lugares guardados"
+        "43 lugares guardados"
       ],
       "links": [
         {
@@ -389,26 +389,6 @@ window.generatedPlacesData = {
               {
                 "label": "Abrir en Maps",
                 "href": "https://www.google.com/maps/search/?api=1&query=Oasis%20Beach%2C%20Av.%20de%20Francia%2C%20s%2Fn%2C%2003191%20Mil%20Palmeras%2C%20Alicante"
-              }
-            ]
-          },
-          {
-            "title": "Детская площадка",
-            "text": "",
-            "details": [
-              {
-                "label": "📍 Dirección",
-                "value": "C. Salar, 5, 03191 Torre de la Horadada, Alicante"
-              }
-            ],
-            "featured": false,
-            "tags": [
-              "🍽️ Restaurants"
-            ],
-            "links": [
-              {
-                "label": "Abrir en Maps",
-                "href": "https://www.google.com/maps/search/?api=1&query=%D0%94%D0%B5%D1%82%D1%81%D0%BA%D0%B0%D1%8F%20%D0%BF%D0%BB%D0%BE%D1%89%D0%B0%D0%B4%D0%BA%D0%B0%2C%20C.%20Salar%2C%205%2C%2003191%20Torre%20de%20la%20Horadada%2C%20Alicante"
               }
             ]
           },
@@ -886,6 +866,50 @@ window.generatedPlacesData = {
         "description": "Parques y zonas infantiles guardadas para planes sencillos cerca.",
         "items": [
           {
+            "title": "Zona de esparcimiento canino Cecilia",
+            "text": "",
+            "details": [
+              {
+                "label": "✨ Nota",
+                "value": "Parque canino"
+              },
+              {
+                "label": "📍 Dirección",
+                "value": "C. Helecho Mojón, 03191 Pilar de la Horadada, Alicante"
+              }
+            ],
+            "featured": false,
+            "tags": [
+              "🌳 Parks"
+            ],
+            "links": [
+              {
+                "label": "Abrir en Maps",
+                "href": "https://www.google.com/maps/search/?api=1&query=Zona%20de%20esparcimiento%20canino%20Cecilia%2C%20C.%20Helecho%20Moj%C3%B3n%2C%2003191%20Pilar%20de%20la%20Horadada%2C%20Alicante"
+              }
+            ]
+          },
+          {
+            "title": "Parque De La Salar",
+            "text": "",
+            "details": [
+              {
+                "label": "📍 Dirección",
+                "value": "C. Salar, 5, 03191 Torre de la Horadada, Alicante"
+              }
+            ],
+            "featured": false,
+            "tags": [
+              "🌳 Parks"
+            ],
+            "links": [
+              {
+                "label": "Abrir en Maps",
+                "href": "https://www.google.com/maps/search/?api=1&query=Parque%20De%20La%20Salar%2C%20C.%20Salar%2C%205%2C%2003191%20Torre%20de%20la%20Horadada%2C%20Alicante"
+              }
+            ]
+          },
+          {
             "title": "Parque Infantil",
             "text": "",
             "details": [
@@ -936,7 +960,7 @@ window.generatedPlacesData = {
       "body": "This section summarises the host's shared Google Maps list and reorders it into categories such as Restaurants, Golf, Ice Cream or Shopping.\nThe main action is to open the full list in Google Maps, save it to your account and use this web summary only as a quick reference during the stay.",
       "tags": [
         "Google Maps",
-        "42 saved places"
+        "43 saved places"
       ],
       "links": [
         {
@@ -1313,26 +1337,6 @@ window.generatedPlacesData = {
               {
                 "label": "Open in Maps",
                 "href": "https://www.google.com/maps/search/?api=1&query=Oasis%20Beach%2C%20Av.%20de%20Francia%2C%20s%2Fn%2C%2003191%20Mil%20Palmeras%2C%20Alicante"
-              }
-            ]
-          },
-          {
-            "title": "Детская площадка",
-            "text": "",
-            "details": [
-              {
-                "label": "📍 Address",
-                "value": "C. Salar, 5, 03191 Torre de la Horadada, Alicante"
-              }
-            ],
-            "featured": false,
-            "tags": [
-              "🍽️ Restaurants"
-            ],
-            "links": [
-              {
-                "label": "Open in Maps",
-                "href": "https://www.google.com/maps/search/?api=1&query=%D0%94%D0%B5%D1%82%D1%81%D0%BA%D0%B0%D1%8F%20%D0%BF%D0%BB%D0%BE%D1%89%D0%B0%D0%B4%D0%BA%D0%B0%2C%20C.%20Salar%2C%205%2C%2003191%20Torre%20de%20la%20Horadada%2C%20Alicante"
               }
             ]
           },
@@ -1809,6 +1813,50 @@ window.generatedPlacesData = {
         "eyebrow": "Outdoor",
         "description": "Parks and playgrounds saved for easy nearby plans.",
         "items": [
+          {
+            "title": "Zona de esparcimiento canino Cecilia",
+            "text": "",
+            "details": [
+              {
+                "label": "✨ Note",
+                "value": "Parque canino"
+              },
+              {
+                "label": "📍 Address",
+                "value": "C. Helecho Mojón, 03191 Pilar de la Horadada, Alicante"
+              }
+            ],
+            "featured": false,
+            "tags": [
+              "🌳 Parks"
+            ],
+            "links": [
+              {
+                "label": "Open in Maps",
+                "href": "https://www.google.com/maps/search/?api=1&query=Zona%20de%20esparcimiento%20canino%20Cecilia%2C%20C.%20Helecho%20Moj%C3%B3n%2C%2003191%20Pilar%20de%20la%20Horadada%2C%20Alicante"
+              }
+            ]
+          },
+          {
+            "title": "Parque De La Salar",
+            "text": "",
+            "details": [
+              {
+                "label": "📍 Address",
+                "value": "C. Salar, 5, 03191 Torre de la Horadada, Alicante"
+              }
+            ],
+            "featured": false,
+            "tags": [
+              "🌳 Parks"
+            ],
+            "links": [
+              {
+                "label": "Open in Maps",
+                "href": "https://www.google.com/maps/search/?api=1&query=Parque%20De%20La%20Salar%2C%20C.%20Salar%2C%205%2C%2003191%20Torre%20de%20la%20Horadada%2C%20Alicante"
+              }
+            ]
+          },
           {
             "title": "Parque Infantil",
             "text": "",
