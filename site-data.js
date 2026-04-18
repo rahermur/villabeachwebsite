@@ -364,58 +364,59 @@ window.siteData = {
             tags: ["Incidencias"],
           },
         ],
-        emergencies: [
+        emergencySummary: [
           {
-            title: "🚨 Número de emergencias",
-            text:
-              "👉 112 (Emergencias generales - gratuito, 24h)\nPolicía, ambulancia y bomberos.",
-            tags: ["112", "Urgente"],
+            title: "🚨 112",
+            text: "Emergencias generales, gratuito y 24h.\nPolicía, ambulancia y bomberos.",
           },
           {
-            title: "🏥 Hospital más cercano",
+            title: "🏥 Hospital",
             text:
-              "Hospital Universitario de Torrevieja\nC. Madrid, s/n, 03186 Torrevieja, Alicante.\nHospital general con urgencias 24h.\nA unos 15-20 minutos en coche desde Playa de las Higuericas.",
-            tags: ["Hospital", "Urgencias 24h"],
+              "Hospital Universitario de Torrevieja.\nUrgencias 24h a unos 15-20 minutos en coche.",
             links: [{ label: "Abrir hospital", hrefKey: "hospitalTorrevieja" }],
           },
           {
-            title: "🏥 Centro de salud más cercano",
+            title: "💊 Farmacia / guardia",
             text:
-              "Centro de Salud Pilar de la Horadada\nCalle Vicente Blasco Ibáñez s/n, 03190 Pilar de la Horadada, Alicante.\nAtención primaria.\nUrgencias básicas diurnas.\nA pocos minutos de la vivienda.",
-            tags: ["Centro de salud", "Atención primaria"],
-            links: [{ label: "Abrir centro de salud", hrefKey: "healthCenterPilar" }],
-          },
-          {
-            title: "💊 Farmacia más cercana",
-            text:
-              "Farmacia Playa Las Higuericas Lda. M del Mar Lorenzo Bañón.\nA 450 m caminando de la vivienda.\nLa farmacia de guardia puede variar cada día.",
-            tags: ["Farmacia", "Cerca"],
+              "Farmacia más cercana a 450 m.\nPara una necesidad 24h, consulta la farmacia de guardia activa del día.",
             links: [
               { label: "Abrir farmacia", hrefKey: "pharmacyHiguericas" },
+              { label: "Farmacia de guardia", hrefKey: "dutyPharmacy" },
+            ],
+          },
+        ],
+        emergencyAccordions: [
+          {
+            title: "🏥 Atención médica",
+            summary: "Hospital y centro de salud más cercanos.",
+            text:
+              "Hospital Universitario de Torrevieja\nC. Madrid, s/n, 03186 Torrevieja, Alicante.\nHospital general con urgencias 24h.\nA unos 15-20 minutos en coche desde Playa de las Higuericas.\n\nCentro de Salud Pilar de la Horadada\nCalle Vicente Blasco Ibáñez s/n, 03190 Pilar de la Horadada, Alicante.\nAtención primaria y urgencias básicas diurnas.\nA pocos minutos de la vivienda.",
+            links: [
+              { label: "Abrir hospital", hrefKey: "hospitalTorrevieja" },
+              { label: "Abrir centro de salud", hrefKey: "healthCenterPilar" },
+            ],
+          },
+          {
+            title: "💊 Farmacia y farmacia de guardia",
+            summary: "Qué hacer si necesitas una farmacia fuera del horario habitual.",
+            text:
+              "Farmacia Playa Las Higuericas Lda. M del Mar Lorenzo Bañón.\nA 450 m caminando de la vivienda.\n\nSi necesitas atención fuera del horario habitual, en España las farmacias 24h funcionan por turnos y van rotando, así que la farmacia disponible puede cambiar cada día.\nPara saber cuál está de guardia en ese momento, utiliza el enlace de farmacia de guardia o consulta con el anfitrión o en el centro de salud.",
+            links: [
+              { label: "Abrir farmacia cercana", hrefKey: "pharmacyHiguericas" },
               { label: "Ver farmacia de guardia", hrefKey: "dutyPharmacy" },
             ],
           },
           {
-            title: "🏡 Seguridad dentro de la vivienda",
+            title: "🏡 En la vivienda",
+            summary: "Elementos básicos de seguridad y precauciones importantes.",
             text:
               "La vivienda dispone de elementos básicos para reaccionar ante una incidencia dentro de la casa.",
             list: [
-              "🧯 Extintor contra incendios (ubicado en zona visible y accesible).",
+              "🧯 Extintor contra incendios en zona visible y accesible.",
               "🧰 Botiquín de primeros auxilios dentro del armario de la entrada.",
+              "👶 Los niños deben estar siempre supervisados en zonas exteriores, piscina y jacuzzi.",
+              "🙏 El uso responsable es esencial para evitar accidentes en una vivienda vacacional con piscina y exterior.",
             ],
-            tags: ["Seguridad", "Vivienda"],
-          },
-          {
-            title: "👶 Supervisión de menores",
-            text:
-              "Los niños deben estar siempre supervisados en zonas exteriores, piscina y jacuzzi. La responsabilidad recae en los adultos acompañantes.",
-            tags: ["Menores", "Piscina"],
-          },
-          {
-            title: "🙏 Nota importante",
-            text:
-              "La vivienda está diseñada para ser segura, pero como en cualquier entorno vacacional con piscina y exterior, el uso responsable es esencial para evitar accidentes.",
-            tags: ["Prevención"],
           },
         ],
       },
@@ -713,56 +714,58 @@ window.siteData = {
             tags: ["Issues"],
           },
         ],
-        emergencies: [
+        emergencySummary: [
           {
-            title: "🚨 Emergency number",
-            text: "👉 112 (general emergencies - free, 24h)\nPolice, ambulance and fire brigade.",
-            tags: ["112", "Urgent"],
+            title: "🚨 112",
+            text: "General emergencies, free and available 24/7.\nPolice, ambulance and fire brigade.",
           },
           {
-            title: "🏥 Nearest hospital",
+            title: "🏥 Hospital",
             text:
-              "Torrevieja University Hospital\nC. Madrid, s/n, 03186 Torrevieja, Alicante.\nGeneral hospital with 24h emergency care.\nAround 15-20 minutes away by car from Playa de las Higuericas.",
-            tags: ["Hospital", "24h emergency"],
+              "Torrevieja University Hospital.\n24h emergency care around 15-20 minutes away by car.",
             links: [{ label: "Open hospital", hrefKey: "hospitalTorrevieja" }],
           },
           {
-            title: "🏥 Nearest health centre",
+            title: "💊 Pharmacy / duty pharmacy",
             text:
-              "Pilar de la Horadada Health Centre\nCalle Vicente Blasco Ibanez s/n, 03190 Pilar de la Horadada, Alicante.\nPrimary care.\nBasic daytime urgent care.\nA few minutes from the house.",
-            tags: ["Health centre", "Primary care"],
-            links: [{ label: "Open health centre", hrefKey: "healthCenterPilar" }],
-          },
-          {
-            title: "💊 Nearest pharmacy",
-            text:
-              "Farmacia Playa Las Higuericas Lda. M del Mar Lorenzo Banon.\n450 m walking from the house.\nThe duty pharmacy may vary each day.",
-            tags: ["Pharmacy", "Nearby"],
+              "Nearest pharmacy is 450 m away.\nFor a 24/7 need, check the active duty pharmacy for that day.",
             links: [
               { label: "Open pharmacy", hrefKey: "pharmacyHiguericas" },
               { label: "Duty pharmacy", hrefKey: "dutyPharmacy" },
             ],
           },
+        ],
+        emergencyAccordions: [
           {
-            title: "🏡 Safety inside the house",
+            title: "🏥 Medical care",
+            summary: "Nearest hospital and health centre.",
+            text:
+              "Torrevieja University Hospital\nC. Madrid, s/n, 03186 Torrevieja, Alicante.\nGeneral hospital with 24h emergency care.\nAround 15-20 minutes away by car from Playa de las Higuericas.\n\nPilar de la Horadada Health Centre\nCalle Vicente Blasco Ibanez s/n, 03190 Pilar de la Horadada, Alicante.\nPrimary care and basic daytime urgent care.\nA few minutes from the house.",
+            links: [
+              { label: "Open hospital", hrefKey: "hospitalTorrevieja" },
+              { label: "Open health centre", hrefKey: "healthCenterPilar" },
+            ],
+          },
+          {
+            title: "💊 Pharmacy and duty pharmacy",
+            summary: "What to do if you need a pharmacy outside normal opening hours.",
+            text:
+              "Farmacia Playa Las Higuericas Lda. M del Mar Lorenzo Banon.\n450 m walking from the house.\n\nIf you need help outside normal opening hours, please note that in Spain 24/7 pharmacies work on a rotating duty system, so the available pharmacy may change every day.\nTo find the active duty pharmacy at that moment, use the duty pharmacy link or ask the host or the health centre.",
+            links: [
+              { label: "Open nearby pharmacy", hrefKey: "pharmacyHiguericas" },
+              { label: "Check duty pharmacy", hrefKey: "dutyPharmacy" },
+            ],
+          },
+          {
+            title: "🏡 Inside the villa",
+            summary: "Basic safety items and important precautions.",
             text: "The house includes basic items to react to an incident inside the property.",
             list: [
               "🧯 Fire extinguisher in a visible and accessible location.",
               "🧰 First-aid kit inside the hall cupboard.",
+              "👶 Children must always be supervised in outdoor areas, around the pool and around the hot tub.",
+              "🙏 Responsible use is essential to avoid accidents in a holiday home with a pool and outdoor areas.",
             ],
-            tags: ["Safety", "House"],
-          },
-          {
-            title: "👶 Child supervision",
-            text:
-              "Children must always be supervised in outdoor areas, around the pool and around the hot tub. Responsibility lies with the accompanying adults.",
-            tags: ["Children", "Pool"],
-          },
-          {
-            title: "🙏 Important note",
-            text:
-              "The house is designed to be safe, but as in any holiday setting with a pool and outdoor areas, responsible use is essential to avoid accidents.",
-            tags: ["Prevention"],
           },
         ],
       },

@@ -124,6 +124,43 @@ const renderHouseSection = () => {
     .join("");
 };
 
+const renderEmergencySection = () => {
+  document.getElementById("emergencySummary").innerHTML = currentCopy.content.emergencySummary
+    .map(
+      (item) => `
+        <article class="emergency-callout">
+          <div class="emergency-callout__copy">
+            <h3>${item.title}</h3>
+            ${textToParagraphs(item.text)}
+          </div>
+          <div class="card__links">${createLinks(item.links)}</div>
+        </article>
+      `
+    )
+    .join("");
+
+  document.getElementById("emergencyAccordions").innerHTML = currentCopy.content.emergencyAccordions
+    .map(
+      (item) => `
+        <details class="emergency-accordion">
+          <summary class="emergency-accordion__summary">
+            <div>
+              <h3>${item.title}</h3>
+              <p>${item.summary}</p>
+            </div>
+            <span class="house-accordion__icon" aria-hidden="true">+</span>
+          </summary>
+          <div class="emergency-accordion__content">
+            ${item.text ? textToParagraphs(item.text) : ""}
+            ${item.list?.length ? `<ul>${item.list.map((entry) => `<li>${entry}</li>`).join("")}</ul>` : ""}
+            <div class="card__links">${createLinks(item.links)}</div>
+          </div>
+        </details>
+      `
+    )
+    .join("");
+};
+
 const setPhoto = (targetId, photo) => {
   const locale = currentLocale in translations ? currentLocale : "en";
   document.getElementById(targetId).innerHTML = `<img src="${photo.src}" alt="${photo.alt[locale]}" />`;
@@ -329,7 +366,7 @@ const render = () => {
 
   renderCards("foodCards", [...currentCopy.content.restaurants, ...currentCopy.content.activities], true);
   renderCards("hostCards", currentCopy.content.hostContacts, true);
-  renderCards("emergencyCards", currentCopy.content.emergencies, true);
+  renderEmergencySection();
 };
 
 let languagePreference = getSavedPreference();
