@@ -108,6 +108,58 @@ a {
   color: var(--muted);
 }
 
+.hero__topbar {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 18px;
+}
+
+.language-switcher {
+  display: grid;
+  gap: 8px;
+  justify-items: end;
+}
+
+.language-switcher__label {
+  font-size: 0.78rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.language-switcher__controls {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 8px;
+}
+
+.language-button {
+  appearance: none;
+  border: 1px solid rgba(24, 53, 59, 0.12);
+  background: rgba(255, 255, 255, 0.72);
+  color: var(--ink);
+  border-radius: 999px;
+  padding: 10px 12px;
+  font: inherit;
+  cursor: pointer;
+  transition:
+    transform 160ms ease,
+    border-color 160ms ease,
+    background 160ms ease;
+}
+
+.language-button:hover {
+  transform: translateY(-1px);
+}
+
+.language-button.is-active {
+  border-color: rgba(11, 141, 155, 0.28);
+  background: rgba(11, 141, 155, 0.12);
+  color: var(--sea-deep);
+}
+
 .hero__actions,
 .action-list,
 .card__links {
@@ -557,6 +609,18 @@ a {
 
   .hero h1 {
     max-width: none;
+  }
+
+  .hero__topbar {
+    flex-direction: column;
+  }
+
+  .language-switcher {
+    justify-items: start;
+  }
+
+  .language-switcher__controls {
+    justify-content: flex-start;
   }
 
   .hero__visuals {

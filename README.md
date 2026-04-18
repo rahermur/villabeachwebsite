@@ -17,6 +17,16 @@ Toda la información editable está en [`site-data.js`](/Users/e045989/villa-hig
 - Fotos reales de la propiedad para la portada.
 - Enlaces reales a listas compartidas de Google Maps si quieres usarlas.
 
+## Idiomas
+
+La web ahora soporta:
+
+- `🌍 Auto`: usa el idioma del navegador y resuelve a español o inglés.
+- `🇪🇸 ES`: fuerza español.
+- `🇬🇧 EN`: fuerza inglés.
+
+La elección manual se guarda en `localStorage` del navegador.
+
 ## Sustituir fotos
 
 1. Guarda tus fotos en `/Users/e045989/villa-higuericas-guide/assets/`.

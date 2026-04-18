@@ -1,7 +1,28 @@
-const data = window.siteData;
+const STORAGE_KEY = "villa-guide-language";
 
-const textToParagraphs = (text) =>
-  text.split("\n").map((line) => `<p>${line}</p>`).join("");
+const { shared, translations, localeOptions } = window.siteData;
+
+const getByPath = (obj, path) =>
+  path.split(".").reduce((acc, key) => (acc ? acc[key] : undefined), obj);
+
+const resolveHref = (link) => {
+  if (link.href) return link.href;
+  if (link.hrefKey) return shared.links[link.hrefKey];
+  return "#";
+};
+
+const resolveTemplate = (text) =>
+  text
+    .replaceAll("[COMPLETAR_HORA_CHECKIN]", shared.property.checkInTime)
+    .replaceAll("[COMPLETAR_HORA_CHECKOUT]", shared.property.checkOutTime)
+    .replaceAll("[COMPLETAR_NOMBRE_WIFI]", shared.property.wifi.network)
+    .replaceAll("[COMPLETAR_PASSWORD_WIFI]", shared.property.wifi.password);
+
+const textToParagraphs = (text = "") =>
+  resolveTemplate(text)
+    .split("\n")
+    .map((line) => `<p>${line}</p>`)
+    .join("");
 
 const createLinks = (links = []) => {
   if (!links.length) return "";
@@ -9,10 +30,13 @@ const createLinks = (links = []) => {
   return `
     <div class="action-list">
       ${links
-        .map(
-          (link) =>
-            `<a class="ghost-button" href="${link.href}" target="_blank" rel="noreferrer">${link.label}</a>`
-        )
+        .map((link) => {
+          const href = resolveHref(link);
+          const external = href.startsWith("http");
+          return `<a class="ghost-button" href="${href}" ${
+            external ? 'target="_blank" rel="noreferrer"' : ""
+          }>${link.label}</a>`;
+        })
         .join("")}
     </div>
   `;
@@ -33,11 +57,12 @@ const renderCards = (targetId, items, wideEveryThird = false) => {
     .map((item, index) => {
       const wideClass = wideEveryThird && index % 3 === 0 ? " card--wide" : "";
       const toneClass = index % 2 === 0 ? " card--soft-sea" : " card--soft-sand";
+      const list = item.listKey ? currentCopy.property[item.listKey] : item.list || [];
       return `
         <article class="card${wideClass}${toneClass}">
           <h3>${item.title}</h3>
           ${textToParagraphs(item.text)}
-          ${item.list ? `<ul>${item.list.map((entry) => `<li>${entry}</li>`).join("")}</ul>` : ""}
+          ${list.length ? `<ul>${list.map((entry) => `<li>${entry}</li>`).join("")}</ul>` : ""}
           ${createTags(item.tags)}
           <div class="card__links">${createLinks(item.links)}</div>
         </article>
@@ -50,7 +75,7 @@ const renderFeaturePanel = (targetId, title, body, list, tags = [], links = []) 
   const target = document.getElementById(targetId);
   target.innerHTML = `
     <div>
-      <p class="eyebrow">Resumen</p>
+      <p class="eyebrow">${currentCopy.ui.summaryEyebrow}</p>
       <h3 class="feature-panel__headline">${title}</h3>
       ${textToParagraphs(body)}
       ${list?.length ? `<ul>${list.map((entry) => `<li>${entry}</li>`).join("")}</ul>` : ""}
@@ -61,222 +86,205 @@ const renderFeaturePanel = (targetId, title, body, list, tags = [], links = []) 
 };
 
 const setPhoto = (targetId, photo) => {
-  document.getElementById(targetId).innerHTML = `<img src="${photo.src}" alt="${photo.alt}" />`;
+  const locale = currentLocale in translations ? currentLocale : "en";
+  document.getElementById(targetId).innerHTML = `<img src="${photo.src}" alt="${photo.alt[locale]}" />`;
 };
 
-document.getElementById("heroTitle").textContent = data.hero.title;
-document.getElementById("heroDescription").textContent = data.hero.description;
-document.getElementById("addressText").textContent = data.property.address;
-document.getElementById("addressHint").textContent = data.property.addressHint;
+const detectLocale = () => {
+  const browserLocale = (navigator.language || "en").toLowerCase();
+  return browserLocale.startsWith("es") ? "es" : "en";
+};
 
-document.getElementById("heroActions").innerHTML = data.hero.actions
-  .map((action) => {
-    const className = action.style === "sea" ? "button button--sea" : "ghost-button";
-    return `<a class="${className}" href="${action.href}" ${
-      action.href.startsWith("http") ? 'target="_blank" rel="noreferrer"' : ""
-    }>${action.label}</a>`;
-  })
-  .join("");
+const getSavedPreference = () => localStorage.getItem(STORAGE_KEY) || "auto";
 
-document.getElementById("heroFacts").innerHTML = data.hero.facts
-  .map(
-    (fact) => `
-      <div class="mini-fact">
-        <span>${fact.label}</span>
-        <strong>${fact.value}</strong>
-      </div>
-    `
-  )
-  .join("");
+const getEffectiveLocale = (preference) => (preference === "auto" ? detectLocale() : preference);
 
-setPhoto("heroPhotoMain", data.property.photos[0]);
-setPhoto("heroPhotoTop", data.property.photos[1]);
-setPhoto("heroPhotoBottom", data.property.photos[2]);
+const formatSelectedLanguage = (preference) => {
+  if (preference === "auto") {
+    return currentCopy.ui.activeLanguageAuto.replace("%s", translations[currentLocale].ui.activeLanguage);
+  }
+  return translations[preference].ui.activeLanguage;
+};
 
-document.getElementById("quickNav").innerHTML = [
-  ["checkin", "Check-in"],
-  ["checkout", "Check-out"],
-  ["house", "Casa"],
-  ["rules", "Normas"],
-  ["maps", "Mapa"],
-  ["food", "Comer y hacer"],
-  ["family", "Niños"],
-  ["contacts", "Ayuda"],
-]
-  .map(([href, label]) => `<a href="#${href}">${label}</a>`)
-  .join("");
+const renderLanguageControls = () => {
+  const controls = document.getElementById("languageControls");
+  controls.innerHTML = ["auto", "es", "en"]
+    .map((optionKey) => {
+      const option = localeOptions[optionKey];
+      const label =
+        optionKey === "auto"
+          ? `${option.flag} ${currentCopy.ui.autoLabel}`
+          : `${option.flag} ${option.label}`;
+      const isActive = languagePreference === optionKey;
+      return `<button class="language-button${isActive ? " is-active" : ""}" data-language="${optionKey}" type="button">${label}</button>`;
+    })
+    .join("");
 
-renderFeaturePanel(
-  "checkInPanel",
-  "Llegada sin estrés",
-  `Hora orientativa: ${data.property.checkIn.time}\nConfirma con el anfitrión el método exacto de acceso antes del viaje.`,
-  data.property.checkIn.details,
-  ["Llegada", "Acceso"],
-  [
-    {
-      label: "Abrir ubicación",
-      href: "https://www.google.com/maps/search/?api=1&query=Calle+Dalia+31%2C+Pilar+de+la+Horadada",
-    },
+  controls.querySelectorAll("[data-language]").forEach((button) => {
+    button.addEventListener("click", () => {
+      languagePreference = button.dataset.language;
+      localStorage.setItem(STORAGE_KEY, languagePreference);
+      render();
+    });
+  });
+};
+
+const applySectionLabels = () => {
+  const map = {
+    heroEyebrow: currentCopy.ui.heroEyebrow,
+    addressLabel: currentCopy.ui.sectionLabels.address,
+    checkinEyebrow: currentCopy.sections.checkin.eyebrow,
+    checkinTitle: currentCopy.sections.checkin.title,
+    checkoutEyebrow: currentCopy.sections.checkout.eyebrow,
+    checkoutTitle: currentCopy.sections.checkout.title,
+    houseEyebrow: currentCopy.sections.house.eyebrow,
+    houseTitle: currentCopy.sections.house.title,
+    rulesEyebrow: currentCopy.sections.rules.eyebrow,
+    rulesTitle: currentCopy.sections.rules.title,
+    mapsEyebrow: currentCopy.sections.maps.eyebrow,
+    mapsTitle: currentCopy.sections.maps.title,
+    foodEyebrow: currentCopy.sections.food.eyebrow,
+    foodTitle: currentCopy.sections.food.title,
+    familyEyebrow: currentCopy.sections.family.eyebrow,
+    familyTitle: currentCopy.sections.family.title,
+    contactsEyebrow: currentCopy.sections.contacts.eyebrow,
+    contactsTitle: currentCopy.sections.contacts.title,
+    languageLabel: currentCopy.ui.languageLabel,
+  };
+
+  Object.entries(map).forEach(([id, value]) => {
+    document.getElementById(id).textContent = value;
+  });
+};
+
+const render = () => {
+  currentLocale = getEffectiveLocale(languagePreference);
+  currentCopy = translations[currentLocale];
+
+  document.documentElement.lang = currentCopy.meta.htmlLang;
+  document.title = currentCopy.meta.title;
+  document.querySelector('meta[name="description"]').setAttribute("content", currentCopy.meta.description);
+
+  applySectionLabels();
+  renderLanguageControls();
+
+  document.getElementById("heroTitle").textContent = currentCopy.hero.title;
+  document.getElementById("heroDescription").textContent = currentCopy.hero.description;
+  document.getElementById("addressText").textContent = shared.address;
+  document.getElementById("addressHint").textContent = currentCopy.hero.addressHint;
+
+  document.getElementById("heroActions").innerHTML = currentCopy.hero.actions
+    .map((action) => {
+      const className = action.style === "sea" ? "button button--sea" : "ghost-button";
+      const href = resolveHref(action);
+      return `<a class="${className}" href="${href}" ${
+        href.startsWith("http") ? 'target="_blank" rel="noreferrer"' : ""
+      }>${action.label}</a>`;
+    })
+    .join("");
+
+  document.getElementById("heroFacts").innerHTML = currentCopy.hero.facts
+    .map((fact) => {
+      const value = fact.valueKey ? resolveTemplate(String(getByPath(shared.property, fact.valueKey))) : fact.value;
+      return `
+        <div class="mini-fact">
+          <span>${fact.label}</span>
+          <strong>${value}</strong>
+        </div>
+      `;
+    })
+    .join("");
+
+  setPhoto("heroPhotoMain", shared.property.photos[0]);
+  setPhoto("heroPhotoTop", shared.property.photos[1]);
+  setPhoto("heroPhotoBottom", shared.property.photos[2]);
+
+  document.getElementById("quickNav").innerHTML = [
+    ["checkin", currentCopy.ui.nav.checkin],
+    ["checkout", currentCopy.ui.nav.checkout],
+    ["house", currentCopy.ui.nav.house],
+    ["rules", currentCopy.ui.nav.rules],
+    ["maps", currentCopy.ui.nav.maps],
+    ["food", currentCopy.ui.nav.food],
+    ["family", currentCopy.ui.nav.family],
+    ["contacts", currentCopy.ui.nav.contacts],
   ]
-);
+    .map(([href, label]) => `<a href="#${href}">${label}</a>`)
+    .join("");
 
-renderCards("checkInCards", [
-  {
-    title: "Antes de salir hacia la villa",
-    text:
-      "Ten a mano el teléfono del anfitrión, revisa el punto exacto de llegada y confirma si necesitas código, llave o asistencia.",
-    tags: ["Preparación"],
-  },
-  {
-    title: "Si llegas tarde",
-    text:
-      "Si prevés llegar más tarde de lo acordado, avisa cuanto antes. Esto evita incidencias con llaves, limpieza o entrega de acceso.",
-    tags: ["Importante"],
-  },
-  {
-    title: "Reconocer la casa",
-    text:
-      "Usa el bloque de mapas para ver la posición exacta, la calle y el entorno inmediato antes de la llegada.",
-    tags: ["Mapa", "Street View"],
-    links: [
-      {
-        label: "Ir al mapa",
-        href: "#maps",
-      },
-    ],
-  },
-]);
+  renderFeaturePanel(
+    "checkInPanel",
+    currentCopy.content.checkInPanel.title,
+    currentCopy.content.checkInPanel.body,
+    currentCopy.property.checkIn.details,
+    currentCopy.content.checkInPanel.tags,
+    currentCopy.content.checkInPanel.links
+  );
 
-renderFeaturePanel(
-  "checkOutPanel",
-  "Salida sencilla",
-  `Hora orientativa: ${data.property.checkOut.time}\nLa idea es dejar la casa preparada para el siguiente huésped sin prisas de última hora.`,
-  data.property.checkOut.details,
-  ["Salida", "Checklist"]
-);
+  renderCards("checkInCards", currentCopy.content.checkInCards);
 
-renderCards("checkOutCards", [
-  {
-    title: "Cocina y basura",
-    text:
-      "Deja la cocina recogida, saca la basura si es posible y evita dejar restos de carbón o comida en exterior.",
-    tags: ["Cierre"],
-  },
-  {
-    title: "Climatización y seguridad",
-    text:
-      "Antes de irte, revisa aire acondicionado, luces, puertas, ventanas, toldos y cualquier elemento exterior sensible al viento.",
-    tags: ["Seguridad"],
-  },
-  {
-    title: "Llaves y mandos",
-    text:
-      "Devuelve llaves, mandos o códigos exactamente como te indique el anfitrión para evitar recargos o incidencias.",
-    tags: ["Entrega"],
-  },
-]);
+  renderFeaturePanel(
+    "checkOutPanel",
+    currentCopy.content.checkOutPanel.title,
+    currentCopy.content.checkOutPanel.body,
+    currentCopy.property.checkOut.details,
+    currentCopy.content.checkOutPanel.tags,
+    currentCopy.content.checkOutPanel.links || []
+  );
 
-renderCards("houseCards", [
-  {
-    title: "Wi-Fi",
-    text: `Red: ${data.property.wifi.network}\nContraseña: ${data.property.wifi.password}`,
-    tags: ["Internet"],
-  },
-  {
-    title: "Uso del jacuzzi",
-    text: "Instrucciones generales de seguridad. Ajustar al equipo real de la vivienda si fuese necesario.",
-    list: data.property.jacuzzi,
-    tags: ["Jacuzzi"],
-  },
-  {
-    title: "Uso de la piscina",
-    text: "Consejos básicos para un uso seguro y sin incidencias.",
-    list: data.property.pool,
-    tags: ["Piscina"],
-  },
-  {
-    title: "Barbacoa de carbón",
-    text: "Recomendaciones para usarla de forma segura y limpia.",
-    list: data.property.bbq,
-    tags: ["Exterior", "Carbón"],
-  },
-  {
-    title: "Aviso importante",
-    text: data.notes.completion,
-    tags: ["Revisar antes de publicar"],
-  },
-], true);
+  renderCards("checkOutCards", currentCopy.content.checkOutCards);
+  renderCards("houseCards", currentCopy.content.houseCards, true);
 
-renderFeaturePanel(
-  "rulesPanel",
-  "Normas de la casa",
-  data.property.houseRules.intro,
-  [],
-  ["Convivencia", "Importante"]
-);
+  renderFeaturePanel(
+    "rulesPanel",
+    currentCopy.sections.rules.title,
+    currentCopy.property.houseRules.intro,
+    [],
+    [currentCopy.sections.rules.eyebrow, currentCopy.ui.selectedLanguageLabel + ": " + formatSelectedLanguage(languagePreference)]
+  );
 
-document.getElementById("rulesCards").innerHTML = data.property.houseRules.sections
-  .map(
-    (section) => `
-      <article class="rule-card">
-        <h3>${section.title}</h3>
-        ${section.text ? textToParagraphs(section.text) : ""}
-        ${section.list?.length ? `<ul>${section.list.map((entry) => `<li>${entry}</li>`).join("")}</ul>` : ""}
-      </article>
-    `
-  )
-  .join("");
+  document.getElementById("rulesCards").innerHTML = currentCopy.property.houseRules.sections
+    .map(
+      (section) => `
+        <article class="rule-card">
+          <h3>${section.title}</h3>
+          ${section.text ? textToParagraphs(section.text) : ""}
+          ${section.list?.length ? `<ul>${section.list.map((entry) => `<li>${entry}</li>`).join("")}</ul>` : ""}
+        </article>
+      `
+    )
+    .join("");
 
-renderCards("foodCards", [...data.restaurants, ...data.activities], true);
-renderCards("familyCards", [
-  {
-    title: "Playa apta para familias",
-    text:
-      "Las Higuericas destaca por su acceso cómodo, zona infantil y paseo de madera, útil si viajas con niños pequeños.",
-    tags: ["Playa", "Niños"],
-    links: [
-      {
-        label: "Ver información oficial",
-        href: "https://www.visitpilardelahoradada.com/es/disfruta_pilar_horadada/playas_calas/playa/2-playa-las-higuericas",
-      },
-    ],
-  },
-  {
-    title: "Ideas sencillas para días tranquilos",
-    text:
-      "Paseo marítimo al atardecer, juegos de arena, helado en la zona del puerto y rutas cortas en bici o patinete.",
-    tags: ["Paseo", "Familia"],
-  },
-  {
-    title: "Más planes infantiles",
-    text:
-      "La oficina de turismo recopila propuestas para familias durante todo el año. Es una buena referencia si el tiempo cambia o quieres alternar playa y paseo.",
-    tags: ["Turismo", "Todo el año"],
-    links: [
-      {
-        label: "Ver guía infantil",
-        href: "https://www.visitpilardelahoradada.com/es/que_ver_hacer/ninyos",
-      },
-    ],
-  },
-]);
-renderCards("contactCards", data.contacts, true);
+  renderCards("foodCards", [...currentCopy.content.restaurants, ...currentCopy.content.activities], true);
+  renderCards("familyCards", currentCopy.content.family);
+  renderCards("contactCards", currentCopy.content.contacts, true);
 
-document.getElementById("mapsEmbed").src = data.maps.embed;
-document.getElementById("locationSummary").innerHTML = `
-  <h3>${data.maps.summary.title}</h3>
-  ${textToParagraphs(data.maps.summary.text)}
-  ${createTags(data.maps.summary.tags)}
-  <div class="card__links">${createLinks(data.maps.summary.links)}</div>
-`;
+  document.getElementById("mapsEmbed").src = shared.links.mapsEmbed;
+  document.getElementById("locationSummary").innerHTML = `
+    <h3>${currentCopy.content.maps.summary.title}</h3>
+    ${textToParagraphs(currentCopy.content.maps.summary.text)}
+    ${createTags(currentCopy.content.maps.summary.tags)}
+    <div class="card__links">${createLinks(currentCopy.content.maps.summary.links)}</div>
+  `;
 
-document.getElementById("streetViewCard").innerHTML = `
-  <div class="streetview-preview">
-    <strong>${data.maps.streetView.title}</strong>
-    <span>Acceso visual a la calle y a la fachada.</span>
-  </div>
-  ${textToParagraphs(data.maps.streetView.text)}
-  <div class="card__links">${createLinks(data.maps.streetView.links)}</div>
-`;
+  document.getElementById("streetViewCard").innerHTML = `
+    <div class="streetview-preview">
+      <strong>${currentCopy.content.maps.streetView.title}</strong>
+      <span>${currentCopy.ui.sectionLabels.streetViewOverlay}</span>
+    </div>
+    ${textToParagraphs(currentCopy.content.maps.streetView.text)}
+    <div class="card__links">${createLinks(currentCopy.content.maps.streetView.links)}</div>
+  `;
 
-renderCards("mapsCards", [...data.location, ...data.maps.essentials, ...data.maps.lists], true);
+  renderCards(
+    "mapsCards",
+    [...currentCopy.content.location, ...currentCopy.content.maps.essentials, ...currentCopy.content.maps.lists],
+    true
+  );
+};
+
+let languagePreference = getSavedPreference();
+let currentLocale = getEffectiveLocale(languagePreference);
+let currentCopy = translations[currentLocale];
+
+render();

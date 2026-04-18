@@ -3,8 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Guía de la Villa | Playa de las Higuericas</title>
+    <title id="pageTitle">Guía de la Villa | Playa de las Higuericas</title>
     <meta
+      id="pageDescription"
       name="description"
       content="Guía digital para huéspedes de una villa en la calle Dalia 31, Pilar de la Horadada."
     />
@@ -20,7 +21,13 @@
     <div class="page-shell">
       <header class="hero">
         <div class="hero__copy">
-          <p class="eyebrow">Beach House Guide</p>
+          <div class="hero__topbar">
+            <p class="eyebrow" id="heroEyebrow">Beach House Guide</p>
+            <div class="language-switcher">
+              <span class="language-switcher__label" id="languageLabel">Idioma</span>
+              <div class="language-switcher__controls" id="languageControls"></div>
+            </div>
+          </div>
           <h1 id="heroTitle"></h1>
           <p class="hero__lede" id="heroDescription"></p>
           <div class="hero__actions" id="heroActions"></div>
@@ -32,7 +39,7 @@
           <div class="hero__photo hero__photo--top" id="heroPhotoTop"></div>
           <div class="hero__photo hero__photo--bottom" id="heroPhotoBottom"></div>
           <div class="hero__location-card">
-            <span class="panel-label">Dirección</span>
+            <span class="panel-label" id="addressLabel">Dirección</span>
             <strong id="addressText"></strong>
             <p id="addressHint"></p>
           </div>
@@ -44,8 +51,8 @@
       <main class="content">
         <section class="section" id="checkin">
           <div class="section-heading">
-            <p class="eyebrow">Llegada</p>
-            <h2>Check-in</h2>
+            <p class="eyebrow" id="checkinEyebrow">Llegada</p>
+            <h2 id="checkinTitle">Check-in</h2>
           </div>
           <div class="feature-layout">
             <div class="feature-panel" id="checkInPanel"></div>
@@ -55,8 +62,8 @@
 
         <section class="section" id="checkout">
           <div class="section-heading">
-            <p class="eyebrow">Salida</p>
-            <h2>Check-out</h2>
+            <p class="eyebrow" id="checkoutEyebrow">Salida</p>
+            <h2 id="checkoutTitle">Check-out</h2>
           </div>
           <div class="feature-layout">
             <div class="feature-panel" id="checkOutPanel"></div>
@@ -66,16 +73,16 @@
 
         <section class="section" id="house">
           <div class="section-heading">
-            <p class="eyebrow">Dentro y fuera</p>
-            <h2>La casa y cómo usarla</h2>
+            <p class="eyebrow" id="houseEyebrow">Dentro y fuera</p>
+            <h2 id="houseTitle">La casa y cómo usarla</h2>
           </div>
           <div class="card-grid" id="houseCards"></div>
         </section>
 
         <section class="section" id="rules">
           <div class="section-heading">
-            <p class="eyebrow">Convivencia</p>
-            <h2>Normas de la casa</h2>
+            <p class="eyebrow" id="rulesEyebrow">Convivencia</p>
+            <h2 id="rulesTitle">Normas de la casa</h2>
           </div>
           <div class="rules-intro" id="rulesPanel"></div>
           <div class="rules-grid" id="rulesCards"></div>
@@ -83,8 +90,8 @@
 
         <section class="section" id="maps">
           <div class="section-heading">
-            <p class="eyebrow">Ubicación</p>
-            <h2>Mapa, Street View y listas útiles</h2>
+            <p class="eyebrow" id="mapsEyebrow">Ubicación</p>
+            <h2 id="mapsTitle">Mapa, Street View y listas útiles</h2>
           </div>
           <div class="map-layout">
             <div class="map-frame">
@@ -105,24 +112,24 @@
 
         <section class="section" id="food">
           <div class="section-heading">
-            <p class="eyebrow">Para disfrutar</p>
-            <h2>Restaurantes, planes y favoritos</h2>
+            <p class="eyebrow" id="foodEyebrow">Para disfrutar</p>
+            <h2 id="foodTitle">Restaurantes, planes y favoritos</h2>
           </div>
           <div class="card-grid" id="foodCards"></div>
         </section>
 
         <section class="section" id="family">
           <div class="section-heading">
-            <p class="eyebrow">Con niños</p>
-            <h2>Planes fáciles en familia</h2>
+            <p class="eyebrow" id="familyEyebrow">Con niños</p>
+            <h2 id="familyTitle">Planes fáciles en familia</h2>
           </div>
           <div class="card-grid" id="familyCards"></div>
         </section>
 
         <section class="section" id="contacts">
           <div class="section-heading">
-            <p class="eyebrow">Ayuda</p>
-            <h2>Contactos y emergencias</h2>
+            <p class="eyebrow" id="contactsEyebrow">Ayuda</p>
+            <h2 id="contactsTitle">Contactos y emergencias</h2>
           </div>
           <div class="card-grid" id="contactCards"></div>
         </section>
