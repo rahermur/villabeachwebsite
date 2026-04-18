@@ -179,34 +179,31 @@ const renderFoodSection = () => {
         foodFeatured: currentCopy.content.foodFeatured,
         foodCategories: currentCopy.content.foodCategories
       };
-  const items = [
-    {
-      title: foodData.foodIntro.title,
-      body: foodData.foodIntro.body,
-      tags: foodData.foodIntro.tags,
-      links: foodData.foodIntro.links,
-      wide: true,
-      intro: true
-    },
-    ...foodData.foodCategories.map((category) => ({
-      title: `${category.emoji || "📍"} ${category.title}`,
-      body: category.description,
-      items: [...category.items].sort(
-        (a, b) => Number(Boolean(b.featured)) - Number(Boolean(a.featured))
-      ),
-      categoryId: category.id,
-      wide: true
-    }))
-  ];
+  renderFeaturePanel(
+    "foodIntro",
+    foodData.foodIntro.title,
+    foodData.foodIntro.body,
+    [],
+    foodData.foodIntro.tags,
+    foodData.foodIntro.links
+  );
 
-  document.getElementById("foodCards").innerHTML = items
+  document.getElementById("foodGroups").innerHTML = foodData.foodCategories
     .map((item, index) => {
-      const toneClass = index % 2 === 0 ? " card--soft-sea" : " card--soft-sand";
-      const introLinks = item.intro ? createLinks(item.links) : "";
-      const introTags = item.intro ? createTags(item.tags) : "";
-      const listMarkup = item.items
-        ? `<ul class="food-bullet-list">
-            ${item.items
+      const category = item;
+      return `
+        <details class="food-group"${index === 0 ? " open" : ""}>
+          <summary class="food-group__summary">
+            <div>
+              <h3>${category.emoji || "📍"} ${category.title}</h3>
+              <p>${category.description}</p>
+            </div>
+            <span class="house-accordion__icon" aria-hidden="true">+</span>
+          </summary>
+          <div class="food-group__content">
+            <ul class="food-bullet-list">
+            ${[...category.items]
+              .sort((a, b) => Number(Boolean(b.featured)) - Number(Boolean(a.featured)))
               .map((entry) => {
                 const addressDetail = entry.details?.find((detail) =>
                   detail.label.includes("Dirección") || detail.label.includes("Address")
@@ -215,7 +212,7 @@ const renderFoodSection = () => {
                   detail.label.includes("Nota") || detail.label.includes("Note")
                 );
                 const mapsHref = entry.links?.[0]?.href || "#";
-                const showTags = item.categoryId !== "food-restaurants" && entry.tags?.length;
+                const showTags = category.id !== "food-restaurants" && entry.tags?.length;
 
                 return `
                   <li class="food-bullet-item">
@@ -231,17 +228,9 @@ const renderFoodSection = () => {
                 `;
               })
               .join("")}
-          </ul>`
-        : "";
-
-      return `
-        <article class="card card--wide${toneClass}">
-          <h3>${item.title}</h3>
-          ${item.body ? textToParagraphs(item.body) : ""}
-          ${introTags}
-          ${listMarkup}
-          <div class="card__links">${introLinks}</div>
-        </article>
+            </ul>
+          </div>
+        </details>
       `;
     })
     .join("");
