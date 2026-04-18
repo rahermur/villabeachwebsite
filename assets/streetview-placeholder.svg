@@ -1,0 +1,16 @@
+<svg width="1200" height="900" viewBox="0 0 1200 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="900" fill="#EAF7F6"/>
+  <rect y="560" width="1200" height="340" fill="#E7D1AF"/>
+  <rect y="610" width="1200" height="290" fill="#D5D0C6"/>
+  <path d="M0 612H1200" stroke="#FBF7F1" stroke-width="26" stroke-dasharray="42 34"/>
+  <rect x="148" y="286" width="360" height="254" rx="26" fill="#FFF7EA"/>
+  <rect x="540" y="230" width="510" height="310" rx="26" fill="#FFF7EA"/>
+  <rect x="204" y="348" width="110" height="110" rx="10" fill="#8ED0D4"/>
+  <rect x="350" y="348" width="110" height="110" rx="10" fill="#8ED0D4"/>
+  <rect x="610" y="300" width="150" height="150" rx="12" fill="#8ED0D4"/>
+  <rect x="790" y="300" width="150" height="150" rx="12" fill="#8ED0D4"/>
+  <path d="M646 230L792 140L946 230H646Z" fill="#F08C5A"/>
+  <path d="M172 286L328 180L484 286H172Z" fill="#1E8E99"/>
+  <circle cx="1085" cy="132" r="64" fill="#FFD06A"/>
+  <text x="600" y="776" text-anchor="middle" fill="#587278" font-family="Arial, sans-serif" font-size="38">Vista previa para el acceso y la calle</text>
+</svg>

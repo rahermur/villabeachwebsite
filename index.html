@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Guía de la Villa | Playa de las Higuericas</title>
+    <meta
+      name="description"
+      content="Guía digital para huéspedes de una villa en la calle Dalia 31, Pilar de la Horadada."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Fraunces:opsz,wght@9..144,400;9..144,600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="hero">
+        <div class="hero__copy">
+          <p class="eyebrow">Beach House Guide</p>
+          <h1 id="heroTitle"></h1>
+          <p class="hero__lede" id="heroDescription"></p>
+          <div class="hero__actions" id="heroActions"></div>
+          <div class="hero__mini-grid" id="heroFacts"></div>
+        </div>
+
+        <div class="hero__visuals">
+          <div class="hero__photo hero__photo--main" id="heroPhotoMain"></div>
+          <div class="hero__photo hero__photo--top" id="heroPhotoTop"></div>
+          <div class="hero__photo hero__photo--bottom" id="heroPhotoBottom"></div>
+          <div class="hero__location-card">
+            <span class="panel-label">Dirección</span>
+            <strong id="addressText"></strong>
+            <p id="addressHint"></p>
+          </div>
+        </div>
+      </header>
+
+      <nav class="quick-nav" id="quickNav"></nav>
+
+      <main class="content">
+        <section class="section" id="checkin">
+          <div class="section-heading">
+            <p class="eyebrow">Llegada</p>
+            <h2>Check-in</h2>
+          </div>
+          <div class="feature-layout">
+            <div class="feature-panel" id="checkInPanel"></div>
+            <div class="card-grid" id="checkInCards"></div>
+          </div>
+        </section>
+
+        <section class="section" id="checkout">
+          <div class="section-heading">
+            <p class="eyebrow">Salida</p>
+            <h2>Check-out</h2>
+          </div>
+          <div class="feature-layout">
+            <div class="feature-panel" id="checkOutPanel"></div>
+            <div class="card-grid" id="checkOutCards"></div>
+          </div>
+        </section>
+
+        <section class="section" id="house">
+          <div class="section-heading">
+            <p class="eyebrow">Dentro y fuera</p>
+            <h2>La casa y cómo usarla</h2>
+          </div>
+          <div class="card-grid" id="houseCards"></div>
+        </section>
+
+        <section class="section" id="rules">
+          <div class="section-heading">
+            <p class="eyebrow">Convivencia</p>
+            <h2>Normas de la casa</h2>
+          </div>
+          <div class="rules-intro" id="rulesPanel"></div>
+          <div class="rules-grid" id="rulesCards"></div>
+        </section>
+
+        <section class="section" id="maps">
+          <div class="section-heading">
+            <p class="eyebrow">Ubicación</p>
+            <h2>Mapa, Street View y listas útiles</h2>
+          </div>
+          <div class="map-layout">
+            <div class="map-frame">
+              <iframe
+                id="mapsEmbed"
+                title="Mapa de la villa"
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+            <div class="map-sidebar">
+              <div class="card" id="locationSummary"></div>
+              <div class="card" id="streetViewCard"></div>
+            </div>
+          </div>
+          <div class="card-grid" id="mapsCards"></div>
+        </section>
+
+        <section class="section" id="food">
+          <div class="section-heading">
+            <p class="eyebrow">Para disfrutar</p>
+            <h2>Restaurantes, planes y favoritos</h2>
+          </div>
+          <div class="card-grid" id="foodCards"></div>
+        </section>
+
+        <section class="section" id="family">
+          <div class="section-heading">
+            <p class="eyebrow">Con niños</p>
+            <h2>Planes fáciles en familia</h2>
+          </div>
+          <div class="card-grid" id="familyCards"></div>
+        </section>
+
+        <section class="section" id="contacts">
+          <div class="section-heading">
+            <p class="eyebrow">Ayuda</p>
+            <h2>Contactos y emergencias</h2>
+          </div>
+          <div class="card-grid" id="contactCards"></div>
+        </section>
+      </main>
+    </div>
+
+    <script src="./site-data.js"></script>
+    <script src="./app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,8 @@
+<svg width="1200" height="900" viewBox="0 0 1200 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="900" fill="#F3E7D3"/>
+  <rect x="160" y="220" width="880" height="460" rx="32" fill="#FFF8EC"/>
+  <rect x="250" y="320" width="260" height="220" rx="18" fill="#D6E8E2"/>
+  <rect x="560" y="300" width="380" height="240" rx="18" fill="#E8D3B4"/>
+  <path d="M160 640L320 500L460 590L610 420L804 600L1040 380V680H160V640Z" fill="#0F766E" fill-opacity="0.14"/>
+  <text x="600" y="770" text-anchor="middle" fill="#6B5B47" font-family="Arial, sans-serif" font-size="42">Añadir foto exterior</text>
+</svg>
