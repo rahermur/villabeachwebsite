@@ -50,6 +50,18 @@ a {
   color: inherit;
 }
 
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
 .page-shell {
   width: min(calc(100% - 28px), var(--max-width));
   margin: 0 auto;
@@ -716,6 +728,38 @@ a {
   margin-top: 16px;
 }
 
+.action-icon-button {
+  display: inline-grid;
+  place-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 999px;
+  border: 1px solid rgba(17, 140, 140, 0.16);
+  background: rgba(255, 255, 255, 0.72);
+  text-decoration: none;
+  color: var(--sea-deep);
+  font-size: 1.05rem;
+}
+
+.action-icon-button--whatsapp {
+  border-color: rgba(37, 211, 102, 0.28);
+  background: rgba(37, 211, 102, 0.08);
+}
+
+.action-icon-button__whatsapp {
+  display: inline-grid;
+  place-items: center;
+  width: 26px;
+  height: 26px;
+  color: #25d366;
+}
+
+.action-icon-button__whatsapp svg {
+  width: 26px;
+  height: 26px;
+  display: block;
+}
+
 .card__detail-button {
   width: auto;
 }
@@ -733,6 +777,41 @@ a {
   font-size: 0.84rem;
   color: var(--sea-deep);
   background: rgba(17, 140, 140, 0.1);
+}
+
+.logo-strip {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 14px;
+}
+
+.logo-pill {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 92px;
+  padding: 10px 14px;
+  border-radius: 14px;
+  font-size: 0.92rem;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+  border: 1px solid rgba(17, 140, 140, 0.08);
+}
+
+.logo-pill--netflix {
+  background: #111;
+  color: #e50914;
+}
+
+.logo-pill--prime {
+  background: #00a8e1;
+  color: white;
+}
+
+.logo-pill--disney {
+  background: #113ccf;
+  color: white;
 }
 
 .house-accordions {
@@ -953,6 +1032,18 @@ a {
   padding: 0 24px 22px;
 }
 
+.food-subgroup + .food-subgroup {
+  margin-top: 18px;
+  padding-top: 16px;
+  border-top: 1px solid rgba(17, 140, 140, 0.1);
+}
+
+.food-subgroup__title {
+  margin: 0 0 10px;
+  font-size: 0.98rem;
+  color: var(--sea-deep);
+}
+
 .food-bullet-list {
   margin: 0;
   padding-left: 18px;
@@ -965,6 +1056,13 @@ a {
   margin-bottom: 4px;
 }
 
+.food-bullet-header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 8px;
+}
+
 .food-bullet-item .card__meta {
   margin-top: 0;
   margin-bottom: 6px;
@@ -975,6 +1073,26 @@ a {
   font-size: 0.95rem;
   color: var(--muted);
   line-height: 1.6;
+}
+
+.food-bullet-status {
+  font-size: 0.92rem;
+  font-weight: 700;
+  color: #c93b22;
+}
+
+.food-bullet-featured {
+  display: inline-flex;
+  align-items: center;
+  padding: 3px 10px;
+  border-radius: 999px;
+  background: rgba(255, 205, 96, 0.24);
+  border: 1px solid rgba(224, 168, 47, 0.34);
+  color: #8c5a07;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  white-space: nowrap;
 }
 
 .food-bullet-link {

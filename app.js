@@ -42,9 +42,28 @@ const createLinks = (links = []) => {
         .map((link) => {
           const href = resolveHref(link);
           const external = href.startsWith("http");
-          return `<a class="ghost-button" href="${href}" ${
+          const className = link.icon
+            ? `action-icon-button${link.icon === "whatsapp" ? " action-icon-button--whatsapp" : ""}`
+            : link.style === "sea"
+              ? "button button--sea"
+              : "ghost-button";
+          const iconMarkup =
+            link.icon === "phone"
+              ? `<span aria-hidden="true">☎</span>`
+              : link.icon === "whatsapp"
+                ? `<span class="action-icon-button__whatsapp" aria-hidden="true">
+                    <svg viewBox="0 0 32 32" role="presentation" focusable="false">
+                      <path fill="currentColor" d="M16 3.2c-7.07 0-12.8 5.63-12.8 12.57 0 2.2.59 4.35 1.7 6.23L3.2 28.8l7-1.83a12.96 12.96 0 0 0 5.8 1.38c7.07 0 12.8-5.63 12.8-12.57S23.07 3.2 16 3.2Z"/>
+                      <path fill="#ffffff" d="M10.67 9.03c-.36 0-.73.17-.96.44-.41.47-1.55 1.52-1.55 3.73 0 2.2 1.58 4.31 1.8 4.6.22.3 3.03 4.84 7.4 6.59 1.05.42 1.9.68 2.55.86 1.07.3 2.04.26 2.8.16.86-.12 2.63-1.07 3-2.1.37-1.04.37-1.93.26-2.1-.11-.18-.41-.3-.85-.51-.45-.2-2.64-1.3-3.05-1.46-.4-.15-.7-.23-.99.24-.3.47-1.15 1.46-1.42 1.76-.26.29-.52.33-.97.11-.44-.22-1.88-.68-3.57-2.16-1.32-1.16-2.2-2.58-2.46-3.02-.26-.43-.03-.67.2-.9.22-.22.45-.52.67-.78.22-.26.3-.44.44-.74.15-.3.07-.56-.04-.78-.11-.22-.99-2.43-1.35-3.33-.29-.68-.58-.7-.85-.71h-.71Z"/>
+                    </svg>
+                  </span>`
+                : "";
+          const labelMarkup = link.icon
+            ? `<span class="sr-only">${link.label}</span>`
+            : link.label;
+          return `<a class="${className}" href="${href}" ${
             external ? 'target="_blank" rel="noreferrer"' : ""
-          }>${link.label}</a>`;
+          } aria-label="${escapeHtml(link.label)}">${iconMarkup}${labelMarkup}</a>`;
         })
         .join("")}
     </div>
@@ -60,7 +79,30 @@ const createTags = (tags = []) => {
   `;
 };
 
-const renderCards = (targetId, items, wideEveryThird = false) => {
+const escapeHtml = (value = "") =>
+  value
+    .replaceAll("&", "&amp;")
+    .replaceAll("<", "&lt;")
+    .replaceAll(">", "&gt;")
+    .replaceAll('"', "&quot;")
+    .replaceAll("'", "&#39;");
+
+const createLogoStrip = (logos = []) => {
+  if (!logos.length) return "";
+  return `
+    <div class="logo-strip">
+      ${logos
+        .map(
+          (logo) =>
+            `<span class="logo-pill logo-pill--${logo.id}">${escapeHtml(logo.label)}</span>`
+        )
+        .join("")}
+    </div>
+  `;
+};
+
+const renderCards = (targetId, items, options = {}) => {
+  const { wideEveryThird = false, showTags = false } = options;
   const target = document.getElementById(targetId);
   target.innerHTML = items
     .map((item, index) => {
@@ -83,7 +125,8 @@ const renderCards = (targetId, items, wideEveryThird = false) => {
           <h3>${item.title}</h3>
           ${textToParagraphs(item.text)}
           ${list.length ? `<ul>${list.map((entry) => `<li>${entry}</li>`).join("")}</ul>` : ""}
-          ${createTags(item.tags)}
+          ${createLogoStrip(item.logos)}
+          ${showTags ? createTags(item.tags) : ""}
           <div class="card__links">${copyButton}${detailButton}${createLinks(item.links)}</div>
         </article>
       `;
@@ -191,6 +234,7 @@ const renderFoodSection = () => {
   document.getElementById("foodGroups").innerHTML = foodData.foodCategories
     .map((item, index) => {
       const category = item;
+      const subgroups = category.subgroups || [{ title: "", items: category.items || [] }];
       return `
         <details class="food-group"${index === 0 ? " open" : ""}>
           <summary class="food-group__summary">
@@ -201,34 +245,53 @@ const renderFoodSection = () => {
             <span class="house-accordion__icon" aria-hidden="true">+</span>
           </summary>
           <div class="food-group__content">
-            <ul class="food-bullet-list">
-            ${[...category.items]
-              .sort((a, b) => Number(Boolean(b.featured)) - Number(Boolean(a.featured)))
+            ${subgroups
+              .map((subgroup) => {
+                const subgroupItems = [...subgroup.items].sort((a, b) => {
+                  const closedDelta = Number(Boolean(a.temporarilyClosed)) - Number(Boolean(b.temporarilyClosed));
+                  if (closedDelta !== 0) return closedDelta;
+                  return Number(Boolean(b.featured)) - Number(Boolean(a.featured));
+                });
+
+                return `
+                  <section class="food-subgroup">
+                    ${subgroup.title ? `<h4 class="food-subgroup__title">${subgroup.title}</h4>` : ""}
+                    <ul class="food-bullet-list">
+                    ${subgroupItems
               .map((entry) => {
                 const addressDetail = entry.details?.find((detail) =>
                   detail.label.includes("Dirección") || detail.label.includes("Address")
                 );
-                const noteDetail = entry.details?.find((detail) =>
-                  detail.label.includes("Nota") || detail.label.includes("Note")
-                );
+                        const noteDetail = entry.details?.find((detail) =>
+                          detail.label.includes("Nota") || detail.label.includes("Note")
+                        );
                 const mapsHref = entry.links?.[0]?.href || "#";
                 const showTags = category.id !== "food-restaurants" && entry.tags?.length;
+                const featuredLabel = currentLocale === "es" ? "Destacado" : "Top pick";
 
                 return `
                   <li class="food-bullet-item">
-                    <strong>${entry.featured ? "⭐ " : ""}${entry.title}</strong>
-                    ${showTags ? createTags(entry.tags) : ""}
-                    ${noteDetail ? `<p class="food-bullet-note">${noteDetail.value}</p>` : ""}
-                    ${
-                      addressDetail
-                        ? `<a class="food-bullet-link" href="${mapsHref}" target="_blank" rel="noreferrer">📍 ${addressDetail.value}</a>`
-                        : ""
-                    }
-                  </li>
+                    <div class="food-bullet-header">
+                      <strong>${entry.title}</strong>
+                      ${entry.featured ? `<span class="food-bullet-featured">${featuredLabel}</span>` : ""}
+                      ${entry.temporarilyClosed ? `<span class="food-bullet-status">${escapeHtml(entry.statusLabel)}</span>` : ""}
+                    </div>
+                            ${showTags ? createTags(entry.tags) : ""}
+                            ${noteDetail ? `<p class="food-bullet-note">${noteDetail.value}</p>` : ""}
+                            ${
+                              addressDetail
+                                ? `<a class="food-bullet-link" href="${mapsHref}" target="_blank" rel="noreferrer">📍 ${addressDetail.value}</a>`
+                                : ""
+                            }
+                          </li>
+                        `;
+                      })
+                      .join("")}
+                    </ul>
+                  </section>
                 `;
               })
               .join("")}
-            </ul>
           </div>
         </details>
       `;
@@ -446,8 +509,8 @@ const render = () => {
     ["checkin", currentCopy.ui.nav.checkin],
     ["rules", currentCopy.ui.nav.rules],
     ["house", currentCopy.ui.nav.house],
-    ["hosts", currentCopy.ui.nav.hosts],
     ["food", currentCopy.ui.nav.food],
+    ["hosts", currentCopy.ui.nav.hosts],
     ["emergencies", currentCopy.ui.nav.emergencies],
   ]
     .map(([href, label]) => `<a href="#${href}">${label}</a>`)
@@ -481,7 +544,7 @@ const render = () => {
     .join("");
 
   renderFoodSection();
-  renderCards("hostCards", currentCopy.content.hostContacts, true);
+  renderCards("hostCards", currentCopy.content.hostContacts, { wideEveryThird: true, showTags: true });
   renderEmergencySection();
 };
 

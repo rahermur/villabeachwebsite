@@ -11,8 +11,6 @@
   ],
   "categoryOrder": [
     "restaurants",
-    "golf",
-    "ice-cream",
     "supermarkets",
     "shopping",
     "sports",
@@ -29,36 +27,8 @@
         "en": "Food and drinks"
       },
       "description": {
-        "es": "Restaurantes, chiringuitos y mesas a las que iríamos primero durante la estancia.",
-        "en": "Restaurants, beach bars and easy meal picks we would open first during the stay."
-      }
-    },
-    "golf": {
-      "title": {
-        "es": "Golf",
-        "en": "Golf"
-      },
-      "eyebrow": {
-        "es": "Plan deportivo",
-        "en": "Sport plan"
-      },
-      "description": {
-        "es": "Campos de golf guardados en la lista compartida del anfitrión.",
-        "en": "Golf courses saved in the host's shared list."
-      }
-    },
-    "ice-cream": {
-      "title": {
-        "es": "Ice Cream",
-        "en": "Ice Cream"
-      },
-      "eyebrow": {
-        "es": "Capricho cerca",
-        "en": "Sweet stop"
-      },
-      "description": {
-        "es": "Paradas rápidas para helado o sobremesa cerca de la costa.",
-        "en": "Quick stops for ice cream or a sweet finish near the coast."
+        "es": "Restaurantes, chiringuitos, heladerías y paradas dulces guardadas en la lista compartida.",
+        "en": "Restaurants, beach bars, ice cream spots and sweet stops saved in the shared list."
       }
     },
     "supermarkets": {
@@ -91,58 +61,30 @@
     },
     "sports": {
       "title": {
-        "es": "Sports",
-        "en": "Sports"
+        "es": "Sports & adventures",
+        "en": "Sports & adventures"
       },
       "eyebrow": {
         "es": "Moverse",
         "en": "Active plans"
       },
       "description": {
-        "es": "Padel, gimnasio y otros planes activos de la lista.",
-        "en": "Padel, gym and other active plans from the shared list."
+        "es": "Padel, gym, tours, aventuras y otros planes activos guardados en la lista.",
+        "en": "Padel, gym, tours, adventures and other active plans from the shared list."
       }
     },
     "parks": {
       "title": {
-        "es": "Parks",
-        "en": "Parks"
+        "es": "Zonas infantiles",
+        "en": "Kids areas"
       },
       "eyebrow": {
         "es": "Aire libre",
         "en": "Outdoor"
       },
       "description": {
-        "es": "Parques y zonas infantiles guardadas para planes sencillos cerca.",
-        "en": "Parks and playgrounds saved for easy nearby plans."
-      }
-    },
-    "health": {
-      "title": {
-        "es": "Health",
-        "en": "Health"
-      },
-      "eyebrow": {
-        "es": "Asistencia",
-        "en": "Medical help"
-      },
-      "description": {
-        "es": "Hospital y centro de salud incluidos también en la lista compartida.",
-        "en": "Hospital and health centre also included in the shared list."
-      }
-    },
-    "pharmacy": {
-      "title": {
-        "es": "Pharmacy",
-        "en": "Pharmacy"
-      },
-      "eyebrow": {
-        "es": "Muy cerca",
-        "en": "Very close"
-      },
-      "description": {
-        "es": "Farmacias guardadas en Google Maps para tenerlas localizadas rápidamente.",
-        "en": "Pharmacies saved in Google Maps so they are quick to find."
+        "es": "Parques, zonas infantiles y planes al aire libre pensados para niños.",
+        "en": "Parks, playgrounds and easy outdoor spots for kids."
       }
     }
   },
@@ -199,6 +141,17 @@
       "tags": {
         "es": ["Restaurants", "Playa"],
         "en": ["Restaurants", "Beach"]
+      }
+    },
+    "wow-beach-by-las-colinas": {
+      "statusCheck": {
+        "url": "https://wowbeach.es/en/restaurant/",
+        "closedPatterns": [
+          "See you on June 4",
+          "Closed until summer 26",
+          "Nos vemos el 4 de junio"
+        ],
+        "label": "official-site-seasonal-closure"
       }
     },
     "centro-comercial-dos-mares": {

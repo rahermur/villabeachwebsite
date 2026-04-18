@@ -90,8 +90,8 @@ window.siteData = {
           checkin: "Llegada y salida",
           house: "Casa",
           rules: "Normas",
-          food: "Para disfrutar",
-          hosts: "Anfitrión",
+          food: "Recomendaciones",
+          hosts: "Contacto",
           emergencies: "Emergencias",
         },
         sectionLabels: {
@@ -113,8 +113,8 @@ window.siteData = {
         checkin: { eyebrow: "Llegada", title: "Llegada y salida" },
         house: { eyebrow: "Dentro y fuera", title: "Todo en la villa" },
         rules: { eyebrow: "Convivencia", title: "Normas de la casa" },
-        food: { eyebrow: "Para disfrutar", title: "Maps, favoritos y planes" },
-        hosts: { eyebrow: "Anfitriones", title: "Contacto del anfitrión" },
+        food: { eyebrow: "Para disfrutar", title: "Recomendaciones" },
+        hosts: { eyebrow: "Anfitriones", title: "Contacto" },
         emergencies: { eyebrow: "Emergencias", title: "Ayuda rápida y asistencia" },
       },
       hero: {
@@ -220,7 +220,6 @@ window.siteData = {
             title: "🛬 Llegada",
             text:
               "Coordina la llegada con el anfitrión a partir de las 15:00.\nAntes de venir, completa si es posible el check-in online desde el enlace personal enviado previamente por email o mensaje.\nEn el check-in se recordarán las normas de la casa y se resolverá cualquier duda necesaria.",
-            tags: ["Llegada", "Desde las 15:00"],
             layout: "half",
             sheetKey: "arrivalRegistration",
           },
@@ -252,7 +251,6 @@ window.siteData = {
             list: [
               "💡 La conexión es de 1 Gb, así que debería ser bastante estable salvo si estás muy lejos del router.",
             ],
-            tags: ["Internet", "1 Gb"],
             copyValueKey: "wifi.password",
           },
           {
@@ -262,7 +260,11 @@ window.siteData = {
             list: [
               "🔐 Recuerda cerrar sesión en todas tus cuentas antes del check-out.",
             ],
-            tags: ["TV", "Streaming"],
+            logos: [
+              { id: "netflix", label: "NETFLIX" },
+              { id: "prime", label: "prime video" },
+              { id: "disney", label: "Disney+" },
+            ],
           },
         ],
         houseAccordions: [
@@ -397,16 +399,27 @@ window.siteData = {
         ],
         hostContacts: [
           {
-            title: "Anfitrión principal",
+            title: "Anfitrión principal 1",
             text:
               "Nombre: [COMPLETAR_NOMBRE]\nTeléfono / WhatsApp: [COMPLETAR_TEL]\nHorario recomendado de contacto: [COMPLETAR_HORARIO]",
-            tags: ["Reserva", "Check-in"],
+            tags: ["Check-in", "Check-out", "Dudas y consultas", "Recomendaciones"],
+          },
+          {
+            title: "Anfitrión principal 2",
+            text:
+              "Nombre: [COMPLETAR_NOMBRE]\nTeléfono / WhatsApp: [COMPLETAR_TEL]\nHorario recomendado de contacto: [COMPLETAR_HORARIO]",
+            tags: ["Check-in", "Check-out", "Dudas y consultas", "Recomendaciones"],
           },
           {
             title: "Contacto de apoyo",
             text:
-              "Nombre: [COMPLETAR_NOMBRE]\nTeléfono / WhatsApp: [COMPLETAR_TEL]\nUsar si el contacto principal no responde.",
-            tags: ["Incidencias"],
+              "Nombre: Ana Montoro Rosado\nTeléfono / WhatsApp: 678267650\nUsar si los anfitriones principales no responden o si necesitas apoyo durante la estancia.",
+            tags: ["Apoyo", "Incidencias"],
+            copyValue: "678267650",
+            links: [
+              { label: "Llamar", href: "tel:+34678267650", icon: "phone" },
+              { label: "WhatsApp", href: "https://wa.me/34678267650", icon: "whatsapp" },
+            ],
           },
         ],
         emergencySummary: [
@@ -471,8 +484,8 @@ window.siteData = {
           checkin: "Arrival & departure",
           house: "House",
           rules: "Rules",
-          food: "To enjoy",
-          hosts: "Host",
+          food: "Recommendations",
+          hosts: "Contact",
           emergencies: "Emergency",
         },
         sectionLabels: {
@@ -493,8 +506,8 @@ window.siteData = {
         checkin: { eyebrow: "Arrival", title: "Arrival & departure" },
         house: { eyebrow: "Inside and outside", title: "Everything at the villa" },
         rules: { eyebrow: "Stay well", title: "House rules" },
-        food: { eyebrow: "To enjoy", title: "Maps, favourites and plans" },
-        hosts: { eyebrow: "Hosts", title: "Host contact" },
+        food: { eyebrow: "To enjoy", title: "Recommendations" },
+        hosts: { eyebrow: "Hosts", title: "Contact" },
         emergencies: { eyebrow: "Emergency", title: "Quick help and assistance" },
       },
       hero: {
@@ -600,7 +613,6 @@ window.siteData = {
             title: "🛬 Arrival",
             text:
               "Coordinate the arrival with the host from 3:00 pm onwards.\nBefore travelling, complete the online check-in if possible using the personal link previously sent by email or message.\nDuring check-in, the house rules can be reviewed and any questions can be answered.",
-            tags: ["Arrival", "From 3:00 pm"],
             layout: "half",
             sheetKey: "arrivalRegistration",
           },
@@ -632,7 +644,6 @@ window.siteData = {
             list: [
               "💡 The connection is 1 Gb, so it should be quite stable unless you are far from the router.",
             ],
-            tags: ["Internet", "1 Gb"],
             copyValueKey: "wifi.password",
           },
           {
@@ -642,7 +653,11 @@ window.siteData = {
             list: [
               "🔐 Remember to log out of all your accounts before check-out.",
             ],
-            tags: ["TV", "Streaming"],
+            logos: [
+              { id: "netflix", label: "NETFLIX" },
+              { id: "prime", label: "prime video" },
+              { id: "disney", label: "Disney+" },
+            ],
           },
         ],
         houseAccordions: [
@@ -777,16 +792,27 @@ window.siteData = {
         ],
         hostContacts: [
           {
-            title: "Main host",
+            title: "Main host 1",
             text:
               "Name: [COMPLETAR_NOMBRE]\nPhone / WhatsApp: [COMPLETAR_TEL]\nRecommended contact hours: [COMPLETAR_HORARIO]",
-            tags: ["Booking", "Check-in"],
+            tags: ["Check-in", "Check-out", "Questions", "Recommendations"],
+          },
+          {
+            title: "Main host 2",
+            text:
+              "Name: [COMPLETAR_NOMBRE]\nPhone / WhatsApp: [COMPLETAR_TEL]\nRecommended contact hours: [COMPLETAR_HORARIO]",
+            tags: ["Check-in", "Check-out", "Questions", "Recommendations"],
           },
           {
             title: "Backup contact",
             text:
-              "Name: [COMPLETAR_NOMBRE]\nPhone / WhatsApp: [COMPLETAR_TEL]\nUse this contact if the main host does not reply.",
-            tags: ["Issues"],
+              "Name: Ana Montoro Rosado\nPhone / WhatsApp: 678267650\nUse this contact if the main hosts do not reply or if you need support during the stay.",
+            tags: ["Support", "Issues"],
+            copyValue: "678267650",
+            links: [
+              { label: "Call", href: "tel:+34678267650", icon: "phone" },
+              { label: "WhatsApp", href: "https://wa.me/34678267650", icon: "whatsapp" },
+            ],
           },
         ],
         emergencySummary: [
