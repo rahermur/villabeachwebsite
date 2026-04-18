@@ -68,7 +68,7 @@ window.siteData = {
       checkOutTime: "[COMPLETAR_HORA_CHECKOUT]",
       photos: [
         {
-          src: "./assets/photo-placeholder-1.jpg",
+          src: "./assets/playa.jpg",
           alt: {
             es: "Vista exterior de la villa con piscina privada y terraza",
             en: "Exterior view of the villa with private pool and terrace",
@@ -83,7 +83,7 @@ window.siteData = {
           },
         },
         {
-          src: "./assets/photo-placeholder-2.svg",
+          src: "./assets/photo-placeholder-1.jpg",
           alt: {
             es: "Añadir foto del salón o cocina",
             en: "Add a living room or kitchen photo",
@@ -98,7 +98,7 @@ window.siteData = {
           },
         },
         {
-          src: "./assets/photo-placeholder-3.svg",
+          src: "./assets/photo-placeholder-3.jpeg",
           alt: {
             es: "Añadir foto de piscina o jacuzzi",
             en: "Add a pool or hot tub photo",
@@ -197,7 +197,7 @@ window.siteData = {
       hero: {
         title: "Villa Dalia 31",
         description:
-          "Una guía fresca y directa para disfrutar de unos días junto al mar en una villa luminosa con piscina privada, terraza exterior y zonas de descanso: llegada, salida, normas de la casa, jacuzzi, piscina, barbacoa, ubicación exacta, restaurantes, planes y ayuda rápida.",
+          "Bienvenidos a nuestra villa. Esperamos que disfrutéis de vuestra estancia, del buen clima y de todas las comodidades de la casa. Esta guía os ayudará a sacar el máximo partido a vuestra visita. Si tenéis cualquier duda o comentario estaremos encantados de escucharos.",
         actions: [
           {
             label: "Cómo llegar",

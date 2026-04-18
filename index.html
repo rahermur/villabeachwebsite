@@ -50,29 +50,34 @@
 
     <div class="page-shell" id="pageShell" hidden>
       <header class="hero">
-        <div class="hero__copy">
-          <div class="hero__topbar">
-            <p class="eyebrow" id="heroEyebrow">Beach House Guide</p>
-            <div class="language-switcher">
-              <span class="language-switcher__label" id="languageLabel">Idioma</span>
-              <div class="language-switcher__controls" id="languageControls"></div>
-            </div>
+        <div class="hero__topbar">
+          <div class="language-switcher">
+            <span class="language-switcher__label" id="languageLabel">Idioma</span>
+            <div class="language-switcher__controls" id="languageControls"></div>
           </div>
-          <h1 id="heroTitle"></h1>
-          <p class="hero__lede" id="heroDescription"></p>
-          <div class="hero__actions" id="heroActions"></div>
-          <div class="hero__mini-grid" id="heroFacts"></div>
+          <button class="logout-button" id="logoutButton" type="button">Cerrar acceso</button>
         </div>
 
-        <div class="hero__visuals">
-          <button class="logout-button" id="logoutButton" type="button">Cerrar acceso</button>
-          <div class="hero__photo hero__photo--main" id="heroPhotoMain"></div>
-          <div class="hero__photo hero__photo--top" id="heroPhotoTop"></div>
-          <div class="hero__photo hero__photo--bottom" id="heroPhotoBottom"></div>
-          <div class="hero__location-card">
-            <span class="panel-label" id="addressLabel">Dirección</span>
-            <strong id="addressText"></strong>
-            <p id="addressHint"></p>
+        <div class="hero__content">
+          <div class="hero__bg" id="heroPhotoMain"></div>
+          <div class="hero__overlay"></div>
+
+          <div class="hero__panel">
+            <p class="eyebrow" id="heroEyebrow">Beach House Guide</p>
+            <h1 id="heroTitle"></h1>
+            <p class="hero__lede" id="heroDescription"></p>
+            <div class="hero__actions" id="heroActions"></div>
+            <div class="hero__mini-grid" id="heroFacts"></div>
+            <div class="hero__location-card">
+              <span class="panel-label" id="addressLabel">Dirección</span>
+              <strong id="addressText"></strong>
+              <p id="addressHint"></p>
+            </div>
+          </div>
+
+          <div class="hero__photos">
+            <div class="hero__photo" id="heroPhotoTop"></div>
+            <div class="hero__photo" id="heroPhotoBottom"></div>
           </div>
         </div>
       </header>
