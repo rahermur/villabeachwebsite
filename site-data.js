@@ -44,7 +44,7 @@ window.siteData = {
       checkOutTime: "12:00",
       photos: [
         {
-          src: "./assets/playa.jpg",
+          src: "./assets/photo-placeholder-1.jpg",
           alt: {
             es: "Vista exterior de la villa con piscina privada y terraza",
             en: "Exterior view of the villa with private pool and terrace",
@@ -53,8 +53,8 @@ window.siteData = {
         {
           src: "./assets/photo-placeholder-1.jpg",
           alt: {
-            es: "Añadir foto del salón o la cocina",
-            en: "Add a living room or kitchen photo",
+            es: "Vista exterior de la villa con piscina privada y terraza",
+            en: "Exterior view of the villa with private pool and terrace",
           },
         },
         {

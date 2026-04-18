@@ -1051,15 +1051,10 @@ a {
   }
 
   .hero__topbar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
+    position: relative;
     z-index: 40;
     padding: 10px 14px;
     background: rgba(250, 246, 240, 0.92);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
     border-bottom: 1px solid rgba(17, 140, 140, 0.1);
   }
 
@@ -1109,17 +1104,17 @@ a {
     display: none;
   }
 
-  /* panel azul superpuesto en la parte inferior de la imagen */
+  /* panel semitransparente en la parte inferior de la imagen */
   .hero__panel {
     position: relative;
     z-index: 2;
     margin: 0;
-    padding: 24px 20px 0;
-    background: rgba(17, 140, 140, 0.82);
-    backdrop-filter: blur(16px);
-    -webkit-backdrop-filter: blur(16px);
+    padding: 20px 20px 0;
+    background: rgba(17, 140, 140, 0.55);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
     border: none;
-    border-top: 1px solid rgba(255, 255, 255, 0.15);
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
     border-radius: 0;
     color: white;
     display: flex;
@@ -1128,23 +1123,53 @@ a {
 
   .hero__panel .eyebrow {
     color: var(--yellow);
-    margin-bottom: 6px;
+    margin-bottom: 4px;
   }
 
   .hero h1 {
-    font-size: clamp(2rem, 8vw, 2.6rem);
+    font-size: clamp(1.8rem, 7vw, 2.4rem);
     margin-top: 0;
     color: white;
   }
 
   .hero__lede {
-    font-size: 0.93rem;
-    line-height: 1.6;
+    font-size: 0.9rem;
+    line-height: 1.55;
     margin-top: 8px;
-    color: rgba(255, 255, 255, 0.88);
+    color: rgba(255, 255, 255, 0.9);
   }
 
-  /* botones: "rompen" visualmente fuera del panel azul con fondo arena */
+  /* facts: check-in, check-out, wifi — visibles en el panel */
+  .hero__mini-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+    margin-top: 14px;
+  }
+
+  .hero__panel .mini-fact {
+    background: rgba(255, 255, 255, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 12px;
+    padding: 10px 12px;
+  }
+
+  .hero__panel .mini-fact span {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 0.72rem;
+  }
+
+  .hero__panel .mini-fact strong {
+    color: white;
+    font-size: 0.9rem;
+  }
+
+  /* ocultar tarjeta de dirección */
+  .hero__location-card {
+    display: none;
+  }
+
+  /* botones: "rompen" fuera del panel con fondo arena */
   .hero__panel .hero__actions {
     margin: 16px -20px 0;
     padding: 18px 20px 22px;
@@ -1170,24 +1195,8 @@ a {
     color: var(--ink);
   }
 
-  /* ocultar facts y dirección en móvil */
-  .hero__mini-grid,
-  .hero__location-card {
-    display: none;
-  }
-
   .logout-button {
-    position: fixed;
-    top: 14px;
-    right: 14px;
-    z-index: 50;
-    width: 40px;
-    height: 40px;
-    background: rgba(255, 250, 240, 0.92);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    border-color: rgba(17, 140, 140, 0.12);
-    box-shadow: 0 4px 16px rgba(17, 100, 100, 0.12);
+    position: static;
   }
 
   .quick-nav,
