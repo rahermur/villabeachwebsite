@@ -122,7 +122,7 @@ window.siteData = {
         actions: [
           { label: "Cómo llegar", hrefKey: "mapsRoute", style: "sea" },
           { label: "Anfitrión", href: "#hosts" },
-          { label: "Lista de sitios", hrefKey: "hostList" },
+          { label: "Favoritos", hrefKey: "hostList" },
         ],
         facts: [
           { label: "Check-in", valueKey: "checkInTime" },
