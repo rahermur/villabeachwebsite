@@ -2,11 +2,11 @@
   "source": {
     "type": "google-maps-saved-list",
     "url": "https://maps.app.goo.gl/6kiRLdhaMThJCQia9",
-    "payloadUrl": "https://www.google.es/maps/preview/entitylist/getlist?authuser=0&hl=es&gl=es&pb=%211m4%211s9FHSLytbQZeXfVD7Pj_uPw%212e1%213m1%211e1%212e2%213e2%214i500%216m3%211s2ZTjaa-iNayNmLQP6sWm0As%2115i204459%2128e2%2116b1",
-    "lastSyncedAt": "2026-04-18T14:27:39.344Z",
+    "payloadUrl": "https://www.google.es/maps/preview/entitylist/getlist?authuser=0&hl=es&gl=es&pb=%211m4%211s9FHSLytbQZeXfVD7Pj_uPw%212e1%213m1%211e1%212e2%213e2%214i500%216m3%211sVqXjab-gGtrZruEP_8K2kQM%2115i204459%2128e2%2116b1",
+    "lastSyncedAt": "2026-04-18T15:37:59.835Z",
     "title": "Villa Beach Higuericas",
     "description": "List of recommended places in Pilar de la Horadada and surroundings",
-    "totalPlaces": 42,
+    "totalPlaces": 43,
     "home": {
       "name": "C. Dalia, 31",
       "address": "C. Dalia, 31, 03190 Pilar de la Horadada, Alicante",
@@ -15,6 +15,26 @@
     }
   },
   "places": [
+    {
+      "id": "zona-de-esparcimiento-canino-cecilia",
+      "name": "Zona de esparcimiento canino Cecilia",
+      "note": "Parque canino",
+      "address": "C. Helecho Mojón, 03191 Pilar de la Horadada, Alicante",
+      "lat": 37.8555069,
+      "lng": -0.7686122,
+      "category": "parks",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Zona%20de%20esparcimiento%20canino%20Cecilia%2C%20C.%20Helecho%20Moj%C3%B3n%2C%2003191%20Pilar%20de%20la%20Horadada%2C%20Alicante"
+    },
+    {
+      "id": "parque-de-la-salar",
+      "name": "Parque De La Salar",
+      "note": "",
+      "address": "C. Salar, 5, 03191 Torre de la Horadada, Alicante",
+      "lat": 37.863219699999995,
+      "lng": -0.764679,
+      "category": "parks",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Parque%20De%20La%20Salar%2C%20C.%20Salar%2C%205%2C%2003191%20Torre%20de%20la%20Horadada%2C%20Alicante"
+    },
     {
       "id": "nostrissima",
       "name": "Nostrissima",
@@ -254,16 +274,6 @@
       "lng": -0.7747272,
       "category": "sports",
       "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Pinatar%20Arena%2C%20Av.%20del%20Moj%C3%B3n%2C%20s%2Fn%2C%2030740%20San%20Pedro%20del%20Pinatar%2C%20Murcia"
-    },
-    {
-      "id": "",
-      "name": "Детская площадка",
-      "note": "",
-      "address": "C. Salar, 5, 03191 Torre de la Horadada, Alicante",
-      "lat": 37.8632862,
-      "lng": -0.7647159,
-      "category": "restaurants",
-      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=%D0%94%D0%B5%D1%82%D1%81%D0%BA%D0%B0%D1%8F%20%D0%BF%D0%BB%D0%BE%D1%89%D0%B0%D0%B4%D0%BA%D0%B0%2C%20C.%20Salar%2C%205%2C%2003191%20Torre%20de%20la%20Horadada%2C%20Alicante"
     },
     {
       "id": "parque-infantil",
