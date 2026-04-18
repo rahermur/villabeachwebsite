@@ -693,6 +693,38 @@ a {
   gap: 16px;
 }
 
+.emergency-summary,
+.emergency-accordions {
+  display: grid;
+  gap: 16px;
+}
+
+.emergency-summary {
+  margin-bottom: 16px;
+}
+
+.emergency-callout {
+  display: grid;
+  gap: 14px;
+  padding: 18px 20px;
+  border-radius: 22px;
+  border: 1px solid rgba(24, 53, 59, 0.1);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.82), rgba(255, 248, 235, 0.94));
+  box-shadow: 0 14px 30px rgba(17, 58, 65, 0.08);
+}
+
+.emergency-callout h3 {
+  margin: 0 0 6px;
+  font-size: 1.15rem;
+}
+
+.emergency-callout p {
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.6;
+  white-space: pre-line;
+}
+
 .house-accordion {
   border-radius: var(--radius-lg);
   border: 1px solid rgba(24, 53, 59, 0.1);
@@ -761,6 +793,64 @@ a {
 }
 
 .house-accordion__content ul {
+  margin: 14px 0 0;
+  padding-left: 18px;
+}
+
+.emergency-accordion {
+  border-radius: var(--radius-lg);
+  border: 1px solid rgba(24, 53, 59, 0.1);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.8), rgba(255, 248, 235, 0.94));
+  box-shadow: 0 14px 30px rgba(17, 58, 65, 0.08);
+  overflow: hidden;
+}
+
+.emergency-accordion[open] .house-accordion__icon {
+  transform: rotate(45deg);
+}
+
+.emergency-accordion__summary {
+  list-style: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 18px 20px;
+}
+
+.emergency-accordion__summary::-webkit-details-marker {
+  display: none;
+}
+
+.emergency-accordion__summary h3 {
+  margin: 0 0 6px;
+  font-size: 1.08rem;
+}
+
+.emergency-accordion__summary p:last-child {
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.55;
+}
+
+.emergency-accordion__content {
+  padding: 0 20px 20px;
+  border-top: 1px solid rgba(24, 53, 59, 0.08);
+}
+
+.emergency-accordion__content p,
+.emergency-accordion__content ul {
+  color: var(--muted);
+  line-height: 1.7;
+}
+
+.emergency-accordion__content p {
+  margin: 16px 0 0;
+  white-space: pre-line;
+}
+
+.emergency-accordion__content ul {
   margin: 14px 0 0;
   padding-left: 18px;
 }
@@ -972,7 +1062,10 @@ a {
   }
 
   .house-accordion__summary,
-  .house-accordion__content {
+  .house-accordion__content,
+  .emergency-accordion__summary,
+  .emergency-accordion__content,
+  .emergency-callout {
     padding-left: 18px;
     padding-right: 18px;
   }
