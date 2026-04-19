@@ -1081,6 +1081,12 @@ a {
   color: #c93b22;
 }
 
+.food-bullet-distance {
+  font-size: 0.82rem;
+  color: var(--muted);
+  white-space: nowrap;
+}
+
 .food-bullet-featured {
   display: inline-flex;
   align-items: center;
