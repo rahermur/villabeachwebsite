@@ -18,6 +18,7 @@ python3 -m http.server 8123
 - [index.html](/Users/e045989/villa-higuericas-guide/index.html): page structure
 - [styles.css](/Users/e045989/villa-higuericas-guide/styles.css): responsive styles
 - [site-data.js](/Users/e045989/villa-higuericas-guide/site-data.js): editable content and translations
+- [site-data.locales.js](/Users/e045989/villa-higuericas-guide/site-data.locales.js): extra locale layer for the expanded language set and generated places labels
 - [app.js](/Users/e045989/villa-higuericas-guide/app.js): rendering, interactions, language switching, access gate
 - [generated-places.js](/Users/e045989/villa-higuericas-guide/generated-places.js): generated recommendations data
 
@@ -37,11 +38,28 @@ Most content changes should happen in [site-data.js](/Users/e045989/villa-higuer
 
 The guide supports:
 
-- `🌍 Auto`: uses the browser language and resolves to Spanish or English
-- `🇪🇸 ES`: forces Spanish
-- `🇬🇧 EN`: forces English
+- Spanish (`es`)
+- English (`en`)
+- German (`de`)
+- Dutch (`nl`)
+- Swedish (`sv`)
+- Polish (`pl`)
+- Russian (`ru`)
+- Danish (`da`)
+- Norwegian (`no`)
 
-Manual language choice is stored in `localStorage`.
+Language behaviour:
+
+- first visit uses automatic browser detection
+- the UI shows a compact language dropdown instead of fixed language pills
+- the dropdown shows the current effective language with a flag
+- manual selection is stored in `localStorage`
+
+Implementation notes:
+
+- base Spanish and English content lives in [site-data.js](/Users/e045989/villa-higuericas-guide/site-data.js)
+- the additional locale layer lives in [site-data.locales.js](/Users/e045989/villa-higuericas-guide/site-data.locales.js)
+- recommendation headings and category labels for generated places are also extended there
 
 ## Photos
 
@@ -78,3 +96,4 @@ Prepared flow:
 - If Google Maps scraping fails, the site can still deploy using the latest valid snapshot already committed in the repo.
 - The most fragile part of the project is the Google Maps sync script, because Google does not provide an official API for shared saved lists.
 - `generated-places.js` is a build artifact and should be regenerated after changes to the snapshot or overrides.
+- If you add a new supported language, update both [site-data.locales.js](/Users/e045989/villa-higuericas-guide/site-data.locales.js) and any generated-places locale labels defined there.
