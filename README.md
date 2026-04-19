@@ -78,3 +78,8 @@ Prepared flow:
 - If Google Maps scraping fails, the site can still deploy using the latest valid snapshot already committed in the repo.
 - The most fragile part of the project is the Google Maps sync script, because Google does not provide an official API for shared saved lists.
 - `generated-places.js` is a build artifact and should be regenerated after changes to the snapshot or overrides.
+
+## TODO
+
+- Expand the pool section with clearer guidance about heating expectations, especially that the target should stay around `24°C` and not significantly above that.
+- Expand the hot tub section once the final operating instructions are available, so the guest-facing copy is more precise and complete.
