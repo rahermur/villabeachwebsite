@@ -21,6 +21,8 @@ window.siteData = {
       beaches: "https://www.visitpilardelahoradada.com/es/que_ver_hacer/playas",
       kids: "https://www.visitpilardelahoradada.com/es/que_ver_hacer/ninyos",
       tourism: "https://www.visitpilardelahoradada.com/",
+      taxiPilar: "https://taxipilardelahoradada.com/",
+      taxiOliva: "https://www.taxishermanosoliva.com/es",
       restaurantsGuide:
         "https://www.visitpilardelahoradada.com/es/donde_comer/guia_hosteleria/torre-de-la-horadada",
       restaurantsMap:
@@ -87,12 +89,12 @@ window.siteData = {
         activeLanguage: "Español",
         activeLanguageAuto: "Automático (%s)",
         nav: {
-          checkin: "Llegada y salida",
+          checkin: "Llegada",
           house: "Casa",
           rules: "Normas",
-          food: "Recomendaciones",
+          food: "Planes",
           hosts: "Contacto",
-          emergencies: "Emergencias",
+          emergencies: "Ayuda",
         },
         sectionLabels: {
           address: "Dirección",
@@ -103,6 +105,8 @@ window.siteData = {
           description:
             "Introduce tu código de huésped para ver la guía completa de la villa.",
           inputLabel: "Código de acceso",
+          showCode: "Mostrar código",
+          hideCode: "Ocultar código",
           submit: "Entrar",
           hint: "Si no lo tienes, pídelo al anfitrión.",
           error: "Código incorrecto. Inténtalo de nuevo.",
@@ -186,20 +190,29 @@ window.siteData = {
             },
             {
               title: "🏊 Piscina y jacuzzi",
+              text:
+                "Consulta los apartados específicos de piscina y jacuzzi para ver los consejos de uso durante la estancia.",
               list: [
                 "Es obligatorio ducharse antes de usar la piscina o el jacuzzi.",
                 "No introducir arena en el jacuzzi.",
                 "El jacuzzi no debe ser utilizado por menores de 12 años sin supervisión adulta.",
                 "Los niños no deben permanecer solos en la piscina en ningún momento.",
               ],
+              links: [
+                { label: "Consejos sobre uso de piscina", href: "#house-pool" },
+                { label: "Consejos sobre uso de jacuzzi", href: "#house-jacuzzi" },
+              ],
             },
             {
               title: "🔥 Barbacoa / chimenea",
+              text:
+                "En el apartado de barbacoa tienes también los consejos prácticos de encendido y cierre.",
               list: [
                 "Utilizar siempre pastillas de encendido y el sistema de la chimenea para encender las brasas.",
                 "No utilizar líquidos inflamables.",
                 "Asegurarse de que las brasas quedan completamente apagadas al finalizar.",
               ],
+              links: [{ label: "Consejos sobre uso de barbacoa", href: "#house-bbq" }],
             },
             {
               title: "❄️ Aire acondicionado y calefacción",
@@ -225,9 +238,13 @@ window.siteData = {
           {
             title: "🛬 Llegada",
             text:
-              "Coordina la llegada con el anfitrión a partir de las 15:00.\nAntes de venir, completa si es posible el check-in online desde el enlace personal enviado previamente por email o mensaje.\nEn el check-in se recordarán las normas de la casa y se resolverá cualquier duda necesaria.",
+              "Coordina la llegada con el anfitrión a partir de las 15:00.\nAntes de venir, completa si es posible el check-in online desde el enlace personal enviado previamente por email o mensaje.\nPara llegar a la villa, lo más práctico suele ser venir en coche particular o taxi.\nEn el check-in se recordarán las normas de la casa y se resolverá cualquier duda necesaria.",
             layout: "half",
             sheetKey: "arrivalRegistration",
+            links: [
+              { label: "Taxi Pilar de la Horadada", hrefKey: "taxiPilar" },
+              { label: "Taxi Hermanos Oliva", hrefKey: "taxiOliva" },
+            ],
           },
           {
             title: "🧳 Salida",
@@ -293,6 +310,7 @@ window.siteData = {
         ],
         houseAccordions: [
           {
+            id: "pool",
             title: "🏊 Piscina",
             eyebrow: "Exterior",
             summary: "Consejos rápidos para usar la piscina con seguridad y sin incidencias.",
@@ -300,6 +318,7 @@ window.siteData = {
             listKey: "pool",
           },
           {
+            id: "jacuzzi",
             title: "♨️ Jacuzzi",
             eyebrow: "Relax",
             summary: "Uso cómodo y seguro del jacuzzi durante la estancia.",
@@ -307,6 +326,7 @@ window.siteData = {
             listKey: "jacuzzi",
           },
           {
+            id: "bbq",
             title: "🔥 Barbacoa",
             eyebrow: "Comer fuera",
             summary: "Cómo encenderla y dejarla bien al terminar.",
@@ -322,6 +342,7 @@ window.siteData = {
           links: [
             { label: "Abrir lista completa", hrefKey: "hostList" },
             { label: "Guía oficial", hrefKey: "restaurantsGuide" },
+            { label: "Turismo Pilar de la Horadada", hrefKey: "tourism" },
           ],
         },
         foodFeatured: [
@@ -399,9 +420,18 @@ window.siteData = {
             items: [
               {
                 title: "Turismo local",
-                text: "La web turística del municipio reúne rutas, agenda y propuestas para organizar planes durante la estancia.",
+                text: "La web turística del municipio reúne rutas, agenda, playas, actividades y propuestas para organizar planes durante la estancia y en los alrededores.",
                 tags: ["Agenda", "Rutas"],
                 links: [{ label: "Web turística", hrefKey: "tourism" }],
+              },
+              {
+                title: "Moverse hasta la villa",
+                text: "Para llegar a la vivienda, el coche particular o el taxi suelen ser la opción más práctica. Aquí tienes dos referencias locales de taxi.",
+                tags: ["Transporte", "Taxi"],
+                links: [
+                  { label: "Taxi Pilar de la Horadada", hrefKey: "taxiPilar" },
+                  { label: "Taxi Hermanos Oliva", hrefKey: "taxiOliva" },
+                ],
               },
               {
                 title: "Lista completa en Google Maps",
@@ -505,12 +535,12 @@ window.siteData = {
         activeLanguage: "English",
         activeLanguageAuto: "Automatic (%s)",
         nav: {
-          checkin: "Arrival & departure",
-          house: "House",
+          checkin: "Arrival",
+          house: "Villa",
           rules: "Rules",
-          food: "Recommendations",
+          food: "Plans",
           hosts: "Contact",
-          emergencies: "Emergency",
+          emergencies: "Help",
         },
         sectionLabels: {
           address: "Address",
@@ -520,6 +550,8 @@ window.siteData = {
           title: "Private access",
           description: "Enter your guest code to view the full villa guide.",
           inputLabel: "Access code",
+          showCode: "Show code",
+          hideCode: "Hide code",
           submit: "Enter",
           hint: "If you do not have it, ask the host.",
           error: "Incorrect code. Please try again.",
@@ -603,20 +635,29 @@ window.siteData = {
             },
             {
               title: "🏊 Pool and hot tub",
+              text:
+                "See the dedicated pool and hot tub sections for practical use tips during the stay.",
               list: [
                 "Showering before using the pool or hot tub is mandatory.",
                 "Do not bring sand into the hot tub.",
                 "The hot tub must not be used by children under 12 without adult supervision.",
                 "Children must never be left alone in the pool area.",
               ],
+              links: [
+                { label: "Pool use tips", href: "#house-pool" },
+                { label: "Hot tub use tips", href: "#house-jacuzzi" },
+              ],
             },
             {
               title: "🔥 Barbecue / fireplace",
+              text:
+                "You can also jump to the barbecue section for practical ignition and closing tips.",
               list: [
                 "Always use firelighters and the fireplace system to light the coals.",
                 "Do not use flammable liquids.",
                 "Make sure the coals are fully extinguished when finished.",
               ],
+              links: [{ label: "Barbecue use tips", href: "#house-bbq" }],
             },
             {
               title: "❄️ Air conditioning and heating",
@@ -642,9 +683,13 @@ window.siteData = {
           {
             title: "🛬 Arrival",
             text:
-              "Coordinate the arrival with the host from 3:00 pm onwards.\nBefore travelling, complete the online check-in if possible using the personal link previously sent by email or message.\nDuring check-in, the house rules can be reviewed and any questions can be answered.",
+              "Coordinate the arrival with the host from 3:00 pm onwards.\nBefore travelling, complete the online check-in if possible using the personal link previously sent by email or message.\nTo reach the villa, travelling by private car or taxi is usually the easiest option.\nDuring check-in, the house rules can be reviewed and any questions can be answered.",
             layout: "half",
             sheetKey: "arrivalRegistration",
+            links: [
+              { label: "Taxi Pilar de la Horadada", hrefKey: "taxiPilar" },
+              { label: "Taxi Hermanos Oliva", hrefKey: "taxiOliva" },
+            ],
           },
           {
             title: "🧳 Departure",
@@ -710,6 +755,7 @@ window.siteData = {
         ],
         houseAccordions: [
           {
+            id: "pool",
             title: "🏊 Pool",
             eyebrow: "Outdoor",
             summary: "Quick guidance for safe and easy pool use.",
@@ -717,6 +763,7 @@ window.siteData = {
             listKey: "pool",
           },
           {
+            id: "jacuzzi",
             title: "♨️ Hot tub",
             eyebrow: "Relax",
             summary: "Simple guidance for comfortable and safe hot tub use.",
@@ -724,6 +771,7 @@ window.siteData = {
             listKey: "jacuzzi",
           },
           {
+            id: "bbq",
             title: "🔥 Barbecue",
             eyebrow: "Outdoor dining",
             summary: "How to light it and leave it safely afterwards.",
@@ -739,6 +787,7 @@ window.siteData = {
           links: [
             { label: "Open full list", hrefKey: "hostList" },
             { label: "Official guide", hrefKey: "restaurantsGuide" },
+            { label: "Pilar de la Horadada tourism", hrefKey: "tourism" },
           ],
         },
         foodFeatured: [
@@ -816,9 +865,18 @@ window.siteData = {
             items: [
               {
                 title: "Local tourism",
-                text: "The town tourism website gathers routes, events and ideas for the stay.",
+                text: "The town tourism website brings together routes, events, beaches, activities and useful ideas for the stay and the surrounding area.",
                 tags: ["Events", "Routes"],
                 links: [{ label: "Tourism website", hrefKey: "tourism" }],
+              },
+              {
+                title: "Getting to the villa",
+                text: "To reach the property, travelling by private car or taxi is usually the most practical option. Here are two local taxi references.",
+                tags: ["Transport", "Taxi"],
+                links: [
+                  { label: "Taxi Pilar de la Horadada", hrefKey: "taxiPilar" },
+                  { label: "Taxi Hermanos Oliva", hrefKey: "taxiOliva" },
+                ],
               },
               {
                 title: "Full list in Google Maps",

@@ -2,11 +2,11 @@
   "source": {
     "type": "google-maps-saved-list",
     "url": "https://maps.app.goo.gl/6kiRLdhaMThJCQia9",
-    "payloadUrl": "https://www.google.es/maps/preview/entitylist/getlist?authuser=0&hl=es&gl=es&pb=%211m4%211s9FHSLytbQZeXfVD7Pj_uPw%212e1%213m1%211e1%212e2%213e2%214i500%216m3%211sZvHjabTCHrTKp84P8MibmQo%2115i204459%2128e2%2116b1",
-    "lastSyncedAt": "2026-04-18T21:02:32.017Z",
+    "payloadUrl": "https://www.google.es/maps/preview/entitylist/getlist?authuser=0&hl=es&gl=es&pb=%211m4%211s9FHSLytbQZeXfVD7Pj_uPw%212e1%213m1%211e1%212e2%213e2%214i500%216m3%211sWo_kaZHHJ82t5NoP5OizkQg%2115i204459%2128e2%2116b1",
+    "lastSyncedAt": "2026-04-19T08:16:27.605Z",
     "title": "Villa Beach Higuericas",
     "description": "List of recommended places in Pilar de la Horadada and surroundings",
-    "totalPlaces": 47,
+    "totalPlaces": 52,
     "home": {
       "name": "C. Dalia, 31",
       "address": "C. Dalia, 31, 03190 Pilar de la Horadada, Alicante",
@@ -15,6 +15,97 @@
     }
   },
   "places": [
+    {
+      "id": "heladeria-galan",
+      "name": "Heladería Galán",
+      "note": "The town’s best ice cream",
+      "address": "C. Albacete, 2, 03191 Torre de la Horadada, Alicante",
+      "lat": 37.8679748,
+      "lng": -0.7588073,
+      "category": "ice-cream",
+      "temporarilyClosed": false,
+      "closureLabel": null,
+      "closureSource": null,
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Helader%C3%ADa%20Gal%C3%A1n%2C%20C.%20Albacete%2C%202%2C%2003191%20Torre%20de%20la%20Horadada%2C%20Alicante"
+    },
+    {
+      "id": "paseo-de-cine",
+      "name": "Paseo de Cine",
+      "note": "",
+      "address": "03191 Torre de la Horadada, Alicante",
+      "lat": 37.8692409,
+      "lng": -0.7565759999999999,
+      "category": "restaurants",
+      "temporarilyClosed": false,
+      "closureLabel": null,
+      "closureSource": null,
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Paseo%20de%20Cine%2C%2003191%20Torre%20de%20la%20Horadada%2C%20Alicante"
+    },
+    {
+      "id": "centro-de-visitantes-las-salinas-parque-regional-salinas-de-san-pedro-del-pinatar",
+      "name": "Centro de Visitantes \"Las Salinas\" Parque Regional Salinas de San Pedro del \nPinatar",
+      "note": "",
+      "address": "Av. del Puerto, 317-321, 30740 San Pedro del Pinatar, Murcia",
+      "lat": 37.8349338,
+      "lng": -0.7779805999999999,
+      "category": "parks",
+      "temporarilyClosed": false,
+      "closureLabel": null,
+      "closureSource": null,
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Centro%20de%20Visitantes%20%22Las%20Salinas%22%20Parque%20Regional%20Salinas%20de%20San%20Pedro%20del%20%0APinatar%2C%20Av.%20del%20Puerto%2C%20317-321%2C%2030740%20San%20Pedro%20del%20Pinatar%2C%20Murcia"
+    },
+    {
+      "id": "oficina-de-turismo-tourist-info-pilar-de-la-horadada",
+      "name": "Oficina de Turismo / Tourist Info Pilar de la Horadada",
+      "note": "",
+      "address": "Plaza Campoamor, 2, 03190 Pilar de la Horadada, Alicante",
+      "lat": 37.864392099999996,
+      "lng": -0.7925086,
+      "category": "sports",
+      "temporarilyClosed": false,
+      "closureLabel": null,
+      "closureSource": null,
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Oficina%20de%20Turismo%20%2F%20Tourist%20Info%20Pilar%20de%20la%20Horadada%2C%20Plaza%20Campoamor%2C%202%2C%2003190%20Pilar%20de%20la%20Horadada%2C%20Alicante"
+    },
+    {
+      "id": "go-karts-orihuela-costa",
+      "name": "Go-Karts Orihuela Costa",
+      "note": "",
+      "address": "Carretera Torrevieja - Cartagena, km 5, 700, 03189 Orihuela Costa, Alicante",
+      "lat": 37.940593,
+      "lng": -0.7193145999999999,
+      "category": "restaurants",
+      "temporarilyClosed": false,
+      "closureLabel": null,
+      "closureSource": null,
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Go-Karts%20Orihuela%20Costa%2C%20Carretera%20Torrevieja%20-%20Cartagena%2C%20km%205%2C%20700%2C%2003189%20Orihuela%20Costa%2C%20Alicante"
+    },
+    {
+      "id": "aquopolis-torrevieja",
+      "name": "Aquopolis Torrevieja",
+      "note": "",
+      "address": "Av. Delfina Viudes, s/n, 03183 Torrevieja, Alicante",
+      "lat": 37.993083,
+      "lng": -0.682403,
+      "category": "restaurants",
+      "temporarilyClosed": true,
+      "closureLabel": "official-site-seasonal-closure",
+      "closureSource": "https://torrevieja.aquopolis.es/horarios-y-precios/horarios",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Aquopolis%20Torrevieja%2C%20Av.%20Delfina%20Viudes%2C%20s%2Fn%2C%2003183%20Torrevieja%2C%20Alicante"
+    },
+    {
+      "id": "lo-rufete-multiaventura-park",
+      "name": "Lo Rufete Multiaventura Park",
+      "note": "",
+      "address": "CV-951, Km. 1, 03193 San Miguel de Salinas, Alicante",
+      "lat": 37.997203299999995,
+      "lng": -0.8226477999999999,
+      "category": "sports",
+      "temporarilyClosed": false,
+      "closureLabel": null,
+      "closureSource": null,
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Lo%20Rufete%20Multiaventura%20Park%2C%20CV-951%2C%20Km.%201%2C%2003193%20San%20Miguel%20de%20Salinas%2C%20Alicante"
+    },
     {
       "id": "byoko-la-zenia",
       "name": "Byoko La Zenia",
@@ -105,19 +196,6 @@
       "closureLabel": null,
       "closureSource": null,
       "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Parque%2C%2003191%20El%20Moj%C3%B3n%2C%20Alicante"
-    },
-    {
-      "id": "zona-de-esparcimiento-canino-cecilia",
-      "name": "Zona de esparcimiento canino Cecilia",
-      "note": "Parque canino",
-      "address": "C. Helecho Mojón, 03191 Pilar de la Horadada, Alicante",
-      "lat": 37.8555069,
-      "lng": -0.7686122,
-      "category": "parks",
-      "temporarilyClosed": false,
-      "closureLabel": null,
-      "closureSource": null,
-      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Zona%20de%20esparcimiento%20canino%20Cecilia%2C%20C.%20Helecho%20Moj%C3%B3n%2C%2003191%20Pilar%20de%20la%20Horadada%2C%20Alicante"
     },
     {
       "id": "parque-de-la-salar",
@@ -469,19 +547,6 @@
       "closureLabel": null,
       "closureSource": null,
       "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Pirata%20T%C3%ADo%20Pepe%2C%20C%2F%20Partida%20de%2C%20C.%20Brisamar%2C%2014%2C%2003191%20Torre%20de%20la%20Horadada%2C%20Alicante"
-    },
-    {
-      "id": "heladeria-galan",
-      "name": "Heladería Galán",
-      "note": "The town’s best ice cream",
-      "address": "C. Albacete, 2, 03191 Torre de la Horadada, Alicante",
-      "lat": 37.8679748,
-      "lng": -0.7588073,
-      "category": "ice-cream",
-      "temporarilyClosed": false,
-      "closureLabel": null,
-      "closureSource": null,
-      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Helader%C3%ADa%20Gal%C3%A1n%2C%20C.%20Albacete%2C%202%2C%2003191%20Torre%20de%20la%20Horadada%2C%20Alicante"
     },
     {
       "id": "restaurante-pizzeria-arroceria-plaza",

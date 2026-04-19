@@ -131,6 +131,32 @@
         "en": ["Sports", "Favourite"]
       }
     },
+    "aquopolis-torrevieja": {
+      "category": "parks",
+      "subgroup": "attractions",
+      "statusCheck": {
+        "url": "https://torrevieja.aquopolis.es/horarios-y-precios/horarios",
+        "closedPatterns": [
+          "Lo sentimos, ¡estamos cerrados!",
+          "¡Nos vemos muy pronto!",
+          "Park closed",
+          "We come back the next 1st of June"
+        ],
+        "label": "official-site-seasonal-closure"
+      }
+    },
+    "lo-rufete-multiaventura-park": {
+      "category": "parks",
+      "subgroup": "attractions"
+    },
+    "centro-de-visitantes-las-salinas-parque-regional-salinas-de-san-pedro-del-pinatar": {
+      "category": "sports",
+      "subgroup": "tourism"
+    },
+    "oficina-de-turismo-tourist-info-pilar-de-la-horadada": {
+      "category": "sports",
+      "subgroup": "tourism"
+    },
     "farmacia-playa-las-higuericas-lda-m-del-mar-lorenzo-banon": {
       "tags": {
         "es": ["Pharmacy", "Más cercana"],

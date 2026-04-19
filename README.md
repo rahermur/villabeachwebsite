@@ -1,68 +1,80 @@
 # Villa Higuericas Guide
 
-Web estática para huéspedes de una villa en `Calle Dalia 31, Pilar de la Horadada`.
+Static guest guide for a villa in `Calle Dalia 31, Pilar de la Horadada`.
 
-## Abrir la web
+## Run locally
 
-Abre [`index.html`](/Users/e045989/villa-higuericas-guide/index.html) en el navegador o sirve la carpeta con cualquier servidor estático.
+Open [index.html](/Users/e045989/villa-higuericas-guide/index.html) directly in a browser, or serve the folder with any static server.
 
-## Qué editar primero
+Example:
 
-Toda la información editable está en [`site-data.js`](/Users/e045989/villa-higuericas-guide/site-data.js):
+```bash
+cd /Users/e045989/villa-higuericas-guide
+python3 -m http.server 8123
+```
 
-- Nombre y contraseña del Wi-Fi.
-- Horarios reales de check-in y check-out.
-- Teléfonos y nombres de anfitriones.
-- Instrucciones exactas de jacuzzi, piscina y barbacoa según el equipamiento real.
-- Fotos reales de la propiedad para la portada.
-- Enlaces reales a listas compartidas de Google Maps si quieres usarlas.
+## Main files
 
-## Idiomas
+- [index.html](/Users/e045989/villa-higuericas-guide/index.html): page structure
+- [styles.css](/Users/e045989/villa-higuericas-guide/styles.css): responsive styles
+- [site-data.js](/Users/e045989/villa-higuericas-guide/site-data.js): editable content and translations
+- [app.js](/Users/e045989/villa-higuericas-guide/app.js): rendering, interactions, language switching, access gate
+- [generated-places.js](/Users/e045989/villa-higuericas-guide/generated-places.js): generated recommendations data
 
-La web ahora soporta:
+## What to edit first
 
-- `🌍 Auto`: usa el idioma del navegador y resuelve a español o inglés.
-- `🇪🇸 ES`: fuerza español.
-- `🇬🇧 EN`: fuerza inglés.
+Most content changes should happen in [site-data.js](/Users/e045989/villa-higuericas-guide/site-data.js):
 
-La elección manual se guarda en `localStorage` del navegador.
+- Wi-Fi name and password
+- Check-in and check-out details
+- Host and support contact details
+- Pool, hot tub and barbecue instructions
+- House rules and pet policy
+- Google Maps shared list link
+- Hero photos and property copy
 
-## Sustituir fotos
+## Languages
 
-1. Guarda tus fotos en `/Users/e045989/villa-higuericas-guide/assets/`.
-2. Para la foto principal que me has pasado, usa exactamente este nombre: `/Users/e045989/villa-higuericas-guide/assets/hero-villa-cover.jpg`.
-3. Cambia o amplía las rutas del bloque `property.photos` en `site-data.js` si añades más imágenes.
-4. Las tres primeras fotos se usan en la portada.
-5. Si quieres más fotos para reutilizarlas en otras secciones, añade más objetos al array.
+The guide supports:
 
-## Estructura
+- `🌍 Auto`: uses the browser language and resolves to Spanish or English
+- `🇪🇸 ES`: forces Spanish
+- `🇬🇧 EN`: forces English
 
-- `index.html`: estructura principal.
-- `styles.css`: diseño responsive.
-- `site-data.js`: contenido editable.
-- `app.js`: renderizado simple y botones.
-- `generated-places.js`: datos generados para la sección `To enjoy`.
+Manual language choice is stored in `localStorage`.
 
-## Google Maps As Source Of Truth
+## Photos
 
-La lista guardada de Google Maps puede seguir siendo la fuente de verdad operativa, pero no se usa directamente en el runtime de la web.
+Store property images in `/Users/e045989/villa-higuericas-guide/assets/`.
 
-El flujo preparado ahora es:
+Current expectations:
 
-- `scripts/sync-google-maps-list.mjs`: intenta extraer un snapshot estable de la lista compartida.
-- `data/places.snapshot.json`: último snapshot válido generado desde Google Maps.
-- `data/places.overrides.json`: categorías, favoritos y copy corto para la web.
-- `scripts/build-generated-places.mjs`: mezcla snapshot + overrides y genera `generated-places.js`.
+- the main cover image is `/Users/e045989/villa-higuericas-guide/assets/hero-villa-cover.jpg`
+- the first images in `property.photos` are reused in the hero
+- extra images can be added to the same array in [site-data.js](/Users/e045989/villa-higuericas-guide/site-data.js)
 
-### Workflows
+## Google Maps sync pipeline
 
-- `.github/workflows/sync-google-maps-list.yml`
-  Sincroniza la lista manualmente o en horario programado y actualiza el snapshot.
+The shared Google Maps list is treated as an external source, but the website does not read it directly at runtime.
 
-- `.github/workflows/deploy-pages.yml`
-  Construye `generated-places.js` a partir del último snapshot disponible y despliega en GitHub Pages.
+Prepared flow:
 
-Importante:
+- [scripts/sync-google-maps-list.mjs](/Users/e045989/villa-higuericas-guide/scripts/sync-google-maps-list.mjs): syncs a stable snapshot from the shared list
+- [data/places.snapshot.json](/Users/e045989/villa-higuericas-guide/data/places.snapshot.json): latest synced raw snapshot
+- [data/places.overrides.json](/Users/e045989/villa-higuericas-guide/data/places.overrides.json): editorial overrides, favourites and grouping
+- [scripts/build-generated-places.mjs](/Users/e045989/villa-higuericas-guide/scripts/build-generated-places.mjs): combines snapshot + overrides into generated data
+- [generated-places.js](/Users/e045989/villa-higuericas-guide/generated-places.js): browser-ready output used by the guide
 
-- Si el scrapeo de Google Maps falla, la web puede seguir desplegándose con el último snapshot válido.
-- La parte más frágil del sistema es `sync-google-maps-list.mjs`, porque Google Maps no ofrece una API oficial para listas guardadas compartidas.
+## GitHub Actions
+
+- [.github/workflows/sync-google-maps-list.yml](/Users/e045989/villa-higuericas-guide/.github/workflows/sync-google-maps-list.yml)
+  Refreshes the Google Maps snapshot and rebuilds generated places.
+
+- [.github/workflows/deploy-pages.yml](/Users/e045989/villa-higuericas-guide/.github/workflows/deploy-pages.yml)
+  Syncs the list, rebuilds generated places and deploys the site to GitHub Pages.
+
+## Notes
+
+- If Google Maps scraping fails, the site can still deploy using the latest valid snapshot already committed in the repo.
+- The most fragile part of the project is the Google Maps sync script, because Google does not provide an official API for shared saved lists.
+- `generated-places.js` is a build artifact and should be regenerated after changes to the snapshot or overrides.

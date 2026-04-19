@@ -5,6 +5,7 @@ const pageShell = document.getElementById("pageShell");
 const accessGate = document.getElementById("accessGate");
 const accessForm = document.getElementById("accessForm");
 const accessInput = document.getElementById("accessCode");
+const accessToggle = document.getElementById("accessToggle");
 const accessError = document.getElementById("gateError");
 const logoutButton = document.getElementById("logoutButton");
 const detailSheet = document.getElementById("detailSheet");
@@ -26,6 +27,20 @@ const resolveTemplate = (text = "") =>
     .replaceAll("[COMPLETAR_HORA_CHECKOUT]", shared.property.checkOutTime)
     .replaceAll("[COMPLETAR_NOMBRE_WIFI]", shared.property.wifi.network)
     .replaceAll("[COMPLETAR_PASSWORD_WIFI]", shared.property.wifi.password);
+
+const showGate = () => {
+  accessGate.hidden = false;
+  requestAnimationFrame(() => accessGate.classList.add("is-visible"));
+};
+
+const hideGate = () => {
+  accessGate.classList.remove("is-visible");
+  window.setTimeout(() => {
+    if (!accessGate.classList.contains("is-visible")) {
+      accessGate.hidden = true;
+    }
+  }, 180);
+};
 
 const textToParagraphs = (text = "") =>
   resolveTemplate(text)
@@ -153,10 +168,10 @@ const renderHouseSection = () => {
   renderCards("houseCards", currentCopy.content.houseBasics);
 
   document.getElementById("houseAccordions").innerHTML = currentCopy.content.houseAccordions
-    .map((item, index) => {
+    .map((item) => {
       const list = item.listKey ? currentCopy.property[item.listKey] : item.list || [];
       return `
-        <details class="house-accordion"${index === 0 ? " open" : ""}>
+        <details class="house-accordion"${item.id ? ` id="house-${item.id}"` : ""}>
           <summary class="house-accordion__summary">
             <div>
               <p class="eyebrow">${item.eyebrow || currentCopy.sections.house.eyebrow}</p>
@@ -168,6 +183,7 @@ const renderHouseSection = () => {
           <div class="house-accordion__content">
             ${textToParagraphs(item.text)}
             ${list.length ? `<ul>${list.map((entry) => `<li>${entry}</li>`).join("")}</ul>` : ""}
+            ${createLinks(item.links)}
           </div>
         </details>
       `;
@@ -232,11 +248,11 @@ const renderFoodSection = () => {
   );
 
   document.getElementById("foodGroups").innerHTML = foodData.foodCategories
-    .map((item, index) => {
+    .map((item) => {
       const category = item;
       const subgroups = category.subgroups || [{ title: "", items: category.items || [] }];
       return `
-        <details class="food-group"${index === 0 ? " open" : ""}>
+        <details class="food-group">
           <summary class="food-group__summary">
             <div>
               <h3>${category.emoji || "📍"} ${category.title}</h3>
@@ -248,9 +264,17 @@ const renderFoodSection = () => {
             ${subgroups
               .map((subgroup) => {
                 const subgroupItems = [...subgroup.items].sort((a, b) => {
+                  const featuredDelta = Number(Boolean(b.featured)) - Number(Boolean(a.featured));
+                  if (featuredDelta !== 0) return featuredDelta;
+
+                  const aDistance = Number.isFinite(a.distanceKm) ? a.distanceKm : Number.POSITIVE_INFINITY;
+                  const bDistance = Number.isFinite(b.distanceKm) ? b.distanceKm : Number.POSITIVE_INFINITY;
+                  if (aDistance !== bDistance) return aDistance - bDistance;
+
                   const closedDelta = Number(Boolean(a.temporarilyClosed)) - Number(Boolean(b.temporarilyClosed));
                   if (closedDelta !== 0) return closedDelta;
-                  return Number(Boolean(b.featured)) - Number(Boolean(a.featured));
+
+                  return a.title.localeCompare(b.title);
                 });
 
                 return `
@@ -273,6 +297,7 @@ const renderFoodSection = () => {
                   <li class="food-bullet-item">
                     <div class="food-bullet-header">
                       <strong>${entry.title}</strong>
+                      ${entry.distanceLabel ? `<span class="food-bullet-distance">${escapeHtml(entry.distanceLabel)}</span>` : ""}
                       ${entry.featured ? `<span class="food-bullet-featured">${featuredLabel}</span>` : ""}
                       ${entry.temporarilyClosed ? `<span class="food-bullet-status">${escapeHtml(entry.statusLabel)}</span>` : ""}
                     </div>
@@ -385,18 +410,23 @@ const sha256Hex = async (value) => {
 
 const unlockGuide = () => {
   sessionStorage.setItem(shared.auth.sessionKey, "granted");
-  accessGate.hidden = true;
   pageShell.hidden = false;
+  hideGate();
   document.body.classList.remove("is-locked");
 };
 
 const lockGuide = () => {
   sessionStorage.removeItem(shared.auth.sessionKey);
-  accessGate.hidden = false;
+  showGate();
   pageShell.hidden = true;
   detailSheet.hidden = true;
   accessInput.value = "";
+  accessInput.type = "password";
   accessError.hidden = true;
+  if (accessToggle) {
+    accessToggle.classList.remove("is-visible");
+    accessToggle.setAttribute("aria-label", currentCopy.ui.gate.showCode);
+  }
   document.body.classList.add("is-locked");
 };
 
@@ -510,6 +540,7 @@ const render = () => {
   setPhoto("heroPhotoMain", shared.property.photos[0]);
   setPhoto("heroPhotoTop", shared.property.photos[1]);
   setPhoto("heroPhotoBottom", shared.property.photos[2]);
+  document.getElementById("accessGateMedia").innerHTML = `<img src="${shared.property.photos[0].src}" alt="" />`;
 
   document.getElementById("quickNav").innerHTML = [
     ["checkin", currentCopy.ui.nav.checkin],
@@ -541,6 +572,7 @@ const render = () => {
           <h3>${section.title}</h3>
           ${section.text ? textToParagraphs(section.text) : ""}
           ${section.list?.length ? `<ul>${section.list.map((entry) => `<li>${entry}</li>`).join("")}</ul>` : ""}
+          ${createLinks(section.links)}
           ${
             section.sheetKey
               ? `<div class="card__links"><button class="ghost-button card__detail-button" type="button" data-sheet-key="${section.sheetKey}">${
@@ -575,6 +607,13 @@ accessForm.addEventListener("submit", async (event) => {
 
   accessError.hidden = false;
   accessInput.select();
+});
+
+accessToggle?.addEventListener("click", () => {
+  const shouldShow = accessInput.type === "password";
+  accessInput.type = shouldShow ? "text" : "password";
+  accessToggle.classList.toggle("is-visible", shouldShow);
+  accessToggle.setAttribute("aria-label", shouldShow ? currentCopy.ui.gate.hideCode : currentCopy.ui.gate.showCode);
 });
 
 logoutButton.addEventListener("click", () => {

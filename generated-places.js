@@ -2,22 +2,26 @@ window.generatedPlacesData = {
   "meta": {
     "sourceUrl": "https://maps.app.goo.gl/6kiRLdhaMThJCQia9",
     "listTitle": "Villa Beach Higuericas",
-    "lastSyncedAt": "2026-04-18T21:02:32.017Z",
-    "totalPlaces": 47,
+    "lastSyncedAt": "2026-04-19T08:16:27.605Z",
+    "totalPlaces": 52,
     "directListEmbedAvailable": false
   },
   "es": {
     "foodIntro": {
       "title": "Lista compartida de Google Maps",
-      "body": "Esta sección resume la lista compartida del anfitrión en Google Maps y la ordena por bloques más simples como Restaurants, Supermarkets, Shopping, Sports & adventures o Zonas infantiles.\nLa llamada principal es abrir la lista completa en Google Maps, guardarla en tu cuenta y usar este resumen web solo como atajo rápido durante la estancia.",
+      "body": "Esta sección resume la lista compartida del anfitrión en Google Maps y la ordena por bloques más simples como Restaurants, Supermarkets, Shopping, Sports & adventures o Zonas infantiles.\nLa llamada principal es abrir la lista completa en Google Maps, guardarla en tu cuenta y usar este resumen web solo como atajo rápido durante la estancia.\nLas distancias y tiempos se muestran como referencia aproximada desde la villa.",
       "tags": [
         "Google Maps",
-        "47 lugares guardados"
+        "52 lugares guardados"
       ],
       "links": [
         {
           "label": "🗺️ Abrir y guardar lista en Google Maps",
           "href": "https://maps.app.goo.gl/6kiRLdhaMThJCQia9"
+        },
+        {
+          "label": "Turismo Pilar de la Horadada",
+          "href": "https://www.visitpilardelahoradada.com/"
         }
       ]
     },
@@ -35,6 +39,58 @@ window.generatedPlacesData = {
             "title": "🍽️ Restaurantes",
             "items": [
               {
+                "title": "Paseo de Cine",
+                "text": "",
+                "details": [
+                  {
+                    "label": "📍 Dirección",
+                    "value": "03191 Torre de la Horadada, Alicante"
+                  }
+                ],
+                "featured": false,
+                "distanceKm": 1.7148621274068827,
+                "walkingMinutes": 26,
+                "drivingMinutes": 4,
+                "distanceLabel": "1.7 km · 🚶 ~26 min",
+                "temporarilyClosed": false,
+                "statusLabel": "",
+                "tags": [
+                  "🍽️ Restaurants"
+                ],
+                "links": [
+                  {
+                    "label": "Abrir en Maps",
+                    "href": "https://www.google.com/maps/search/?api=1&query=Paseo%20de%20Cine%2C%2003191%20Torre%20de%20la%20Horadada%2C%20Alicante"
+                  }
+                ]
+              },
+              {
+                "title": "Go-Karts Orihuela Costa",
+                "text": "",
+                "details": [
+                  {
+                    "label": "📍 Dirección",
+                    "value": "Carretera Torrevieja - Cartagena, km 5, 700, 03189 Orihuela Costa, Alicante"
+                  }
+                ],
+                "featured": false,
+                "distanceKm": 10.26481916859324,
+                "walkingMinutes": 157,
+                "drivingMinutes": 22,
+                "distanceLabel": "10.3 km · 🚗 ~22 min",
+                "temporarilyClosed": false,
+                "statusLabel": "",
+                "tags": [
+                  "🍽️ Restaurants"
+                ],
+                "links": [
+                  {
+                    "label": "Abrir en Maps",
+                    "href": "https://www.google.com/maps/search/?api=1&query=Go-Karts%20Orihuela%20Costa%2C%20Carretera%20Torrevieja%20-%20Cartagena%2C%20km%205%2C%20700%2C%2003189%20Orihuela%20Costa%2C%20Alicante"
+                  }
+                ]
+              },
+              {
                 "title": "Nostrissima",
                 "text": "",
                 "details": [
@@ -44,6 +100,10 @@ window.generatedPlacesData = {
                   }
                 ],
                 "featured": false,
+                "distanceKm": 1.9940888847379197,
+                "walkingMinutes": 30,
+                "drivingMinutes": 4,
+                "distanceLabel": "2.0 km · 🚶 ~30 min",
                 "temporarilyClosed": false,
                 "statusLabel": "",
                 "tags": [
@@ -66,6 +126,10 @@ window.generatedPlacesData = {
                   }
                 ],
                 "featured": false,
+                "distanceKm": 1.6458116961046687,
+                "walkingMinutes": 25,
+                "drivingMinutes": 3,
+                "distanceLabel": "1.6 km · 🚶 ~25 min",
                 "temporarilyClosed": false,
                 "statusLabel": "",
                 "tags": [
@@ -88,6 +152,10 @@ window.generatedPlacesData = {
                   }
                 ],
                 "featured": false,
+                "distanceKm": 5.61859784335437,
+                "walkingMinutes": 86,
+                "drivingMinutes": 12,
+                "distanceLabel": "5.6 km · 🚗 ~12 min",
                 "temporarilyClosed": true,
                 "statusLabel": "⚠️ Cerrado temporalmente",
                 "tags": [
@@ -110,6 +178,10 @@ window.generatedPlacesData = {
                   }
                 ],
                 "featured": true,
+                "distanceKm": 7.077876090872352,
+                "walkingMinutes": 108,
+                "drivingMinutes": 15,
+                "distanceLabel": "7.1 km · 🚗 ~15 min",
                 "temporarilyClosed": false,
                 "statusLabel": "",
                 "tags": [
@@ -133,6 +205,10 @@ window.generatedPlacesData = {
                   }
                 ],
                 "featured": false,
+                "distanceKm": 10.295498630887169,
+                "walkingMinutes": 157,
+                "drivingMinutes": 22,
+                "distanceLabel": "10.3 km · 🚗 ~22 min",
                 "temporarilyClosed": false,
                 "statusLabel": "",
                 "tags": [
@@ -155,6 +231,10 @@ window.generatedPlacesData = {
                   }
                 ],
                 "featured": false,
+                "distanceKm": 9.7195498035275,
+                "walkingMinutes": 148,
+                "drivingMinutes": 20,
+                "distanceLabel": "9.7 km · 🚗 ~20 min",
                 "temporarilyClosed": false,
                 "statusLabel": "",
                 "tags": [
@@ -177,6 +257,10 @@ window.generatedPlacesData = {
                   }
                 ],
                 "featured": false,
+                "distanceKm": 11.905366332650727,
+                "walkingMinutes": 182,
+                "drivingMinutes": 25,
+                "distanceLabel": "11.9 km · 🚗 ~25 min",
                 "temporarilyClosed": false,
                 "statusLabel": "",
                 "tags": [
@@ -199,6 +283,10 @@ window.generatedPlacesData = {
                   }
                 ],
                 "featured": false,
+                "distanceKm": 4.555493893681428,
+                "walkingMinutes": 69,
+                "drivingMinutes": 10,
+                "distanceLabel": "4.6 km · 🚗 ~10 min",
                 "temporarilyClosed": false,
                 "statusLabel": "",
                 "tags": [
@@ -225,6 +313,10 @@ window.generatedPlacesData = {
                   }
                 ],
                 "featured": false,
+                "distanceKm": 1.4723455070002445,
+                "walkingMinutes": 22,
+                "drivingMinutes": 3,
+                "distanceLabel": "1.5 km · 🚶 ~22 min",
                 "temporarilyClosed": false,
                 "statusLabel": "",
                 "tags": [
@@ -247,6 +339,10 @@ window.generatedPlacesData = {
                   }
                 ],
                 "featured": false,
+                "distanceKm": 1.5731073944102971,
+                "walkingMinutes": 24,
+                "drivingMinutes": 3,
+                "distanceLabel": "1.6 km · 🚶 ~24 min",
                 "temporarilyClosed": false,
                 "statusLabel": "",
                 "tags": [
@@ -269,6 +365,10 @@ window.generatedPlacesData = {
                   }
                 ],
                 "featured": true,
+                "distanceKm": 8.848440057305492,
+                "walkingMinutes": 135,
+                "drivingMinutes": 19,
+                "distanceLabel": "8.8 km · 🚗 ~19 min",
                 "temporarilyClosed": false,
                 "statusLabel": "",
                 "tags": [
@@ -292,6 +392,10 @@ window.generatedPlacesData = {
                   }
                 ],
                 "featured": false,
+                "distanceKm": 1.5295670331402873,
+                "walkingMinutes": 23,
+                "drivingMinutes": 3,
+                "distanceLabel": "1.5 km · 🚶 ~23 min",
                 "temporarilyClosed": false,
                 "statusLabel": "",
                 "tags": [
@@ -318,6 +422,10 @@ window.generatedPlacesData = {
                   }
                 ],
                 "featured": false,
+                "distanceKm": 3.1401840250381983,
+                "walkingMinutes": 48,
+                "drivingMinutes": 7,
+                "distanceLabel": "3.1 km · 🚗 ~7 min",
                 "temporarilyClosed": false,
                 "statusLabel": "",
                 "tags": [
@@ -344,6 +452,10 @@ window.generatedPlacesData = {
                   }
                 ],
                 "featured": false,
+                "distanceKm": 3.6417053656935816,
+                "walkingMinutes": 56,
+                "drivingMinutes": 8,
+                "distanceLabel": "3.6 km · 🚗 ~8 min",
                 "temporarilyClosed": false,
                 "statusLabel": "",
                 "tags": [
@@ -370,6 +482,10 @@ window.generatedPlacesData = {
                   }
                 ],
                 "featured": false,
+                "distanceKm": 2.1553542039479225,
+                "walkingMinutes": 33,
+                "drivingMinutes": 5,
+                "distanceLabel": "2.2 km · 🚗 ~5 min",
                 "temporarilyClosed": false,
                 "statusLabel": "",
                 "tags": [
@@ -396,6 +512,10 @@ window.generatedPlacesData = {
                   }
                 ],
                 "featured": false,
+                "distanceKm": 2.5423251641858893,
+                "walkingMinutes": 39,
+                "drivingMinutes": 5,
+                "distanceLabel": "2.5 km · 🚗 ~5 min",
                 "temporarilyClosed": false,
                 "statusLabel": "",
                 "tags": [
@@ -418,6 +538,10 @@ window.generatedPlacesData = {
                   }
                 ],
                 "featured": true,
+                "distanceKm": 2.120756372299505,
+                "walkingMinutes": 32,
+                "drivingMinutes": 4,
+                "distanceLabel": "2.1 km · 🚗 ~4 min",
                 "temporarilyClosed": false,
                 "statusLabel": "",
                 "tags": [
@@ -451,6 +575,10 @@ window.generatedPlacesData = {
                   }
                 ],
                 "featured": false,
+                "distanceKm": 0.6340798998304455,
+                "walkingMinutes": 10,
+                "drivingMinutes": 1,
+                "distanceLabel": "0.6 km · 🚶 ~10 min",
                 "temporarilyClosed": false,
                 "statusLabel": "",
                 "tags": [
@@ -473,6 +601,10 @@ window.generatedPlacesData = {
                   }
                 ],
                 "featured": false,
+                "distanceKm": 0.4817030024822554,
+                "walkingMinutes": 7,
+                "drivingMinutes": 1,
+                "distanceLabel": "0.5 km · 🚶 ~7 min",
                 "temporarilyClosed": false,
                 "statusLabel": "",
                 "tags": [
@@ -506,6 +638,10 @@ window.generatedPlacesData = {
                   }
                 ],
                 "featured": false,
+                "distanceKm": 8.373780332060171,
+                "walkingMinutes": 128,
+                "drivingMinutes": 18,
+                "distanceLabel": "8.4 km · 🚗 ~18 min",
                 "temporarilyClosed": false,
                 "statusLabel": "",
                 "tags": [
@@ -532,6 +668,10 @@ window.generatedPlacesData = {
                   }
                 ],
                 "featured": false,
+                "distanceKm": 1.4914172688362597,
+                "walkingMinutes": 23,
+                "drivingMinutes": 3,
+                "distanceLabel": "1.5 km · 🚶 ~23 min",
                 "temporarilyClosed": false,
                 "statusLabel": "",
                 "tags": [
@@ -558,6 +698,10 @@ window.generatedPlacesData = {
                   }
                 ],
                 "featured": false,
+                "distanceKm": 0.26187881688198583,
+                "walkingMinutes": 4,
+                "drivingMinutes": 1,
+                "distanceLabel": "0.3 km · 🚶 ~4 min",
                 "temporarilyClosed": false,
                 "statusLabel": "",
                 "tags": [
@@ -590,6 +734,10 @@ window.generatedPlacesData = {
                   }
                 ],
                 "featured": true,
+                "distanceKm": 1.4903700551894088,
+                "walkingMinutes": 23,
+                "drivingMinutes": 3,
+                "distanceLabel": "1.5 km · 🚶 ~23 min",
                 "temporarilyClosed": false,
                 "statusLabel": "",
                 "tags": [
@@ -632,6 +780,10 @@ window.generatedPlacesData = {
                   }
                 ],
                 "featured": false,
+                "distanceKm": 1.3365257302072007,
+                "walkingMinutes": 20,
+                "drivingMinutes": 3,
+                "distanceLabel": "1.3 km · 🚶 ~20 min",
                 "temporarilyClosed": false,
                 "statusLabel": "",
                 "tags": [
@@ -658,6 +810,10 @@ window.generatedPlacesData = {
                   }
                 ],
                 "featured": false,
+                "distanceKm": 1.3917108001348486,
+                "walkingMinutes": 21,
+                "drivingMinutes": 3,
+                "distanceLabel": "1.4 km · 🚶 ~21 min",
                 "temporarilyClosed": false,
                 "statusLabel": "",
                 "tags": [
@@ -680,6 +836,10 @@ window.generatedPlacesData = {
                   }
                 ],
                 "featured": false,
+                "distanceKm": 1.661180914501566,
+                "walkingMinutes": 25,
+                "drivingMinutes": 3,
+                "distanceLabel": "1.7 km · 🚶 ~25 min",
                 "temporarilyClosed": false,
                 "statusLabel": "",
                 "tags": [
@@ -717,6 +877,10 @@ window.generatedPlacesData = {
                   }
                 ],
                 "featured": false,
+                "distanceKm": 5.683354458911545,
+                "walkingMinutes": 87,
+                "drivingMinutes": 12,
+                "distanceLabel": "5.7 km · 🚗 ~12 min",
                 "temporarilyClosed": false,
                 "statusLabel": "",
                 "tags": [
@@ -744,6 +908,10 @@ window.generatedPlacesData = {
                   }
                 ],
                 "featured": false,
+                "distanceKm": 1.1407588418652213,
+                "walkingMinutes": 17,
+                "drivingMinutes": 2,
+                "distanceLabel": "1.1 km · 🚶 ~17 min",
                 "temporarilyClosed": false,
                 "statusLabel": "",
                 "tags": [
@@ -770,6 +938,10 @@ window.generatedPlacesData = {
                   }
                 ],
                 "featured": true,
+                "distanceKm": 8.673256763638195,
+                "walkingMinutes": 132,
+                "drivingMinutes": 18,
+                "distanceLabel": "8.7 km · 🚗 ~18 min",
                 "temporarilyClosed": false,
                 "statusLabel": "",
                 "tags": [
@@ -797,6 +969,10 @@ window.generatedPlacesData = {
                   }
                 ],
                 "featured": false,
+                "distanceKm": 0.2843822520536233,
+                "walkingMinutes": 4,
+                "drivingMinutes": 1,
+                "distanceLabel": "0.3 km · 🚶 ~4 min",
                 "temporarilyClosed": false,
                 "statusLabel": "",
                 "tags": [
@@ -838,6 +1014,10 @@ window.generatedPlacesData = {
                   }
                 ],
                 "featured": false,
+                "distanceKm": 4.155873587239765,
+                "walkingMinutes": 63,
+                "drivingMinutes": 9,
+                "distanceLabel": "4.2 km · 🚗 ~9 min",
                 "temporarilyClosed": false,
                 "statusLabel": "",
                 "tags": [
@@ -864,6 +1044,10 @@ window.generatedPlacesData = {
                   }
                 ],
                 "featured": false,
+                "distanceKm": 3.036409159789829,
+                "walkingMinutes": 46,
+                "drivingMinutes": 6,
+                "distanceLabel": "3.0 km · 🚗 ~6 min",
                 "temporarilyClosed": false,
                 "statusLabel": "",
                 "tags": [
@@ -890,6 +1074,10 @@ window.generatedPlacesData = {
                   }
                 ],
                 "featured": true,
+                "distanceKm": 1.586142772559797,
+                "walkingMinutes": 24,
+                "drivingMinutes": 3,
+                "distanceLabel": "1.6 km · 🚶 ~24 min",
                 "temporarilyClosed": false,
                 "statusLabel": "",
                 "tags": [
@@ -900,6 +1088,64 @@ window.generatedPlacesData = {
                   {
                     "label": "Abrir en Maps",
                     "href": "https://www.google.com/maps/search/?api=1&query=Pinatar%20Arena%2C%20Av.%20del%20Moj%C3%B3n%2C%20s%2Fn%2C%2030740%20San%20Pedro%20del%20Pinatar%2C%20Murcia"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "tourism",
+            "title": "🧭 Turismo y visitas",
+            "items": [
+              {
+                "title": "Centro de Visitantes \"Las Salinas\" Parque Regional Salinas de San Pedro del \nPinatar",
+                "text": "",
+                "details": [
+                  {
+                    "label": "📍 Dirección",
+                    "value": "Av. del Puerto, 317-321, 30740 San Pedro del Pinatar, Murcia"
+                  }
+                ],
+                "featured": false,
+                "distanceKm": 2.5664080519248693,
+                "walkingMinutes": 39,
+                "drivingMinutes": 5,
+                "distanceLabel": "2.6 km · 🚗 ~5 min",
+                "temporarilyClosed": false,
+                "statusLabel": "",
+                "tags": [
+                  "💪 Sports & adventures"
+                ],
+                "links": [
+                  {
+                    "label": "Abrir en Maps",
+                    "href": "https://www.google.com/maps/search/?api=1&query=Centro%20de%20Visitantes%20%22Las%20Salinas%22%20Parque%20Regional%20Salinas%20de%20San%20Pedro%20del%20%0APinatar%2C%20Av.%20del%20Puerto%2C%20317-321%2C%2030740%20San%20Pedro%20del%20Pinatar%2C%20Murcia"
+                  }
+                ]
+              },
+              {
+                "title": "Oficina de Turismo / Tourist Info Pilar de la Horadada",
+                "text": "",
+                "details": [
+                  {
+                    "label": "📍 Dirección",
+                    "value": "Plaza Campoamor, 2, 03190 Pilar de la Horadada, Alicante"
+                  }
+                ],
+                "featured": false,
+                "distanceKm": 2.3557930282531,
+                "walkingMinutes": 36,
+                "drivingMinutes": 5,
+                "distanceLabel": "2.4 km · 🚗 ~5 min",
+                "temporarilyClosed": false,
+                "statusLabel": "",
+                "tags": [
+                  "💪 Sports & adventures"
+                ],
+                "links": [
+                  {
+                    "label": "Abrir en Maps",
+                    "href": "https://www.google.com/maps/search/?api=1&query=Oficina%20de%20Turismo%20%2F%20Tourist%20Info%20Pilar%20de%20la%20Horadada%2C%20Plaza%20Campoamor%2C%202%2C%2003190%20Pilar%20de%20la%20Horadada%2C%20Alicante"
                   }
                 ]
               }
@@ -923,6 +1169,10 @@ window.generatedPlacesData = {
                   }
                 ],
                 "featured": false,
+                "distanceKm": 3.772217559630952,
+                "walkingMinutes": 58,
+                "drivingMinutes": 8,
+                "distanceLabel": "3.8 km · 🚗 ~8 min",
                 "temporarilyClosed": false,
                 "statusLabel": "",
                 "tags": [
@@ -949,6 +1199,10 @@ window.generatedPlacesData = {
                   }
                 ],
                 "featured": false,
+                "distanceKm": 2.547201176627306,
+                "walkingMinutes": 39,
+                "drivingMinutes": 5,
+                "distanceLabel": "2.5 km · 🚗 ~5 min",
                 "temporarilyClosed": false,
                 "statusLabel": "",
                 "tags": [
@@ -975,6 +1229,10 @@ window.generatedPlacesData = {
                   }
                 ],
                 "featured": false,
+                "distanceKm": 1.7024831201041772,
+                "walkingMinutes": 26,
+                "drivingMinutes": 4,
+                "distanceLabel": "1.7 km · 🚶 ~26 min",
                 "temporarilyClosed": false,
                 "statusLabel": "",
                 "tags": [
@@ -1003,6 +1261,10 @@ window.generatedPlacesData = {
                   }
                 ],
                 "featured": true,
+                "distanceKm": 8.740785991079868,
+                "walkingMinutes": 133,
+                "drivingMinutes": 18,
+                "distanceLabel": "8.7 km · 🚗 ~18 min",
                 "temporarilyClosed": false,
                 "statusLabel": "",
                 "tags": [
@@ -1030,6 +1292,10 @@ window.generatedPlacesData = {
                   }
                 ],
                 "featured": false,
+                "distanceKm": 5.6994858859835915,
+                "walkingMinutes": 87,
+                "drivingMinutes": 12,
+                "distanceLabel": "5.7 km · 🚗 ~12 min",
                 "temporarilyClosed": false,
                 "statusLabel": "",
                 "tags": [
@@ -1055,7 +1321,7 @@ window.generatedPlacesData = {
         "subgroups": [
           {
             "id": "parks",
-            "title": "🛝 Parques y zonas infantiles",
+            "title": "🛝 Zonas infantiles",
             "items": [
               {
                 "title": "Parque",
@@ -1067,6 +1333,10 @@ window.generatedPlacesData = {
                   }
                 ],
                 "featured": false,
+                "distanceKm": 0.9521912061406071,
+                "walkingMinutes": 15,
+                "drivingMinutes": 2,
+                "distanceLabel": "1.0 km · 🚶 ~15 min",
                 "temporarilyClosed": false,
                 "statusLabel": "",
                 "tags": [
@@ -1080,32 +1350,6 @@ window.generatedPlacesData = {
                 ]
               },
               {
-                "title": "Zona de esparcimiento canino Cecilia",
-                "text": "",
-                "details": [
-                  {
-                    "label": "✨ Nota",
-                    "value": "Parque canino"
-                  },
-                  {
-                    "label": "📍 Dirección",
-                    "value": "C. Helecho Mojón, 03191 Pilar de la Horadada, Alicante"
-                  }
-                ],
-                "featured": false,
-                "temporarilyClosed": false,
-                "statusLabel": "",
-                "tags": [
-                  "🛝 Zonas infantiles"
-                ],
-                "links": [
-                  {
-                    "label": "Abrir en Maps",
-                    "href": "https://www.google.com/maps/search/?api=1&query=Zona%20de%20esparcimiento%20canino%20Cecilia%2C%20C.%20Helecho%20Moj%C3%B3n%2C%2003191%20Pilar%20de%20la%20Horadada%2C%20Alicante"
-                  }
-                ]
-              },
-              {
                 "title": "Parque De La Salar",
                 "text": "",
                 "details": [
@@ -1115,6 +1359,10 @@ window.generatedPlacesData = {
                   }
                 ],
                 "featured": false,
+                "distanceKm": 0.7889907260504119,
+                "walkingMinutes": 12,
+                "drivingMinutes": 2,
+                "distanceLabel": "0.8 km · 🚶 ~12 min",
                 "temporarilyClosed": false,
                 "statusLabel": "",
                 "tags": [
@@ -1137,6 +1385,10 @@ window.generatedPlacesData = {
                   }
                 ],
                 "featured": false,
+                "distanceKm": 0.4943516409353751,
+                "walkingMinutes": 8,
+                "drivingMinutes": 1,
+                "distanceLabel": "0.5 km · 🚶 ~8 min",
                 "temporarilyClosed": false,
                 "statusLabel": "",
                 "tags": [
@@ -1159,6 +1411,10 @@ window.generatedPlacesData = {
                   }
                 ],
                 "featured": false,
+                "distanceKm": 0.4821730610807245,
+                "walkingMinutes": 7,
+                "drivingMinutes": 1,
+                "distanceLabel": "0.5 km · 🚶 ~7 min",
                 "temporarilyClosed": false,
                 "statusLabel": "",
                 "tags": [
@@ -1172,6 +1428,64 @@ window.generatedPlacesData = {
                 ]
               }
             ]
+          },
+          {
+            "id": "attractions",
+            "title": "🎡 Parques de atracciones",
+            "items": [
+              {
+                "title": "Aquopolis Torrevieja",
+                "text": "",
+                "details": [
+                  {
+                    "label": "📍 Dirección",
+                    "value": "Av. Delfina Viudes, s/n, 03183 Torrevieja, Alicante"
+                  }
+                ],
+                "featured": false,
+                "distanceKm": 16.92534050692306,
+                "walkingMinutes": 258,
+                "drivingMinutes": 36,
+                "distanceLabel": "16.9 km · 🚗 ~36 min",
+                "temporarilyClosed": true,
+                "statusLabel": "⚠️ Cerrado temporalmente",
+                "tags": [
+                  "🛝 Zonas infantiles"
+                ],
+                "links": [
+                  {
+                    "label": "Abrir en Maps",
+                    "href": "https://www.google.com/maps/search/?api=1&query=Aquopolis%20Torrevieja%2C%20Av.%20Delfina%20Viudes%2C%20s%2Fn%2C%2003183%20Torrevieja%2C%20Alicante"
+                  }
+                ]
+              },
+              {
+                "title": "Lo Rufete Multiaventura Park",
+                "text": "",
+                "details": [
+                  {
+                    "label": "📍 Dirección",
+                    "value": "CV-951, Km. 1, 03193 San Miguel de Salinas, Alicante"
+                  }
+                ],
+                "featured": false,
+                "distanceKm": 16.372535986051115,
+                "walkingMinutes": 250,
+                "drivingMinutes": 34,
+                "distanceLabel": "16.4 km · 🚗 ~34 min",
+                "temporarilyClosed": false,
+                "statusLabel": "",
+                "tags": [
+                  "🛝 Zonas infantiles"
+                ],
+                "links": [
+                  {
+                    "label": "Abrir en Maps",
+                    "href": "https://www.google.com/maps/search/?api=1&query=Lo%20Rufete%20Multiaventura%20Park%2C%20CV-951%2C%20Km.%201%2C%2003193%20San%20Miguel%20de%20Salinas%2C%20Alicante"
+                  }
+                ]
+              }
+            ]
           }
         ]
       }
@@ -1181,15 +1495,19 @@ window.generatedPlacesData = {
   "en": {
     "foodIntro": {
       "title": "Shared Google Maps list",
-      "body": "This section summarises the host's shared Google Maps list and reorders it into simpler groups such as Restaurants, Supermarkets, Shopping, Sports & adventures or Kids areas.\nThe main action is to open the full list in Google Maps, save it to your account and use this web summary only as a quick reference during the stay.",
+      "body": "This section summarises the host's shared Google Maps list and reorders it into simpler groups such as Restaurants, Supermarkets, Shopping, Sports & adventures or Kids areas.\nThe main action is to open the full list in Google Maps, save it to your account and use this web summary only as a quick reference during the stay.\nDistances and travel times are shown as approximate references from the villa.",
       "tags": [
         "Google Maps",
-        "47 saved places"
+        "52 saved places"
       ],
       "links": [
         {
           "label": "🗺️ Open and save list in Google Maps",
           "href": "https://maps.app.goo.gl/6kiRLdhaMThJCQia9"
+        },
+        {
+          "label": "Pilar de la Horadada tourism",
+          "href": "https://www.visitpilardelahoradada.com/"
         }
       ]
     },
@@ -1207,6 +1525,58 @@ window.generatedPlacesData = {
             "title": "🍽️ Restaurants",
             "items": [
               {
+                "title": "Paseo de Cine",
+                "text": "",
+                "details": [
+                  {
+                    "label": "📍 Address",
+                    "value": "03191 Torre de la Horadada, Alicante"
+                  }
+                ],
+                "featured": false,
+                "distanceKm": 1.7148621274068827,
+                "walkingMinutes": 26,
+                "drivingMinutes": 4,
+                "distanceLabel": "1.7 km · 🚶 ~26 min",
+                "temporarilyClosed": false,
+                "statusLabel": "",
+                "tags": [
+                  "🍽️ Restaurants"
+                ],
+                "links": [
+                  {
+                    "label": "Open in Maps",
+                    "href": "https://www.google.com/maps/search/?api=1&query=Paseo%20de%20Cine%2C%2003191%20Torre%20de%20la%20Horadada%2C%20Alicante"
+                  }
+                ]
+              },
+              {
+                "title": "Go-Karts Orihuela Costa",
+                "text": "",
+                "details": [
+                  {
+                    "label": "📍 Address",
+                    "value": "Carretera Torrevieja - Cartagena, km 5, 700, 03189 Orihuela Costa, Alicante"
+                  }
+                ],
+                "featured": false,
+                "distanceKm": 10.26481916859324,
+                "walkingMinutes": 157,
+                "drivingMinutes": 22,
+                "distanceLabel": "10.3 km · 🚗 ~22 min",
+                "temporarilyClosed": false,
+                "statusLabel": "",
+                "tags": [
+                  "🍽️ Restaurants"
+                ],
+                "links": [
+                  {
+                    "label": "Open in Maps",
+                    "href": "https://www.google.com/maps/search/?api=1&query=Go-Karts%20Orihuela%20Costa%2C%20Carretera%20Torrevieja%20-%20Cartagena%2C%20km%205%2C%20700%2C%2003189%20Orihuela%20Costa%2C%20Alicante"
+                  }
+                ]
+              },
+              {
                 "title": "Nostrissima",
                 "text": "",
                 "details": [
@@ -1216,6 +1586,10 @@ window.generatedPlacesData = {
                   }
                 ],
                 "featured": false,
+                "distanceKm": 1.9940888847379197,
+                "walkingMinutes": 30,
+                "drivingMinutes": 4,
+                "distanceLabel": "2.0 km · 🚶 ~30 min",
                 "temporarilyClosed": false,
                 "statusLabel": "",
                 "tags": [
@@ -1238,6 +1612,10 @@ window.generatedPlacesData = {
                   }
                 ],
                 "featured": false,
+                "distanceKm": 1.6458116961046687,
+                "walkingMinutes": 25,
+                "drivingMinutes": 3,
+                "distanceLabel": "1.6 km · 🚶 ~25 min",
                 "temporarilyClosed": false,
                 "statusLabel": "",
                 "tags": [
@@ -1260,6 +1638,10 @@ window.generatedPlacesData = {
                   }
                 ],
                 "featured": false,
+                "distanceKm": 5.61859784335437,
+                "walkingMinutes": 86,
+                "drivingMinutes": 12,
+                "distanceLabel": "5.6 km · 🚗 ~12 min",
                 "temporarilyClosed": true,
                 "statusLabel": "⚠️ Temporarily closed",
                 "tags": [
@@ -1282,6 +1664,10 @@ window.generatedPlacesData = {
                   }
                 ],
                 "featured": true,
+                "distanceKm": 7.077876090872352,
+                "walkingMinutes": 108,
+                "drivingMinutes": 15,
+                "distanceLabel": "7.1 km · 🚗 ~15 min",
                 "temporarilyClosed": false,
                 "statusLabel": "",
                 "tags": [
@@ -1305,6 +1691,10 @@ window.generatedPlacesData = {
                   }
                 ],
                 "featured": false,
+                "distanceKm": 10.295498630887169,
+                "walkingMinutes": 157,
+                "drivingMinutes": 22,
+                "distanceLabel": "10.3 km · 🚗 ~22 min",
                 "temporarilyClosed": false,
                 "statusLabel": "",
                 "tags": [
@@ -1327,6 +1717,10 @@ window.generatedPlacesData = {
                   }
                 ],
                 "featured": false,
+                "distanceKm": 9.7195498035275,
+                "walkingMinutes": 148,
+                "drivingMinutes": 20,
+                "distanceLabel": "9.7 km · 🚗 ~20 min",
                 "temporarilyClosed": false,
                 "statusLabel": "",
                 "tags": [
@@ -1349,6 +1743,10 @@ window.generatedPlacesData = {
                   }
                 ],
                 "featured": false,
+                "distanceKm": 11.905366332650727,
+                "walkingMinutes": 182,
+                "drivingMinutes": 25,
+                "distanceLabel": "11.9 km · 🚗 ~25 min",
                 "temporarilyClosed": false,
                 "statusLabel": "",
                 "tags": [
@@ -1371,6 +1769,10 @@ window.generatedPlacesData = {
                   }
                 ],
                 "featured": false,
+                "distanceKm": 4.555493893681428,
+                "walkingMinutes": 69,
+                "drivingMinutes": 10,
+                "distanceLabel": "4.6 km · 🚗 ~10 min",
                 "temporarilyClosed": false,
                 "statusLabel": "",
                 "tags": [
@@ -1397,6 +1799,10 @@ window.generatedPlacesData = {
                   }
                 ],
                 "featured": false,
+                "distanceKm": 1.4723455070002445,
+                "walkingMinutes": 22,
+                "drivingMinutes": 3,
+                "distanceLabel": "1.5 km · 🚶 ~22 min",
                 "temporarilyClosed": false,
                 "statusLabel": "",
                 "tags": [
@@ -1419,6 +1825,10 @@ window.generatedPlacesData = {
                   }
                 ],
                 "featured": false,
+                "distanceKm": 1.5731073944102971,
+                "walkingMinutes": 24,
+                "drivingMinutes": 3,
+                "distanceLabel": "1.6 km · 🚶 ~24 min",
                 "temporarilyClosed": false,
                 "statusLabel": "",
                 "tags": [
@@ -1441,6 +1851,10 @@ window.generatedPlacesData = {
                   }
                 ],
                 "featured": true,
+                "distanceKm": 8.848440057305492,
+                "walkingMinutes": 135,
+                "drivingMinutes": 19,
+                "distanceLabel": "8.8 km · 🚗 ~19 min",
                 "temporarilyClosed": false,
                 "statusLabel": "",
                 "tags": [
@@ -1464,6 +1878,10 @@ window.generatedPlacesData = {
                   }
                 ],
                 "featured": false,
+                "distanceKm": 1.5295670331402873,
+                "walkingMinutes": 23,
+                "drivingMinutes": 3,
+                "distanceLabel": "1.5 km · 🚶 ~23 min",
                 "temporarilyClosed": false,
                 "statusLabel": "",
                 "tags": [
@@ -1490,6 +1908,10 @@ window.generatedPlacesData = {
                   }
                 ],
                 "featured": false,
+                "distanceKm": 3.1401840250381983,
+                "walkingMinutes": 48,
+                "drivingMinutes": 7,
+                "distanceLabel": "3.1 km · 🚗 ~7 min",
                 "temporarilyClosed": false,
                 "statusLabel": "",
                 "tags": [
@@ -1516,6 +1938,10 @@ window.generatedPlacesData = {
                   }
                 ],
                 "featured": false,
+                "distanceKm": 3.6417053656935816,
+                "walkingMinutes": 56,
+                "drivingMinutes": 8,
+                "distanceLabel": "3.6 km · 🚗 ~8 min",
                 "temporarilyClosed": false,
                 "statusLabel": "",
                 "tags": [
@@ -1542,6 +1968,10 @@ window.generatedPlacesData = {
                   }
                 ],
                 "featured": false,
+                "distanceKm": 2.1553542039479225,
+                "walkingMinutes": 33,
+                "drivingMinutes": 5,
+                "distanceLabel": "2.2 km · 🚗 ~5 min",
                 "temporarilyClosed": false,
                 "statusLabel": "",
                 "tags": [
@@ -1568,6 +1998,10 @@ window.generatedPlacesData = {
                   }
                 ],
                 "featured": false,
+                "distanceKm": 2.5423251641858893,
+                "walkingMinutes": 39,
+                "drivingMinutes": 5,
+                "distanceLabel": "2.5 km · 🚗 ~5 min",
                 "temporarilyClosed": false,
                 "statusLabel": "",
                 "tags": [
@@ -1590,6 +2024,10 @@ window.generatedPlacesData = {
                   }
                 ],
                 "featured": true,
+                "distanceKm": 2.120756372299505,
+                "walkingMinutes": 32,
+                "drivingMinutes": 4,
+                "distanceLabel": "2.1 km · 🚗 ~4 min",
                 "temporarilyClosed": false,
                 "statusLabel": "",
                 "tags": [
@@ -1623,6 +2061,10 @@ window.generatedPlacesData = {
                   }
                 ],
                 "featured": false,
+                "distanceKm": 0.6340798998304455,
+                "walkingMinutes": 10,
+                "drivingMinutes": 1,
+                "distanceLabel": "0.6 km · 🚶 ~10 min",
                 "temporarilyClosed": false,
                 "statusLabel": "",
                 "tags": [
@@ -1645,6 +2087,10 @@ window.generatedPlacesData = {
                   }
                 ],
                 "featured": false,
+                "distanceKm": 0.4817030024822554,
+                "walkingMinutes": 7,
+                "drivingMinutes": 1,
+                "distanceLabel": "0.5 km · 🚶 ~7 min",
                 "temporarilyClosed": false,
                 "statusLabel": "",
                 "tags": [
@@ -1678,6 +2124,10 @@ window.generatedPlacesData = {
                   }
                 ],
                 "featured": false,
+                "distanceKm": 8.373780332060171,
+                "walkingMinutes": 128,
+                "drivingMinutes": 18,
+                "distanceLabel": "8.4 km · 🚗 ~18 min",
                 "temporarilyClosed": false,
                 "statusLabel": "",
                 "tags": [
@@ -1704,6 +2154,10 @@ window.generatedPlacesData = {
                   }
                 ],
                 "featured": false,
+                "distanceKm": 1.4914172688362597,
+                "walkingMinutes": 23,
+                "drivingMinutes": 3,
+                "distanceLabel": "1.5 km · 🚶 ~23 min",
                 "temporarilyClosed": false,
                 "statusLabel": "",
                 "tags": [
@@ -1730,6 +2184,10 @@ window.generatedPlacesData = {
                   }
                 ],
                 "featured": false,
+                "distanceKm": 0.26187881688198583,
+                "walkingMinutes": 4,
+                "drivingMinutes": 1,
+                "distanceLabel": "0.3 km · 🚶 ~4 min",
                 "temporarilyClosed": false,
                 "statusLabel": "",
                 "tags": [
@@ -1762,6 +2220,10 @@ window.generatedPlacesData = {
                   }
                 ],
                 "featured": true,
+                "distanceKm": 1.4903700551894088,
+                "walkingMinutes": 23,
+                "drivingMinutes": 3,
+                "distanceLabel": "1.5 km · 🚶 ~23 min",
                 "temporarilyClosed": false,
                 "statusLabel": "",
                 "tags": [
@@ -1804,6 +2266,10 @@ window.generatedPlacesData = {
                   }
                 ],
                 "featured": false,
+                "distanceKm": 1.3365257302072007,
+                "walkingMinutes": 20,
+                "drivingMinutes": 3,
+                "distanceLabel": "1.3 km · 🚶 ~20 min",
                 "temporarilyClosed": false,
                 "statusLabel": "",
                 "tags": [
@@ -1830,6 +2296,10 @@ window.generatedPlacesData = {
                   }
                 ],
                 "featured": false,
+                "distanceKm": 1.3917108001348486,
+                "walkingMinutes": 21,
+                "drivingMinutes": 3,
+                "distanceLabel": "1.4 km · 🚶 ~21 min",
                 "temporarilyClosed": false,
                 "statusLabel": "",
                 "tags": [
@@ -1852,6 +2322,10 @@ window.generatedPlacesData = {
                   }
                 ],
                 "featured": false,
+                "distanceKm": 1.661180914501566,
+                "walkingMinutes": 25,
+                "drivingMinutes": 3,
+                "distanceLabel": "1.7 km · 🚶 ~25 min",
                 "temporarilyClosed": false,
                 "statusLabel": "",
                 "tags": [
@@ -1889,6 +2363,10 @@ window.generatedPlacesData = {
                   }
                 ],
                 "featured": false,
+                "distanceKm": 5.683354458911545,
+                "walkingMinutes": 87,
+                "drivingMinutes": 12,
+                "distanceLabel": "5.7 km · 🚗 ~12 min",
                 "temporarilyClosed": false,
                 "statusLabel": "",
                 "tags": [
@@ -1916,6 +2394,10 @@ window.generatedPlacesData = {
                   }
                 ],
                 "featured": false,
+                "distanceKm": 1.1407588418652213,
+                "walkingMinutes": 17,
+                "drivingMinutes": 2,
+                "distanceLabel": "1.1 km · 🚶 ~17 min",
                 "temporarilyClosed": false,
                 "statusLabel": "",
                 "tags": [
@@ -1942,6 +2424,10 @@ window.generatedPlacesData = {
                   }
                 ],
                 "featured": true,
+                "distanceKm": 8.673256763638195,
+                "walkingMinutes": 132,
+                "drivingMinutes": 18,
+                "distanceLabel": "8.7 km · 🚗 ~18 min",
                 "temporarilyClosed": false,
                 "statusLabel": "",
                 "tags": [
@@ -1969,6 +2455,10 @@ window.generatedPlacesData = {
                   }
                 ],
                 "featured": false,
+                "distanceKm": 0.2843822520536233,
+                "walkingMinutes": 4,
+                "drivingMinutes": 1,
+                "distanceLabel": "0.3 km · 🚶 ~4 min",
                 "temporarilyClosed": false,
                 "statusLabel": "",
                 "tags": [
@@ -2010,6 +2500,10 @@ window.generatedPlacesData = {
                   }
                 ],
                 "featured": false,
+                "distanceKm": 4.155873587239765,
+                "walkingMinutes": 63,
+                "drivingMinutes": 9,
+                "distanceLabel": "4.2 km · 🚗 ~9 min",
                 "temporarilyClosed": false,
                 "statusLabel": "",
                 "tags": [
@@ -2036,6 +2530,10 @@ window.generatedPlacesData = {
                   }
                 ],
                 "featured": false,
+                "distanceKm": 3.036409159789829,
+                "walkingMinutes": 46,
+                "drivingMinutes": 6,
+                "distanceLabel": "3.0 km · 🚗 ~6 min",
                 "temporarilyClosed": false,
                 "statusLabel": "",
                 "tags": [
@@ -2062,6 +2560,10 @@ window.generatedPlacesData = {
                   }
                 ],
                 "featured": true,
+                "distanceKm": 1.586142772559797,
+                "walkingMinutes": 24,
+                "drivingMinutes": 3,
+                "distanceLabel": "1.6 km · 🚶 ~24 min",
                 "temporarilyClosed": false,
                 "statusLabel": "",
                 "tags": [
@@ -2072,6 +2574,64 @@ window.generatedPlacesData = {
                   {
                     "label": "Open in Maps",
                     "href": "https://www.google.com/maps/search/?api=1&query=Pinatar%20Arena%2C%20Av.%20del%20Moj%C3%B3n%2C%20s%2Fn%2C%2030740%20San%20Pedro%20del%20Pinatar%2C%20Murcia"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "tourism",
+            "title": "🧭 Tourism and visits",
+            "items": [
+              {
+                "title": "Centro de Visitantes \"Las Salinas\" Parque Regional Salinas de San Pedro del \nPinatar",
+                "text": "",
+                "details": [
+                  {
+                    "label": "📍 Address",
+                    "value": "Av. del Puerto, 317-321, 30740 San Pedro del Pinatar, Murcia"
+                  }
+                ],
+                "featured": false,
+                "distanceKm": 2.5664080519248693,
+                "walkingMinutes": 39,
+                "drivingMinutes": 5,
+                "distanceLabel": "2.6 km · 🚗 ~5 min",
+                "temporarilyClosed": false,
+                "statusLabel": "",
+                "tags": [
+                  "💪 Sports & adventures"
+                ],
+                "links": [
+                  {
+                    "label": "Open in Maps",
+                    "href": "https://www.google.com/maps/search/?api=1&query=Centro%20de%20Visitantes%20%22Las%20Salinas%22%20Parque%20Regional%20Salinas%20de%20San%20Pedro%20del%20%0APinatar%2C%20Av.%20del%20Puerto%2C%20317-321%2C%2030740%20San%20Pedro%20del%20Pinatar%2C%20Murcia"
+                  }
+                ]
+              },
+              {
+                "title": "Oficina de Turismo / Tourist Info Pilar de la Horadada",
+                "text": "",
+                "details": [
+                  {
+                    "label": "📍 Address",
+                    "value": "Plaza Campoamor, 2, 03190 Pilar de la Horadada, Alicante"
+                  }
+                ],
+                "featured": false,
+                "distanceKm": 2.3557930282531,
+                "walkingMinutes": 36,
+                "drivingMinutes": 5,
+                "distanceLabel": "2.4 km · 🚗 ~5 min",
+                "temporarilyClosed": false,
+                "statusLabel": "",
+                "tags": [
+                  "💪 Sports & adventures"
+                ],
+                "links": [
+                  {
+                    "label": "Open in Maps",
+                    "href": "https://www.google.com/maps/search/?api=1&query=Oficina%20de%20Turismo%20%2F%20Tourist%20Info%20Pilar%20de%20la%20Horadada%2C%20Plaza%20Campoamor%2C%202%2C%2003190%20Pilar%20de%20la%20Horadada%2C%20Alicante"
                   }
                 ]
               }
@@ -2095,6 +2655,10 @@ window.generatedPlacesData = {
                   }
                 ],
                 "featured": false,
+                "distanceKm": 3.772217559630952,
+                "walkingMinutes": 58,
+                "drivingMinutes": 8,
+                "distanceLabel": "3.8 km · 🚗 ~8 min",
                 "temporarilyClosed": false,
                 "statusLabel": "",
                 "tags": [
@@ -2121,6 +2685,10 @@ window.generatedPlacesData = {
                   }
                 ],
                 "featured": false,
+                "distanceKm": 2.547201176627306,
+                "walkingMinutes": 39,
+                "drivingMinutes": 5,
+                "distanceLabel": "2.5 km · 🚗 ~5 min",
                 "temporarilyClosed": false,
                 "statusLabel": "",
                 "tags": [
@@ -2147,6 +2715,10 @@ window.generatedPlacesData = {
                   }
                 ],
                 "featured": false,
+                "distanceKm": 1.7024831201041772,
+                "walkingMinutes": 26,
+                "drivingMinutes": 4,
+                "distanceLabel": "1.7 km · 🚶 ~26 min",
                 "temporarilyClosed": false,
                 "statusLabel": "",
                 "tags": [
@@ -2175,6 +2747,10 @@ window.generatedPlacesData = {
                   }
                 ],
                 "featured": true,
+                "distanceKm": 8.740785991079868,
+                "walkingMinutes": 133,
+                "drivingMinutes": 18,
+                "distanceLabel": "8.7 km · 🚗 ~18 min",
                 "temporarilyClosed": false,
                 "statusLabel": "",
                 "tags": [
@@ -2202,6 +2778,10 @@ window.generatedPlacesData = {
                   }
                 ],
                 "featured": false,
+                "distanceKm": 5.6994858859835915,
+                "walkingMinutes": 87,
+                "drivingMinutes": 12,
+                "distanceLabel": "5.7 km · 🚗 ~12 min",
                 "temporarilyClosed": false,
                 "statusLabel": "",
                 "tags": [
@@ -2227,7 +2807,7 @@ window.generatedPlacesData = {
         "subgroups": [
           {
             "id": "parks",
-            "title": "🛝 Parks and playgrounds",
+            "title": "🛝 Kids areas",
             "items": [
               {
                 "title": "Parque",
@@ -2239,6 +2819,10 @@ window.generatedPlacesData = {
                   }
                 ],
                 "featured": false,
+                "distanceKm": 0.9521912061406071,
+                "walkingMinutes": 15,
+                "drivingMinutes": 2,
+                "distanceLabel": "1.0 km · 🚶 ~15 min",
                 "temporarilyClosed": false,
                 "statusLabel": "",
                 "tags": [
@@ -2252,32 +2836,6 @@ window.generatedPlacesData = {
                 ]
               },
               {
-                "title": "Zona de esparcimiento canino Cecilia",
-                "text": "",
-                "details": [
-                  {
-                    "label": "✨ Note",
-                    "value": "Parque canino"
-                  },
-                  {
-                    "label": "📍 Address",
-                    "value": "C. Helecho Mojón, 03191 Pilar de la Horadada, Alicante"
-                  }
-                ],
-                "featured": false,
-                "temporarilyClosed": false,
-                "statusLabel": "",
-                "tags": [
-                  "🛝 Kids areas"
-                ],
-                "links": [
-                  {
-                    "label": "Open in Maps",
-                    "href": "https://www.google.com/maps/search/?api=1&query=Zona%20de%20esparcimiento%20canino%20Cecilia%2C%20C.%20Helecho%20Moj%C3%B3n%2C%2003191%20Pilar%20de%20la%20Horadada%2C%20Alicante"
-                  }
-                ]
-              },
-              {
                 "title": "Parque De La Salar",
                 "text": "",
                 "details": [
@@ -2287,6 +2845,10 @@ window.generatedPlacesData = {
                   }
                 ],
                 "featured": false,
+                "distanceKm": 0.7889907260504119,
+                "walkingMinutes": 12,
+                "drivingMinutes": 2,
+                "distanceLabel": "0.8 km · 🚶 ~12 min",
                 "temporarilyClosed": false,
                 "statusLabel": "",
                 "tags": [
@@ -2309,6 +2871,10 @@ window.generatedPlacesData = {
                   }
                 ],
                 "featured": false,
+                "distanceKm": 0.4943516409353751,
+                "walkingMinutes": 8,
+                "drivingMinutes": 1,
+                "distanceLabel": "0.5 km · 🚶 ~8 min",
                 "temporarilyClosed": false,
                 "statusLabel": "",
                 "tags": [
@@ -2331,6 +2897,10 @@ window.generatedPlacesData = {
                   }
                 ],
                 "featured": false,
+                "distanceKm": 0.4821730610807245,
+                "walkingMinutes": 7,
+                "drivingMinutes": 1,
+                "distanceLabel": "0.5 km · 🚶 ~7 min",
                 "temporarilyClosed": false,
                 "statusLabel": "",
                 "tags": [
@@ -2340,6 +2910,64 @@ window.generatedPlacesData = {
                   {
                     "label": "Open in Maps",
                     "href": "https://www.google.com/maps/search/?api=1&query=%C3%81rea%20infantil%2C%2003191%20Pilar%20de%20la%20Horadada%2C%20Alicante"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "attractions",
+            "title": "🎡 Attraction parks",
+            "items": [
+              {
+                "title": "Aquopolis Torrevieja",
+                "text": "",
+                "details": [
+                  {
+                    "label": "📍 Address",
+                    "value": "Av. Delfina Viudes, s/n, 03183 Torrevieja, Alicante"
+                  }
+                ],
+                "featured": false,
+                "distanceKm": 16.92534050692306,
+                "walkingMinutes": 258,
+                "drivingMinutes": 36,
+                "distanceLabel": "16.9 km · 🚗 ~36 min",
+                "temporarilyClosed": true,
+                "statusLabel": "⚠️ Temporarily closed",
+                "tags": [
+                  "🛝 Kids areas"
+                ],
+                "links": [
+                  {
+                    "label": "Open in Maps",
+                    "href": "https://www.google.com/maps/search/?api=1&query=Aquopolis%20Torrevieja%2C%20Av.%20Delfina%20Viudes%2C%20s%2Fn%2C%2003183%20Torrevieja%2C%20Alicante"
+                  }
+                ]
+              },
+              {
+                "title": "Lo Rufete Multiaventura Park",
+                "text": "",
+                "details": [
+                  {
+                    "label": "📍 Address",
+                    "value": "CV-951, Km. 1, 03193 San Miguel de Salinas, Alicante"
+                  }
+                ],
+                "featured": false,
+                "distanceKm": 16.372535986051115,
+                "walkingMinutes": 250,
+                "drivingMinutes": 34,
+                "distanceLabel": "16.4 km · 🚗 ~34 min",
+                "temporarilyClosed": false,
+                "statusLabel": "",
+                "tags": [
+                  "🛝 Kids areas"
+                ],
+                "links": [
+                  {
+                    "label": "Open in Maps",
+                    "href": "https://www.google.com/maps/search/?api=1&query=Lo%20Rufete%20Multiaventura%20Park%2C%20CV-951%2C%20Km.%201%2C%2003193%20San%20Miguel%20de%20Salinas%2C%20Alicante"
                   }
                 ]
               }

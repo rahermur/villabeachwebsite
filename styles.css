@@ -75,15 +75,40 @@ a {
   display: grid;
   place-items: center;
   padding: 20px;
-  background:
-    radial-gradient(circle at top left, rgba(17, 140, 140, 0.2), transparent 25%),
-    radial-gradient(circle at bottom right, rgba(242, 187, 22, 0.18), transparent 28%),
-    rgba(245, 239, 230, 0.96);
+  overflow: hidden;
+  background: rgba(245, 239, 230, 0.72);
   backdrop-filter: blur(12px);
+  transition: opacity 160ms ease, transform 160ms ease;
 }
 
 .access-gate[hidden] {
   display: none;
+}
+
+.access-gate__media,
+.access-gate__veil {
+  position: absolute;
+  inset: 0;
+}
+
+.access-gate__media {
+  z-index: 0;
+}
+
+.access-gate__media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 55%;
+  transform: scale(1.02);
+}
+
+.access-gate__veil {
+  z-index: 1;
+  background:
+    radial-gradient(circle at top left, rgba(17, 140, 140, 0.22), transparent 28%),
+    radial-gradient(circle at bottom right, rgba(242, 187, 22, 0.18), transparent 32%),
+    rgba(245, 239, 230, 0.74);
 }
 
 .access-gate__panel {
@@ -94,6 +119,8 @@ a {
   background:
     linear-gradient(180deg, rgba(255, 255, 255, 0.88), rgba(250, 246, 240, 0.96));
   box-shadow: var(--shadow);
+  position: relative;
+  z-index: 2;
 }
 
 .access-gate__panel h1 {
@@ -123,11 +150,48 @@ a {
 
 .access-gate__input {
   width: 100%;
-  padding: 14px 16px;
+  padding: 14px 52px 14px 16px;
   border-radius: 16px;
   border: 1px solid rgba(17, 140, 140, 0.14);
   background: rgba(255, 255, 255, 0.8);
   font: inherit;
+}
+
+.access-gate__input-wrap {
+  position: relative;
+}
+
+.access-gate__toggle {
+  appearance: none;
+  border: 0;
+  background: transparent;
+  color: var(--muted);
+  position: absolute;
+  top: 50%;
+  right: 12px;
+  transform: translateY(-50%);
+  width: 32px;
+  height: 32px;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+}
+
+.access-gate__toggle-icon {
+  width: 18px;
+  height: 18px;
+}
+
+.access-gate__toggle-icon--show {
+  display: none;
+}
+
+.access-gate__toggle.is-visible .access-gate__toggle-icon--show {
+  display: block;
+}
+
+.access-gate__toggle.is-visible .access-gate__toggle-icon--hide {
+  display: none;
 }
 
 .access-gate__error {
@@ -1081,6 +1145,12 @@ a {
   color: #c93b22;
 }
 
+.food-bullet-distance {
+  font-size: 0.82rem;
+  color: var(--muted);
+  white-space: nowrap;
+}
+
 .food-bullet-featured {
   display: inline-flex;
   align-items: center;
@@ -1302,20 +1372,19 @@ a {
   /* contenedor imagen: ocupa pantalla completa */
   .hero__content {
     position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
+    display: grid;
+    grid-template-rows: minmax(320px, 46svh) auto;
     padding: 0;
-    height: 100svh;
-    min-height: 500px;
+    min-height: 0;
     overflow: hidden;
+    background: var(--bg-soft);
   }
 
-  /* activar la foto de fondo */
   .hero__bg {
     display: block;
-    position: absolute;
-    inset: 0;
+    position: relative;
+    grid-row: 1;
+    grid-column: 1;
     z-index: 0;
   }
 
@@ -1323,40 +1392,42 @@ a {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    object-position: center;
+    object-position: center 62%;
   }
 
-  /* overlay sutil para que el panel se lea bien */
   .hero__overlay {
     display: block;
-    position: absolute;
-    inset: 0;
+    position: relative;
+    inset: auto;
+    grid-row: 1;
+    grid-column: 1;
     z-index: 1;
     background: linear-gradient(
       to bottom,
-      rgba(0,0,0,0.05) 0%,
-      rgba(0,0,0,0.1) 50%,
-      rgba(17, 140, 140, 0.55) 100%
+      rgba(0,0,0,0.03) 0%,
+      rgba(0,0,0,0.08) 58%,
+      rgba(17, 140, 140, 0.28) 100%
     );
+    pointer-events: none;
   }
 
-  /* ocultar el collage de fotos secundarias en móvil */
   .hero__photos {
     display: none;
   }
 
-  /* panel semitransparente en la parte inferior de la imagen */
   .hero__panel {
     position: relative;
     z-index: 2;
-    margin: 0;
-    padding: 20px 20px 0;
+    grid-row: 2;
+    grid-column: 1;
+    margin: -18px 0 0;
+    padding: 18px 20px 0;
     background: rgba(17, 140, 140, 0.55);
     backdrop-filter: blur(14px);
     -webkit-backdrop-filter: blur(14px);
     border: none;
-    border-top: 1px solid rgba(255, 255, 255, 0.2);
-    border-radius: 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.18);
+    border-radius: 22px 22px 0 0;
     color: white;
     display: flex;
     flex-direction: column;
@@ -1364,7 +1435,10 @@ a {
 
   .hero__panel .eyebrow {
     color: var(--yellow);
-    margin-bottom: 4px;
+    margin-bottom: 6px;
+    line-height: 1.35;
+    font-size: 0.8rem;
+    letter-spacing: 0.11em;
   }
 
   .hero h1 {
@@ -1440,10 +1514,39 @@ a {
     position: static;
   }
 
-  .quick-nav,
   .button,
   .ghost-button {
     width: 100%;
+  }
+
+  .quick-nav {
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    gap: 8px;
+    margin: 14px 0 4px;
+    padding: 10px 14px 12px;
+    border-radius: 0;
+    background: rgba(255, 246, 233, 0.92);
+    border-left: 0;
+    border-right: 0;
+  }
+
+  .quick-nav::-webkit-scrollbar {
+    display: none;
+  }
+
+  .quick-nav {
+    scrollbar-width: none;
+  }
+
+  .quick-nav a {
+    flex: 0 0 auto;
+    padding: 9px 12px;
+    font-size: 0.9rem;
+    white-space: nowrap;
   }
 
   .content {
@@ -1579,5 +1682,17 @@ a {
     max-height: 82vh;
     padding: 18px 18px 24px;
     border-radius: 24px 24px 18px 18px;
+  }
+
+  .access-gate {
+    align-items: end;
+    padding: 0;
+  }
+
+  .access-gate__panel {
+    width: 100%;
+    padding: 22px 18px 24px;
+    border-radius: 24px 24px 0 0;
+    border-bottom: 0;
   }
 }
