@@ -1,9 +1,9 @@
 window.generatedPlacesData = {
   "meta": {
-    "sourceUrl": "https://maps.app.goo.gl/b9seTWpVJFqm8rsS6",
+    "sourceUrl": "https://maps.app.goo.gl/6kiRLdhaMThJCQia9",
     "listTitle": "Villa Beach Higuericas",
-    "lastSyncedAt": "2026-04-19T06:50:59.663Z",
-    "totalPlaces": 47,
+    "lastSyncedAt": "2026-04-19T08:16:27.605Z",
+    "totalPlaces": 52,
     "directListEmbedAvailable": false
   },
   "es": {
@@ -12,12 +12,16 @@ window.generatedPlacesData = {
       "body": "Esta sección resume la lista compartida del anfitrión en Google Maps y la ordena por bloques más simples como Restaurants, Supermarkets, Shopping, Sports & adventures o Zonas infantiles.\nLa llamada principal es abrir la lista completa en Google Maps, guardarla en tu cuenta y usar este resumen web solo como atajo rápido durante la estancia.\nLas distancias y tiempos se muestran como referencia aproximada desde la villa.",
       "tags": [
         "Google Maps",
-        "47 lugares guardados"
+        "52 lugares guardados"
       ],
       "links": [
         {
           "label": "🗺️ Abrir y guardar lista en Google Maps",
-          "href": "https://maps.app.goo.gl/b9seTWpVJFqm8rsS6"
+          "href": "https://maps.app.goo.gl/6kiRLdhaMThJCQia9"
+        },
+        {
+          "label": "Turismo Pilar de la Horadada",
+          "href": "https://www.visitpilardelahoradada.com/"
         }
       ]
     },
@@ -34,6 +38,58 @@ window.generatedPlacesData = {
             "id": "restaurants",
             "title": "🍽️ Restaurantes",
             "items": [
+              {
+                "title": "Paseo de Cine",
+                "text": "",
+                "details": [
+                  {
+                    "label": "📍 Dirección",
+                    "value": "03191 Torre de la Horadada, Alicante"
+                  }
+                ],
+                "featured": false,
+                "distanceKm": 1.7148621274068827,
+                "walkingMinutes": 26,
+                "drivingMinutes": 4,
+                "distanceLabel": "1.7 km · 🚶 ~26 min",
+                "temporarilyClosed": false,
+                "statusLabel": "",
+                "tags": [
+                  "🍽️ Restaurants"
+                ],
+                "links": [
+                  {
+                    "label": "Abrir en Maps",
+                    "href": "https://www.google.com/maps/search/?api=1&query=Paseo%20de%20Cine%2C%2003191%20Torre%20de%20la%20Horadada%2C%20Alicante"
+                  }
+                ]
+              },
+              {
+                "title": "Go-Karts Orihuela Costa",
+                "text": "",
+                "details": [
+                  {
+                    "label": "📍 Dirección",
+                    "value": "Carretera Torrevieja - Cartagena, km 5, 700, 03189 Orihuela Costa, Alicante"
+                  }
+                ],
+                "featured": false,
+                "distanceKm": 10.26481916859324,
+                "walkingMinutes": 157,
+                "drivingMinutes": 22,
+                "distanceLabel": "10.3 km · 🚗 ~22 min",
+                "temporarilyClosed": false,
+                "statusLabel": "",
+                "tags": [
+                  "🍽️ Restaurants"
+                ],
+                "links": [
+                  {
+                    "label": "Abrir en Maps",
+                    "href": "https://www.google.com/maps/search/?api=1&query=Go-Karts%20Orihuela%20Costa%2C%20Carretera%20Torrevieja%20-%20Cartagena%2C%20km%205%2C%20700%2C%2003189%20Orihuela%20Costa%2C%20Alicante"
+                  }
+                ]
+              },
               {
                 "title": "Nostrissima",
                 "text": "",
@@ -1038,6 +1094,64 @@ window.generatedPlacesData = {
             ]
           },
           {
+            "id": "tourism",
+            "title": "🧭 Turismo y visitas",
+            "items": [
+              {
+                "title": "Centro de Visitantes \"Las Salinas\" Parque Regional Salinas de San Pedro del \nPinatar",
+                "text": "",
+                "details": [
+                  {
+                    "label": "📍 Dirección",
+                    "value": "Av. del Puerto, 317-321, 30740 San Pedro del Pinatar, Murcia"
+                  }
+                ],
+                "featured": false,
+                "distanceKm": 2.5664080519248693,
+                "walkingMinutes": 39,
+                "drivingMinutes": 5,
+                "distanceLabel": "2.6 km · 🚗 ~5 min",
+                "temporarilyClosed": false,
+                "statusLabel": "",
+                "tags": [
+                  "💪 Sports & adventures"
+                ],
+                "links": [
+                  {
+                    "label": "Abrir en Maps",
+                    "href": "https://www.google.com/maps/search/?api=1&query=Centro%20de%20Visitantes%20%22Las%20Salinas%22%20Parque%20Regional%20Salinas%20de%20San%20Pedro%20del%20%0APinatar%2C%20Av.%20del%20Puerto%2C%20317-321%2C%2030740%20San%20Pedro%20del%20Pinatar%2C%20Murcia"
+                  }
+                ]
+              },
+              {
+                "title": "Oficina de Turismo / Tourist Info Pilar de la Horadada",
+                "text": "",
+                "details": [
+                  {
+                    "label": "📍 Dirección",
+                    "value": "Plaza Campoamor, 2, 03190 Pilar de la Horadada, Alicante"
+                  }
+                ],
+                "featured": false,
+                "distanceKm": 2.3557930282531,
+                "walkingMinutes": 36,
+                "drivingMinutes": 5,
+                "distanceLabel": "2.4 km · 🚗 ~5 min",
+                "temporarilyClosed": false,
+                "statusLabel": "",
+                "tags": [
+                  "💪 Sports & adventures"
+                ],
+                "links": [
+                  {
+                    "label": "Abrir en Maps",
+                    "href": "https://www.google.com/maps/search/?api=1&query=Oficina%20de%20Turismo%20%2F%20Tourist%20Info%20Pilar%20de%20la%20Horadada%2C%20Plaza%20Campoamor%2C%202%2C%2003190%20Pilar%20de%20la%20Horadada%2C%20Alicante"
+                  }
+                ]
+              }
+            ]
+          },
+          {
             "id": "padel",
             "title": "🎾 Pádel",
             "items": [
@@ -1207,7 +1321,7 @@ window.generatedPlacesData = {
         "subgroups": [
           {
             "id": "parks",
-            "title": "🛝 Parques y zonas infantiles",
+            "title": "🛝 Zonas infantiles",
             "items": [
               {
                 "title": "Parque",
@@ -1232,36 +1346,6 @@ window.generatedPlacesData = {
                   {
                     "label": "Abrir en Maps",
                     "href": "https://www.google.com/maps/search/?api=1&query=Parque%2C%2003191%20El%20Moj%C3%B3n%2C%20Alicante"
-                  }
-                ]
-              },
-              {
-                "title": "Zona de esparcimiento canino Cecilia",
-                "text": "",
-                "details": [
-                  {
-                    "label": "✨ Nota",
-                    "value": "Parque canino"
-                  },
-                  {
-                    "label": "📍 Dirección",
-                    "value": "C. Helecho Mojón, 03191 Pilar de la Horadada, Alicante"
-                  }
-                ],
-                "featured": false,
-                "distanceKm": 0.14254120529197853,
-                "walkingMinutes": 2,
-                "drivingMinutes": 1,
-                "distanceLabel": "0.1 km · 🚶 ~2 min",
-                "temporarilyClosed": false,
-                "statusLabel": "",
-                "tags": [
-                  "🛝 Zonas infantiles"
-                ],
-                "links": [
-                  {
-                    "label": "Abrir en Maps",
-                    "href": "https://www.google.com/maps/search/?api=1&query=Zona%20de%20esparcimiento%20canino%20Cecilia%2C%20C.%20Helecho%20Moj%C3%B3n%2C%2003191%20Pilar%20de%20la%20Horadada%2C%20Alicante"
                   }
                 ]
               },
@@ -1344,6 +1428,64 @@ window.generatedPlacesData = {
                 ]
               }
             ]
+          },
+          {
+            "id": "attractions",
+            "title": "🎡 Parques de atracciones",
+            "items": [
+              {
+                "title": "Aquopolis Torrevieja",
+                "text": "",
+                "details": [
+                  {
+                    "label": "📍 Dirección",
+                    "value": "Av. Delfina Viudes, s/n, 03183 Torrevieja, Alicante"
+                  }
+                ],
+                "featured": false,
+                "distanceKm": 16.92534050692306,
+                "walkingMinutes": 258,
+                "drivingMinutes": 36,
+                "distanceLabel": "16.9 km · 🚗 ~36 min",
+                "temporarilyClosed": true,
+                "statusLabel": "⚠️ Cerrado temporalmente",
+                "tags": [
+                  "🛝 Zonas infantiles"
+                ],
+                "links": [
+                  {
+                    "label": "Abrir en Maps",
+                    "href": "https://www.google.com/maps/search/?api=1&query=Aquopolis%20Torrevieja%2C%20Av.%20Delfina%20Viudes%2C%20s%2Fn%2C%2003183%20Torrevieja%2C%20Alicante"
+                  }
+                ]
+              },
+              {
+                "title": "Lo Rufete Multiaventura Park",
+                "text": "",
+                "details": [
+                  {
+                    "label": "📍 Dirección",
+                    "value": "CV-951, Km. 1, 03193 San Miguel de Salinas, Alicante"
+                  }
+                ],
+                "featured": false,
+                "distanceKm": 16.372535986051115,
+                "walkingMinutes": 250,
+                "drivingMinutes": 34,
+                "distanceLabel": "16.4 km · 🚗 ~34 min",
+                "temporarilyClosed": false,
+                "statusLabel": "",
+                "tags": [
+                  "🛝 Zonas infantiles"
+                ],
+                "links": [
+                  {
+                    "label": "Abrir en Maps",
+                    "href": "https://www.google.com/maps/search/?api=1&query=Lo%20Rufete%20Multiaventura%20Park%2C%20CV-951%2C%20Km.%201%2C%2003193%20San%20Miguel%20de%20Salinas%2C%20Alicante"
+                  }
+                ]
+              }
+            ]
           }
         ]
       }
@@ -1356,12 +1498,16 @@ window.generatedPlacesData = {
       "body": "This section summarises the host's shared Google Maps list and reorders it into simpler groups such as Restaurants, Supermarkets, Shopping, Sports & adventures or Kids areas.\nThe main action is to open the full list in Google Maps, save it to your account and use this web summary only as a quick reference during the stay.\nDistances and travel times are shown as approximate references from the villa.",
       "tags": [
         "Google Maps",
-        "47 saved places"
+        "52 saved places"
       ],
       "links": [
         {
           "label": "🗺️ Open and save list in Google Maps",
-          "href": "https://maps.app.goo.gl/b9seTWpVJFqm8rsS6"
+          "href": "https://maps.app.goo.gl/6kiRLdhaMThJCQia9"
+        },
+        {
+          "label": "Pilar de la Horadada tourism",
+          "href": "https://www.visitpilardelahoradada.com/"
         }
       ]
     },
@@ -1378,6 +1524,58 @@ window.generatedPlacesData = {
             "id": "restaurants",
             "title": "🍽️ Restaurants",
             "items": [
+              {
+                "title": "Paseo de Cine",
+                "text": "",
+                "details": [
+                  {
+                    "label": "📍 Address",
+                    "value": "03191 Torre de la Horadada, Alicante"
+                  }
+                ],
+                "featured": false,
+                "distanceKm": 1.7148621274068827,
+                "walkingMinutes": 26,
+                "drivingMinutes": 4,
+                "distanceLabel": "1.7 km · 🚶 ~26 min",
+                "temporarilyClosed": false,
+                "statusLabel": "",
+                "tags": [
+                  "🍽️ Restaurants"
+                ],
+                "links": [
+                  {
+                    "label": "Open in Maps",
+                    "href": "https://www.google.com/maps/search/?api=1&query=Paseo%20de%20Cine%2C%2003191%20Torre%20de%20la%20Horadada%2C%20Alicante"
+                  }
+                ]
+              },
+              {
+                "title": "Go-Karts Orihuela Costa",
+                "text": "",
+                "details": [
+                  {
+                    "label": "📍 Address",
+                    "value": "Carretera Torrevieja - Cartagena, km 5, 700, 03189 Orihuela Costa, Alicante"
+                  }
+                ],
+                "featured": false,
+                "distanceKm": 10.26481916859324,
+                "walkingMinutes": 157,
+                "drivingMinutes": 22,
+                "distanceLabel": "10.3 km · 🚗 ~22 min",
+                "temporarilyClosed": false,
+                "statusLabel": "",
+                "tags": [
+                  "🍽️ Restaurants"
+                ],
+                "links": [
+                  {
+                    "label": "Open in Maps",
+                    "href": "https://www.google.com/maps/search/?api=1&query=Go-Karts%20Orihuela%20Costa%2C%20Carretera%20Torrevieja%20-%20Cartagena%2C%20km%205%2C%20700%2C%2003189%20Orihuela%20Costa%2C%20Alicante"
+                  }
+                ]
+              },
               {
                 "title": "Nostrissima",
                 "text": "",
@@ -2382,6 +2580,64 @@ window.generatedPlacesData = {
             ]
           },
           {
+            "id": "tourism",
+            "title": "🧭 Tourism and visits",
+            "items": [
+              {
+                "title": "Centro de Visitantes \"Las Salinas\" Parque Regional Salinas de San Pedro del \nPinatar",
+                "text": "",
+                "details": [
+                  {
+                    "label": "📍 Address",
+                    "value": "Av. del Puerto, 317-321, 30740 San Pedro del Pinatar, Murcia"
+                  }
+                ],
+                "featured": false,
+                "distanceKm": 2.5664080519248693,
+                "walkingMinutes": 39,
+                "drivingMinutes": 5,
+                "distanceLabel": "2.6 km · 🚗 ~5 min",
+                "temporarilyClosed": false,
+                "statusLabel": "",
+                "tags": [
+                  "💪 Sports & adventures"
+                ],
+                "links": [
+                  {
+                    "label": "Open in Maps",
+                    "href": "https://www.google.com/maps/search/?api=1&query=Centro%20de%20Visitantes%20%22Las%20Salinas%22%20Parque%20Regional%20Salinas%20de%20San%20Pedro%20del%20%0APinatar%2C%20Av.%20del%20Puerto%2C%20317-321%2C%2030740%20San%20Pedro%20del%20Pinatar%2C%20Murcia"
+                  }
+                ]
+              },
+              {
+                "title": "Oficina de Turismo / Tourist Info Pilar de la Horadada",
+                "text": "",
+                "details": [
+                  {
+                    "label": "📍 Address",
+                    "value": "Plaza Campoamor, 2, 03190 Pilar de la Horadada, Alicante"
+                  }
+                ],
+                "featured": false,
+                "distanceKm": 2.3557930282531,
+                "walkingMinutes": 36,
+                "drivingMinutes": 5,
+                "distanceLabel": "2.4 km · 🚗 ~5 min",
+                "temporarilyClosed": false,
+                "statusLabel": "",
+                "tags": [
+                  "💪 Sports & adventures"
+                ],
+                "links": [
+                  {
+                    "label": "Open in Maps",
+                    "href": "https://www.google.com/maps/search/?api=1&query=Oficina%20de%20Turismo%20%2F%20Tourist%20Info%20Pilar%20de%20la%20Horadada%2C%20Plaza%20Campoamor%2C%202%2C%2003190%20Pilar%20de%20la%20Horadada%2C%20Alicante"
+                  }
+                ]
+              }
+            ]
+          },
+          {
             "id": "padel",
             "title": "🎾 Padel",
             "items": [
@@ -2551,7 +2807,7 @@ window.generatedPlacesData = {
         "subgroups": [
           {
             "id": "parks",
-            "title": "🛝 Parks and playgrounds",
+            "title": "🛝 Kids areas",
             "items": [
               {
                 "title": "Parque",
@@ -2576,36 +2832,6 @@ window.generatedPlacesData = {
                   {
                     "label": "Open in Maps",
                     "href": "https://www.google.com/maps/search/?api=1&query=Parque%2C%2003191%20El%20Moj%C3%B3n%2C%20Alicante"
-                  }
-                ]
-              },
-              {
-                "title": "Zona de esparcimiento canino Cecilia",
-                "text": "",
-                "details": [
-                  {
-                    "label": "✨ Note",
-                    "value": "Parque canino"
-                  },
-                  {
-                    "label": "📍 Address",
-                    "value": "C. Helecho Mojón, 03191 Pilar de la Horadada, Alicante"
-                  }
-                ],
-                "featured": false,
-                "distanceKm": 0.14254120529197853,
-                "walkingMinutes": 2,
-                "drivingMinutes": 1,
-                "distanceLabel": "0.1 km · 🚶 ~2 min",
-                "temporarilyClosed": false,
-                "statusLabel": "",
-                "tags": [
-                  "🛝 Kids areas"
-                ],
-                "links": [
-                  {
-                    "label": "Open in Maps",
-                    "href": "https://www.google.com/maps/search/?api=1&query=Zona%20de%20esparcimiento%20canino%20Cecilia%2C%20C.%20Helecho%20Moj%C3%B3n%2C%2003191%20Pilar%20de%20la%20Horadada%2C%20Alicante"
                   }
                 ]
               },
@@ -2684,6 +2910,64 @@ window.generatedPlacesData = {
                   {
                     "label": "Open in Maps",
                     "href": "https://www.google.com/maps/search/?api=1&query=%C3%81rea%20infantil%2C%2003191%20Pilar%20de%20la%20Horadada%2C%20Alicante"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "attractions",
+            "title": "🎡 Attraction parks",
+            "items": [
+              {
+                "title": "Aquopolis Torrevieja",
+                "text": "",
+                "details": [
+                  {
+                    "label": "📍 Address",
+                    "value": "Av. Delfina Viudes, s/n, 03183 Torrevieja, Alicante"
+                  }
+                ],
+                "featured": false,
+                "distanceKm": 16.92534050692306,
+                "walkingMinutes": 258,
+                "drivingMinutes": 36,
+                "distanceLabel": "16.9 km · 🚗 ~36 min",
+                "temporarilyClosed": true,
+                "statusLabel": "⚠️ Temporarily closed",
+                "tags": [
+                  "🛝 Kids areas"
+                ],
+                "links": [
+                  {
+                    "label": "Open in Maps",
+                    "href": "https://www.google.com/maps/search/?api=1&query=Aquopolis%20Torrevieja%2C%20Av.%20Delfina%20Viudes%2C%20s%2Fn%2C%2003183%20Torrevieja%2C%20Alicante"
+                  }
+                ]
+              },
+              {
+                "title": "Lo Rufete Multiaventura Park",
+                "text": "",
+                "details": [
+                  {
+                    "label": "📍 Address",
+                    "value": "CV-951, Km. 1, 03193 San Miguel de Salinas, Alicante"
+                  }
+                ],
+                "featured": false,
+                "distanceKm": 16.372535986051115,
+                "walkingMinutes": 250,
+                "drivingMinutes": 34,
+                "distanceLabel": "16.4 km · 🚗 ~34 min",
+                "temporarilyClosed": false,
+                "statusLabel": "",
+                "tags": [
+                  "🛝 Kids areas"
+                ],
+                "links": [
+                  {
+                    "label": "Open in Maps",
+                    "href": "https://www.google.com/maps/search/?api=1&query=Lo%20Rufete%20Multiaventura%20Park%2C%20CV-951%2C%20Km.%201%2C%2003193%20San%20Miguel%20de%20Salinas%2C%20Alicante"
                   }
                 ]
               }
