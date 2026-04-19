@@ -13,7 +13,7 @@ window.siteData = {
     links: {
       mapsRoute:
         "https://www.google.com/maps/search/?api=1&query=Calle+Dalia+31%2C+Pilar+de+la+Horadada",
-      hostList: "https://maps.app.goo.gl/6kiRLdhaMThJCQia9",
+      hostList: "https://maps.app.goo.gl/b9seTWpVJFqm8rsS6",
       foodMapEmbed:
         "https://www.google.com/maps?q=Playa%20de%20las%20Higuericas%2C%20Pilar%20de%20la%20Horadada&output=embed",
       beach:

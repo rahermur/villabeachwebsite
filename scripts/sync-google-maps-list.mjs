@@ -7,7 +7,7 @@ const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const snapshotPath = path.join(ROOT, "data", "places.snapshot.json");
 const overridesPath = path.join(ROOT, "data", "places.overrides.json");
 const LIST_URL =
-  process.env.GOOGLE_MAPS_LIST_URL || "https://maps.app.goo.gl/6kiRLdhaMThJCQia9";
+  process.env.GOOGLE_MAPS_LIST_URL || "https://maps.app.goo.gl/b9seTWpVJFqm8rsS6";
 const BASE_URL = "https://www.google.es";
 const overrides = JSON.parse(await fs.readFile(overridesPath, "utf8"));
 
