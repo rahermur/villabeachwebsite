@@ -399,7 +399,7 @@ const applySectionLabels = () => {
     emergenciesEyebrow: currentCopy.sections.emergencies.eyebrow,
     emergenciesTitle: currentCopy.sections.emergencies.title,
     languageLabel: currentCopy.ui.languageLabel,
-    logoutButton: currentCopy.ui.logoutLabel,
+    logoutButtonLabel: currentCopy.ui.logoutLabel,
     gateEyebrow: currentCopy.ui.gate.eyebrow,
     gateTitle: currentCopy.ui.gate.title,
     gateDescription: currentCopy.ui.gate.description,
