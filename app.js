@@ -8,6 +8,7 @@ const accessInput = document.getElementById("accessCode");
 const accessToggle = document.getElementById("accessToggle");
 const accessError = document.getElementById("gateError");
 const logoutButton = document.getElementById("logoutButton");
+const languageTrigger = document.getElementById("languageTrigger");
 const detailSheet = document.getElementById("detailSheet");
 const detailSheetClose = document.getElementById("detailSheetClose");
 const generatedPlacesData = window.generatedPlacesData;
@@ -291,7 +292,7 @@ const renderFoodSection = () => {
                         );
                 const mapsHref = entry.links?.[0]?.href || "#";
                 const showTags = category.id !== "food-restaurants" && entry.tags?.length;
-                const featuredLabel = currentLocale === "es" ? "Destacado" : "Top pick";
+                const featuredLabel = currentCopy.ui.featuredLabel || (currentLocale === "es" ? "Destacado" : "Top pick");
 
                 return `
                   <li class="food-bullet-item">
@@ -331,7 +332,7 @@ const setPhoto = (targetId, photo) => {
 
 const detectLocale = () => {
   const browserLocale = (navigator.language || "en").toLowerCase();
-  return browserLocale.startsWith("es") ? "es" : "en";
+  return Object.keys(translations).find((locale) => locale !== "auto" && browserLocale.startsWith(locale)) || "en";
 };
 
 const getSavedPreference = () => localStorage.getItem(STORAGE_KEY) || "auto";
@@ -345,15 +346,27 @@ const formatSelectedLanguage = (preference) => {
   return translations[preference].ui.activeLanguage;
 };
 
+let isLanguageMenuOpen = false;
+
 const renderLanguageControls = () => {
   const controls = document.getElementById("languageControls");
-  controls.innerHTML = ["auto", "es", "en"]
+  const optionKeys = Object.keys(localeOptions).filter((key) => key !== "auto");
+  controls.hidden = !isLanguageMenuOpen;
+  languageTrigger?.setAttribute("aria-expanded", String(isLanguageMenuOpen));
+  if (languageTrigger) {
+    const activeKey = languagePreference === "auto" ? currentLocale : languagePreference;
+    const activeOption = localeOptions[activeKey];
+    languageTrigger.innerHTML = `
+      <span class="language-switcher__trigger-copy">
+        <span class="language-switcher__label" id="languageLabel">${currentCopy.ui.languageLabel}</span>
+        <span class="language-switcher__value" aria-hidden="true">${activeOption.flag}</span>
+      </span>
+    `;
+  }
+  controls.innerHTML = optionKeys
     .map((optionKey) => {
       const option = localeOptions[optionKey];
-      const label =
-        optionKey === "auto"
-          ? `${option.flag} ${currentCopy.ui.autoLabel}`
-          : `${option.flag} ${option.label}`;
+      const label = `${option.flag} ${option.label}`;
       const isActive = languagePreference === optionKey;
       return `<button class="language-button${isActive ? " is-active" : ""}" data-language="${optionKey}" type="button">${label}</button>`;
     })
@@ -363,6 +376,7 @@ const renderLanguageControls = () => {
     button.addEventListener("click", () => {
       languagePreference = button.dataset.language;
       localStorage.setItem(STORAGE_KEY, languagePreference);
+      isLanguageMenuOpen = false;
       render();
     });
   });
@@ -618,6 +632,26 @@ accessToggle?.addEventListener("click", () => {
 
 logoutButton.addEventListener("click", () => {
   lockGuide();
+});
+
+languageTrigger?.addEventListener("click", (event) => {
+  event.stopPropagation();
+  isLanguageMenuOpen = !isLanguageMenuOpen;
+  renderLanguageControls();
+});
+
+document.addEventListener("click", (event) => {
+  if (!isLanguageMenuOpen) return;
+  if (languageTrigger?.contains(event.target) || document.getElementById("languageControls")?.contains(event.target)) return;
+  isLanguageMenuOpen = false;
+  renderLanguageControls();
+});
+
+document.addEventListener("keydown", (event) => {
+  if (event.key === "Escape" && isLanguageMenuOpen) {
+    isLanguageMenuOpen = false;
+    renderLanguageControls();
+  }
 });
 
 detailSheetClose.addEventListener("click", closeDetailSheet);
