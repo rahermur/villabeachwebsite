@@ -43,7 +43,7 @@ jobs:
       - name: Prepare static artifact
         run: |
           mkdir -p dist/assets
-          cp index.html app.js site-data.js generated-places.js styles.css README.md dist/
+          cp index.html app.js site-data.js site-data.locales.js generated-places.js styles.css README.md dist/
           cp -R assets/. dist/assets/
 
       - name: Configure Pages
