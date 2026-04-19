@@ -248,9 +248,17 @@ const renderFoodSection = () => {
             ${subgroups
               .map((subgroup) => {
                 const subgroupItems = [...subgroup.items].sort((a, b) => {
+                  const featuredDelta = Number(Boolean(b.featured)) - Number(Boolean(a.featured));
+                  if (featuredDelta !== 0) return featuredDelta;
+
+                  const aDistance = Number.isFinite(a.distanceKm) ? a.distanceKm : Number.POSITIVE_INFINITY;
+                  const bDistance = Number.isFinite(b.distanceKm) ? b.distanceKm : Number.POSITIVE_INFINITY;
+                  if (aDistance !== bDistance) return aDistance - bDistance;
+
                   const closedDelta = Number(Boolean(a.temporarilyClosed)) - Number(Boolean(b.temporarilyClosed));
                   if (closedDelta !== 0) return closedDelta;
-                  return Number(Boolean(b.featured)) - Number(Boolean(a.featured));
+
+                  return a.title.localeCompare(b.title);
                 });
 
                 return `
@@ -273,6 +281,7 @@ const renderFoodSection = () => {
                   <li class="food-bullet-item">
                     <div class="food-bullet-header">
                       <strong>${entry.title}</strong>
+                      ${entry.distanceLabel ? `<span class="food-bullet-distance">${escapeHtml(entry.distanceLabel)}</span>` : ""}
                       ${entry.featured ? `<span class="food-bullet-featured">${featuredLabel}</span>` : ""}
                       ${entry.temporarilyClosed ? `<span class="food-bullet-status">${escapeHtml(entry.statusLabel)}</span>` : ""}
                     </div>
