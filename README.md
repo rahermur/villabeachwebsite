@@ -97,3 +97,8 @@ Prepared flow:
 - The most fragile part of the project is the Google Maps sync script, because Google does not provide an official API for shared saved lists.
 - `generated-places.js` is a build artifact and should be regenerated after changes to the snapshot or overrides.
 - If you add a new supported language, update both [site-data.locales.js](/Users/e045989/villa-higuericas-guide/site-data.locales.js) and any generated-places locale labels defined there.
+
+## TODO
+
+- Expand the pool section with clearer guidance about heating expectations, especially that the target should stay around `24°C` and not significantly above that.
+- Expand the hot tub section once the final operating instructions are available, so the guest-facing copy is more precise and complete.
