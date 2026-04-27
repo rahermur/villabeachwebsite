@@ -2,8 +2,8 @@
   "source": {
     "type": "google-maps-saved-list",
     "url": "https://maps.app.goo.gl/6kiRLdhaMThJCQia9",
-    "payloadUrl": "https://www.google.es/maps/preview/entitylist/getlist?authuser=0&hl=en&gl=us&pb=%211m4%211s9FHSLytbQZeXfVD7Pj_uPw%212e1%213m1%211e1%212e2%213e2%214i500%216m3%211std3laaaqMZKK8L0Pgee5mQw%2115i204459%2128e2%2116b1",
-    "lastSyncedAt": "2026-04-20T08:03:04.381Z",
+    "payloadUrl": "https://www.google.es/maps/preview/entitylist/getlist?authuser=0&hl=en&gl=us&pb=%211m4%211s9FHSLytbQZeXfVD7Pj_uPw%212e1%213m1%211e1%212e2%213e2%214i500%216m3%211sFBzvacOkDLr7kPIP0MOKWA%2115i204459%2128e2%2116b1",
+    "lastSyncedAt": "2026-04-27T08:19:36.109Z",
     "title": "Villa Beach Higuericas",
     "description": "List of recommended places in Pilar de la Horadada and surroundings",
     "totalPlaces": 52,
@@ -380,19 +380,6 @@
       "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Restaurante%20Asia%2C%20C.%20Mayor%2C%20136%2C%2003190%20Pilar%20de%20la%20Horadada%2C%20Alicante"
     },
     {
-      "id": "bodegon-la-pena",
-      "name": "Bodegón la Peña",
-      "note": "",
-      "address": "C. Benissa, 37, 03190 Pilar de la Horadada, Alicante",
-      "lat": 37.8629119,
-      "lng": -0.7835795,
-      "category": "restaurants",
-      "temporarilyClosed": false,
-      "closureLabel": null,
-      "closureSource": null,
-      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Bodeg%C3%B3n%20la%20Pe%C3%B1a%2C%20C.%20Benissa%2C%2037%2C%2003190%20Pilar%20de%20la%20Horadada%2C%20Alicante"
-    },
-    {
       "id": "aldi",
       "name": "ALDI",
       "note": "Supermarket",
@@ -653,19 +640,6 @@
       "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Las%20Colinas%20Golf%20%26%20Country%20Club%2C%20Av.%20de%20las%20Colinas%2C%202%2C%2003189%20Dehesa%20de%20Campoamor%2C%20Alicante"
     },
     {
-      "id": "lo-romero-golf",
-      "name": "Lo Romero Golf",
-      "note": "Golf",
-      "address": "CV 925 Km 29, CV-925, Km 29, 03191 Pilar de la Horadada, Alicante",
-      "lat": 37.882675,
-      "lng": -0.8234334999999999,
-      "category": "golf",
-      "temporarilyClosed": false,
-      "closureLabel": null,
-      "closureSource": null,
-      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Lo%20Romero%20Golf%2C%20CV%20925%20Km%2029%2C%20CV-925%2C%20Km%2029%2C%2003191%20Pilar%20de%20la%20Horadada%2C%20Alicante"
-    },
-    {
       "id": "c-mar-de-noruega-2-16",
       "name": "C. Mar de Noruega, 2, 16",
       "note": "Small Chinese bazar",
@@ -677,6 +651,32 @@
       "closureLabel": null,
       "closureSource": null,
       "mapsUrl": "https://www.google.com/maps/search/?api=1&query=C.%20Mar%20de%20Noruega%2C%202%2C%2016%2C%20C.%20Mar%20de%20Noruega%2C%202%2C%2003191%20Torre%20de%20la%20Horadada%2C%20Alicante"
+    },
+    {
+      "id": "bodegon-la-pena",
+      "name": "Bodegón la Peña",
+      "note": "",
+      "address": "C. Benissa, 37, 03190 Pilar de la Horadada, Alicante",
+      "lat": 37.8629119,
+      "lng": -0.7835795,
+      "category": "restaurants",
+      "temporarilyClosed": false,
+      "closureLabel": null,
+      "closureSource": null,
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Bodeg%C3%B3n%20la%20Pe%C3%B1a%2C%20C.%20Benissa%2C%2037%2C%2003190%20Pilar%20de%20la%20Horadada%2C%20Alicante"
+    },
+    {
+      "id": "lo-romero-golf",
+      "name": "Lo Romero Golf",
+      "note": "",
+      "address": "CV 925 Km 29, CV-925, Km 29, 03191 Pilar de la Horadada, Alicante",
+      "lat": 37.882675,
+      "lng": -0.8234334999999999,
+      "category": "golf",
+      "temporarilyClosed": false,
+      "closureLabel": null,
+      "closureSource": null,
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Lo%20Romero%20Golf%2C%20CV%20925%20Km%2029%2C%20CV-925%2C%20Km%2029%2C%2003191%20Pilar%20de%20la%20Horadada%2C%20Alicante"
     },
     {
       "id": "restaurante-victoria-roneria-mangu",

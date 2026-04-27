@@ -2,7 +2,7 @@ window.generatedPlacesData = {
   "meta": {
     "sourceUrl": "https://maps.app.goo.gl/6kiRLdhaMThJCQia9",
     "listTitle": "Villa Beach Higuericas",
-    "lastSyncedAt": "2026-04-20T08:03:04.381Z",
+    "lastSyncedAt": "2026-04-27T08:19:36.109Z",
     "totalPlaces": 52,
     "directListEmbedAvailable": false
   },
@@ -330,32 +330,6 @@ window.generatedPlacesData = {
                 ]
               },
               {
-                "title": "Bodegón la Peña",
-                "text": "",
-                "details": [
-                  {
-                    "label": "📍 Dirección",
-                    "value": "C. Benissa, 37, 03190 Pilar de la Horadada, Alicante"
-                  }
-                ],
-                "featured": false,
-                "distanceKm": 1.5731073944102971,
-                "walkingMinutes": 24,
-                "drivingMinutes": 3,
-                "distanceLabel": "1.6 km · 🚶 ~24 min",
-                "temporarilyClosed": false,
-                "statusLabel": "",
-                "tags": [
-                  "🍽️ Restaurants"
-                ],
-                "links": [
-                  {
-                    "label": "Abrir en Maps",
-                    "href": "https://www.google.com/maps/search/?api=1&query=Bodeg%C3%B3n%20la%20Pe%C3%B1a%2C%20C.%20Benissa%2C%2037%2C%2003190%20Pilar%20de%20la%20Horadada%2C%20Alicante"
-                  }
-                ]
-              },
-              {
                 "title": "il Palco",
                 "text": "",
                 "details": [
@@ -525,6 +499,32 @@ window.generatedPlacesData = {
                   {
                     "label": "Abrir en Maps",
                     "href": "https://www.google.com/maps/search/?api=1&query=Manolo's%20Mar%2C%20Calle%20Hamburgo%2C%20s%2Fn%20Complejo%20Deportivo%20Las%20Artes%2C%2003191%20Torre%20de%20la%20Horadada%2C%20Alicante"
+                  }
+                ]
+              },
+              {
+                "title": "Bodegón la Peña",
+                "text": "",
+                "details": [
+                  {
+                    "label": "📍 Dirección",
+                    "value": "C. Benissa, 37, 03190 Pilar de la Horadada, Alicante"
+                  }
+                ],
+                "featured": false,
+                "distanceKm": 1.5731073944102971,
+                "walkingMinutes": 24,
+                "drivingMinutes": 3,
+                "distanceLabel": "1.6 km · 🚶 ~24 min",
+                "temporarilyClosed": false,
+                "statusLabel": "",
+                "tags": [
+                  "🍽️ Restaurants"
+                ],
+                "links": [
+                  {
+                    "label": "Abrir en Maps",
+                    "href": "https://www.google.com/maps/search/?api=1&query=Bodeg%C3%B3n%20la%20Pe%C3%B1a%2C%20C.%20Benissa%2C%2037%2C%2003190%20Pilar%20de%20la%20Horadada%2C%20Alicante"
                   }
                 ]
               },
@@ -1283,10 +1283,6 @@ window.generatedPlacesData = {
                 "text": "",
                 "details": [
                   {
-                    "label": "✨ Nota",
-                    "value": "Golf"
-                  },
-                  {
                     "label": "📍 Dirección",
                     "value": "CV 925 Km 29, CV-925, Km 29, 03191 Pilar de la Horadada, Alicante"
                   }
@@ -1816,32 +1812,6 @@ window.generatedPlacesData = {
                 ]
               },
               {
-                "title": "Bodegón la Peña",
-                "text": "",
-                "details": [
-                  {
-                    "label": "📍 Address",
-                    "value": "C. Benissa, 37, 03190 Pilar de la Horadada, Alicante"
-                  }
-                ],
-                "featured": false,
-                "distanceKm": 1.5731073944102971,
-                "walkingMinutes": 24,
-                "drivingMinutes": 3,
-                "distanceLabel": "1.6 km · 🚶 ~24 min",
-                "temporarilyClosed": false,
-                "statusLabel": "",
-                "tags": [
-                  "🍽️ Restaurants"
-                ],
-                "links": [
-                  {
-                    "label": "Open in Maps",
-                    "href": "https://www.google.com/maps/search/?api=1&query=Bodeg%C3%B3n%20la%20Pe%C3%B1a%2C%20C.%20Benissa%2C%2037%2C%2003190%20Pilar%20de%20la%20Horadada%2C%20Alicante"
-                  }
-                ]
-              },
-              {
                 "title": "il Palco",
                 "text": "",
                 "details": [
@@ -2011,6 +1981,32 @@ window.generatedPlacesData = {
                   {
                     "label": "Open in Maps",
                     "href": "https://www.google.com/maps/search/?api=1&query=Manolo's%20Mar%2C%20Calle%20Hamburgo%2C%20s%2Fn%20Complejo%20Deportivo%20Las%20Artes%2C%2003191%20Torre%20de%20la%20Horadada%2C%20Alicante"
+                  }
+                ]
+              },
+              {
+                "title": "Bodegón la Peña",
+                "text": "",
+                "details": [
+                  {
+                    "label": "📍 Address",
+                    "value": "C. Benissa, 37, 03190 Pilar de la Horadada, Alicante"
+                  }
+                ],
+                "featured": false,
+                "distanceKm": 1.5731073944102971,
+                "walkingMinutes": 24,
+                "drivingMinutes": 3,
+                "distanceLabel": "1.6 km · 🚶 ~24 min",
+                "temporarilyClosed": false,
+                "statusLabel": "",
+                "tags": [
+                  "🍽️ Restaurants"
+                ],
+                "links": [
+                  {
+                    "label": "Open in Maps",
+                    "href": "https://www.google.com/maps/search/?api=1&query=Bodeg%C3%B3n%20la%20Pe%C3%B1a%2C%20C.%20Benissa%2C%2037%2C%2003190%20Pilar%20de%20la%20Horadada%2C%20Alicante"
                   }
                 ]
               },
@@ -2768,10 +2764,6 @@ window.generatedPlacesData = {
                 "title": "Lo Romero Golf",
                 "text": "",
                 "details": [
-                  {
-                    "label": "✨ Note",
-                    "value": "Golf"
-                  },
                   {
                     "label": "📍 Address",
                     "value": "CV 925 Km 29, CV-925, Km 29, 03191 Pilar de la Horadada, Alicante"
