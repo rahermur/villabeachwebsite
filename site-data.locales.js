@@ -34,6 +34,15 @@
 
   const localePatches = {
     fr: {
+      property: {
+        jacuzzi: [
+          "Se doucher avant de l'utiliser et remettre la couverture lorsqu'il n'est pas utilisé.",
+          "Ne pas introduire de sable ni d'objets en verre dans le jacuzzi.",
+          "Ne pas manipuler le panneau technique, les filtres ou les réglages du traitement de l'eau.",
+          "Ne pas dépasser 38°C et éviter les longues sessions lorsque l'eau est très chaude.",
+          "Si vous êtes enceinte ou si vous souffrez d'hypertension, d'insuffisance respiratoire ou d'autres problèmes de santé, consultez votre médecin avant d'utiliser le jacuzzi."
+        ]
+      },
       meta: {
         title: "Guide de la villa | Higuericas Beach",
         description: "Guide numérique pour les voyageurs d'une villa située Calle Dalia 31, Pilar de la Horadada.",
@@ -117,9 +126,9 @@
           { title: "🔥 Barbecue", eyebrow: "Repas en extérieur", summary: "Comment l'allumer et le laisser en sécurité après usage.", text: "Utilisez le barbecue calmement, sans accélérants, et laissez toujours les braises complètement éteintes à la fin." }
         ],
         hostContacts: [
-          { title: "Hôte principal 1", text: "Nom : [COMPLETAR_NOMBRE]\nTéléphone / WhatsApp : [COMPLETAR_TEL]\nHoraires conseillés de contact : [COMPLETAR_HORARIO]" },
-          { title: "Hôte principal 2", text: "Nom : [COMPLETAR_NOMBRE]\nTéléphone / WhatsApp : [COMPLETAR_TEL]\nHoraires conseillés de contact : [COMPLETAR_HORARIO]" },
-          { title: "Contact de soutien", text: "Nom : Ana Montoro Rosado\nTéléphone / WhatsApp : 678267650\nÀ utiliser si les hôtes principaux ne répondent pas ou si vous avez besoin d'aide pendant le séjour." }
+          { title: "Hôte principal 1", text: "Nom : Stacey\nTéléphone / WhatsApp : 613869407" },
+          { title: "Hôte principal 2", text: "Nom : Sergio\nTéléphone / WhatsApp : 680957414" },
+          { title: "Contact de soutien", text: "Nom : Ana\nTéléphone / WhatsApp : 678267650\nÀ utiliser si les hôtes principaux ne répondent pas ou si vous avez besoin d'aide pendant le séjour." }
         ],
         emergencySummary: [{ title: "🚨 112", text: "Numéro d'urgence général, gratuit et disponible 24h/24.\nPolice, ambulance et pompiers." }],
         emergencyAccordions: [
@@ -130,6 +139,15 @@
       }
     },
     de: {
+      property: {
+        jacuzzi: [
+          "Vor der Nutzung duschen und die Abdeckung schließen, wenn der Whirlpool nicht benutzt wird.",
+          "Keinen Sand oder Glasgegenstände in den Whirlpool bringen.",
+          "Weder das Technikpanel noch Filter oder Wasserchemie-Einstellungen berühren.",
+          "38°C nicht überschreiten und längere Sitzungen vermeiden, wenn das Wasser sehr heiß ist.",
+          "Wenn du schwanger bist oder unter Bluthochdruck, Atemproblemen oder anderen gesundheitlichen Beschwerden leidest, sprich bitte vor der Nutzung mit deinem Arzt."
+        ]
+      },
       meta: {
         title: "Villa-Guide | Higuericas Beach",
         description: "Digitale Gäste-Guide für eine Villa in der Calle Dalia 31, Pilar de la Horadada.",
@@ -213,9 +231,9 @@
           { title: "🔥 Grill", eyebrow: "Draußen essen", summary: "Wie man ihn anzündet und danach sicher hinterlässt.", text: "Den Grill ruhig und ohne Brandbeschleuniger verwenden und die Kohlen am Ende vollständig löschen." }
         ],
         hostContacts: [
-          { title: "Hauptgastgeber 1", text: "Name: [COMPLETAR_NOMBRE]\nTelefon / WhatsApp: [COMPLETAR_TEL]\nEmpfohlene Kontaktzeiten: [COMPLETAR_HORARIO]" },
-          { title: "Hauptgastgeber 2", text: "Name: [COMPLETAR_NOMBRE]\nTelefon / WhatsApp: [COMPLETAR_TEL]\nEmpfohlene Kontaktzeiten: [COMPLETAR_HORARIO]" },
-          { title: "Ersatzkontakt", text: "Name: Ana Montoro Rosado\nTelefon / WhatsApp: 678267650\nDiesen Kontakt bitte nutzen, wenn die Hauptgastgeber nicht antworten oder du während des Aufenthalts Unterstützung brauchst." }
+          { title: "Hauptgastgeber 1", text: "Name: Stacey\nTelefon / WhatsApp: 613869407" },
+          { title: "Hauptgastgeber 2", text: "Name: Sergio\nTelefon / WhatsApp: 680957414" },
+          { title: "Ersatzkontakt", text: "Name: Ana\nTelefon / WhatsApp: 678267650\nDiesen Kontakt bitte nutzen, wenn die Hauptgastgeber nicht antworten oder du während des Aufenthalts Unterstützung brauchst." }
         ],
         emergencySummary: [{ title: "🚨 112", text: "Allgemeiner Notruf, kostenlos und rund um die Uhr erreichbar.\nPolizei, Rettungsdienst und Feuerwehr." }],
         emergencyAccordions: [
@@ -226,6 +244,15 @@
       }
     },
     nl: {
+      property: {
+        jacuzzi: [
+          "Douche vóór gebruik en houd de afdekking gesloten wanneer de jacuzzi niet wordt gebruikt.",
+          "Breng geen zand of glazen voorwerpen in de jacuzzi.",
+          "Raak het technische paneel, de filters of de waterbehandelingsinstellingen niet aan.",
+          "Ga niet boven 38°C en vermijd lange sessies wanneer het water erg warm is.",
+          "Als je zwanger bent of last hebt van hoge bloeddruk, ademhalingsproblemen of andere gezondheidsklachten, raadpleeg dan je arts voordat je de jacuzzi gebruikt."
+        ]
+      },
       meta: { title: "Villa-gids | Higuericas Beach", description: "Digitale gastenhandleiding voor een villa aan Calle Dalia 31, Pilar de la Horadada.", htmlLang: "nl" },
       ui: {
         languageLabel: "Taal", selectedLanguageLabel: "Geselecteerd", logoutLabel: "Afmelden", activeLanguage: "Nederlands", activeLanguageAuto: "Automatisch (%s)", featuredLabel: "Aanrader",
@@ -265,9 +292,9 @@
           { title: "🔥 Barbecue", eyebrow: "Buiten eten", summary: "Hoe je hem aansteekt en veilig achterlaat.", text: "Gebruik de barbecue rustig, zonder aanmaakvloeistoffen, en zorg dat de kolen aan het eind volledig uit zijn." }
         ],
         hostContacts: [
-          { title: "Hoofdhost 1", text: "Naam: [COMPLETAR_NOMBRE]\nTelefoon / WhatsApp: [COMPLETAR_TEL]\nAanbevolen contacturen: [COMPLETAR_HORARIO]" },
-          { title: "Hoofdhost 2", text: "Naam: [COMPLETAR_NOMBRE]\nTelefoon / WhatsApp: [COMPLETAR_TEL]\nAanbevolen contacturen: [COMPLETAR_HORARIO]" },
-          { title: "Back-upcontact", text: "Naam: Ana Montoro Rosado\nTelefoon / WhatsApp: 678267650\nGebruik dit contact als de hoofdhosts niet reageren of als je tijdens het verblijf ondersteuning nodig hebt." }
+          { title: "Hoofdhost 1", text: "Naam: Stacey\nTelefoon / WhatsApp: 613869407" },
+          { title: "Hoofdhost 2", text: "Naam: Sergio\nTelefoon / WhatsApp: 680957414" },
+          { title: "Back-upcontact", text: "Naam: Ana\nTelefoon / WhatsApp: 678267650\nGebruik dit contact als de hoofdhosts niet reageren of als je tijdens het verblijf ondersteuning nodig hebt." }
         ],
         emergencySummary: [{ title: "🚨 112", text: "Algemene nooddienst, gratis en 24/7 bereikbaar.\nPolitie, ambulance en brandweer." }],
         emergencyAccordions: [
@@ -278,6 +305,15 @@
       }
     },
     sv: {
+      property: {
+        jacuzzi: [
+          "Duscha före användning och håll locket stängt när jacuzzin inte används.",
+          "Ta inte med sand eller glasföremål i jacuzzin.",
+          "Rör inte kontrollpanelen, filtren eller inställningarna för vattenbehandlingen.",
+          "Överskrid inte 38°C och undvik långa bad när vattnet är mycket varmt.",
+          "Om du är gravid eller har högt blodtryck, andningsbesvär eller andra hälsoproblem bör du rådgöra med läkare innan du använder jacuzzin."
+        ]
+      },
       meta: { title: "Villaguide | Higuericas Beach", description: "Digital gästguide för en villa på Calle Dalia 31, Pilar de la Horadada.", htmlLang: "sv" },
       ui: {
         languageLabel: "Språk", selectedLanguageLabel: "Valt", logoutLabel: "Logga ut", activeLanguage: "Svenska", activeLanguageAuto: "Automatiskt (%s)", featuredLabel: "Utvalt",
@@ -310,9 +346,9 @@
           { title: "🔥 Grill", eyebrow: "Äta ute", summary: "Hur du tänder den och lämnar den säker efteråt.", text: "Använd grillen lugnt, utan tändvätska, och se till att glöden är helt släckt när du är klar." }
         ],
         hostContacts: [
-          { title: "Huvudvärd 1", text: "Namn: [COMPLETAR_NOMBRE]\nTelefon / WhatsApp: [COMPLETAR_TEL]\nRekommenderade kontaktider: [COMPLETAR_HORARIO]" },
-          { title: "Huvudvärd 2", text: "Namn: [COMPLETAR_NOMBRE]\nTelefon / WhatsApp: [COMPLETAR_TEL]\nRekommenderade kontaktider: [COMPLETAR_HORARIO]" },
-          { title: "Reservkontakt", text: "Namn: Ana Montoro Rosado\nTelefon / WhatsApp: 678267650\nAnvänd denna kontakt om huvudvärdarna inte svarar eller om du behöver hjälp under vistelsen." }
+          { title: "Huvudvärd 1", text: "Namn: Stacey\nTelefon / WhatsApp: 613869407" },
+          { title: "Huvudvärd 2", text: "Namn: Sergio\nTelefon / WhatsApp: 680957414" },
+          { title: "Reservkontakt", text: "Namn: Ana\nTelefon / WhatsApp: 678267650\nAnvänd denna kontakt om huvudvärdarna inte svarar eller om du behöver hjälp under vistelsen." }
         ],
         emergencySummary: [{ title: "🚨 112", text: "Allmänt nödnummer, gratis och tillgängligt dygnet runt.\nPolis, ambulans och brandkår." }],
         emergencyAccordions: [
@@ -323,6 +359,15 @@
       }
     },
     pl: {
+      property: {
+        jacuzzi: [
+          "Przed użyciem weź prysznic i trzymaj pokrywę zamkniętą, gdy jacuzzi nie jest używane.",
+          "Nie wnosić piasku ani szklanych przedmiotów do jacuzzi.",
+          "Nie dotykać panelu technicznego, filtrów ani ustawień uzdatniania wody.",
+          "Nie przekraczać 38°C i unikać długich sesji, gdy woda jest bardzo gorąca.",
+          "Jeśli jesteś w ciąży lub masz nadciśnienie, problemy z oddychaniem albo inne dolegliwości zdrowotne, skonsultuj się z lekarzem przed skorzystaniem z jacuzzi."
+        ]
+      },
       meta: { title: "Przewodnik po willi | Higuericas Beach", description: "Cyfrowy przewodnik dla gości willi przy Calle Dalia 31, Pilar de la Horadada.", htmlLang: "pl" },
       ui: {
         languageLabel: "Język", selectedLanguageLabel: "Wybrany", logoutLabel: "Wyloguj", activeLanguage: "Polski", activeLanguageAuto: "Automatyczny (%s)", featuredLabel: "Polecane",
@@ -355,9 +400,9 @@
           { title: "🔥 Grill", eyebrow: "Jedzenie na zewnątrz", summary: "Jak go rozpalić i bezpiecznie pozostawić po użyciu.", text: "Używaj grilla spokojnie, bez łatwopalnych płynów, i upewnij się, że po zakończeniu żar jest całkowicie wygaszony." }
         ],
         hostContacts: [
-          { title: "Główny gospodarz 1", text: "Imię: [COMPLETAR_NOMBRE]\nTelefon / WhatsApp: [COMPLETAR_TEL]\nZalecane godziny kontaktu: [COMPLETAR_HORARIO]" },
-          { title: "Główny gospodarz 2", text: "Imię: [COMPLETAR_NOMBRE]\nTelefon / WhatsApp: [COMPLETAR_TEL]\nZalecane godziny kontaktu: [COMPLETAR_HORARIO]" },
-          { title: "Kontakt zapasowy", text: "Imię: Ana Montoro Rosado\nTelefon / WhatsApp: 678267650\nUżyj tego kontaktu, jeśli główni gospodarze nie odpowiadają lub potrzebujesz pomocy podczas pobytu." }
+          { title: "Główny gospodarz 1", text: "Imię: Stacey\nTelefon / WhatsApp: 613869407" },
+          { title: "Główny gospodarz 2", text: "Imię: Sergio\nTelefon / WhatsApp: 680957414" },
+          { title: "Kontakt zapasowy", text: "Imię: Ana\nTelefon / WhatsApp: 678267650\nUżyj tego kontaktu, jeśli główni gospodarze nie odpowiadają lub potrzebujesz pomocy podczas pobytu." }
         ],
         emergencySummary: [{ title: "🚨 112", text: "Ogólny numer alarmowy, bezpłatny i dostępny 24/7.\nPolicja, pogotowie i straż pożarna." }],
         emergencyAccordions: [
@@ -368,6 +413,15 @@
       }
     },
     ru: {
+      property: {
+        jacuzzi: [
+          "Перед использованием примите душ и держите крышку закрытой, когда джакузи не используется.",
+          "Не заносите в джакузи песок и стеклянные предметы.",
+          "Не трогайте техническую панель, фильтры и настройки обработки воды.",
+          "Не превышайте 38°C и избегайте длительных сеансов, если вода очень горячая.",
+          "Если вы беременны или страдаете от повышенного давления, проблем с дыханием или других заболеваний, проконсультируйтесь с врачом перед использованием джакузи."
+        ]
+      },
       meta: { title: "Гид по вилле | Higuericas Beach", description: "Цифровой гид для гостей виллы на Calle Dalia 31, Pilar de la Horadada.", htmlLang: "ru" },
       ui: {
         languageLabel: "Язык", selectedLanguageLabel: "Выбрано", logoutLabel: "Выйти", activeLanguage: "Русский", activeLanguageAuto: "Автоматически (%s)", featuredLabel: "Рекомендуем",
@@ -400,9 +454,9 @@
           { title: "🔥 Барбекю", eyebrow: "Еда на улице", summary: "Как разжечь и безопасно оставить после использования.", text: "Пользуйтесь барбекю спокойно, без жидкостей для розжига, и в конце убедитесь, что угли полностью потухли." }
         ],
         hostContacts: [
-          { title: "Основной хозяин 1", text: "Имя: [COMPLETAR_NOMBRE]\nТелефон / WhatsApp: [COMPLETAR_TEL]\nРекомендуемое время связи: [COMPLETAR_HORARIO]" },
-          { title: "Основной хозяин 2", text: "Имя: [COMPLETAR_NOMBRE]\nТелефон / WhatsApp: [COMPLETAR_TEL]\nРекомендуемое время связи: [COMPLETAR_HORARIO]" },
-          { title: "Резервный контакт", text: "Имя: Ana Montoro Rosado\nТелефон / WhatsApp: 678267650\nИспользуйте этот контакт, если основные хозяева не отвечают или вам нужна помощь во время проживания." }
+          { title: "Основной хозяин 1", text: "Имя: Stacey\nТелефон / WhatsApp: 613869407" },
+          { title: "Основной хозяин 2", text: "Имя: Sergio\nТелефон / WhatsApp: 680957414" },
+          { title: "Резервный контакт", text: "Имя: Ana\nТелефон / WhatsApp: 678267650\nИспользуйте этот контакт, если основные хозяева не отвечают или вам нужна помощь во время проживания." }
         ],
         emergencySummary: [{ title: "🚨 112", text: "Общий номер экстренной помощи, бесплатно и круглосуточно.\nПолиция, скорая помощь и пожарная служба." }],
         emergencyAccordions: [
@@ -413,6 +467,15 @@
       }
     },
     da: {
+      property: {
+        jacuzzi: [
+          "Tag brusebad før brug, og hold overdækningen lukket, når jacuzzien ikke bruges.",
+          "Tag ikke sand eller glasgenstande med i jacuzzien.",
+          "Undlad at røre det tekniske panel, filtrene eller indstillingerne for vandbehandling.",
+          "Overskrid ikke 38°C og undgå lange sessioner, når vandet er meget varmt.",
+          "Hvis du er gravid eller har forhøjet blodtryk, vejrtrækningsproblemer eller andre helbredsproblemer, bør du tale med din læge, før du bruger jacuzzien."
+        ]
+      },
       meta: { title: "Villa-guide | Higuericas Beach", description: "Digital gæsteguide til en villa på Calle Dalia 31, Pilar de la Horadada.", htmlLang: "da" },
       ui: {
         languageLabel: "Sprog", selectedLanguageLabel: "Valgt", logoutLabel: "Log ud", activeLanguage: "Dansk", activeLanguageAuto: "Automatisk (%s)", featuredLabel: "Fremhævet",
@@ -445,9 +508,9 @@
           { title: "🔥 Grill", eyebrow: "Spise ude", summary: "Sådan tænder du den og efterlader den sikkert bagefter.", text: "Brug grillen roligt, uden optændingsvæsker, og sørg for at kullene er helt slukket til sidst." }
         ],
         hostContacts: [
-          { title: "Hovedvært 1", text: "Navn: [COMPLETAR_NOMBRE]\nTelefon / WhatsApp: [COMPLETAR_TEL]\nAnbefalede kontakttider: [COMPLETAR_HORARIO]" },
-          { title: "Hovedvært 2", text: "Navn: [COMPLETAR_NOMBRE]\nTelefon / WhatsApp: [COMPLETAR_TEL]\nAnbefalede kontakttider: [COMPLETAR_HORARIO]" },
-          { title: "Backup-kontakt", text: "Navn: Ana Montoro Rosado\nTelefon / WhatsApp: 678267650\nBrug denne kontakt, hvis hovedværterne ikke svarer, eller hvis du har brug for hjælp under opholdet." }
+          { title: "Hovedvært 1", text: "Navn: Stacey\nTelefon / WhatsApp: 613869407" },
+          { title: "Hovedvært 2", text: "Navn: Sergio\nTelefon / WhatsApp: 680957414" },
+          { title: "Backup-kontakt", text: "Navn: Ana\nTelefon / WhatsApp: 678267650\nBrug denne kontakt, hvis hovedværterne ikke svarer, eller hvis du har brug for hjælp under opholdet." }
         ],
         emergencySummary: [{ title: "🚨 112", text: "Generelt alarmnummer, gratis og tilgængeligt døgnet rundt.\nPoliti, ambulance og brandvæsen." }],
         emergencyAccordions: [
@@ -458,6 +521,15 @@
       }
     },
     no: {
+      property: {
+        jacuzzi: [
+          "Dusj før bruk og hold trekket lukket når jacuzzien ikke er i bruk.",
+          "Ikke ta med sand eller glassgjenstander i jacuzzien.",
+          "Ikke rør det tekniske panelet, filtrene eller innstillingene for vannbehandling.",
+          "Ikke overskrid 38°C og unngå lange økter når vannet er veldig varmt.",
+          "Hvis du er gravid eller har høyt blodtrykk, pustebesvær eller andre helseproblemer, bør du rådføre deg med lege før du bruker jacuzzien."
+        ]
+      },
       meta: { title: "Villa-guide | Higuericas Beach", description: "Digital gjesteguide for en villa i Calle Dalia 31, Pilar de la Horadada.", htmlLang: "no" },
       ui: {
         languageLabel: "Språk", selectedLanguageLabel: "Valgt", logoutLabel: "Logg ut", activeLanguage: "Norsk", activeLanguageAuto: "Automatisk (%s)", featuredLabel: "Anbefalt",
@@ -490,9 +562,9 @@
           { title: "🔥 Grill", eyebrow: "Spise ute", summary: "Slik tenner du den og lar den være trygg etterpå.", text: "Bruk grillen rolig, uten tennvæske, og sørg for at kullet er helt slukket når du er ferdig." }
         ],
         hostContacts: [
-          { title: "Hovedvert 1", text: "Navn: [COMPLETAR_NOMBRE]\nTelefon / WhatsApp: [COMPLETAR_TEL]\nAnbefalte kontakttider: [COMPLETAR_HORARIO]" },
-          { title: "Hovedvert 2", text: "Navn: [COMPLETAR_NOMBRE]\nTelefon / WhatsApp: [COMPLETAR_TEL]\nAnbefalte kontakttider: [COMPLETAR_HORARIO]" },
-          { title: "Reservekontakt", text: "Navn: Ana Montoro Rosado\nTelefon / WhatsApp: 678267650\nBruk denne kontakten hvis hovedvertene ikke svarer eller hvis du trenger hjelp under oppholdet." }
+          { title: "Hovedvert 1", text: "Navn: Stacey\nTelefon / WhatsApp: 613869407" },
+          { title: "Hovedvert 2", text: "Navn: Sergio\nTelefon / WhatsApp: 680957414" },
+          { title: "Reservekontakt", text: "Navn: Ana\nTelefon / WhatsApp: 678267650\nBruk denne kontakten hvis hovedvertene ikke svarer eller hvis du trenger hjelp under oppholdet." }
         ],
         emergencySummary: [{ title: "🚨 112", text: "Generelt nødnummer, gratis og tilgjengelig 24/7.\nPoliti, ambulanse og brannvesen." }],
         emergencyAccordions: [

@@ -146,7 +146,8 @@ window.siteData = {
           "Ducharse antes de usarlo y mantener la tapa cerrada cuando no se utilice.",
           "No introducir arena ni objetos de cristal.",
           "No manipular el cuadro técnico, los filtros ni la química del agua.",
-          "El uso del jacuzzi implica un coste adicional de 60 EUR y debe solicitarse con al menos 2 días de antelación.",
+          "No superar los 38°C y limitar las sesiones prolongadas si el agua está muy caliente.",
+          "Si está embarazada o tiene hipertensión, insuficiencia respiratoria u otros problemas de salud, consulte a su médico antes de usar el jacuzzi.",
         ],
         pool: [
           "No correr alrededor de la piscina ni dejar a menores sin supervisión.",
@@ -463,19 +464,29 @@ window.siteData = {
           {
             title: "Anfitrión principal 1",
             text:
-              "Nombre: [COMPLETAR_NOMBRE]\nTeléfono / WhatsApp: [COMPLETAR_TEL]\nHorario recomendado de contacto: [COMPLETAR_HORARIO]",
+              "Nombre: Stacey\nTeléfono / WhatsApp: 613869407",
             tags: ["Check-in", "Check-out", "Dudas y consultas", "Recomendaciones"],
+            copyValue: "613869407",
+            links: [
+              { label: "Llamar", href: "tel:+34613869407", icon: "phone" },
+              { label: "WhatsApp", href: "https://wa.me/34613869407", icon: "whatsapp" },
+            ],
           },
           {
             title: "Anfitrión principal 2",
             text:
-              "Nombre: [COMPLETAR_NOMBRE]\nTeléfono / WhatsApp: [COMPLETAR_TEL]\nHorario recomendado de contacto: [COMPLETAR_HORARIO]",
+              "Nombre: Sergio\nTeléfono / WhatsApp: 680957414",
             tags: ["Check-in", "Check-out", "Dudas y consultas", "Recomendaciones"],
+            copyValue: "680957414",
+            links: [
+              { label: "Llamar", href: "tel:+34680957414", icon: "phone" },
+              { label: "WhatsApp", href: "https://wa.me/34680957414", icon: "whatsapp" },
+            ],
           },
           {
             title: "Contacto de apoyo",
             text:
-              "Nombre: Ana Montoro Rosado\nTeléfono / WhatsApp: 678267650\nUsar si los anfitriones principales no responden o si necesitas apoyo durante la estancia.",
+              "Nombre: Ana\nTeléfono / WhatsApp: 678267650\nUsar si los anfitriones principales no responden o si necesitas apoyo durante la estancia.",
             tags: ["Apoyo", "Incidencias"],
             copyValue: "678267650",
             links: [
@@ -599,7 +610,8 @@ window.siteData = {
           "Shower before using it and keep the cover closed when it is not in use.",
           "Do not bring sand or glass objects into the hot tub.",
           "Do not touch the technical panel, filters or water treatment settings.",
-          "Using the hot tub has an additional 60 EUR fee and must be requested at least 2 days before arrival.",
+          "Do not exceed 38°C and avoid long sessions when the water is very hot.",
+          "If you are pregnant or have high blood pressure, respiratory issues or other health conditions, consult your doctor before using the hot tub.",
         ],
         pool: [
           "Do not run around the pool or leave children unsupervised.",
@@ -916,19 +928,29 @@ window.siteData = {
           {
             title: "Main host 1",
             text:
-              "Name: [COMPLETAR_NOMBRE]\nPhone / WhatsApp: [COMPLETAR_TEL]\nRecommended contact hours: [COMPLETAR_HORARIO]",
+              "Name: Stacey\nPhone / WhatsApp: 613869407",
             tags: ["Check-in", "Check-out", "Questions", "Recommendations"],
+            copyValue: "613869407",
+            links: [
+              { label: "Call", href: "tel:+34613869407", icon: "phone" },
+              { label: "WhatsApp", href: "https://wa.me/34613869407", icon: "whatsapp" },
+            ],
           },
           {
             title: "Main host 2",
             text:
-              "Name: [COMPLETAR_NOMBRE]\nPhone / WhatsApp: [COMPLETAR_TEL]\nRecommended contact hours: [COMPLETAR_HORARIO]",
+              "Name: Sergio\nPhone / WhatsApp: 680957414",
             tags: ["Check-in", "Check-out", "Questions", "Recommendations"],
+            copyValue: "680957414",
+            links: [
+              { label: "Call", href: "tel:+34680957414", icon: "phone" },
+              { label: "WhatsApp", href: "https://wa.me/34680957414", icon: "whatsapp" },
+            ],
           },
           {
             title: "Backup contact",
             text:
-              "Name: Ana Montoro Rosado\nPhone / WhatsApp: 678267650\nUse this contact if the main hosts do not reply or if you need support during the stay.",
+              "Name: Ana\nPhone / WhatsApp: 678267650\nUse this contact if the main hosts do not reply or if you need support during the stay.",
             tags: ["Support", "Issues"],
             copyValue: "678267650",
             links: [
