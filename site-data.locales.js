@@ -22,6 +22,7 @@
   };
 
   Object.assign(siteData.localeOptions, {
+    fr: { code: "fr", flag: "🇫🇷", label: "Français" },
     de: { code: "de", flag: "🇩🇪", label: "Deutsch" },
     nl: { code: "nl", flag: "🇳🇱", label: "Nederlands" },
     sv: { code: "sv", flag: "🇸🇪", label: "Svenska" },
@@ -32,6 +33,102 @@
   });
 
   const localePatches = {
+    fr: {
+      meta: {
+        title: "Guide de la villa | Higuericas Beach",
+        description: "Guide numérique pour les voyageurs d'une villa située Calle Dalia 31, Pilar de la Horadada.",
+        htmlLang: "fr"
+      },
+      ui: {
+        languageLabel: "Langue",
+        selectedLanguageLabel: "Sélectionné",
+        logoutLabel: "Déconnexion",
+        activeLanguage: "Français",
+        activeLanguageAuto: "Automatique (%s)",
+        featuredLabel: "À ne pas manquer",
+        nav: { checkin: "Arrivée", house: "Villa", rules: "Règles", food: "Plans", hosts: "Contact", emergencies: "Aide" },
+        sectionLabels: { address: "Adresse" },
+        gate: {
+          title: "Accès privé",
+          description: "Saisissez votre code invité pour voir le guide complet de la villa.",
+          inputLabel: "Code d'accès",
+          showCode: "Afficher le code",
+          hideCode: "Masquer le code",
+          submit: "Entrer",
+          hint: "Si vous ne l'avez pas, demandez-le à l'hôte.",
+          error: "Code incorrect. Veuillez réessayer."
+        },
+        viewMoreLabel: "Voir le détail"
+      },
+      sections: {
+        checkin: { eyebrow: "Arrivée", title: "Arrivée et départ" },
+        house: { eyebrow: "Intérieur et extérieur", title: "Tout dans la villa" },
+        rules: { eyebrow: "Séjour", title: "Règles de la maison" },
+        food: { eyebrow: "Profiter", title: "Recommandations" },
+        hosts: { eyebrow: "Hôtes", title: "Contact" },
+        emergencies: { eyebrow: "Urgence", title: "Aide rapide" }
+      },
+      hero: {
+        description: "Bienvenue à la villa. Ce guide rassemble l'essentiel pour l'arrivée, le départ, l'utilisation de la maison et les informations pratiques sur la région pour un séjour serein au bord de la mer.",
+        actions: [
+          { label: "Comment venir", hrefKey: "mapsRoute", style: "sea" },
+          { label: "Contacter l'hôte", href: "#hosts" },
+          { label: "Favoris dans Maps", hrefKey: "hostList" }
+        ],
+        facts: [
+          { label: "Check-in", valueKey: "checkInTime" },
+          { label: "Check-out", valueKey: "checkOutTime" },
+          { label: "Wi‑Fi", valueKey: "wifi.network" },
+          { label: "Mot de passe Wi‑Fi", valueKey: "wifi.password" }
+        ],
+        addressHint: "À quelques minutes à pied de Playa de las Higuericas et facilement accessible en voiture."
+      },
+      content: {
+        checkInCards: [
+          {
+            title: "🛬 Arrivée",
+            text: "Coordonnez votre arrivée avec l'hôte à partir de 15h00.\nSi possible, effectuez le check-in en ligne avant le voyage via le lien personnel reçu par e-mail ou message.\nLe plus pratique pour rejoindre la villa est généralement de venir en voiture ou en taxi.\nLors du check-in, les règles de la maison peuvent être rappelées et toutes les questions peuvent être clarifiées."
+          },
+          {
+            title: "🧳 Départ",
+            text: "L'heure de départ de référence est fixée à 12h00.\nSi vous avez besoin d'un départ tardif, demandez-le à l'avance.\nIl n'est pas nécessaire de rencontrer l'hôte en personne pour rendre les clés : il suffit de prévenir que vous quittez la villa et de suivre les consignes convenues.",
+            list: [
+              "🍽️ Laissez la cuisine rangée et sortez les déchets si possible.",
+              "💡 Éteignez les lumières et la climatisation, puis fermez portes et fenêtres.",
+              "📩 Prévenez l'hôte lorsque vous quittez le logement."
+            ]
+          }
+        ],
+        houseBasics: [
+          {
+            title: "📶 Wi‑Fi",
+            text: "Réseau : [COMPLETAR_NOMBRE_WIFI]\nMot de passe : [COMPLETAR_PASSWORD_WIFI]",
+            list: ["💡 La connexion est de 1 Gb et devrait être assez stable, sauf si vous êtes très loin du routeur."]
+          },
+          {
+            title: "📺 TV / streaming",
+            text: "Vous pouvez ajouter vos propres comptes Netflix, Prime Video, Disney+ ou d'autres plateformes de streaming pendant le séjour.",
+            list: ["🔐 Pensez à vous déconnecter de tous vos comptes avant le départ."]
+          }
+        ],
+        houseAccordions: [
+          { title: "🏊 Piscine", eyebrow: "Extérieur", summary: "Conseils rapides pour utiliser la piscine en toute sécurité.", text: "Avant de l'utiliser, vérifiez que la zone est dégagée et surveillez toujours les enfants." },
+          { title: "♨️ Jacuzzi", eyebrow: "Détente", summary: "Conseils simples pour une utilisation confortable et sûre du jacuzzi.", text: "Le jacuzzi doit être utilisé avec soin et rester fermé lorsqu'il n'est pas utilisé." },
+          { title: "🔥 Barbecue", eyebrow: "Repas en extérieur", summary: "Comment l'allumer et le laisser en sécurité après usage.", text: "Utilisez le barbecue calmement, sans accélérants, et laissez toujours les braises complètement éteintes à la fin." }
+        ],
+        hostContacts: [
+          { title: "Hôte principal 1", text: "Nom : [COMPLETAR_NOMBRE]\nTéléphone / WhatsApp : [COMPLETAR_TEL]\nHoraires conseillés de contact : [COMPLETAR_HORARIO]" },
+          { title: "Hôte principal 2", text: "Nom : [COMPLETAR_NOMBRE]\nTéléphone / WhatsApp : [COMPLETAR_TEL]\nHoraires conseillés de contact : [COMPLETAR_HORARIO]" },
+          { title: "Contact de soutien", text: "Nom : Ana Montoro Rosado\nTéléphone / WhatsApp : 678267650\nÀ utiliser si les hôtes principaux ne répondent pas ou si vous avez besoin d'aide pendant le séjour." }
+        ],
+        emergencySummary: [{ title: "🚨 112", text: "Numéro d'urgence général, gratuit et disponible 24h/24.\nPolice, ambulance et pompiers." }],
+        emergencyAccordions: [
+          { title: "🏥 Assistance médicale", summary: "Hôpital et centre de santé les plus proches.", text: "Hôpital universitaire de Torrevieja\nC. Madrid, s/n, 03186 Torrevieja, Alicante.\nHôpital général avec urgences 24h/24.\nÀ environ 15 à 20 minutes en voiture de Playa de las Higuericas.\n\nCentre de santé de Pilar de la Horadada\nCalle Vicente Blasco Ibanez s/n, 03190 Pilar de la Horadada, Alicante.\nSoins primaires et urgences de base en journée.\nÀ quelques minutes de la villa." },
+          { title: "💊 Pharmacie et pharmacie de garde", summary: "Pharmacie la plus proche et quoi faire si vous avez besoin d'une pharmacie ouverte 24h/24.", text: "Farmacia Playa Las Higuericas Lda. M del Mar Lorenzo Banon.\nEnviron 450 m à pied depuis la villa.\n\nEn Espagne, les pharmacies ouvertes 24h/24 fonctionnent par rotation, donc la pharmacie disponible peut changer chaque jour.\nUtilisez le lien de la pharmacie de garde ou demandez à l'hôte ou au centre de santé." },
+          { title: "🏡 Dans la villa", summary: "Éléments de sécurité essentiels et précautions importantes.", text: "La villa dispose d'équipements de base pour réagir à un incident dans le logement.", list: ["🧯 Extincteur dans une zone visible et accessible.", "🧰 Trousse de premiers secours dans l'armoire de l'entrée.", "👶 Les enfants doivent toujours être surveillés dans les zones extérieures, près de la piscine et du jacuzzi.", "🙏 Une utilisation responsable est essentielle pour éviter les accidents dans une maison de vacances avec piscine et espaces extérieurs."] }
+        ]
+      }
+    },
     de: {
       meta: {
         title: "Villa-Guide | Higuericas Beach",
@@ -408,6 +505,39 @@
   };
 
   const detailedLocalePatches = {
+    fr: {
+      property: {
+        houseRules: {
+          intro: "🙏 Merci de traiter la maison avec soin et respect, comme si elle était la vôtre. Ces règles aident à garder un séjour confortable, sûr et calme pour tous. Tout dommage ou incident doit être signalé dès que possible.",
+          sections: [
+            { title: "🚭 Interdiction de fumer à l'intérieur", text: "Il n'est pas permis de fumer à l'intérieur du logement. Merci d'utiliser les zones extérieures prévues à cet effet." },
+            { title: "🔇 Heures de repos", text: "À partir de 23h00, merci de maintenir un niveau de bruit faible afin de respecter le voisinage et l'environnement." },
+            { title: "🎉 Pas de fêtes ni d'événements", text: "Les fêtes, célébrations ou réunions qui perturbent la tranquillité du logement ou du voisinage ne sont pas autorisées." },
+            { title: "👥 Visiteurs et occupation", text: "Il n'est pas permis d'héberger ou d'inviter des personnes qui n'ont pas été enregistrées à l'avance lors du check-in. L'occupation doit toujours respecter la réservation confirmée." },
+            { title: "🐾 Animaux", text: "Les animaux sont acceptés sur demande. Un supplément de 25 EUR par séjour ainsi qu'une caution supplémentaire selon le poids de l'animal sont demandés, à régler au moment du check-in via l'application de check-in ou par virement. Un couchage et des gamelles sont disponibles pour les animaux petits ou moyens, même si nous recommandons d'apporter les vôtres.", sheetKey: "petPolicy" },
+            { title: "🏊 Piscine et jacuzzi", text: "Consultez les sections spécifiques sur la piscine et le jacuzzi pour voir les conseils d'utilisation pendant le séjour.", list: ["Il est obligatoire de se doucher avant d'utiliser la piscine ou le jacuzzi.", "Ne pas introduire de sable dans le jacuzzi.", "Le jacuzzi ne doit pas être utilisé par des enfants de moins de 12 ans sans surveillance d'un adulte.", "Les enfants ne doivent jamais rester seuls dans la zone de la piscine."], links: [{ label: "Conseils d'utilisation de la piscine", href: "#house-pool" }, { label: "Conseils d'utilisation du jacuzzi", href: "#house-jacuzzi" }] },
+            { title: "🔥 Barbecue / cheminée", text: "Dans la section barbecue, vous trouverez aussi des conseils pratiques pour l'allumage et la fermeture en toute sécurité.", list: ["Utiliser toujours des allume-feux et le système cheminée pour allumer les braises.", "Ne pas utiliser de liquides inflammables.", "S'assurer que les braises sont complètement éteintes à la fin."], links: [{ label: "Conseils d'utilisation du barbecue", href: "#house-bbq" }] },
+            { title: "❄️ Climatisation et chauffage", text: "Merci d'utiliser la climatisation et le chauffage de manière responsable et de les éteindre lorsque vous quittez le logement." },
+            { title: "🗑️ Déchets et recyclage", text: "Les déchets doivent être déposés régulièrement dans les conteneurs proches. Merci de nous aider à garder l'environnement propre.", list: ["🟩 Vert : déchets généraux", "🟦 Bleu : papier et carton", "🟨 Jaune : emballages et plastiques", "♻️ Verre : conteneurs spécifiques pour le verre"] }
+          ]
+        }
+      },
+      content: {
+        infoSheets: {
+          arrivalRegistration: {
+            eyebrow: "Arrivée",
+            title: "🪪 Enregistrement des voyageurs et check-in en ligne",
+            text: "Toutes les personnes hébergées doivent s'enregistrer via l'application de check-in, car en Espagne ces données doivent obligatoirement être communiquées à la police.\nL'environnement est sécurisé et les données du document d'identité sont utilisées uniquement pour remplir cette obligation légale.\nNormalement, vous recevrez à l'avance un lien personnel par e-mail ou message afin de le compléter en ligne, mais si cela n'a pas été fait, l'un des hôtes recueillera les informations pendant le check-in avant l'entrée dans le logement."
+          },
+          petPolicy: {
+            eyebrow: "Règles",
+            title: "🐾 Animaux : conditions et caution",
+            text: "Les animaux sont acceptés uniquement sur demande et il est important de le signaler juste après la réservation. Si cela n'a pas été communiqué à l'avance, nous ne pouvons pas garantir le séjour avec un animal.\n\nLe séjour avec animal entraîne un supplément de 25 EUR par séjour, et non par nuit.\nUne caution supplémentaire est également demandée pour d'éventuels dommages ou un nettoyage exceptionnel, à régler au moment du check-in via l'application de check-in ou par virement bancaire.\n\nLa villa dispose d'un couchage et de gamelles pour les animaux petits ou moyens, même si nous recommandons d'apporter les vôtres pour que l'animal soit plus à l'aise.",
+            list: ["Jusqu'à 10 kg : caution de 150 EUR par séjour.", "Plus de 10 kg : caution de 260 EUR par séjour.", "L'animal doit disposer d'un carnet de santé à jour, incluant vaccinations et vermifugation.", "Les chiens doivent être tenus en laisse et, le cas échéant, porter une muselière, toujours sous la surveillance du propriétaire ou d'un gardien autorisé.", "Les animaux potentiellement dangereux ou agressifs, y compris les races considérées comme telles par la réglementation applicable, ne sont pas admis.", "Il n'est pas permis aux animaux de monter sur les lits ou les canapés. Ils doivent avoir leur propre couchage ou couverture.", "Il n'est pas permis d'utiliser les serviettes, draps ou linge de lit de la villa pour l'animal, ni qu'il fasse ses besoins à l'intérieur de l'appartement.", "Les propriétaires doivent nettoyer toute saleté laissée par l'animal dans le logement, dans les parties communes ou sur les accès.", "Les dommages, taches, odeurs ou nettoyages spéciaux affectant les textiles, le mobilier ou les équipements seront évalués et déduits de la caution ou, si nécessaire, facturés séparément selon le coût réel de remplacement ou de réparation.", "Si aucun problème n'est constaté, la caution est restituée après le check-out. En cas de dommages ou de saleté exceptionnelle, le client sera informé et le coût correspondant sera appliqué."]
+          }
+        }
+      }
+    },
     de: {
       property: {
         houseRules: {
@@ -653,6 +783,16 @@
   if (!generatedPlacesData?.en) return;
 
   const generatedLocaleText = {
+    fr: {
+      introTitle: "Liste Google Maps partagée",
+      introBody:
+        "Cette section résume la liste Google Maps partagée de l'hôte et l'organise en groupes plus simples comme restaurants, supermarchés, shopping, sport et aventures ou zones pour enfants.\nL'action la plus utile est d'ouvrir la liste complète dans Google Maps, de l'enregistrer dans votre compte et d'utiliser ce résumé web uniquement comme aide rapide pendant le séjour.\nLes distances et durées sont des estimations à partir de la villa.",
+      openList: "🗺️ Ouvrir et enregistrer la liste dans Google Maps",
+      tourism: "Tourisme Pilar de la Horadada",
+      categories: { restaurants: ["Restaurants", "Manger et boire"], supermarkets: ["Supermarchés", "Pratique"], shopping: ["Shopping", "Boutiques et centres"], sports: ["Sport et aventures", "Plans actifs"], parks: ["Zones pour enfants", "Extérieur"] },
+      subgroups: { restaurants: "🍽️ Restaurants", bars: "🍹 Bars et chiringuitos", cafes: "☕ Cafés", "ice-cream": "🍦 Glaces et douceurs", supermarkets: "🛒 Supermarchés", shopping: "🛍️ Shopping et centres", sports: "💪 Sport et aventures", tourism: "🧭 Tourisme et visites", padel: "🎾 Padel", golf: "⛳ Golf", parks: "🛝 Zones pour enfants", attractions: "🎡 Parcs d'attractions" },
+      closed: "⚠️ Fermé temporairement"
+    },
     de: {
       introTitle: "Geteilte Google-Maps-Liste",
       introBody:
@@ -729,7 +869,7 @@
     const base = clone(generatedPlacesData.en);
     base.foodIntro.title = localeText.introTitle;
     base.foodIntro.body = localeText.introBody;
-    base.foodIntro.tags = ["Google Maps", `${generatedPlacesData.meta.totalPlaces} ${code === "ru" ? "мест" : code === "pl" ? "zapisanych miejsc" : code === "de" ? "gespeicherte Orte" : code === "nl" ? "opgeslagen plekken" : code === "sv" ? "sparade platser" : code === "da" ? "gemte steder" : "lagrede steder"}`];
+    base.foodIntro.tags = ["Google Maps", `${generatedPlacesData.meta.totalPlaces} ${code === "ru" ? "мест" : code === "pl" ? "zapisanych miejsc" : code === "de" ? "gespeicherte Orte" : code === "fr" ? "lieux enregistrés" : code === "nl" ? "opgeslagen plekken" : code === "sv" ? "sparade platser" : code === "da" ? "gemte steder" : "lagrede steder"}`];
     base.foodIntro.links = [
       { label: localeText.openList, href: generatedPlacesData.meta.sourceUrl },
       { label: localeText.tourism, href: "https://www.visitpilardelahoradada.com/" }
