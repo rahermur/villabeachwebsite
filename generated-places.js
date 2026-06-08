@@ -2,7 +2,7 @@ window.generatedPlacesData = {
   "meta": {
     "sourceUrl": "https://maps.app.goo.gl/6kiRLdhaMThJCQia9",
     "listTitle": "Villa Beach Higuericas",
-    "lastSyncedAt": "2026-06-01T11:27:07.245Z",
+    "lastSyncedAt": "2026-06-08T10:47:36.069Z",
     "totalPlaces": 52,
     "directListEmbedAvailable": false
   },
@@ -156,8 +156,8 @@ window.generatedPlacesData = {
                 "walkingMinutes": 86,
                 "drivingMinutes": 12,
                 "distanceLabel": "5.6 km · 🚗 ~12 min",
-                "temporarilyClosed": true,
-                "statusLabel": "⚠️ Cerrado temporalmente",
+                "temporarilyClosed": false,
+                "statusLabel": "",
                 "tags": [
                   "🍽️ Restaurants"
                 ],
@@ -810,10 +810,10 @@ window.generatedPlacesData = {
                   }
                 ],
                 "featured": false,
-                "distanceKm": 1.3917108001348486,
-                "walkingMinutes": 21,
+                "distanceKm": 1.2185837795686438,
+                "walkingMinutes": 19,
                 "drivingMinutes": 3,
-                "distanceLabel": "1.4 km · 🚶 ~21 min",
+                "distanceLabel": "1.2 km · 🚶 ~19 min",
                 "temporarilyClosed": false,
                 "statusLabel": "",
                 "tags": [
@@ -1638,8 +1638,8 @@ window.generatedPlacesData = {
                 "walkingMinutes": 86,
                 "drivingMinutes": 12,
                 "distanceLabel": "5.6 km · 🚗 ~12 min",
-                "temporarilyClosed": true,
-                "statusLabel": "⚠️ Temporarily closed",
+                "temporarilyClosed": false,
+                "statusLabel": "",
                 "tags": [
                   "🍽️ Restaurants"
                 ],
@@ -2292,10 +2292,10 @@ window.generatedPlacesData = {
                   }
                 ],
                 "featured": false,
-                "distanceKm": 1.3917108001348486,
-                "walkingMinutes": 21,
+                "distanceKm": 1.2185837795686438,
+                "walkingMinutes": 19,
                 "drivingMinutes": 3,
-                "distanceLabel": "1.4 km · 🚶 ~21 min",
+                "distanceLabel": "1.2 km · 🚶 ~19 min",
                 "temporarilyClosed": false,
                 "statusLabel": "",
                 "tags": [
