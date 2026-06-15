@@ -2,7 +2,7 @@ window.generatedPlacesData = {
   "meta": {
     "sourceUrl": "https://maps.app.goo.gl/6kiRLdhaMThJCQia9",
     "listTitle": "Villa Beach Higuericas",
-    "lastSyncedAt": "2026-06-08T10:47:36.069Z",
+    "lastSyncedAt": "2026-06-15T11:58:00.162Z",
     "totalPlaces": 52,
     "directListEmbedAvailable": false
   },
@@ -48,7 +48,7 @@ window.generatedPlacesData = {
                   }
                 ],
                 "featured": false,
-                "distanceKm": 1.7148621274068827,
+                "distanceKm": 1.7151411683214304,
                 "walkingMinutes": 26,
                 "drivingMinutes": 4,
                 "distanceLabel": "1.7 km · 🚶 ~26 min",
@@ -74,7 +74,7 @@ window.generatedPlacesData = {
                   }
                 ],
                 "featured": false,
-                "distanceKm": 10.26481916859324,
+                "distanceKm": 10.265108617826012,
                 "walkingMinutes": 157,
                 "drivingMinutes": 22,
                 "distanceLabel": "10.3 km · 🚗 ~22 min",
@@ -100,7 +100,7 @@ window.generatedPlacesData = {
                   }
                 ],
                 "featured": false,
-                "distanceKm": 1.9940888847379197,
+                "distanceKm": 1.9941107384572214,
                 "walkingMinutes": 30,
                 "drivingMinutes": 4,
                 "distanceLabel": "2.0 km · 🚶 ~30 min",
@@ -126,7 +126,7 @@ window.generatedPlacesData = {
                   }
                 ],
                 "featured": false,
-                "distanceKm": 1.6458116961046687,
+                "distanceKm": 1.645813323363578,
                 "walkingMinutes": 25,
                 "drivingMinutes": 3,
                 "distanceLabel": "1.6 km · 🚶 ~25 min",
@@ -152,7 +152,7 @@ window.generatedPlacesData = {
                   }
                 ],
                 "featured": false,
-                "distanceKm": 5.61859784335437,
+                "distanceKm": 5.618889095882289,
                 "walkingMinutes": 86,
                 "drivingMinutes": 12,
                 "distanceLabel": "5.6 km · 🚗 ~12 min",
@@ -178,7 +178,7 @@ window.generatedPlacesData = {
                   }
                 ],
                 "featured": true,
-                "distanceKm": 7.077876090872352,
+                "distanceKm": 7.078164306946527,
                 "walkingMinutes": 108,
                 "drivingMinutes": 15,
                 "distanceLabel": "7.1 km · 🚗 ~15 min",
@@ -205,7 +205,7 @@ window.generatedPlacesData = {
                   }
                 ],
                 "featured": false,
-                "distanceKm": 10.295498630887169,
+                "distanceKm": 10.295788110273469,
                 "walkingMinutes": 157,
                 "drivingMinutes": 22,
                 "distanceLabel": "10.3 km · 🚗 ~22 min",
@@ -231,7 +231,7 @@ window.generatedPlacesData = {
                   }
                 ],
                 "featured": false,
-                "distanceKm": 9.7195498035275,
+                "distanceKm": 9.719839407282032,
                 "walkingMinutes": 148,
                 "drivingMinutes": 20,
                 "distanceLabel": "9.7 km · 🚗 ~20 min",
@@ -257,7 +257,7 @@ window.generatedPlacesData = {
                   }
                 ],
                 "featured": false,
-                "distanceKm": 11.905366332650727,
+                "distanceKm": 11.905179481235736,
                 "walkingMinutes": 182,
                 "drivingMinutes": 25,
                 "distanceLabel": "11.9 km · 🚗 ~25 min",
@@ -283,7 +283,7 @@ window.generatedPlacesData = {
                   }
                 ],
                 "featured": false,
-                "distanceKm": 4.555493893681428,
+                "distanceKm": 4.555202810622762,
                 "walkingMinutes": 69,
                 "drivingMinutes": 10,
                 "distanceLabel": "4.6 km · 🚗 ~10 min",
@@ -313,7 +313,7 @@ window.generatedPlacesData = {
                   }
                 ],
                 "featured": false,
-                "distanceKm": 1.4723455070002445,
+                "distanceKm": 1.4723407235130272,
                 "walkingMinutes": 22,
                 "drivingMinutes": 3,
                 "distanceLabel": "1.5 km · 🚶 ~22 min",
@@ -339,7 +339,7 @@ window.generatedPlacesData = {
                   }
                 ],
                 "featured": true,
-                "distanceKm": 8.848440057305492,
+                "distanceKm": 8.848665603301916,
                 "walkingMinutes": 135,
                 "drivingMinutes": 19,
                 "distanceLabel": "8.8 km · 🚗 ~19 min",
@@ -366,7 +366,7 @@ window.generatedPlacesData = {
                   }
                 ],
                 "featured": false,
-                "distanceKm": 1.5295670331402873,
+                "distanceKm": 1.5297594998693678,
                 "walkingMinutes": 23,
                 "drivingMinutes": 3,
                 "distanceLabel": "1.5 km · 🚶 ~23 min",
@@ -396,7 +396,7 @@ window.generatedPlacesData = {
                   }
                 ],
                 "featured": false,
-                "distanceKm": 3.1401840250381983,
+                "distanceKm": 3.1404746901491225,
                 "walkingMinutes": 48,
                 "drivingMinutes": 7,
                 "distanceLabel": "3.1 km · 🚗 ~7 min",
@@ -426,7 +426,7 @@ window.generatedPlacesData = {
                   }
                 ],
                 "featured": false,
-                "distanceKm": 3.6417053656935816,
+                "distanceKm": 3.6419964864402194,
                 "walkingMinutes": 56,
                 "drivingMinutes": 8,
                 "distanceLabel": "3.6 km · 🚗 ~8 min",
@@ -456,7 +456,7 @@ window.generatedPlacesData = {
                   }
                 ],
                 "featured": false,
-                "distanceKm": 2.1553542039479225,
+                "distanceKm": 2.1556442199905237,
                 "walkingMinutes": 33,
                 "drivingMinutes": 5,
                 "distanceLabel": "2.2 km · 🚗 ~5 min",
@@ -486,7 +486,7 @@ window.generatedPlacesData = {
                   }
                 ],
                 "featured": false,
-                "distanceKm": 2.5423251641858893,
+                "distanceKm": 2.5426129754614153,
                 "walkingMinutes": 39,
                 "drivingMinutes": 5,
                 "distanceLabel": "2.5 km · 🚗 ~5 min",
@@ -512,7 +512,7 @@ window.generatedPlacesData = {
                   }
                 ],
                 "featured": false,
-                "distanceKm": 1.5731073944102971,
+                "distanceKm": 1.573154960117869,
                 "walkingMinutes": 24,
                 "drivingMinutes": 3,
                 "distanceLabel": "1.6 km · 🚶 ~24 min",
@@ -538,7 +538,7 @@ window.generatedPlacesData = {
                   }
                 ],
                 "featured": true,
-                "distanceKm": 2.120756372299505,
+                "distanceKm": 2.12104515055338,
                 "walkingMinutes": 32,
                 "drivingMinutes": 4,
                 "distanceLabel": "2.1 km · 🚗 ~4 min",
@@ -575,7 +575,7 @@ window.generatedPlacesData = {
                   }
                 ],
                 "featured": false,
-                "distanceKm": 0.6340881889676132,
+                "distanceKm": 0.6359716957637825,
                 "walkingMinutes": 10,
                 "drivingMinutes": 1,
                 "distanceLabel": "0.6 km · 🚶 ~10 min",
@@ -601,7 +601,7 @@ window.generatedPlacesData = {
                   }
                 ],
                 "featured": false,
-                "distanceKm": 0.4817030024822554,
+                "distanceKm": 0.48155790109912816,
                 "walkingMinutes": 7,
                 "drivingMinutes": 1,
                 "distanceLabel": "0.5 km · 🚶 ~7 min",
@@ -638,7 +638,7 @@ window.generatedPlacesData = {
                   }
                 ],
                 "featured": false,
-                "distanceKm": 8.373780332060171,
+                "distanceKm": 8.374071006059824,
                 "walkingMinutes": 128,
                 "drivingMinutes": 18,
                 "distanceLabel": "8.4 km · 🚗 ~18 min",
@@ -668,7 +668,7 @@ window.generatedPlacesData = {
                   }
                 ],
                 "featured": false,
-                "distanceKm": 1.4914172688362597,
+                "distanceKm": 1.4917033329725031,
                 "walkingMinutes": 23,
                 "drivingMinutes": 3,
                 "distanceLabel": "1.5 km · 🚶 ~23 min",
@@ -698,7 +698,7 @@ window.generatedPlacesData = {
                   }
                 ],
                 "featured": false,
-                "distanceKm": 0.26187881688198583,
+                "distanceKm": 0.2621458774343387,
                 "walkingMinutes": 4,
                 "drivingMinutes": 1,
                 "distanceLabel": "0.3 km · 🚶 ~4 min",
@@ -734,7 +734,7 @@ window.generatedPlacesData = {
                   }
                 ],
                 "featured": true,
-                "distanceKm": 1.4903700551894088,
+                "distanceKm": 1.490653326683976,
                 "walkingMinutes": 23,
                 "drivingMinutes": 3,
                 "distanceLabel": "1.5 km · 🚶 ~23 min",
@@ -780,7 +780,7 @@ window.generatedPlacesData = {
                   }
                 ],
                 "featured": false,
-                "distanceKm": 1.3365257302072007,
+                "distanceKm": 1.3366978319513982,
                 "walkingMinutes": 20,
                 "drivingMinutes": 3,
                 "distanceLabel": "1.3 km · 🚶 ~20 min",
@@ -810,10 +810,10 @@ window.generatedPlacesData = {
                   }
                 ],
                 "featured": false,
-                "distanceKm": 1.2185837795686438,
-                "walkingMinutes": 19,
+                "distanceKm": 1.4228158046005084,
+                "walkingMinutes": 22,
                 "drivingMinutes": 3,
-                "distanceLabel": "1.2 km · 🚶 ~19 min",
+                "distanceLabel": "1.4 km · 🚶 ~22 min",
                 "temporarilyClosed": false,
                 "statusLabel": "",
                 "tags": [
@@ -836,7 +836,7 @@ window.generatedPlacesData = {
                   }
                 ],
                 "featured": false,
-                "distanceKm": 1.661180914501566,
+                "distanceKm": 1.6612939844822359,
                 "walkingMinutes": 25,
                 "drivingMinutes": 3,
                 "distanceLabel": "1.7 km · 🚶 ~25 min",
@@ -877,7 +877,7 @@ window.generatedPlacesData = {
                   }
                 ],
                 "featured": false,
-                "distanceKm": 5.683354458911545,
+                "distanceKm": 5.68309479101386,
                 "walkingMinutes": 87,
                 "drivingMinutes": 12,
                 "distanceLabel": "5.7 km · 🚗 ~12 min",
@@ -908,7 +908,7 @@ window.generatedPlacesData = {
                   }
                 ],
                 "featured": false,
-                "distanceKm": 1.1407588418652213,
+                "distanceKm": 1.1409951806557768,
                 "walkingMinutes": 17,
                 "drivingMinutes": 2,
                 "distanceLabel": "1.1 km · 🚶 ~17 min",
@@ -938,7 +938,7 @@ window.generatedPlacesData = {
                   }
                 ],
                 "featured": true,
-                "distanceKm": 8.673256763638195,
+                "distanceKm": 8.673548249086187,
                 "walkingMinutes": 132,
                 "drivingMinutes": 18,
                 "distanceLabel": "8.7 km · 🚗 ~18 min",
@@ -969,7 +969,7 @@ window.generatedPlacesData = {
                   }
                 ],
                 "featured": false,
-                "distanceKm": 0.2843822520536233,
+                "distanceKm": 0.2846568112457814,
                 "walkingMinutes": 4,
                 "drivingMinutes": 1,
                 "distanceLabel": "0.3 km · 🚶 ~4 min",
@@ -1014,7 +1014,7 @@ window.generatedPlacesData = {
                   }
                 ],
                 "featured": false,
-                "distanceKm": 4.155873587239765,
+                "distanceKm": 4.155620571070742,
                 "walkingMinutes": 63,
                 "drivingMinutes": 9,
                 "distanceLabel": "4.2 km · 🚗 ~9 min",
@@ -1044,7 +1044,7 @@ window.generatedPlacesData = {
                   }
                 ],
                 "featured": false,
-                "distanceKm": 3.036409159789829,
+                "distanceKm": 3.036699436208861,
                 "walkingMinutes": 46,
                 "drivingMinutes": 6,
                 "distanceLabel": "3.0 km · 🚗 ~6 min",
@@ -1074,7 +1074,7 @@ window.generatedPlacesData = {
                   }
                 ],
                 "featured": true,
-                "distanceKm": 1.586142772559797,
+                "distanceKm": 1.5858526978644352,
                 "walkingMinutes": 24,
                 "drivingMinutes": 3,
                 "distanceLabel": "1.6 km · 🚶 ~24 min",
@@ -1107,7 +1107,7 @@ window.generatedPlacesData = {
                   }
                 ],
                 "featured": false,
-                "distanceKm": 2.5664080519248693,
+                "distanceKm": 2.566117007626898,
                 "walkingMinutes": 39,
                 "drivingMinutes": 5,
                 "distanceLabel": "2.6 km · 🚗 ~5 min",
@@ -1133,7 +1133,7 @@ window.generatedPlacesData = {
                   }
                 ],
                 "featured": false,
-                "distanceKm": 2.3557930282531,
+                "distanceKm": 2.3558150229660186,
                 "walkingMinutes": 36,
                 "drivingMinutes": 5,
                 "distanceLabel": "2.4 km · 🚗 ~5 min",
@@ -1169,7 +1169,7 @@ window.generatedPlacesData = {
                   }
                 ],
                 "featured": false,
-                "distanceKm": 3.772217559630952,
+                "distanceKm": 3.7725088822924153,
                 "walkingMinutes": 58,
                 "drivingMinutes": 8,
                 "distanceLabel": "3.8 km · 🚗 ~8 min",
@@ -1199,7 +1199,7 @@ window.generatedPlacesData = {
                   }
                 ],
                 "featured": false,
-                "distanceKm": 2.547201176627306,
+                "distanceKm": 2.547489510400615,
                 "walkingMinutes": 39,
                 "drivingMinutes": 5,
                 "distanceLabel": "2.5 km · 🚗 ~5 min",
@@ -1229,7 +1229,7 @@ window.generatedPlacesData = {
                   }
                 ],
                 "featured": false,
-                "distanceKm": 1.7024831201041772,
+                "distanceKm": 1.7021959109727878,
                 "walkingMinutes": 26,
                 "drivingMinutes": 4,
                 "distanceLabel": "1.7 km · 🚶 ~26 min",
@@ -1261,7 +1261,7 @@ window.generatedPlacesData = {
                   }
                 ],
                 "featured": true,
-                "distanceKm": 8.740785991079868,
+                "distanceKm": 8.74100227136237,
                 "walkingMinutes": 133,
                 "drivingMinutes": 18,
                 "distanceLabel": "8.7 km · 🚗 ~18 min",
@@ -1288,7 +1288,7 @@ window.generatedPlacesData = {
                   }
                 ],
                 "featured": false,
-                "distanceKm": 5.6994858859835915,
+                "distanceKm": 5.6995523916155,
                 "walkingMinutes": 87,
                 "drivingMinutes": 12,
                 "distanceLabel": "5.7 km · 🚗 ~12 min",
@@ -1329,7 +1329,7 @@ window.generatedPlacesData = {
                   }
                 ],
                 "featured": false,
-                "distanceKm": 0.9521912061406071,
+                "distanceKm": 0.9519081714881674,
                 "walkingMinutes": 15,
                 "drivingMinutes": 2,
                 "distanceLabel": "1.0 km · 🚶 ~15 min",
@@ -1355,7 +1355,7 @@ window.generatedPlacesData = {
                   }
                 ],
                 "featured": false,
-                "distanceKm": 0.7889907260504119,
+                "distanceKm": 0.7892821551872525,
                 "walkingMinutes": 12,
                 "drivingMinutes": 2,
                 "distanceLabel": "0.8 km · 🚶 ~12 min",
@@ -1381,7 +1381,7 @@ window.generatedPlacesData = {
                   }
                 ],
                 "featured": false,
-                "distanceKm": 0.4943516409353751,
+                "distanceKm": 0.494189634285468,
                 "walkingMinutes": 8,
                 "drivingMinutes": 1,
                 "distanceLabel": "0.5 km · 🚶 ~8 min",
@@ -1407,7 +1407,7 @@ window.generatedPlacesData = {
                   }
                 ],
                 "featured": false,
-                "distanceKm": 0.4821730610807245,
+                "distanceKm": 0.48205865319516533,
                 "walkingMinutes": 7,
                 "drivingMinutes": 1,
                 "distanceLabel": "0.5 km · 🚶 ~7 min",
@@ -1439,7 +1439,7 @@ window.generatedPlacesData = {
                   }
                 ],
                 "featured": false,
-                "distanceKm": 16.92534050692306,
+                "distanceKm": 16.925628714294668,
                 "walkingMinutes": 258,
                 "drivingMinutes": 36,
                 "distanceLabel": "16.9 km · 🚗 ~36 min",
@@ -1465,7 +1465,7 @@ window.generatedPlacesData = {
                   }
                 ],
                 "featured": false,
-                "distanceKm": 16.372535986051115,
+                "distanceKm": 16.37277577068777,
                 "walkingMinutes": 250,
                 "drivingMinutes": 34,
                 "distanceLabel": "16.4 km · 🚗 ~34 min",
@@ -1486,7 +1486,7 @@ window.generatedPlacesData = {
         ]
       }
     ],
-    "foodMapEmbed": "https://www.google.com/maps?q=37.8565095,-0.7676005&z=13&output=embed"
+    "foodMapEmbed": "https://www.google.com/maps?q=37.856507,-0.7676014999999999&z=13&output=embed"
   },
   "en": {
     "foodIntro": {
@@ -1530,7 +1530,7 @@ window.generatedPlacesData = {
                   }
                 ],
                 "featured": false,
-                "distanceKm": 1.7148621274068827,
+                "distanceKm": 1.7151411683214304,
                 "walkingMinutes": 26,
                 "drivingMinutes": 4,
                 "distanceLabel": "1.7 km · 🚶 ~26 min",
@@ -1556,7 +1556,7 @@ window.generatedPlacesData = {
                   }
                 ],
                 "featured": false,
-                "distanceKm": 10.26481916859324,
+                "distanceKm": 10.265108617826012,
                 "walkingMinutes": 157,
                 "drivingMinutes": 22,
                 "distanceLabel": "10.3 km · 🚗 ~22 min",
@@ -1582,7 +1582,7 @@ window.generatedPlacesData = {
                   }
                 ],
                 "featured": false,
-                "distanceKm": 1.9940888847379197,
+                "distanceKm": 1.9941107384572214,
                 "walkingMinutes": 30,
                 "drivingMinutes": 4,
                 "distanceLabel": "2.0 km · 🚶 ~30 min",
@@ -1608,7 +1608,7 @@ window.generatedPlacesData = {
                   }
                 ],
                 "featured": false,
-                "distanceKm": 1.6458116961046687,
+                "distanceKm": 1.645813323363578,
                 "walkingMinutes": 25,
                 "drivingMinutes": 3,
                 "distanceLabel": "1.6 km · 🚶 ~25 min",
@@ -1634,7 +1634,7 @@ window.generatedPlacesData = {
                   }
                 ],
                 "featured": false,
-                "distanceKm": 5.61859784335437,
+                "distanceKm": 5.618889095882289,
                 "walkingMinutes": 86,
                 "drivingMinutes": 12,
                 "distanceLabel": "5.6 km · 🚗 ~12 min",
@@ -1660,7 +1660,7 @@ window.generatedPlacesData = {
                   }
                 ],
                 "featured": true,
-                "distanceKm": 7.077876090872352,
+                "distanceKm": 7.078164306946527,
                 "walkingMinutes": 108,
                 "drivingMinutes": 15,
                 "distanceLabel": "7.1 km · 🚗 ~15 min",
@@ -1687,7 +1687,7 @@ window.generatedPlacesData = {
                   }
                 ],
                 "featured": false,
-                "distanceKm": 10.295498630887169,
+                "distanceKm": 10.295788110273469,
                 "walkingMinutes": 157,
                 "drivingMinutes": 22,
                 "distanceLabel": "10.3 km · 🚗 ~22 min",
@@ -1713,7 +1713,7 @@ window.generatedPlacesData = {
                   }
                 ],
                 "featured": false,
-                "distanceKm": 9.7195498035275,
+                "distanceKm": 9.719839407282032,
                 "walkingMinutes": 148,
                 "drivingMinutes": 20,
                 "distanceLabel": "9.7 km · 🚗 ~20 min",
@@ -1739,7 +1739,7 @@ window.generatedPlacesData = {
                   }
                 ],
                 "featured": false,
-                "distanceKm": 11.905366332650727,
+                "distanceKm": 11.905179481235736,
                 "walkingMinutes": 182,
                 "drivingMinutes": 25,
                 "distanceLabel": "11.9 km · 🚗 ~25 min",
@@ -1765,7 +1765,7 @@ window.generatedPlacesData = {
                   }
                 ],
                 "featured": false,
-                "distanceKm": 4.555493893681428,
+                "distanceKm": 4.555202810622762,
                 "walkingMinutes": 69,
                 "drivingMinutes": 10,
                 "distanceLabel": "4.6 km · 🚗 ~10 min",
@@ -1795,7 +1795,7 @@ window.generatedPlacesData = {
                   }
                 ],
                 "featured": false,
-                "distanceKm": 1.4723455070002445,
+                "distanceKm": 1.4723407235130272,
                 "walkingMinutes": 22,
                 "drivingMinutes": 3,
                 "distanceLabel": "1.5 km · 🚶 ~22 min",
@@ -1821,7 +1821,7 @@ window.generatedPlacesData = {
                   }
                 ],
                 "featured": true,
-                "distanceKm": 8.848440057305492,
+                "distanceKm": 8.848665603301916,
                 "walkingMinutes": 135,
                 "drivingMinutes": 19,
                 "distanceLabel": "8.8 km · 🚗 ~19 min",
@@ -1848,7 +1848,7 @@ window.generatedPlacesData = {
                   }
                 ],
                 "featured": false,
-                "distanceKm": 1.5295670331402873,
+                "distanceKm": 1.5297594998693678,
                 "walkingMinutes": 23,
                 "drivingMinutes": 3,
                 "distanceLabel": "1.5 km · 🚶 ~23 min",
@@ -1878,7 +1878,7 @@ window.generatedPlacesData = {
                   }
                 ],
                 "featured": false,
-                "distanceKm": 3.1401840250381983,
+                "distanceKm": 3.1404746901491225,
                 "walkingMinutes": 48,
                 "drivingMinutes": 7,
                 "distanceLabel": "3.1 km · 🚗 ~7 min",
@@ -1908,7 +1908,7 @@ window.generatedPlacesData = {
                   }
                 ],
                 "featured": false,
-                "distanceKm": 3.6417053656935816,
+                "distanceKm": 3.6419964864402194,
                 "walkingMinutes": 56,
                 "drivingMinutes": 8,
                 "distanceLabel": "3.6 km · 🚗 ~8 min",
@@ -1938,7 +1938,7 @@ window.generatedPlacesData = {
                   }
                 ],
                 "featured": false,
-                "distanceKm": 2.1553542039479225,
+                "distanceKm": 2.1556442199905237,
                 "walkingMinutes": 33,
                 "drivingMinutes": 5,
                 "distanceLabel": "2.2 km · 🚗 ~5 min",
@@ -1968,7 +1968,7 @@ window.generatedPlacesData = {
                   }
                 ],
                 "featured": false,
-                "distanceKm": 2.5423251641858893,
+                "distanceKm": 2.5426129754614153,
                 "walkingMinutes": 39,
                 "drivingMinutes": 5,
                 "distanceLabel": "2.5 km · 🚗 ~5 min",
@@ -1994,7 +1994,7 @@ window.generatedPlacesData = {
                   }
                 ],
                 "featured": false,
-                "distanceKm": 1.5731073944102971,
+                "distanceKm": 1.573154960117869,
                 "walkingMinutes": 24,
                 "drivingMinutes": 3,
                 "distanceLabel": "1.6 km · 🚶 ~24 min",
@@ -2020,7 +2020,7 @@ window.generatedPlacesData = {
                   }
                 ],
                 "featured": true,
-                "distanceKm": 2.120756372299505,
+                "distanceKm": 2.12104515055338,
                 "walkingMinutes": 32,
                 "drivingMinutes": 4,
                 "distanceLabel": "2.1 km · 🚗 ~4 min",
@@ -2057,7 +2057,7 @@ window.generatedPlacesData = {
                   }
                 ],
                 "featured": false,
-                "distanceKm": 0.6340881889676132,
+                "distanceKm": 0.6359716957637825,
                 "walkingMinutes": 10,
                 "drivingMinutes": 1,
                 "distanceLabel": "0.6 km · 🚶 ~10 min",
@@ -2083,7 +2083,7 @@ window.generatedPlacesData = {
                   }
                 ],
                 "featured": false,
-                "distanceKm": 0.4817030024822554,
+                "distanceKm": 0.48155790109912816,
                 "walkingMinutes": 7,
                 "drivingMinutes": 1,
                 "distanceLabel": "0.5 km · 🚶 ~7 min",
@@ -2120,7 +2120,7 @@ window.generatedPlacesData = {
                   }
                 ],
                 "featured": false,
-                "distanceKm": 8.373780332060171,
+                "distanceKm": 8.374071006059824,
                 "walkingMinutes": 128,
                 "drivingMinutes": 18,
                 "distanceLabel": "8.4 km · 🚗 ~18 min",
@@ -2150,7 +2150,7 @@ window.generatedPlacesData = {
                   }
                 ],
                 "featured": false,
-                "distanceKm": 1.4914172688362597,
+                "distanceKm": 1.4917033329725031,
                 "walkingMinutes": 23,
                 "drivingMinutes": 3,
                 "distanceLabel": "1.5 km · 🚶 ~23 min",
@@ -2180,7 +2180,7 @@ window.generatedPlacesData = {
                   }
                 ],
                 "featured": false,
-                "distanceKm": 0.26187881688198583,
+                "distanceKm": 0.2621458774343387,
                 "walkingMinutes": 4,
                 "drivingMinutes": 1,
                 "distanceLabel": "0.3 km · 🚶 ~4 min",
@@ -2216,7 +2216,7 @@ window.generatedPlacesData = {
                   }
                 ],
                 "featured": true,
-                "distanceKm": 1.4903700551894088,
+                "distanceKm": 1.490653326683976,
                 "walkingMinutes": 23,
                 "drivingMinutes": 3,
                 "distanceLabel": "1.5 km · 🚶 ~23 min",
@@ -2262,7 +2262,7 @@ window.generatedPlacesData = {
                   }
                 ],
                 "featured": false,
-                "distanceKm": 1.3365257302072007,
+                "distanceKm": 1.3366978319513982,
                 "walkingMinutes": 20,
                 "drivingMinutes": 3,
                 "distanceLabel": "1.3 km · 🚶 ~20 min",
@@ -2292,10 +2292,10 @@ window.generatedPlacesData = {
                   }
                 ],
                 "featured": false,
-                "distanceKm": 1.2185837795686438,
-                "walkingMinutes": 19,
+                "distanceKm": 1.4228158046005084,
+                "walkingMinutes": 22,
                 "drivingMinutes": 3,
-                "distanceLabel": "1.2 km · 🚶 ~19 min",
+                "distanceLabel": "1.4 km · 🚶 ~22 min",
                 "temporarilyClosed": false,
                 "statusLabel": "",
                 "tags": [
@@ -2318,7 +2318,7 @@ window.generatedPlacesData = {
                   }
                 ],
                 "featured": false,
-                "distanceKm": 1.661180914501566,
+                "distanceKm": 1.6612939844822359,
                 "walkingMinutes": 25,
                 "drivingMinutes": 3,
                 "distanceLabel": "1.7 km · 🚶 ~25 min",
@@ -2359,7 +2359,7 @@ window.generatedPlacesData = {
                   }
                 ],
                 "featured": false,
-                "distanceKm": 5.683354458911545,
+                "distanceKm": 5.68309479101386,
                 "walkingMinutes": 87,
                 "drivingMinutes": 12,
                 "distanceLabel": "5.7 km · 🚗 ~12 min",
@@ -2390,7 +2390,7 @@ window.generatedPlacesData = {
                   }
                 ],
                 "featured": false,
-                "distanceKm": 1.1407588418652213,
+                "distanceKm": 1.1409951806557768,
                 "walkingMinutes": 17,
                 "drivingMinutes": 2,
                 "distanceLabel": "1.1 km · 🚶 ~17 min",
@@ -2420,7 +2420,7 @@ window.generatedPlacesData = {
                   }
                 ],
                 "featured": true,
-                "distanceKm": 8.673256763638195,
+                "distanceKm": 8.673548249086187,
                 "walkingMinutes": 132,
                 "drivingMinutes": 18,
                 "distanceLabel": "8.7 km · 🚗 ~18 min",
@@ -2451,7 +2451,7 @@ window.generatedPlacesData = {
                   }
                 ],
                 "featured": false,
-                "distanceKm": 0.2843822520536233,
+                "distanceKm": 0.2846568112457814,
                 "walkingMinutes": 4,
                 "drivingMinutes": 1,
                 "distanceLabel": "0.3 km · 🚶 ~4 min",
@@ -2496,7 +2496,7 @@ window.generatedPlacesData = {
                   }
                 ],
                 "featured": false,
-                "distanceKm": 4.155873587239765,
+                "distanceKm": 4.155620571070742,
                 "walkingMinutes": 63,
                 "drivingMinutes": 9,
                 "distanceLabel": "4.2 km · 🚗 ~9 min",
@@ -2526,7 +2526,7 @@ window.generatedPlacesData = {
                   }
                 ],
                 "featured": false,
-                "distanceKm": 3.036409159789829,
+                "distanceKm": 3.036699436208861,
                 "walkingMinutes": 46,
                 "drivingMinutes": 6,
                 "distanceLabel": "3.0 km · 🚗 ~6 min",
@@ -2556,7 +2556,7 @@ window.generatedPlacesData = {
                   }
                 ],
                 "featured": true,
-                "distanceKm": 1.586142772559797,
+                "distanceKm": 1.5858526978644352,
                 "walkingMinutes": 24,
                 "drivingMinutes": 3,
                 "distanceLabel": "1.6 km · 🚶 ~24 min",
@@ -2589,7 +2589,7 @@ window.generatedPlacesData = {
                   }
                 ],
                 "featured": false,
-                "distanceKm": 2.5664080519248693,
+                "distanceKm": 2.566117007626898,
                 "walkingMinutes": 39,
                 "drivingMinutes": 5,
                 "distanceLabel": "2.6 km · 🚗 ~5 min",
@@ -2615,7 +2615,7 @@ window.generatedPlacesData = {
                   }
                 ],
                 "featured": false,
-                "distanceKm": 2.3557930282531,
+                "distanceKm": 2.3558150229660186,
                 "walkingMinutes": 36,
                 "drivingMinutes": 5,
                 "distanceLabel": "2.4 km · 🚗 ~5 min",
@@ -2651,7 +2651,7 @@ window.generatedPlacesData = {
                   }
                 ],
                 "featured": false,
-                "distanceKm": 3.772217559630952,
+                "distanceKm": 3.7725088822924153,
                 "walkingMinutes": 58,
                 "drivingMinutes": 8,
                 "distanceLabel": "3.8 km · 🚗 ~8 min",
@@ -2681,7 +2681,7 @@ window.generatedPlacesData = {
                   }
                 ],
                 "featured": false,
-                "distanceKm": 2.547201176627306,
+                "distanceKm": 2.547489510400615,
                 "walkingMinutes": 39,
                 "drivingMinutes": 5,
                 "distanceLabel": "2.5 km · 🚗 ~5 min",
@@ -2711,7 +2711,7 @@ window.generatedPlacesData = {
                   }
                 ],
                 "featured": false,
-                "distanceKm": 1.7024831201041772,
+                "distanceKm": 1.7021959109727878,
                 "walkingMinutes": 26,
                 "drivingMinutes": 4,
                 "distanceLabel": "1.7 km · 🚶 ~26 min",
@@ -2743,7 +2743,7 @@ window.generatedPlacesData = {
                   }
                 ],
                 "featured": true,
-                "distanceKm": 8.740785991079868,
+                "distanceKm": 8.74100227136237,
                 "walkingMinutes": 133,
                 "drivingMinutes": 18,
                 "distanceLabel": "8.7 km · 🚗 ~18 min",
@@ -2770,7 +2770,7 @@ window.generatedPlacesData = {
                   }
                 ],
                 "featured": false,
-                "distanceKm": 5.6994858859835915,
+                "distanceKm": 5.6995523916155,
                 "walkingMinutes": 87,
                 "drivingMinutes": 12,
                 "distanceLabel": "5.7 km · 🚗 ~12 min",
@@ -2811,7 +2811,7 @@ window.generatedPlacesData = {
                   }
                 ],
                 "featured": false,
-                "distanceKm": 0.9521912061406071,
+                "distanceKm": 0.9519081714881674,
                 "walkingMinutes": 15,
                 "drivingMinutes": 2,
                 "distanceLabel": "1.0 km · 🚶 ~15 min",
@@ -2837,7 +2837,7 @@ window.generatedPlacesData = {
                   }
                 ],
                 "featured": false,
-                "distanceKm": 0.7889907260504119,
+                "distanceKm": 0.7892821551872525,
                 "walkingMinutes": 12,
                 "drivingMinutes": 2,
                 "distanceLabel": "0.8 km · 🚶 ~12 min",
@@ -2863,7 +2863,7 @@ window.generatedPlacesData = {
                   }
                 ],
                 "featured": false,
-                "distanceKm": 0.4943516409353751,
+                "distanceKm": 0.494189634285468,
                 "walkingMinutes": 8,
                 "drivingMinutes": 1,
                 "distanceLabel": "0.5 km · 🚶 ~8 min",
@@ -2889,7 +2889,7 @@ window.generatedPlacesData = {
                   }
                 ],
                 "featured": false,
-                "distanceKm": 0.4821730610807245,
+                "distanceKm": 0.48205865319516533,
                 "walkingMinutes": 7,
                 "drivingMinutes": 1,
                 "distanceLabel": "0.5 km · 🚶 ~7 min",
@@ -2921,7 +2921,7 @@ window.generatedPlacesData = {
                   }
                 ],
                 "featured": false,
-                "distanceKm": 16.92534050692306,
+                "distanceKm": 16.925628714294668,
                 "walkingMinutes": 258,
                 "drivingMinutes": 36,
                 "distanceLabel": "16.9 km · 🚗 ~36 min",
@@ -2947,7 +2947,7 @@ window.generatedPlacesData = {
                   }
                 ],
                 "featured": false,
-                "distanceKm": 16.372535986051115,
+                "distanceKm": 16.37277577068777,
                 "walkingMinutes": 250,
                 "drivingMinutes": 34,
                 "distanceLabel": "16.4 km · 🚗 ~34 min",
@@ -2968,6 +2968,6 @@ window.generatedPlacesData = {
         ]
       }
     ],
-    "foodMapEmbed": "https://www.google.com/maps?q=37.8565095,-0.7676005&z=13&output=embed"
+    "foodMapEmbed": "https://www.google.com/maps?q=37.856507,-0.7676014999999999&z=13&output=embed"
   }
 };

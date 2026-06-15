@@ -2,16 +2,16 @@
   "source": {
     "type": "google-maps-saved-list",
     "url": "https://maps.app.goo.gl/6kiRLdhaMThJCQia9",
-    "payloadUrl": "https://www.google.es/maps/preview/entitylist/getlist?authuser=0&hl=en&gl=us&pb=%211m4%211s9FHSLytbQZeXfVD7Pj_uPw%212e1%213m1%211e1%212e2%213e2%214i500%216m3%211swJ0masW5FKasur8Pz_6SwQk%2115i204459%2128e2%2116b1",
-    "lastSyncedAt": "2026-06-08T10:47:36.069Z",
+    "payloadUrl": "https://www.google.es/maps/preview/entitylist/getlist?authuser=0&hl=en&gl=us&pb=%211m4%211s9FHSLytbQZeXfVD7Pj_uPw%212e1%213m1%211e1%212e2%213e2%214i500%216m3%211sv-gvaqHGEbDBkPIP-KuIoAE%2115i204459%2128e2%2116b1",
+    "lastSyncedAt": "2026-06-15T11:58:00.162Z",
     "title": "Villa Beach Higuericas",
     "description": "List of recommended places in Pilar de la Horadada and surroundings",
     "totalPlaces": 52,
     "home": {
       "name": "C. Dalia, 31",
       "address": "C. Dalia, 31, 03190 Pilar de la Horadada, Alicante",
-      "lat": 37.8565095,
-      "lng": -0.7676005
+      "lat": 37.856507,
+      "lng": -0.7676014999999999
     }
   },
   "places": [
@@ -384,8 +384,8 @@
       "name": "ALDI",
       "note": "Supermarket",
       "address": "C. Mayor, s/n, 03190 Pilar de la Horadada, Alicante",
-      "lat": 37.8600028,
-      "lng": -0.7807567999999999,
+      "lat": 37.8599434,
+      "lng": -0.7832127999999999,
       "category": "supermarkets",
       "temporarilyClosed": false,
       "closureLabel": null,
@@ -527,8 +527,8 @@
       "name": "Pirata Tío Pepe",
       "note": "Nice hidden chiringuito!",
       "address": "C/ Partida de, C. Brisamar, 14, 03191 Torre de la Horadada, Alicante",
-      "lat": 37.8607606,
-      "lng": -0.7627864,
+      "lat": 37.8607374,
+      "lng": -0.7627263,
       "category": "bars",
       "temporarilyClosed": false,
       "closureLabel": null,
