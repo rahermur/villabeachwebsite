@@ -2,7 +2,7 @@ window.generatedPlacesData = {
   "meta": {
     "sourceUrl": "https://maps.app.goo.gl/6kiRLdhaMThJCQia9",
     "listTitle": "Villa Beach Higuericas",
-    "lastSyncedAt": "2026-06-29T10:51:20.599Z",
+    "lastSyncedAt": "2026-07-06T10:12:46.407Z",
     "totalPlaces": 52,
     "directListEmbedAvailable": false
   },
