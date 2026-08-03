@@ -2,7 +2,7 @@ window.generatedPlacesData = {
   "meta": {
     "sourceUrl": "https://maps.app.goo.gl/6kiRLdhaMThJCQia9",
     "listTitle": "Villa Beach Higuericas",
-    "lastSyncedAt": "2026-07-27T09:43:45.386Z",
+    "lastSyncedAt": "2026-08-03T09:37:16.683Z",
     "totalPlaces": 52,
     "directListEmbedAvailable": false
   },
@@ -668,7 +668,7 @@ window.generatedPlacesData = {
                   }
                 ],
                 "featured": false,
-                "distanceKm": 1.4917033329725031,
+                "distanceKm": 1.4851443659854644,
                 "walkingMinutes": 23,
                 "drivingMinutes": 3,
                 "distanceLabel": "1.5 km · 🚶 ~23 min",
@@ -810,10 +810,10 @@ window.generatedPlacesData = {
                   }
                 ],
                 "featured": false,
-                "distanceKm": 1.1930870015159853,
-                "walkingMinutes": 18,
+                "distanceKm": 1.391703536614558,
+                "walkingMinutes": 21,
                 "drivingMinutes": 3,
-                "distanceLabel": "1.2 km · 🚶 ~18 min",
+                "distanceLabel": "1.4 km · 🚶 ~21 min",
                 "temporarilyClosed": false,
                 "statusLabel": "",
                 "tags": [
@@ -2150,7 +2150,7 @@ window.generatedPlacesData = {
                   }
                 ],
                 "featured": false,
-                "distanceKm": 1.4917033329725031,
+                "distanceKm": 1.4851443659854644,
                 "walkingMinutes": 23,
                 "drivingMinutes": 3,
                 "distanceLabel": "1.5 km · 🚶 ~23 min",
@@ -2292,10 +2292,10 @@ window.generatedPlacesData = {
                   }
                 ],
                 "featured": false,
-                "distanceKm": 1.1930870015159853,
-                "walkingMinutes": 18,
+                "distanceKm": 1.391703536614558,
+                "walkingMinutes": 21,
                 "drivingMinutes": 3,
-                "distanceLabel": "1.2 km · 🚶 ~18 min",
+                "distanceLabel": "1.4 km · 🚶 ~21 min",
                 "temporarilyClosed": false,
                 "statusLabel": "",
                 "tags": [
