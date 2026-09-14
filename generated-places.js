@@ -2,7 +2,7 @@ window.generatedPlacesData = {
   "meta": {
     "sourceUrl": "https://maps.app.goo.gl/6kiRLdhaMThJCQia9",
     "listTitle": "Villa Beach Higuericas",
-    "lastSyncedAt": "2026-09-07T11:30:02.373Z",
+    "lastSyncedAt": "2026-09-14T11:42:14.250Z",
     "totalPlaces": 52,
     "directListEmbedAvailable": false
   },
@@ -810,10 +810,10 @@ window.generatedPlacesData = {
                   }
                 ],
                 "featured": false,
-                "distanceKm": 1.391703536614558,
-                "walkingMinutes": 21,
+                "distanceKm": 1.191588961808717,
+                "walkingMinutes": 18,
                 "drivingMinutes": 3,
-                "distanceLabel": "1.4 km · 🚶 ~21 min",
+                "distanceLabel": "1.2 km · 🚶 ~18 min",
                 "temporarilyClosed": false,
                 "statusLabel": "",
                 "tags": [
@@ -2292,10 +2292,10 @@ window.generatedPlacesData = {
                   }
                 ],
                 "featured": false,
-                "distanceKm": 1.391703536614558,
-                "walkingMinutes": 21,
+                "distanceKm": 1.191588961808717,
+                "walkingMinutes": 18,
                 "drivingMinutes": 3,
-                "distanceLabel": "1.4 km · 🚶 ~21 min",
+                "distanceLabel": "1.2 km · 🚶 ~18 min",
                 "temporarilyClosed": false,
                 "statusLabel": "",
                 "tags": [
