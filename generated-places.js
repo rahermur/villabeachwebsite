@@ -2,7 +2,7 @@ window.generatedPlacesData = {
   "meta": {
     "sourceUrl": "https://maps.app.goo.gl/6kiRLdhaMThJCQia9",
     "listTitle": "Villa Beach Higuericas",
-    "lastSyncedAt": "2026-10-26T12:12:07.241Z",
+    "lastSyncedAt": "2026-11-02T14:41:29.341Z",
     "totalPlaces": 52,
     "directListEmbedAvailable": false
   },
@@ -810,10 +810,10 @@ window.generatedPlacesData = {
                   }
                 ],
                 "featured": false,
-                "distanceKm": 1.4228158046005084,
-                "walkingMinutes": 22,
+                "distanceKm": 1.1972122343505331,
+                "walkingMinutes": 18,
                 "drivingMinutes": 3,
-                "distanceLabel": "1.4 km · 🚶 ~22 min",
+                "distanceLabel": "1.2 km · 🚶 ~18 min",
                 "temporarilyClosed": false,
                 "statusLabel": "",
                 "tags": [
@@ -1261,10 +1261,10 @@ window.generatedPlacesData = {
                   }
                 ],
                 "featured": true,
-                "distanceKm": 8.827215951819344,
-                "walkingMinutes": 135,
-                "drivingMinutes": 19,
-                "distanceLabel": "8.8 km · 🚗 ~19 min",
+                "distanceKm": 8.74100227136237,
+                "walkingMinutes": 133,
+                "drivingMinutes": 18,
+                "distanceLabel": "8.7 km · 🚗 ~18 min",
                 "temporarilyClosed": false,
                 "statusLabel": "",
                 "tags": [
@@ -2292,10 +2292,10 @@ window.generatedPlacesData = {
                   }
                 ],
                 "featured": false,
-                "distanceKm": 1.4228158046005084,
-                "walkingMinutes": 22,
+                "distanceKm": 1.1972122343505331,
+                "walkingMinutes": 18,
                 "drivingMinutes": 3,
-                "distanceLabel": "1.4 km · 🚶 ~22 min",
+                "distanceLabel": "1.2 km · 🚶 ~18 min",
                 "temporarilyClosed": false,
                 "statusLabel": "",
                 "tags": [
@@ -2743,10 +2743,10 @@ window.generatedPlacesData = {
                   }
                 ],
                 "featured": true,
-                "distanceKm": 8.827215951819344,
-                "walkingMinutes": 135,
-                "drivingMinutes": 19,
-                "distanceLabel": "8.8 km · 🚗 ~19 min",
+                "distanceKm": 8.74100227136237,
+                "walkingMinutes": 133,
+                "drivingMinutes": 18,
+                "distanceLabel": "8.7 km · 🚗 ~18 min",
                 "temporarilyClosed": false,
                 "statusLabel": "",
                 "tags": [
